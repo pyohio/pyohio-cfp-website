@@ -4,6 +4,7 @@
 {% load proposal_tags %}
 {% load review_tags %}
 {% load teams_tags %}
+{% load registrasion_tags %}
 
 {% block head_title %}Dashboard{% endblock %}
 
@@ -91,6 +92,79 @@
                 </table>
             {% endif %}
         {% endif %}
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="pull-right">
+                {% if not user.attendee.completed_registration %}
+                    <a href="{% url "guided_registration" %}" class="btn btn-xs btn-default">
+                        <i class="fa fa-plus-sign"></i> Register for the conference
+                    </a>
+                {% else %}
+                  <a href="{% url "attendee_edit" %}" class="btn btn-xs btn-default">
+                      <i class="fa fa-pencil"></i> Edit your attendee profile
+                  </a>
+
+                  {% items_pending as pending %}
+                  {% if pending %}
+                    <a href="{% url "checkout" %}" class="btn btn-xs btn-default">
+                        <i class="fa fa-credit-card"></i> Pay your registration
+                    </a>
+                  {% endif %}
+                {% endif %}
+            </div>
+            <h3 class="panel-title">
+              <i class="fa fa-ticket"></i>
+                {% trans "Registration" %}
+            </h3>
+
+        </div>
+
+        <div class="panel-body">
+            {% if not user.attendee.completed_registration %}
+                <p>To attend the conference, you must purchase a ticket. <a href="{% url "guided_registration" %}">Use our registration form to purchase your ticket</a>.
+            {% else %}
+              <h4>Your registration</h4>
+                  {% items_pending as pending %}
+                  {% if pending %}
+                    <h5>Items pending payment</h5>
+                    {% include "registrasion/items_list.html" with items=pending %}
+                  {% endif %}
+                {% items_purchased as purchased %}
+                {% if purchased %}
+                  <h5>Paid items</h5>
+                  {% include "registrasion/items_list.html" with items=purchased %}
+                {% endif %}
+                <h5>Add/Update items</h5>
+                {% available_categories as categories %}
+                {% for category in categories %}
+                  <li><a href="{% url "product_category" category.id %}">{{ category.name }}</a></li>
+                {% endfor %}
+              </ul>
+
+              {% invoices as invoices %}
+              {% if invoices %}
+              <h5>Invoices</h5>
+                <ul>
+                  {% for invoice in invoices %}
+                    {% if not invoice.is_void %}
+                      <li>
+                          <a href="{% url "invoice" invoice.id %}">Invoice {{ invoice.id }}</a>
+                          - ${{ invoice.value }} ({{ invoice.get_status_display }})
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% available_credit as credit %}
+              {% if credit %}
+                <p>You have ${{ credit }} leftover from refunded invoices. Contact the conference organisers
+                  to put this toward other purchases, or to refund it.</p>
+              {% endif %}
+            {% endif %}
+          </div>
     </div>
 
     <div class="panel panel-default">

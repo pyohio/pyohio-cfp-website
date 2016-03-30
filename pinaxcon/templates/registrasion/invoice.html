@@ -1,0 +1,81 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+{% block body %}
+
+
+{% if invoice.is_unpaid %}
+  <p><strong>NOTICE:</strong> The below invoice is automatically generated, and will be voided
+    if you amend your registration before payment, or if discounts or products contained in the
+    invoice become unavailable. The items and discounts are only reserved until
+    the invoice due time.</p>
+
+  {% url "invoice_access" invoice.user.attendee.access_code as access_url %}
+  <p>Your most recent unpaid invoice will be available at
+    <a href="{{ access_url }}">{{ request.scheme }}://{{ request.get_host }}{{ access_url }}</a>
+    You can give this URL to your accounts department to pay your registration.</p>
+
+  <div>
+    <a class="btn btn-default" href="{% url "demopay" invoice.id invoice.user.attendee.access_code %}">Pay this invoice</a>
+    {% if user.is_staff %}
+      <a class="btn btn-default" href="{% url "manual_payment" invoice.id %}">Apply manual payment</a>
+    {% endif %}
+  </div>
+{% elif invoice.is_paid %}
+  {% if user.is_staff %}
+  <div>
+    {% if user.is_staff %}
+      <a class="btn btn-default" href="{% url "manual_payment" invoice.id %}">Apply manual payment/refund</a>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endif %}
+
+<hr />
+
+<h2>Invoice</h2>
+
+{% with invoice_user=invoice.cart.user %}
+  <ul>
+    <li><strong>Invoice number:</strong> {{ invoice.id }}
+    <li><strong>Invoice status:</strong> {{ invoice.get_status_display }}</li>
+    <li><strong>Issue date:</strong> {{ invoice.issue_time|date:"DATE_FORMAT" }}
+    {% if not invoice.is_void %}
+      <li><strong>Due:</strong> {{ invoice.due_time|date:"DATETIME_FORMAT"}}</li>
+    {% endif %}
+    <li><strong>Attention:</strong> {{ invoice_user.attendee.attendeeprofilebase.invoice_recipient }}</li>
+  </ul>
+{% endwith %}
+
+<p>This invoice has been issued as a result of an application to attend (conference name).</p>
+
+
+<table class="table table-striped">
+  <tr>
+    <th>Description</th>
+    <th class="text-right">Quantity</th>
+    <th class="text-right">Price/Unit</th>
+    <th class="text-right">Total</th>
+  </tr>
+  {% for line_item in invoice.lineitem_set.all %}
+    <tr>
+      <td>{{ line_item.description }}</td>
+      <td class="text-right">{{ line_item.quantity }}</td>
+      <td class="text-right">${{ line_item.price }}</td>
+      <td class="text-right">${{ line_item.price|multiply:line_item.quantity }}</td>
+    </tr>
+  {% endfor %}
+  <tr>
+    <th>TOTAL</th>
+    <td></td>
+    <td></td>
+    <td class="text-right">${{ invoice.value }}</td>
+  </tr>
+</table>
+
+{% if invoice.paymentbase_set.all %}
+<h4>Payments received</h4>
+{% include "registrasion/payment_list.html" with payments=invoice.paymentbase_set.all %}
+{% endif %}
+
+{% endblock %}

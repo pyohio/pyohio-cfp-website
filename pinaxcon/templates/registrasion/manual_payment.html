@@ -1,0 +1,31 @@
+{% extends "registrasion/base.html" %}
+{% load bootstrap %}
+
+{% block body %}
+
+  <h1>Invoice {{ invoice.id }} - {{ invoice.get_status_display }}</h1>
+
+  <h2>Past payments</h2>
+
+  {% include "registrasion/payment_list.html" with payments=invoice.paymentbase_set.all %}
+
+  <h2>Apply manual payment</h2>
+
+  <p>Enter a reference and the amount of the payment. A refund is a negative
+  payment.</p>
+
+  <form method="post" action="">
+    {% csrf_token %}
+
+    <table>
+        {{ form|bootstrap }}
+    </table>
+
+    <div class="form-actions">
+        <input class="btn btn-primary" type="submit" value="Apply payment" />
+        <a class="btn btn-default" href="{% url "invoice" invoice.id %}">Return to invoice</a>
+    </div>
+  </form>
+
+
+{% endblock %}

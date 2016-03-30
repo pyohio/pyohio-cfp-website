@@ -1,0 +1,24 @@
+{% extends "registrasion/base.html" %}
+{% load bootstrap %}
+
+{% block body %}
+
+  <h1>Your profile</h1>
+
+  <p>These details will appear on your badge, your invoices, and will be used
+  to order catered food at the conference.</p>
+
+  <form method="post" action="">
+    {% csrf_token %}
+
+    <table>
+        {{ form|bootstrap }}
+    </table>
+
+    <div class="form-actions">
+        <input class="btn btn-primary" type="submit" value="Save" />
+    </div>
+  </form>
+
+
+{% endblock %}

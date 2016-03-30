@@ -1,0 +1,35 @@
+{% extends "registrasion/base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+
+{% block body %}
+
+  <h1>Conference Registration – Review</h1>
+
+  {% items_pending as pending %}
+  {% if pending %}
+
+  <p><em>Step 4 of 4</em></p>
+
+  <p>You're almost done! You've selected the following items:<p>
+  {% include "registrasion/items_list.html" with items=pending %}
+
+  <p>You can either generate an invoice and pay for your registration, or return to
+    the dashboard to make amendments.</p>
+
+  <div class="form-actions">
+    <a class="btn btn-default" href="{% url "checkout" %}">Check out and pay</a>
+    <a class="btn btn-default" href="{% url "dashboard" %}">Return to dashboard</a>
+  </div>
+
+  {% else %}
+
+  <p>You have no items that need to be paid.</p>
+
+  <div class="form-actions">
+    <a class="btn btn-default" href="{% url "dashboard" %}">Return to dashboard</a>
+  </div>
+
+  {% endif %}
+
+{% endblock %}

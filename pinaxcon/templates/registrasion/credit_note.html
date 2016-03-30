@@ -1,0 +1,40 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+{% block body %}
+
+<h2>Credit Note</h2>
+
+{% with note_user=credit_note.invoice.user %}
+  <ul>
+    <li><strong>Number:</strong> {{ credit_note.id }}
+    <li><strong>Attention:</strong> {{ credit_note.invoice.user.attendee.attendeeprofilebase.invoice_recipient }}</li>
+    <li><strong>Value:</strong> {{ credit_note.value }}</li>
+    <li><strong>Status:</strong> {{ credit_note.status }}</li>
+  </ul>
+{% endwith %}
+
+<p>This credit note was generated from funds excess from invoice {{ credit_note.invoice.id }}.</p>
+
+{% if credit_note.is_unclaimed %}
+  <form method="post" action="">
+    {% csrf_token %}
+    <h3>Apply to invoice</h3>
+    <p>You can apply this credit note to an unpaid invoice.</p>
+
+      {{ apply_form|bootstrap }}
+      <div class="form-actions">
+          <input class="btn btn-primary" type="submit" value="Apply to invoice" />
+      </div>
+    <h3>Manual refund</h3>
+    <p>You can mark this credit note as refunded, and handle the refund manually.
+    </p>
+
+      {{ refund_form|bootstrap }}
+      <div class="form-actions">
+          <input class="btn btn-primary" type="submit" value="Mark as refunded" />
+      </div>
+  </form>
+{% endif %}
+
+{% endblock %}

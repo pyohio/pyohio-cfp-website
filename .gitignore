@@ -1,3 +1,6 @@
 *.pyc
 node_modules/
 _build/
+.DS_Store
+dev.db
+

@@ -26,6 +26,13 @@ urlpatterns = [
 
     url(r"^boxes/", include("pinax.boxes.urls")),
     url(r"^", include("pinax.pages.urls")),
+
+    # Required by registrasion
+    url(r'^register/', include('registrasion.urls')),
+    url(r'^nested_admin/', include('nested_admin.urls')),
+
+    # Demo payment gateway and related features
+    url(r"^register/pinaxcon/", include("pinaxcon.registrasion.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,7 @@
+{% if discounts %}
+  <ul>
+    {% for discount in discounts %}
+      <li>{{ discount.quantity }} &times; {{ discount.clause }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

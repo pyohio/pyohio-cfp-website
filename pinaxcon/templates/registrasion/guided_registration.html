@@ -1,0 +1,36 @@
+{% extends "registrasion/base.html" %}
+{% load bootstrap %}
+
+{% block body %}
+
+  <h1>Conference Registration – {{ title }}</h1>
+
+  <p><em>Step {{ current_step }} of {{ total_steps|add:1 }}</em></p>
+
+  <form method="post" action="">
+    {% csrf_token %}
+
+    {% for section in sections %}
+      <h3>{{ section.title }}</h3>
+
+      {% if section.description %}
+        <p>{{ section.description }}</p>
+      {% endif %}
+
+      {% if section.discounts %}
+        <p>You have the following discounts available to you:</p>
+        {% include "registrasion/discount_list.html" with discounts=section.discounts %}
+      {% endif %}
+
+      <fieldset>
+        {{ section.form|bootstrap }}
+      </fieldset>
+    {% endfor %}
+
+    <div class="form-actions">
+      <input class="btn btn-primary" type="submit" value="Next" />
+    </div>
+  </form>
+
+
+{% endblock %}
