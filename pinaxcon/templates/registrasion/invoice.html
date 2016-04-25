@@ -25,7 +25,8 @@
   {% if user.is_staff %}
   <div>
     {% if user.is_staff %}
-      <a class="btn btn-default" href="{% url "manual_payment" invoice.id %}">Apply manual payment/refund</a>
+    <a class="btn btn-default" href="{% url "manual_payment" invoice.id %}">Apply manual payment/refund</a>
+    <a class="btn btn-default" href="{% url "refund" invoice.id %}">Refund by issuing credit note</a>
     {% endif %}
   </div>
   {% endif %}
@@ -43,7 +44,7 @@
     {% if not invoice.is_void %}
       <li><strong>Due:</strong> {{ invoice.due_time|date:"DATETIME_FORMAT"}}</li>
     {% endif %}
-    <li><strong>Attention:</strong> {{ invoice_user.attendee.attendeeprofilebase.invoice_recipient }}</li>
+    <li><strong>Recipient:</strong> {{ invoice_user.attendee.attendeeprofilebase.invoice_recipient|linebreaksbr}}</li>
   </ul>
 {% endwith %}
 

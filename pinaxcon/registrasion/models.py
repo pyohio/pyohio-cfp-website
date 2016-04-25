@@ -11,7 +11,7 @@ class AttendeeProfile(rego.AttendeeProfileBase):
 
     def invoice_recipient(self):
         if self.company:
-            base = "%(name_per_invoice)s c/- %(company)s"
+            base = "\n%(company)s\nAttention: %(name_per_invoice)s"
         else:
             base = "%(name_per_invoice)s"
         return base % self.__dict__

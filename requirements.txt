@@ -8,6 +8,10 @@ dj-database-url==0.4.0
 pinax-pages==0.4.2
 pinax-boxes==2.1.2
 
-# run off of master for now
-git+https://github.com/pinax/symposion.git
-git+https://github.com/chrisjrn/registrasion.git@demo_site_integration
+# For testing
+django-nose==1.4.3
+coverage==4.0.3
+
+# Registrasion
+registrasion==0.1.0
+https://github.com/pinax/symposion/tarball/ad81810#egg=symposion

@@ -368,7 +368,7 @@
   }
 },
 {
-  "model": "registrasion.enablingconditionbase",
+  "model": "registrasion.flagbase",
   "pk": 1,
   "fields": {
     "description": "Extra accommodation depends on Accommodation",
