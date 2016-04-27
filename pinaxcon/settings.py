@@ -163,6 +163,9 @@ INSTALLED_APPS = [
     "pinaxcon",
     "pinaxcon.proposals",
     "pinaxcon.registrasion",
+
+    #testing
+    "django_nose",
 ]
 
 # A sample logging configuration. The only tangible logging
@@ -221,3 +224,12 @@ PINAX_PAGES_HOOKSET = "pinaxcon.hooks.PinaxPagesHookSet"
 PINAX_BOXES_HOOKSET = "pinaxcon.hooks.PinaxBoxesHookSet"
 
 ATTENDEE_PROFILE_FORM = "pinaxcon.registrasion.forms.ProfileForm"
+
+# Use nose to run all tests
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# Tell nose to measure coverage on the 'foo' and 'bar' apps
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=registrasion.controllers,registrasion.models',
+]
