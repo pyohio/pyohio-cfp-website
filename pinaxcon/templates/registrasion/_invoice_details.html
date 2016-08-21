@@ -1,0 +1,46 @@
+{% load registrasion_tags %}
+
+<h2>Invoice</h2>
+
+{% with invoice_user=invoice.cart.user %}
+  <ul>
+    <li><strong>Invoice number:</strong> {{ invoice.id }}
+    <li><strong>Invoice status:</strong> {{ invoice.get_status_display }}</li>
+    <li><strong>Issue date:</strong> {{ invoice.issue_time|date:"DATE_FORMAT" }}
+    {% if not invoice.is_void %}
+      <li><strong>Due:</strong> {{ invoice.due_time|date:"DATETIME_FORMAT"}}</li>
+    {% endif %}
+    <li><strong>Recipient:</strong> {{ invoice_user.attendee.attendeeprofilebase.invoice_recipient|linebreaksbr}}</li>
+  </ul>
+{% endwith %}
+
+<p>This invoice has been issued as a result of an application to attend (conference name).</p>
+
+
+<table class="table table-striped">
+  <tr>
+    <th>Description</th>
+    <th class="text-right">Quantity</th>
+    <th class="text-right">Price/Unit</th>
+    <th class="text-right">Total</th>
+  </tr>
+  {% for line_item in invoice.lineitem_set.all %}
+    <tr>
+      <td>{{ line_item.description }}</td>
+      <td class="text-right">{{ line_item.quantity }}</td>
+      <td class="text-right">${{ line_item.price }}</td>
+      <td class="text-right">${{ line_item.price|multiply:line_item.quantity }}</td>
+    </tr>
+  {% endfor %}
+  <tr>
+    <th>TOTAL</th>
+    <td></td>
+    <td></td>
+    <td class="text-right">${{ invoice.value }}</td>
+  </tr>
+</table>
+
+{% if invoice.paymentbase_set.all %}
+<h4>Payments received</h4>
+{% include "registrasion/payment_list.html" with payments=invoice.paymentbase_set.all %}
+{% endif %}
