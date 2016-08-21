@@ -1,12 +1,13 @@
 {% load i18n %}
 
-<p>The following invoice was created as part of an attempt to register at (conference name). Please ensure it is paid by the due date.</p>
-
 {% if invoice.is_unpaid %}
 <p><strong>NOTICE:</strong> The below invoice is automatically generated, and will be voided
   if you amend your registration before payment, or if discounts or products contained in the
   invoice become unavailable. The items and discounts are only reserved until
   the invoice due time.</p>
+
+<p>Please ensure this invoice is paid by the due date.</p>
+
 {% endif %}
 
 {% url "invoice" invoice.id invoice.user.attendee.access_code as access_url %}

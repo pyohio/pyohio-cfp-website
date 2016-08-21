@@ -1,1 +1,1 @@
-{% load i18n %}{% blocktrans %}Invoice {{invoice.id}} from (CONFERENCE_COMPANY){% endblocktrans %}
+{% load i18n %}Invoice {{ invoice.id }} from (CONFERENCE_COMPANY)
