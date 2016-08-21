@@ -1,0 +1,20 @@
+{% load i18n %}
+
+{% if invoice.is_unpaid %}
+<p><strong>NOTICE:</strong> The below invoice is automatically generated, and will be voided
+  if you amend your registration before payment, or if discounts or products contained in the
+  invoice become unavailable. The items and discounts are only reserved until
+  the invoice due time.</p>
+
+<p>Please ensure this invoice is paid by the due date.</p>
+
+{% endif %}
+
+{% url "invoice" invoice.id invoice.user.attendee.access_code as access_url %}
+<p>This invoice is available at <a href="http://{{ current_site }}{{ access_url }}">http://{{ current_site }}{{ access_url }}</a> --
+  You can give this URL to your accounts department to pay your registration.
+</p>
+
+<hr />
+
+{% include "registrasion/_invoice_details.html" %}
