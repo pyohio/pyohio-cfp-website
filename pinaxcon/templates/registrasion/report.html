@@ -1,0 +1,31 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+
+{% block body %}
+
+  <h2>{{ title }}</h2>
+
+  <form method="GET">
+    {{ form | bootstrap}}
+    <br/>
+    <input type="submit">
+  </form>
+<hr />
+
+<table class="table table-striped">
+  <tr>
+    {% for heading in report.headings %}
+      <th>{{ heading }}</th>
+    {% endfor %}
+  </tr>
+  {% for line in report.data %}
+    <tr>
+      {% for item in line %}
+        <td>{{ item }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
