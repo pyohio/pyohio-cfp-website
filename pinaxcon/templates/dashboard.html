@@ -164,6 +164,13 @@
                   to put this toward other purchases, or to refund it.</p>
               {% endif %}
             {% endif %}
+
+          {% if user.is_staff %}
+            <h4>Registration reports</h4>
+
+            <p><a href="{% url "reports_list" %}">View available reports</a>.
+            </p>
+          {% endif %}
           </div>
     </div>
 
