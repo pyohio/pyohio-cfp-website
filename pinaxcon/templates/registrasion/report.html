@@ -6,11 +6,13 @@
 
   <h2>{{ title }}</h2>
 
-  <form method="GET">
-    {{ form | bootstrap}}
-    <br/>
-    <input type="submit">
-  </form>
+  {% if form %}
+    <form method="GET">
+      {{ form | bootstrap}}
+      <br/>
+      <input type="submit">
+    </form>
+  {% endif %}
 <hr />
 
 <table class="table table-striped">
@@ -22,7 +24,12 @@
   {% for line in report.data %}
     <tr>
       {% for item in line %}
-        <td>{{ item }}</td>
+        <td>
+          {% if report.link_view and forloop.counter0 == 0 %}
+            <a href="{% url report.link_view item %}">
+          {% endif %}
+          {{ item }}
+        </td>
       {% endfor %}
     </tr>
   {% endfor %}
