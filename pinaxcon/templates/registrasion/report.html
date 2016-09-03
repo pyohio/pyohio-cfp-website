@@ -15,24 +15,27 @@
   {% endif %}
 <hr />
 
-<table class="table table-striped">
-  <tr>
-    {% for heading in report.headings %}
-      <th>{{ heading }}</th>
-    {% endfor %}
-  </tr>
-  {% for line in report.data %}
+{% for report in reports %}
+  <h3>{{ report.title }}</h3>
+  <table class="table table-striped">
     <tr>
-      {% for item in line %}
-        <td>
-          {% if report.link_view and forloop.counter0 == 0 %}
-            <a href="{% url report.link_view item %}">
-          {% endif %}
-          {{ item }}
-        </td>
+      {% for heading in report.headings %}
+        <th>{{ heading }}</th>
       {% endfor %}
     </tr>
-  {% endfor %}
-</table>
+    {% for line in report.data %}
+      <tr>
+        {% for item in line %}
+          <td>
+            {% if report.link_view and forloop.counter0 == 0 %}
+              <a href="{% url report.link_view item %}">
+            {% endif %}
+            {{ item }}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+{% endfor %}
 
 {% endblock %}
