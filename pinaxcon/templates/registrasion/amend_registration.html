@@ -1,0 +1,46 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+
+{% block body %}
+
+<h2>Item summary for {{ user.attendee.attendeeprofilebase.attendee_name }}
+  (id={{user.id}})</h2>
+
+<h3>Paid Items</h3>
+
+<p>You cannot remove paid items from someone's registration. You must first
+  cancel the invoice that added those items. You will need to re-add the items
+  from that invoice for the user to have them available again.</p>
+
+{% include "registrasion/items_list.html" with items=paid %}
+
+<h3>Cancelled Items</h3>
+
+{% include "registrasion/items_list.html" with items=cancelled %}
+
+<h3>Amend pending items</h3>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form | bootstrap}}
+  <br/>
+  <input type="submit">
+</form>
+
+<h3>Generate invoice</h3>
+
+<div>
+  <a class="btn btn-xs btn-default" href="{% url "checkout" user.id %}">Check out cart and view invoice</a>
+</div>
+
+<h3>Apply voucher</h3>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ voucher_form | bootstrap}}
+  <br/>
+  <input type="submit">
+</form>
+
+{% endblock %}
