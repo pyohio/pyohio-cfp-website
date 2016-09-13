@@ -8,7 +8,7 @@
 {% with note_user=credit_note.invoice.user %}
   <ul>
     <li><strong>Number:</strong> {{ credit_note.id }}
-    <li><strong>Attention:</strong> {{ credit_note.invoice.user.attendee.attendeeprofilebase.invoice_recipient }}</li>
+    <li><strong>Attention:</strong> {{ credit_note.invoice.recipient }}</li>
     <li><strong>Value:</strong> {{ credit_note.value }}</li>
     <li><strong>Status:</strong> {{ credit_note.status }}</li>
   </ul>
