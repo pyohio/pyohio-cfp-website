@@ -109,7 +109,7 @@
                   {% items_pending as pending %}
                   {% if pending %}
                     <a href="{% url "checkout" %}" class="btn btn-xs btn-default">
-                        <i class="fa fa-credit-card"></i> Pay your registration
+                        <i class="fa fa-credit-card"></i> Check out and pay
                     </a>
                   {% endif %}
                 {% endif %}
@@ -130,6 +130,9 @@
                   {% if pending %}
                     <h5>Items pending payment</h5>
                     {% include "registrasion/items_list.html" with items=pending %}
+                    <p><a href="{% url "checkout" %}" class="btn btn-xs btn-default">
+                        <i class="fa fa-credit-card"></i>
+                        Check out and pay for these items.</a></p>
                   {% endif %}
                 {% items_purchased as purchased %}
                 {% if purchased %}
