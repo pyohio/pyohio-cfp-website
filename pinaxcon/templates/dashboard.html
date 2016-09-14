@@ -129,7 +129,7 @@
                   {% items_pending as pending %}
                   {% if pending %}
                     <h5>Items pending payment</h5>
-                    {% include "registrasion/items_list.html" with items=pending %}
+                    {% include "registrasion/_items_list.html" with items=pending %}
                     <p><a href="{% url "checkout" %}" class="btn btn-xs btn-default">
                         <i class="fa fa-credit-card"></i>
                         Check out and pay for these items.</a></p>
@@ -137,7 +137,7 @@
                 {% items_purchased as purchased %}
                 {% if purchased %}
                   <h5>Paid items</h5>
-                  {% include "registrasion/items_list.html" with items=purchased %}
+                  {% include "registrasion/_items_list.html" with items=purchased %}
                 {% endif %}
                 <h5>Add/Update items</h5>
                 {% available_categories as categories %}
