@@ -27,19 +27,20 @@
   <h3>Add to your selection</h3>
 
   <p>You can add these items now, or you can come back and add them in a
-    later purchase. </p>
+    later purchase.</p>
 
   {% if missing %}
 
     <p>
       <strong>You have <em>not</em> selected any items from the following
-        categories:</strong>
+        categories. Even if your ticket includes complimentary tickets to social
+        events, or t-shirts, you must still add them to your selection.
+      </strong>
     </p>
+
     {% include "registrasion/_category_list.html" with categories=missing %}
 
   {% endif %}
-
-  <h3></h3>
 
   <p><strong>You can also select more items from these categories:</strong></p>
 
