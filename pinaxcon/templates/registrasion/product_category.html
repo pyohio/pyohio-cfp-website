@@ -20,7 +20,7 @@
     {% if items %}
       <h3>Paid items</h3>
       <p>You have already paid for the following items:</p>
-      {% include "registrasion/items_list.html" with items=items %}
+      {% include "registrasion/_items_list.html" with items=items %}
     {% endif %}
 
 
@@ -37,7 +37,9 @@
 
     <div class="form-actions">
         <input class="btn btn-primary" type="submit" value="Add to cart" />
+        <a href="{% url "dashboard" %}" class="btn btn-default">Return to dashboard</a>
     </div>
+
 
   </form>
 

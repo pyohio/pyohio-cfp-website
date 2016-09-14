@@ -23,14 +23,11 @@
         <th>{{ heading }}</th>
       {% endfor %}
     </tr>
-    {% for line in report.data %}
+    {% for line in report.rows %}
       <tr>
         {% for item in line %}
           <td>
-            {% if report.link_view and forloop.counter0 == 0 %}
-              <a href="{% url report.link_view item %}">
-            {% endif %}
-            {{ item }}
+            {{ item|safe }}
           </td>
         {% endfor %}
       </tr>

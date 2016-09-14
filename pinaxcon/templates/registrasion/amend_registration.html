@@ -13,11 +13,11 @@
   cancel the invoice that added those items. You will need to re-add the items
   from that invoice for the user to have them available again.</p>
 
-{% include "registrasion/items_list.html" with items=paid %}
+{% include "registrasion/_items_list.html" with items=paid %}
 
 <h3>Cancelled Items</h3>
 
-{% include "registrasion/items_list.html" with items=cancelled %}
+{% include "registrasion/_items_list.html" with items=cancelled %}
 
 <h3>Amend pending items</h3>
 
