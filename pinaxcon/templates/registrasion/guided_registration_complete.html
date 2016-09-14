@@ -13,12 +13,12 @@
 
   <p>You've selected the following items, which will be in your invoice when
     you check out:<p>
-  {% include "registrasion/items_list.html" with items=pending %}
+  {% include "registrasion/_items_list.html" with items=pending %}
 
   <p>You've already paid for the following items:</p>
   {% items_purchased as purchased %}
   {% if purchased %}
-    {% include "registrasion/items_list.html" with items=purchased suffix="(PAID)" %}
+    {% include "registrasion/_items_list.html" with items=purchased suffix="(PAID)" %}
   {% endif %}
 
 
