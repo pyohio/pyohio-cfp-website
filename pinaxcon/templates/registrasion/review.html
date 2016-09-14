@@ -15,9 +15,9 @@
     you check out:<p>
   {% include "registrasion/_items_list.html" with items=pending %}
 
-  <p>You've already paid for the following items:</p>
   {% items_purchased as purchased %}
   {% if purchased %}
+    <p>You've already paid for the following items:</p>
     {% include "registrasion/_items_list.html" with items=purchased suffix="(PAID)" %}
   {% endif %}
 
@@ -42,14 +42,16 @@
 
   {% endif %}
 
-  <p><strong>You can also select more items from these categories:</strong></p>
+  <p>
+    <strong>You can also change your selection from these categories:</strong>
+  </p>
 
   {% available_categories as available %}
   {% include "registrasion/_category_list.html" with categories=available exclude=missing %}
 
   <h3>What next?</h3>
 
-  <p>You can either generate an invoice and pay for your registration, or return to
+  <p>You can either generate an invoice and pay for your selections, or return to
       the dashboard.</p>
 
   <div class="form-actions">
