@@ -141,9 +141,7 @@
                 {% endif %}
                 <h5>Add/Update items</h5>
                 {% available_categories as categories %}
-                {% for category in categories %}
-                  <li><a href="{% url "product_category" category.id %}">{{ category.name }}</a></li>
-                {% endfor %}
+                {% include "registrasion/_category_list.html" with categories=categories %}
               </ul>
 
               {% invoices as invoices %}

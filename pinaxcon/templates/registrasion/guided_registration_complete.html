@@ -4,21 +4,57 @@
 
 {% block body %}
 
-  <h1>Conference Registration – Review</h1>
+  <h1>Review your selection</h1>
 
   {% items_pending as pending %}
   {% if pending %}
 
-  <p><em>Step 4 of 4</em></p>
+  <h3>Current selection</h3>
 
-  <p>You're almost done! You've selected the following items:<p>
+  <p>You've selected the following items, which will be in your invoice when
+    you check out:<p>
   {% include "registrasion/items_list.html" with items=pending %}
 
+  <p>You've already paid for the following items:</p>
+  {% items_purchased as purchased %}
+  {% if purchased %}
+    {% include "registrasion/items_list.html" with items=purchased suffix="(PAID)" %}
+  {% endif %}
+
+
+  {% missing_categories as missing %}
+
+  <h3>Add to your selection</h3>
+
+  <p>You can add these items now, or you can come back and add them in a
+    later purchase. </p>
+
+  {% if missing %}
+
+    <p>
+      <strong>You have <em>not</em> selected any items from the following
+        categories:</strong>
+    </p>
+    {% include "registrasion/_category_list.html" with categories=missing %}
+
+  {% endif %}
+
+  <h3></h3>
+
+  <p><strong>You can also select more items from these categories:</strong></p>
+
+  {% available_categories as available %}
+  {% include "registrasion/_category_list.html" with categories=available exclude=missing %}
+
+  <h3>What next?</h3>
+
   <p>You can either generate an invoice and pay for your registration, or return to
-    the dashboard to make amendments.</p>
+      the dashboard.</p>
 
   <div class="form-actions">
-    <a class="btn btn-default" href="{% url "checkout" %}">Check out and pay</a>
+    <a class="btn btn-default" href="{% url "checkout" %}">
+      <i class="fa fa-credit-card"></i> Check out and pay
+    </a>
     <a class="btn btn-default" href="{% url "dashboard" %}">Return to dashboard</a>
   </div>
 
