@@ -26,6 +26,16 @@
       <div class="form-actions">
           <input class="btn btn-primary" type="submit" value="Apply to invoice" />
       </div>
+    <h3>Generate cancellation fee</h3>
+    <p>You can generate an invoice for a cancellation fee, resulting in an invoice
+      and a new credit note.
+    </p>
+
+      {{ cancellation_fee_form|bootstrap }}
+      <div class="form-actions">
+          <input class="btn btn-primary" type="submit" value="Generate fee" />
+      </div>
+
     <h3>Manual refund</h3>
     <p>You can mark this credit note as refunded, and handle the refund manually.
     </p>
