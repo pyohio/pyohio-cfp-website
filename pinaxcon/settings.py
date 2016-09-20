@@ -223,7 +223,11 @@ PROPOSAL_FORMS = {
 PINAX_PAGES_HOOKSET = "pinaxcon.hooks.PinaxPagesHookSet"
 PINAX_BOXES_HOOKSET = "pinaxcon.hooks.PinaxBoxesHookSet"
 
-ATTENDEE_PROFILE_FORM = "pinaxcon.registrasion.forms.ProfileForm"
+# Registrasion Attendee profile model
+ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
+# Registrasion attendee profile form -- must act on ATTENDEE_PROFILE_FORM
+# You only need to provide this if you're customising the form from the default
+# ATTENDEE_PROFILE_FORM = "pinaxcon.registrasion.forms.ProfileForm"
 
 # Use nose to run all tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
