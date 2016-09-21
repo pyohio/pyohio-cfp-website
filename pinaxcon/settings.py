@@ -237,6 +237,8 @@ ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
 # You only need to provide this if you're customising the form from the default
 # ATTENDEE_PROFILE_FORM = "pinaxcon.registrasion.forms.ProfileForm"
 
+INVOICE_CURRENCY = "AUD"
+
 # Use nose to run all tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
