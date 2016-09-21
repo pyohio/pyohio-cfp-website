@@ -158,6 +158,7 @@ INSTALLED_APPS = [
 
     # Registrasion-stipe
     "pinax.stripe",
+    "django_countries",
     "registripe",
 
     #admin - required by registrasion ??
