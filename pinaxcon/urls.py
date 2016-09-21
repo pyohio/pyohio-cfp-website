@@ -24,12 +24,15 @@ urlpatterns = [
 
     url(r"^teams/", include("symposion.teams.urls")),
 
+    # Demo payment gateway and related features
+    url(r"^register/pinaxcon/", include("pinaxcon.registrasion.urls")),
+
+    # Demo payment gateway and related features
+    url(r"^register/payments/", include("registripe.urls")),
+
     # Required by registrasion
     url(r'^register/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
-
-    # Demo payment gateway and related features
-    url(r"^register/pinaxcon/", include("pinaxcon.registrasion.urls")),
 
     url(r"^boxes/", include("pinax.boxes.urls")),
 

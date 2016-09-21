@@ -156,6 +156,10 @@ INSTALLED_APPS = [
     # Registrasion
     "registrasion",
 
+    # Registrasion-stipe
+    "pinax.stripe",
+    "registripe",
+
     #admin - required by registrasion ??
     "nested_admin",
 
@@ -222,6 +226,9 @@ PROPOSAL_FORMS = {
 }
 PINAX_PAGES_HOOKSET = "pinaxcon.hooks.PinaxPagesHookSet"
 PINAX_BOXES_HOOKSET = "pinaxcon.hooks.PinaxBoxesHookSet"
+
+PINAX_STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "your test public key")
+PINAX_STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "your test secret key")
 
 # Registrasion Attendee profile model
 ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
