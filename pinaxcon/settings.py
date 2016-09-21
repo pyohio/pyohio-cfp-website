@@ -230,6 +230,7 @@ PINAX_BOXES_HOOKSET = "pinaxcon.hooks.PinaxBoxesHookSet"
 
 PINAX_STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "your test public key")
 PINAX_STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "your test secret key")
+PINAX_STRIPE_SEND_EMAIL_RECEIPTS = False
 
 # Registrasion Attendee profile model
 ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
