@@ -1,0 +1,22 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+
+{% block body %}
+
+  <h2>Stripe refunds for credit note #{{ credit_note.id}}</h2>
+
+  <p>This credit note is valued at ${{ credit_note.value }}.</p>
+
+  <h3>Available refunds</h3>
+
+  <p>Currently credit notes can only be cashed out in full in a single
+    transaction. If you need to cash out to multiple small payments, you will
+    need to manually invoke the refunds from the Stripe Dashboard.</p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{form|bootstrap}}
+    <input id="submit" class="btn btn-primary" type="submit" value="Refund {{ credit_note.value }} to payment source" />
+  </form>
+{% endblock %}
