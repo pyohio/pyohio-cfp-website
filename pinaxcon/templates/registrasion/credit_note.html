@@ -36,6 +36,10 @@
           <input class="btn btn-primary" type="submit" value="Generate fee" />
       </div>
 
+    <h3>Stripe Refund</h3>
+
+    <p><a href="{% url 'registripe_refund' credit_note.id %}">View Stripe refund options</a></p>
+
     <h3>Manual refund</h3>
     <p>You can mark this credit note as refunded, and handle the refund manually.
     </p>

@@ -17,7 +17,7 @@
 
   <div>
     <a class="btn btn-default" href="{% url "demopay" invoice.id invoice.user.attendee.access_code %}">Pay this invoice (dummy)</a>
-    <a class="btn btn-default" href='{% url "registripe_card" invoice.id %}'>Pay this invoice with Stripe</a>
+    <a class="btn btn-default" href='{% url "registripe_card" invoice.id invoice.user.attendee.access_code %}'>Pay this invoice with Stripe</a>
     {% if user.is_staff %}
       <a class="btn btn-default" href="{% url "manual_payment" invoice.id %}">Apply manual payment</a>
     {% endif %}
