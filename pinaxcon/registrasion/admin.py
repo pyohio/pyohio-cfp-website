@@ -7,3 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 class UserProfileAdmin(admin.ModelAdmin):
     model = models.AttendeeProfile
     list_display = ("name", "company", "name_per_invoice")
+
+@admin.register(models.DynamicValues)
+class DynamicValuesAdmin(admin.ModelAdmin):
+    pass

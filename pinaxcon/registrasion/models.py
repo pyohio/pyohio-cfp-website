@@ -1,5 +1,17 @@
 from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 from registrasion import models as rego
+
+
+@python_2_unicode_compatible
+class DynamicValues(models.Model):
+
+    name = models.CharField(max_length=64)
+    value = models.IntegerField()
+
+    def __str__(self):
+        return "%s - %d" % (self.name, self.value)
+
 
 class AttendeeProfile(rego.AttendeeProfileBase):
 
@@ -73,6 +85,9 @@ class AttendeeProfile(rego.AttendeeProfileBase):
     gender = models.CharField(
         max_length=64,
         blank=True,
+    )
+    db_defined_values = models.ManyToManyField(
+        DynamicValues
     )
 
 
