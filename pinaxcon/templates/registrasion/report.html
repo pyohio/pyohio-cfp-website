@@ -16,7 +16,13 @@
 <hr />
 
 {% for report in reports %}
+
+  <div class="btn-group pull-right">
+    <a class="btn btn-default" href="{% report_as_csv forloop.counter0 %}">View as CSV</a>
+  </div>
+
   <h3>{{ report.title }}</h3>
+
   <table class="table table-striped">
     <tr>
       {% for heading in report.headings %}
