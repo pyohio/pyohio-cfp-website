@@ -1,0 +1,31 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+
+{% block body %}
+
+<h2>Send reminder e-mails</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form | bootstrap}}
+  <br/>
+  <input type="submit">
+</form>
+
+{% if emails %}
+  <h3>Previews</h3>
+
+  {% for email in emails %}
+    <dl>
+      <dt>From</dt><dd>{{ email.from_email }}</dd>
+      <dt>To</dt><dd>{{ email.recipient_list|join:", " }}</dd>
+      <dt>Subject</dt><dd>{{ email.subject }}</dd>
+      <dt>Body</dt><dd><pre>{{ email.body }}</pre></dd>
+    </dl>
+    <hr />
+  {% endfor %}
+
+{% endif %}
+
+{% endblock %}
