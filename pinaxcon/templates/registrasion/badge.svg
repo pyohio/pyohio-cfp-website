@@ -35,8 +35,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.93566975"
-     inkscape:cx="248.54189"
-     inkscape:cy="122.90306"
+     inkscape:cx="334.04214"
+     inkscape:cy="336.65369"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -135,6 +135,16 @@
          sodipodi:role="line"
          x="28.572266"
          y="452.12436"
+         style="font-size:30px"
+         id="tspan4184" /><tspan
+         sodipodi:role="line"
+         x="28.572266"
+         y="489.62436"
+         style="font-size:30px"
+         id="tspan4187">TICKET: {% for ticket in ticket %}{{ ticket.product.name }}{% endfor %}</tspan><tspan
+         sodipodi:role="line"
+         x="28.572266"
+         y="527.12433"
          id="tspan4196"
          style="font-size:30px" /></text>
     <rect
