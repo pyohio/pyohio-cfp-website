@@ -1,0 +1,16 @@
+{% extends "site_base.html" %}
+{% load bootstrap %}
+{% load registrasion_tags %}
+
+{% block body %}
+
+<h2>Generate badges zip</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form | bootstrap}}
+  <br/>
+  <input type="submit">
+</form>
+
+{% endblock %}
