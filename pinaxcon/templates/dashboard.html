@@ -94,13 +94,16 @@
         {% endif %}
     </div>
 
+    {% sold_out_and_unregistered as sold_out %}
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="pull-right">
                 {% if not user.attendee.completed_registration %}
+                  {% if not sold_out %}
                     <a href="{% url "guided_registration" %}" class="btn btn-xs btn-default">
                         <i class="fa fa-plus-sign"></i> Register for the conference
                     </a>
+                  {% endif %}
                 {% else %}
                   <a href="{% url "attendee_edit" %}" class="btn btn-xs btn-default">
                       <i class="fa fa-pencil"></i> Edit your attendee profile
@@ -131,7 +134,13 @@
 
         <div class="panel-body">
             {% if not user.attendee.completed_registration %}
+              {% if not sold_out %}
                 <p>To attend the conference, you must purchase a ticket. <a href="{% url "guided_registration" %}">Use our registration form to purchase your ticket</a>.
+              {% else %}
+                <p>There are no tickets available to the general public.</p>
+
+                <p>If you have a voucher code, you can <a href="{% url "voucher_code" %}">enter that voucher code</a>, which may enable tickets for you.</p>
+              {% endif %}
             {% else %}
               <h4>Your registration</h4>
                   {% items_pending as pending %}
