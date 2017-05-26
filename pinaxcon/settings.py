@@ -238,10 +238,16 @@ ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
 # You only need to provide this if you're customising the form from the default
 # ATTENDEE_PROFILE_FORM = "pinaxcon.registrasion.forms.ProfileForm"
 
+# Ticket product category -- used to identify which products must be available
+# in order to register.
+TICKET_PRODUCT_CATEGORY = 1
+
+
 INVOICE_CURRENCY = "AUD"
 
 # Use nose to run all tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
 
 # Tell nose to measure coverage on the 'foo' and 'bar' apps
 NOSE_ARGS = [
