@@ -113,6 +113,14 @@
                     </a>
                   {% endif %}
                 {% endif %}
+                <a href="{% url "voucher_code" %}" class="btn btn-xs btn-default">
+                    Enter a voucher code
+                </a>
+                {% if user.is_staff %}
+                  <a href="{% url "reports_list" %}" class="btn btn-xs btn-default">View reports</a>
+                {% endif %}
+
+
             </div>
             <h3 class="panel-title">
               <i class="fa fa-ticket"></i>
@@ -166,12 +174,6 @@
               {% endif %}
             {% endif %}
 
-          {% if user.is_staff %}
-            <h4>Registration reports</h4>
-
-            <p><a href="{% url "reports_list" %}">View available reports</a>.
-            </p>
-          {% endif %}
           </div>
     </div>
 
