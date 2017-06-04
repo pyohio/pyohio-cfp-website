@@ -1,0 +1,6 @@
+{% extends "registrasion/invoice_.html" %}
+
+{% block payment_actions %}
+  <a class="btn btn-default" href="{% url "demopay" invoice.id invoice.user.attendee.access_code %}">Pay this invoice (dummy)</a>
+  {{ block.super }}
+{% endblock %}
