@@ -155,6 +155,7 @@ INSTALLED_APPS = [
 
     # Registrasion
     "registrasion",
+    "symposion_templates",
 
     # Registrasion-stipe
     "pinax.stripe",
