@@ -1,15 +1,18 @@
-@import "bootstrap";
-@import "font-awesome";
+$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
+@import "../bootstrap/stylesheets/_bootstrap.scss";
 
-@import "variables.less";
+/* @import "bootstrap";
+@import "font-awesome"; */
+
+@import "variables.scss";
 
 // Account
-@import "account.less";
+@import "account.scss";
 
 // Symposion UI components
-@import "editor.less";
-@import "symposion-components.less";
-@import "symposion-schedule.less";
+@import "editor.scss";
+@import "symposion-components.scss";
+@import "symposion-schedule.scss";
 
 // Site overrides
-@import "custom.less";
+@import "custom.scss";
