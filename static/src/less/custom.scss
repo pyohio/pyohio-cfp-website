@@ -16,13 +16,13 @@ p.login-signup {
 }
 
 .feature-columns {
-    .make-row();
+    @include make-row();
 
     > div {
         i.fa {
             margin-bottom: 0.2em;
         }
-        .make-sm-column(4);
+        @include make-sm-column(4);
         .text-center;
         margin: 2em 0;
     }
@@ -32,9 +32,9 @@ body.reviews.review-list .review-list,
 body.reviews.voting-status .voting-status,
 body.reviews.review-results .review-results {
     z-index: 2; // Place active items above their siblings for proper border styling
-    color: @list-group-active-color;
-    background-color: @list-group-active-bg;
-    border-color: @list-group-active-border;
+    color: $list-group-active-color;
+    background-color: $list-group-active-bg;
+    border-color: $list-group-active-border;
 }
 
 body.reviews.voting-status {
