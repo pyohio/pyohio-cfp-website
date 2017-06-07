@@ -1,9 +1,4 @@
 /* global window ace */
-window.jQuery = window.$ = require('jquery');
-
-const $ = window.$;
-
-require('bootstrap');
 
 const loadEditors = () => {
     const $editors = $('.modal-body textarea, #id_body, #id_comment, #id_message, #id_text, #id_abstract, #id_additional_notes, #id_content_override, #id_description, #id_biography');
