@@ -1,1 +1,6 @@
-<script src='/site_media/static/js/site-92ae8d0d6c.js'></script>
+{% load compress %}
+{% load staticfiles %}
+
+{% compress js %}
+  <script src='{% static "js/site.js" %}'></script>
+{% endcompress %}
