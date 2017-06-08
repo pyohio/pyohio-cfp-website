@@ -10,6 +10,15 @@ import symposion.views
 
 urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="homepage.html"), name="home"),
+
+    url(r"^about$", TemplateView.as_view(template_name="pages/about.html"), name="page_about"),
+    url(r"^venue$", TemplateView.as_view(template_name="pages/venue.html"), name="page_venue"),
+    url(
+        r"^sponsors/info$",
+        TemplateView.as_view(template_name="pages/sponsors/info.html"),
+        name="page_sponsor_info",
+    ),
+
     url(r"^admin/", include(admin.site.urls)),
 
     url(r"^account/", include("account.urls")),
