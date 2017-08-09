@@ -150,5 +150,29 @@
         "sort_order": 9,
         "access_permissions": []
     }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 10,
+    "fields": {
+        "title": "Colophon",
+        "hint": "",
+        "url": "Colophon",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 1,
+        "sort_order": 10,
+        "access_permissions": []
+    }
 }
 ]
