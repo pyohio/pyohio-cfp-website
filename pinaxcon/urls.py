@@ -22,6 +22,7 @@ urlpatterns = [
     url(r"^speaker/", include("symposion.speakers.urls")),
     url(r"^proposals/", include("symposion.proposals.urls")),
     url(r"^proposals$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="proposals"),
+    url(r"^selection-process$", TemplateView.as_view(template_name="static_pages/selection-process.html"), name="selection-process"),
     url(r"^sponsors/", include("symposion.sponsorship.urls")),
     url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/sponsors.html"), name="sponsors"),
     url(r"^reviews/", include("symposion.reviews.urls")),
