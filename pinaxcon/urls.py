@@ -9,16 +9,10 @@ import symposion.views
 
 
 urlpatterns = [
-    url(r"^$", TemplateView.as_view(template_name="homepage.html"), name="home"),
-
-    url(r"^about$", TemplateView.as_view(template_name="pages/about.html"), name="page_about"),
-    url(r"^venue$", TemplateView.as_view(template_name="pages/venue.html"), name="page_venue"),
-    url(
-        r"^sponsors/info$",
-        TemplateView.as_view(template_name="pages/sponsors/info.html"),
-        name="page_sponsor_info",
-    ),
-
+    url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
+    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="code-of-conduct"),
+    url(r"^about$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="about"),
+    url(r"^news$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="news"),
     url(r"^admin/", include(admin.site.urls)),
 
     url(r"^account/", include("account.urls")),
@@ -27,7 +21,9 @@ urlpatterns = [
 
     url(r"^speaker/", include("symposion.speakers.urls")),
     url(r"^proposals/", include("symposion.proposals.urls")),
+    url(r"^proposals$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="proposals"),
     url(r"^sponsors/", include("symposion.sponsorship.urls")),
+    url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="sponsors"),
     url(r"^reviews/", include("symposion.reviews.urls")),
     url(r"^schedule/", include("symposion.schedule.urls")),
 
@@ -42,8 +38,6 @@ urlpatterns = [
     # Required by registrasion
     url(r'^register/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
-
-    url(r"^boxes/", include("pinax.boxes.urls")),
 
     # Catch-all MUST go last.
     #url(r"^", include("pinax.pages.urls")),
