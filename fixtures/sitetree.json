@@ -1,1 +1,154 @@
-[{"model": "sitetree.tree", "pk": 1, "fields": {"title": "main", "alias": "main"}}, {"model": "sitetree.treeitem", "pk": 1, "fields": {"title": "About", "hint": "", "url": "about", "urlaspattern": true, "tree": 1, "hidden": false, "alias": null, "description": "", "inmenu": true, "inbreadcrumbs": true, "insitetree": true, "access_loggedin": false, "access_guest": false, "access_restricted": false, "access_perm_type": 1, "parent": null, "sort_order": 2, "access_permissions": []}}, {"model": "sitetree.treeitem", "pk": 3, "fields": {"title": "Call for Sponsors", "hint": "", "url": "sponsors", "urlaspattern": false, "tree": 1, "hidden": false, "alias": null, "description": "", "inmenu": true, "inbreadcrumbs": true, "insitetree": true, "access_loggedin": false, "access_guest": false, "access_restricted": false, "access_perm_type": 1, "parent": null, "sort_order": 7, "access_permissions": []}}, {"model": "sitetree.treeitem", "pk": 4, "fields": {"title": "Home", "hint": "", "url": "home", "urlaspattern": true, "tree": 1, "hidden": false, "alias": null, "description": "", "inmenu": true, "inbreadcrumbs": true, "insitetree": true, "access_loggedin": false, "access_guest": false, "access_restricted": false, "access_perm_type": 1, "parent": null, "sort_order": 1, "access_permissions": []}}, {"model": "sitetree.treeitem", "pk": 7, "fields": {"title": "Call for Proposals", "hint": "", "url": "proposals", "urlaspattern": false, "tree": 1, "hidden": false, "alias": null, "description": "", "inmenu": true, "inbreadcrumbs": true, "insitetree": true, "access_loggedin": false, "access_guest": false, "access_restricted": false, "access_perm_type": 1, "parent": null, "sort_order": 4, "access_permissions": []}}, {"model": "sitetree.treeitem", "pk": 8, "fields": {"title": "Code of Conduct", "hint": "", "url": "code-of-conduct", "urlaspattern": false, "tree": 1, "hidden": false, "alias": null, "description": "", "inmenu": true, "inbreadcrumbs": true, "insitetree": true, "access_loggedin": false, "access_guest": false, "access_restricted": false, "access_perm_type": 1, "parent": null, "sort_order": 8, "access_permissions": []}}, {"model": "sitetree.treeitem", "pk": 9, "fields": {"title": "News", "hint": "", "url": "news", "urlaspattern": false, "tree": 1, "hidden": false, "alias": null, "description": "", "inmenu": true, "inbreadcrumbs": true, "insitetree": true, "access_loggedin": false, "access_guest": false, "access_restricted": false, "access_perm_type": 1, "parent": null, "sort_order": 9, "access_permissions": []}}]
+[
+{
+    "model": "sitetree.tree",
+    "pk": 1,
+    "fields": {
+        "title": "main",
+        "alias": "main"
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 1,
+    "fields": {
+        "title": "About",
+        "hint": "",
+        "url": "about",
+        "urlaspattern": true,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 2,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 3,
+    "fields": {
+        "title": "Call for Sponsors",
+        "hint": "",
+        "url": "sponsors",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 7,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 4,
+    "fields": {
+        "title": "Home",
+        "hint": "",
+        "url": "home",
+        "urlaspattern": true,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 1,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 7,
+    "fields": {
+        "title": "Call for Proposals",
+        "hint": "",
+        "url": "proposals",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 4,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 8,
+    "fields": {
+        "title": "Code of Conduct",
+        "hint": "",
+        "url": "code-of-conduct",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 8,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 9,
+    "fields": {
+        "title": "News",
+        "hint": "",
+        "url": "news",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 9,
+        "access_permissions": []
+    }
+}
+]
