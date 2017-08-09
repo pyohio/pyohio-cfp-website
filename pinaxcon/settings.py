@@ -20,7 +20,7 @@ import dj_database_url
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = ["localhost", ".herokuapp.com"]
+ALLOWED_HOSTS = ["localhost", ".herokuapp.com", ".northbaypython.org"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -221,11 +221,20 @@ FIXTURE_DIRS = [
     os.path.join(PROJECT_ROOT, "fixtures"),
 ]
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# Heroku: Get email configuration from environment variables.
 
-ACCOUNT_OPEN_SIGNUP = True
+EMAIL_BACKEND = os.environ.get("DJANGO_EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")  # noqa
+EMAIL_HOST = os.environ.get("DJANGO_EMAIL_HOST", "")
+EMAIL_PORT = int(os.environ.get("DJANGO_EMAIL_PORT", 25))
+EMAIL_HOST_USER = os.environ.get("DJANGO_EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = os.environ.get("DJANGO_EMAIL_HOST_PASSWORD", "")
+EMAIL_USE_TLS = bool(os.environ.get("DJANGO_EMAIL_USE_TLS", False))
+EMAIL_USE_SSL = bool(os.environ.get("DJANGO_EMAIL_USE_SSL", False))
+
+# We need to explicitly switch on signups.
+ACCOUNT_OPEN_SIGNUP = bool(os.environ.get("DJANGO_ACCOUNT_OPEN_SIGNUP", False))
 ACCOUNT_EMAIL_UNIQUE = True
-ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False if DEBUG else True
 ACCOUNT_LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
