@@ -1,17 +1,18 @@
-registrasion-demo
+North Bay Python
 =================
 
-PinaxCon
----------
-`PinaxCon` is a working demo of Symposion and the Symposion Starter Project. It usually lives at https://github.com/pinax/PinaxCon
+The website for North Bay Python is a Django application with Symposion and Registrasion.
 
-This is a fork of PinaxCon to demonstrate Registrasion, a registration package that works well with Symposion. You can find Registrasion at https://github.com/chrisjrn/registrasion
+Setup
+-----
 
-Registrasion has relaively complete docs at http://registrasion.readthedocs.org
+1. pip install -r requirements
+2. python manage.py createsuperuser
+3. python manage.py loaddata fixtures/*
+4. python manage.py migrate
 
+Reference Material
+------------------
 
-What is the point of this?
---------------------------
-This project provides some starter templates for much of the functionality of Registrasion, as well as demos of how to make payments and enter user profiles.
-
-If you care to, you can also use this project as a starting point for your own Registrasion-based site.
+* Registrasion docs are at http://registrasion.readthedocs.io
+* Symposion docs are at http://symposion.readthedocs.io
