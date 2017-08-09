@@ -278,3 +278,9 @@ NOSE_ARGS = [
     '--with-coverage',
     '--cover-package=registrasion.controllers,registrasion.models',
 ]
+
+MARKDOWN_DEUX_STYLES = {
+    "default": {
+        "safe_mode": False,
+    },
+}
