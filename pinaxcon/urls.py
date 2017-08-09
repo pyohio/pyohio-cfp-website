@@ -10,9 +10,9 @@ import symposion.views
 
 urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
-    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="code-of-conduct"),
-    url(r"^about$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="about"),
-    url(r"^news$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="news"),
+    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code-of-conduct.html"), name="code-of-conduct"),
+    url(r"^about$", TemplateView.as_view(template_name="static_pages/about.html"), name="about"),
+    url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
     url(r"^admin/", include(admin.site.urls)),
 
     url(r"^account/", include("account.urls")),
@@ -23,7 +23,7 @@ urlpatterns = [
     url(r"^proposals/", include("symposion.proposals.urls")),
     url(r"^proposals$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="proposals"),
     url(r"^sponsors/", include("symposion.sponsorship.urls")),
-    url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="sponsors"),
+    url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/sponsors.html"), name="sponsors"),
     url(r"^reviews/", include("symposion.reviews.urls")),
     url(r"^schedule/", include("symposion.schedule.urls")),
 
