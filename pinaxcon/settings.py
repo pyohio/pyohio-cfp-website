@@ -15,7 +15,12 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = []
+# HEROKU: Update database configuration with $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+
+ALLOWED_HOSTS = ["localhost", ".herokuapp.com"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
