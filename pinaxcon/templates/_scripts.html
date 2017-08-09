@@ -1,1 +1,10 @@
-<script src='/site_media/static/js/site-92ae8d0d6c.js'></script>
+{% load compress %}
+{% load staticfiles %}
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+
+{% compress js %}
+  <script src='{% static "bootstrap/javascripts/bootstrap.min.js" %}'></script>
+  <script src='{% static "js/site.js" %}'></script>
+{% endcompress %}

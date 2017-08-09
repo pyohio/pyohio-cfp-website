@@ -7,6 +7,7 @@ dj-static==0.0.6
 dj-database-url==0.4.0
 pinax-pages==0.4.2
 pinax-boxes==2.1.2
+django-libsass==0.7
 
 # For testing
 django-nose==1.4.3
@@ -16,3 +17,4 @@ coverage==4.0.3
 https://github.com/chrisjrn/registrasion/tarball/master#egg=registrasion
 https://github.com/pinax/symposion/tarball/ad81810#egg=symposion
 https://github.com/chrisjrn/registrasion-stripe/tarball/master#egg=registrasion-stripe
+https://github.com/chrisjrn/symposion-bootstrap-templates/tarball/master#egg=symposion-bootstrap-templates

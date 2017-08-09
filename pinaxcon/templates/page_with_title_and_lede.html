@@ -1,0 +1,18 @@
+{% extends "site_base.html" %}
+
+{% block head_title %}{% block title %}{% endblock %}{% endblock %}
+
+{% block body %}
+
+  {% block heading_base %}
+    <h1>{% block heading %}{% endblock %}</h1>
+  {% endblock %}
+
+  {% block lede_base %}
+    <p class="lead">{% block lede %}{% endblock %}</p>
+  {% endblock %}
+
+  {% block content %}
+  {% endblock %}
+
+{% endblock %}
