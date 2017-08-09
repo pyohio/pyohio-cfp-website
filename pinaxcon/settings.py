@@ -143,6 +143,7 @@ INSTALLED_APPS = [
     "pinax.boxes",
     "pinax.eventlog",
     "pinax.pages",
+    "markdown_deux",
 
     # symposion
     "symposion",

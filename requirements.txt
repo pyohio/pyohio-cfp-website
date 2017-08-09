@@ -8,6 +8,9 @@ dj-database-url==0.4.0
 pinax-pages==0.4.2
 pinax-boxes==2.1.2
 django-libsass==0.7
+django-markdown-deux==1.0.5
+
+
 
 # For testing
 django-nose==1.4.3
