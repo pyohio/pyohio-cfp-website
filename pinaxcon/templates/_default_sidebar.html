@@ -13,9 +13,13 @@
 
             {% for sponsor in level.sponsors %}
                 <div style="margin: 10px 0;">
-                    <a href="{{ sponsor.external_url }}">
-                        <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
-                    </a>
+                    {% if sponsor.website_logo %}
+                        <a href="{{ sponsor.external_url }}">
+                            <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
+                        </a>
+                    {% else %}
+                        <a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a>
+                    {% endif %}
                 </div>
             {% endfor %}
         {% endif %}
