@@ -62,4 +62,4 @@ Depending on the incident, the conference chair, or designate, may decide to mak
 
 If some attendees were angered by the incident, it is best to apologize to them that the incident occurred to begin with.  If there are residual hard feelings, suggest to them to write an email to the conference chair or to the event coordinator. It will be dealt with accordingly.
 
-A listing of [North Bay Python staff is located here](/about/staff), including contact phone numbers. If at all possible, all reports should be made directly to [Ewa Jodlowska](mailto:ewa@python.org) (Event Coordinator) or [Jesse Noller](mailto:jnoller@python.org) (PyCon Chair).
+A listing of [North Bay Python staff is located here](/about/staff), including contact phone numbers. If at all possible, all reports should be made directly to Bleep and Bloop.
