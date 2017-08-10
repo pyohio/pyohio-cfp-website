@@ -10,17 +10,44 @@ import symposion.views
 
 urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
-    url(r"^about$", TemplateView.as_view(template_name="static_pages/about.html"), name="about"),
+
+    # about
+    # TODO add /about
+    url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north-bay-python.html"), name="about/north-bay-python"),
+    # TODO add /about/the-mystic
+    # TODO add /about/petaluma
+    url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
+    url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
+
+    # program
+    # TODO add /program
+    # TODO add /program/sessions
+    # TODO add /program/events
+    url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call-for-proposals.html"), name="program/call-for-proposals"),
+    url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection-process.html"), name="program/selection-process"),
+
+    # attend
+    # TODO add /attend
+    # TODO add /attend/buy-a-ticket
+    # TODO add /attend/volunteer
+    # TODO add /attend/financial-assistance
+    # TODO add /attend/how-to-pitch-your-manager
+    # TODO add /attend/how-to-get-here
+    # TODO add /attend/where-to-stay
+    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code-of-conduct/code-of-conduct.html"), name="code-of-conduct"),
+    url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code-of-conduct/harassment-procedure-attendee.html"), name="code-of-conduct/harassment-incidents"),
+    url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/code-of-conduct/harassment-procedure-staff.html"), name="code-of-conduct/harassment-staff-procedures"),
+    url(r"^terms-and-conditions$", TemplateView.as_view(template_name="static_pages/terms-and-conditions.html"), name="terms-and-conditions"),
+
+    # sponsor
+    # TODO add /sponsors
+    url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become-a-sponsor.html"), name="sponsors/become-a-sponsor"),
+
+    # news
     url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
-    url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/sponsors.html"), name="sponsors"),
-    url(r"^colophon$", TemplateView.as_view(template_name="static_pages/colophon.html"), name="colophon"),
 
-    url(r"^proposals$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="proposals"),
-    url(r"^selection-process$", TemplateView.as_view(template_name="static_pages/selection-process.html"), name="selection-process"),
+    # Django, Symposion, and Registrasion URLs
 
-    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code-of-conduct.html"), name="code-of-conduct"),
-    url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/harassment-procedure-attendee.html"), name="harassment-procedure-attendee"),
-    url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/harassment-procedure-staff.html"), name="harassment-procedure-staff"),
     url(r"^admin/", include(admin.site.urls)),
 
     url(r"^account/", include("account.urls")),
