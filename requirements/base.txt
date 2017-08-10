@@ -1,4 +1,4 @@
-Django==1.9.2
+Django>=1.11,<1.12
 pinax-theme-bootstrap==7.3.0
 django-user-accounts==1.3.1
 metron==1.3.7
@@ -9,11 +9,14 @@ pinax-pages==0.4.2
 pinax-boxes==2.1.2
 django-libsass==0.7
 django-markdown-deux==1.0.5
-
+django-sitetree==1.8.0
+django-countries==4.6.1
+easy-thumbnails==2.4.1
+django-timezone-field==2.0
 
 
 # For testing
-django-nose==1.4.3
+django-nose==1.4.4
 coverage==4.0.3
 
 # Registrasion
