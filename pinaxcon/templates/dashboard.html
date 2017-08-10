@@ -11,6 +11,21 @@
 {% block body_class %}auth{% endblock %}
 
 {% block body %}
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <h3 class="panel-title">
+              <i class="fa fa-user-o"></i>
+              Account
+          </h3>
+      </div>
+      <div class="panel-body">
+        <li>
+            <a href="{% url 'account_password' %}">{% trans "Change password" %}</a>
+        </li>
+      </div>
+    </div>
+
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="pull-right">
@@ -94,7 +109,9 @@
         {% endif %}
     </div>
 
+{% comment %}
     {% include "registrasion/dashboard_widget.html" %}
+{% endcomment %}
 
     <div class="panel panel-default">
         <div class="panel-heading">
