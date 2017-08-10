@@ -6,10 +6,16 @@ The website for North Bay Python is a Django application with Symposion and Regi
 Setup
 -----
 
-1. pip install -r requirements
+Development
+~~~~~~~~~~~
+1. pip install -r requirements/base.txt
 2. python manage.py createsuperuser
 3. python manage.py loaddata fixtures/*
 4. python manage.py migrate
+
+Prod
+~~~~
+Use `pip install -r requirements.txt` instead.
 
 Reference Material
 ------------------

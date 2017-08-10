@@ -1,1 +1,1 @@
-web: gunicorn --bind=0.0.0.0 --log-file - pinaxcon.wsgi
+web: gunicorn pinaxcon.wsgi --log-file - 
