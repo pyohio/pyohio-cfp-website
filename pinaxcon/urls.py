@@ -10,9 +10,17 @@ import symposion.views
 
 urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
-    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code-of-conduct.html"), name="code-of-conduct"),
     url(r"^about$", TemplateView.as_view(template_name="static_pages/about.html"), name="about"),
     url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
+    url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/sponsors.html"), name="sponsors"),
+    url(r"^colophon$", TemplateView.as_view(template_name="static_pages/colophon.html"), name="colophon"),
+
+    url(r"^proposals$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="proposals"),
+    url(r"^selection-process$", TemplateView.as_view(template_name="static_pages/selection-process.html"), name="selection-process"),
+
+    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code-of-conduct.html"), name="code-of-conduct"),
+    url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/harassment-procedure-attendee.html"), name="harassment-procedure-attendee"),
+    url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/harassment-procedure-staff.html"), name="harassment-procedure-staff"),
     url(r"^admin/", include(admin.site.urls)),
 
     url(r"^account/", include("account.urls")),
@@ -21,10 +29,7 @@ urlpatterns = [
 
     url(r"^speaker/", include("symposion.speakers.urls")),
     url(r"^proposals/", include("symposion.proposals.urls")),
-    url(r"^proposals$", TemplateView.as_view(template_name="static_pages/proposals.html"), name="proposals"),
-    url(r"^selection-process$", TemplateView.as_view(template_name="static_pages/selection-process.html"), name="selection-process"),
     url(r"^sponsors/", include("symposion.sponsorship.urls")),
-    url(r"^sponsors$", TemplateView.as_view(template_name="static_pages/sponsors.html"), name="sponsors"),
     url(r"^reviews/", include("symposion.reviews.urls")),
     url(r"^schedule/", include("symposion.schedule.urls")),
 
