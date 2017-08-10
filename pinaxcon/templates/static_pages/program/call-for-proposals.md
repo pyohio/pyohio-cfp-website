@@ -6,7 +6,7 @@ North Bay Python is seeking speakers of all experience levels, especially first-
 
 If you've never presented at a conference before and think you might like to try it, we want to hear from you! The program committee is *very* much interested in encouraging and supporting new speakers, and we will be able to provide detailed feedback and work with you to develop your proposal and talk content so you can give the best talk possible.
 
-In the interest of transparency, we have documented our [Selection Process](./selection-process).
+In the interest of transparency, we have documented our [Selection Process](/program/selection-process).
 
 ## Dates
 
@@ -20,7 +20,7 @@ In the interest of transparency, we have documented our [Selection Process](./se
 
 North Bay Python is dedicated to featuring a diverse and inclusive speaker lineup.
 
-**All speakers will be expected to have read and adhere to the conference [Code of Conduct](./code-of-conduct). In particular for speakers: slide contents and spoken material should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate, and neither are language or imagery that denigrate or demean people based on race, gender, religion, sexual orientation, physical appearance, disability, or body size.**
+**All speakers will be expected to have read and adhere to the conference [Code of Conduct](/code-of-conduct). In particular for speakers: slide contents and spoken material should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate, and neither are language or imagery that denigrate or demean people based on race, gender, religion, sexual orientation, physical appearance, disability, or body size.**
 
 We will make every effort to provide accommodations for speakers and attendees of all abilities — all we ask is that you let us know so we can prepare accordingly.
 
