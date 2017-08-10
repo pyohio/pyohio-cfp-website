@@ -21,6 +21,6 @@
     {% endif %}
 </ul>
 
-<form id="accountLogOutForm" style="display: none;" action="{% url 'account_logout' %}" method="POST">
+<form id="accountLogOutForm" action="{% url 'account_logout' %}" method="POST">
     {% csrf_token %}
 </form>

@@ -13,7 +13,7 @@ urlpatterns = [
 
     # about
     # TODO add /about
-    url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north-bay-python.html"), name="about/north-bay-python"),
+    url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north_bay_python.html"), name="about/north-bay-python"),
     # TODO add /about/the-mystic
     # TODO add /about/petaluma
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
@@ -23,8 +23,8 @@ urlpatterns = [
     # TODO add /program
     # TODO add /program/sessions
     # TODO add /program/events
-    url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call-for-proposals.html"), name="program/call-for-proposals"),
-    url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection-process.html"), name="program/selection-process"),
+    url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call_for_proposals.html"), name="program/call-for-proposals"),
+    url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
 
     # attend
     # TODO add /attend
@@ -34,14 +34,14 @@ urlpatterns = [
     # TODO add /attend/how-to-pitch-your-manager
     # TODO add /attend/how-to-get-here
     # TODO add /attend/where-to-stay
-    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code-of-conduct/code-of-conduct.html"), name="code-of-conduct"),
-    url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code-of-conduct/harassment-procedure-attendee.html"), name="code-of-conduct/harassment-incidents"),
-    url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/code-of-conduct/harassment-procedure-staff.html"), name="code-of-conduct/harassment-staff-procedures"),
-    url(r"^terms-and-conditions$", TemplateView.as_view(template_name="static_pages/terms-and-conditions.html"), name="terms-and-conditions"),
+    url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code_of_conduct/code_of_conduct.html"), name="code-of-conduct"),
+    url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),
+    url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_staff.html"), name="code-of-conduct/harassment-staff-procedures"),
+    url(r"^terms-and-conditions$", TemplateView.as_view(template_name="static_pages/terms_and_conditions.html"), name="terms-and-conditions"),
 
     # sponsor
     # TODO add /sponsors
-    url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become-a-sponsor.html"), name="sponsors/become-a-sponsor"),
+    url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become_a_sponsor.html"), name="sponsors/become-a-sponsor"),
 
     # news
     url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
