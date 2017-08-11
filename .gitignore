@@ -6,3 +6,4 @@ dev.db
 .coverage
 staticfiles
 venv/
+pinaxcon/site_media
