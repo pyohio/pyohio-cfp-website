@@ -1,12 +1,8 @@
-*Portions of this page were drawn from ideas seen on [DjangoCon EU](https://djangocon.eu), [SeaGL](https://seagl.org), [Fog City Ruby](http://www.fogcityruby.com/speak/), and others. Thanks to all for their inspiration and permission to borrow!*
-
 ### The North Bay Python 2017 CFP is open!
-
-North Bay Python is seeking speakers of all experience levels, especially first-timers, to contribute to our first-ever conference program! If you use Python professionally or as a hobbyist, or are even just excited about Python or programming and open source in general, we'd love to hear from you.
 
 If you've never presented at a conference before and think you might like to try it, we want to hear from you! The program committee is *very* much interested in encouraging and supporting new speakers, and we will be able to provide detailed feedback and work with you to develop your proposal and talk content so you can give the best talk possible.
 
-In the interest of transparency, we have documented our [Selection Process](/program/selection-process).
+In the interest of transparency, we have documented our [Selection Process](/program/selection-process). Portions of this page were drawn from ideas seen on [DjangoCon EU](https://djangocon.eu), [SeaGL](https://seagl.org), [Fog City Ruby](http://www.fogcityruby.com/speak/), and others. Thanks to all for their inspiration and permission to borrow!
 
 ## Dates
 
