@@ -1,6 +1,5 @@
-This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)”.
+*This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)”.*
 
--------------------------------------------------------------------------------------------------
 Be sure to have a good understanding of our Code of Conduct policy, which can be found here: [https://northbaypython.org/code-of-conduct](/code-of-conduct)
 
 Also have a good understanding of what is expected from an attendee that wants to report a harassment incident. These guidelines can be found here: [https://northbaypython.org/code-of-conduct/harassment-incidents](/code-of-conduct/harassment-incidents)
