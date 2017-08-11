@@ -1,6 +1,7 @@
 {% extends "page_with_title_and_lede.html" %}
 
 {% load i18n %}
+{% load markdown_deux_tags %}
 
 {% block head_title %}Terms and Conditions{% endblock %}
 
@@ -9,5 +10,9 @@
 {% block body_class %}terms-and-conditions{% endblock %}
 
 {% block content %}
+  {% markdown %}
 
+{% include "static_pages/terms_and_conditions.md" %}
+
+  {% endmarkdown %}
 {% endblock %}
