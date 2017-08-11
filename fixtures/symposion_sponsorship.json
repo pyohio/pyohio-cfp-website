@@ -1,0 +1,166 @@
+[
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 1,
+    "fields": {
+        "conference": 1,
+        "name": "Gold",
+        "order": 1,
+        "cost": 4000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 2,
+    "fields": {
+        "conference": 1,
+        "name": "Silver",
+        "order": 2,
+        "cost": 2000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 3,
+    "fields": {
+        "conference": 1,
+        "name": "Platinum",
+        "order": 1,
+        "cost": 6000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 4,
+    "fields": {
+        "conference": 1,
+        "name": "Individual",
+        "order": 4,
+        "cost": 500,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefit",
+    "pk": 2,
+    "fields": {
+        "name": "Web Logo",
+        "description": "Logo to appear on the website",
+        "type": "weblogo",
+        "content_type": "simple"
+    }
+},
+{
+    "model": "symposion_sponsorship.benefit",
+    "pk": 3,
+    "fields": {
+        "name": "Print Logo",
+        "description": "Logo to appear in print",
+        "type": "file",
+        "content_type": "simple"
+    }
+},
+{
+    "model": "symposion_sponsorship.benefit",
+    "pk": 4,
+    "fields": {
+        "name": "Sponsor Description",
+        "description": "Description to appear on website and in print",
+        "type": "text",
+        "content_type": "simple"
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 1,
+    "fields": {
+        "benefit": 2,
+        "level": 1,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 2,
+    "fields": {
+        "benefit": 2,
+        "level": 2,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 3,
+    "fields": {
+        "benefit": 2,
+        "level": 3,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 5,
+    "fields": {
+        "benefit": 3,
+        "level": 1,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 6,
+    "fields": {
+        "benefit": 3,
+        "level": 2,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 7,
+    "fields": {
+        "benefit": 3,
+        "level": 3,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 9,
+    "fields": {
+        "benefit": 4,
+        "level": 1,
+        "max_words": 200,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 10,
+    "fields": {
+        "benefit": 4,
+        "level": 2,
+        "max_words": 100,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 11,
+    "fields": {
+        "benefit": 4,
+        "level": 3,
+        "max_words": 300,
+        "other_limits": ""
+    }
+}
+]
