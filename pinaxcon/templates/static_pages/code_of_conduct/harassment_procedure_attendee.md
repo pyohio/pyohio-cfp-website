@@ -1,4 +1,4 @@
-This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)”.
+*This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)”.*
 
 1\. Keep in mind that all conference staff will be wearing a conference t-shirt/button with the word “STAFF” on it (or otherwise clearly marked as staff). The staff will also be prepared to handle the incident. All of our staff are informed of the [code of conduct policy](/code-of-conduct) and guide for handling harassment at the conference. *There will be a mandatory staff meeting onsite at the conference when this will be reiterated.*
 
