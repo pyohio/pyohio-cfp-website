@@ -1,3 +1,15 @@
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+// Used by links, buttons, and other background bits.
+$brand-primary: #1f6400;
+
+$font-family-sans-serif:  'Montserrat', Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+// Navbar
+$navbar-default-bg: $brand-primary;
+$navbar-default-color: white;
+$navbar-default-link-color: darken($navbar-default-color, 6.5%);
+$navbar-default-link-hover-color: darken($navbar-default-link-color, 6.5%);
+$navbar-default-link-active-color: $navbar-default-link-hover-color;
+$navbar-default-link-disabled-color: lighten($navbar-default-bg, 6.5%);

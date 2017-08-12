@@ -1,7 +1,19 @@
 body {
   padding-top: 50px;
   position: relative;
+  font-weight: 300;  // Not overridable in bootstrap at the moment.
 }
+
+// Not overridable in bootstrap at the moment
+.dropdown-menu >li >a {
+  font-weight: 300;
+}
+
+// Not overridable in bootstrap at the moment.
+strong {
+  font-weight: 500;
+}
+
 section {
   padding: 20px 0px;
 }
@@ -64,7 +76,3 @@ body.reviews.voting-status {
 .sponsor-list > div {
     margin: 10px 0;
 }
-
-
-
-
