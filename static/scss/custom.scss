@@ -76,3 +76,51 @@ body.reviews.voting-status {
 .sponsor-list > div {
     margin: 10px 0;
 }
+
+.home {
+  margin: 0;
+  padding-top: $navbar-height - $navbar-padding-vertical - 8;
+}
+
+.home#content_body {
+  margin: 0;
+  padding: 0;
+}
+
+.has-bottom-aligned-div {
+  position: relative;
+  height: 100%;
+}
+
+.bottom-align {
+  position: absolute;
+  bottom: 0;
+}
+
+.homepage-block {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 480px;  // TODO: change
+  height: 480px;
+  position: relative;
+}
+
+.homepage-block.light {
+  background-color: hsla(207, 60%, 85%, 1.0);
+}
+
+.homepage-block-bg {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  background-blend-mode: multiply;
+}
+
+.homepage-block.dark {
+  background: #333;
+  color: white;
+}

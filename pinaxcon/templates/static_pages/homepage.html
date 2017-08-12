@@ -1,11 +1,52 @@
-{% extends "site_base.html" %}
+{% extends "site_base_home.html" %}
 
 {% load i18n %}
+{% load staticfiles %}
 
 {% block head_title %}Welcome{% endblock %}
 
 {% block body_class %}home{% endblock %}
 
 {% block body %}
+
+  <div class="jumbotron homepage-block light">
+
+    <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+
+    <div class="container has-bottom-aligned-div">
+
+      <h1>North Bay Python</h1>
+      <h2>A Python conference north of the Golden Gate</h2>
+
+      <div class="bottom-align col-md-6 col-md-offset-3 text-center">
+        <h3>Petaluma, California</h3>
+        <h4><strong>2017 Conference:</strong> 2 &amp; 3 December</h4>
+        <h4>Talk submissions close 29 September</h4>
+
+        <div class="btn-group">
+          <a class="btn btn-lg btn-primary" href="/dashboard">Submit a proposal</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="jumbotron homepage-block dark">
+    <div class="container">
+      <h1>Downtown Petaluma</h1>
+      <h2>Blah Blah Test</h2>
+    </div>
+  </div>
+
+  <div class="jumbotron homepage-block light">
+
+    <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+    
+    <div class="container">
+      <h1>Sponsors</h1>
+    </div>
+  </div>
+
+
 
 {% endblock %}
