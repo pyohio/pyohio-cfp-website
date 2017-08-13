@@ -18,6 +18,13 @@
 {% endblock %}
 
 {% block body_base %}
+
+  <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+
+  <div id="background-filter">
+
+  <div class="hills footer"></div>
+
     <section id="content_body">
         <div class="container">
             {% include "_messages.html" %}
@@ -37,8 +44,14 @@
 {% endblock %}
 
 
-{% block footer %}
-    {% include "_footer.html" %}
+{% block footer_base %}
+  <div class="container">
+    <footer>
+      {% block footer %}
+          {% include "_footer.html" %}
+      {% endblock %}
+    </footer>
+  </div>
 {% endblock %}
 
 
