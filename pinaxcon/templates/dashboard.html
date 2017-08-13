@@ -5,6 +5,7 @@
 {% load review_tags %}
 {% load teams_tags %}
 {% load registrasion_tags %}
+{% load account_tags %}
 
 {% block head_title %}Dashboard{% endblock %}
 
@@ -17,6 +18,9 @@
           <h3 class="panel-title">
               <i class="fa fa-user-o"></i>
               Account
+              <span class="pull-right">
+                <i class="fa fa-user"></i> {% user_display request.user %}
+              </span>
           </h3>
       </div>
       <div class="panel-body">
@@ -37,7 +41,7 @@
                     <a href="{% url "speaker_edit" %}" class="btn btn-xs btn-default">
                         <i class="fa fa-pencil"></i> Edit your speaker profile
                     </a>
-                    <a href="{% url "proposal_submit" %}" class="btn btn-xs btn-default">
+                    <a href="/proposals/submit/talk" class="btn btn-xs btn-default">
                         <i class="fa fa-plus-sign"></i> Submit a new proposal
                     </a>
                 {% endif %}

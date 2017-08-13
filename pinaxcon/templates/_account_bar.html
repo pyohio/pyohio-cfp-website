@@ -1,12 +1,8 @@
 {% load i18n %}
 {% load account_tags %}
 
-
 <ul class="nav navbar-nav pull-right">
     {% if request.user.is_authenticated %}
-        <span class="navbar-text">
-            <i class="fa fa-user"></i> {% user_display request.user %}
-        </span>
         <li>
             <a href="{% url "dashboard" %}"><i class="fa fa-tasks"></i> {% trans "Dashboard" %}</a>
         </li>

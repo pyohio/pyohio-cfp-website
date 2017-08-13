@@ -1,8 +1,8 @@
-*This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)”.*
+*This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports "Ada Initive Anti-harassment Guide on Responding to Reports")".*
 
-Be sure to have a good understanding of our Code of Conduct policy, which can be found here: [https://northbaypython.org/code-of-conduct](/code-of-conduct)
+Be sure to have a good understanding of our Code of Conduct policy, which can be found here: [https://northbaypython.org/code-of-conduct](/code-of-conduct "North Bay Python Code of Conduct")
 
-Also have a good understanding of what is expected from an attendee that wants to report a harassment incident. These guidelines can be found here: [https://northbaypython.org/code-of-conduct/harassment-incidents](/code-of-conduct/harassment-incidents)
+Also have a good understanding of what is expected from an attendee that wants to report a harassment incident. These guidelines can be found here: [https://northbaypython.org/code-of-conduct/harassment-incidents](/code-of-conduct/harassment-incidents "North Bay Python attendee procedure for incident handling")
 
 Try to get as much of the incident in written form by the reporter. If you cannot, transcribe it yourself as it was told to you. The important information to gather include the following:
 
@@ -61,4 +61,4 @@ Depending on the incident, the conference chair, or designate, may decide to mak
 
 If some attendees were angered by the incident, it is best to apologize to them that the incident occurred to begin with.  If there are residual hard feelings, suggest to them to write an email to the conference chair or to the event coordinator. It will be dealt with accordingly.
 
-A listing of [North Bay Python staff is located here](/about/team), including contact phone numbers. If at all possible, all reports should be made directly to Bleep and Bloop.
+A listing of [North Bay Python staff is located here](/about/team "About the North Bay Python team"), including contact phone numbers. If at all possible, all reports should be made directly to Bleep and Bloop.

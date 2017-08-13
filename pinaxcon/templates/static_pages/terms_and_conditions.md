@@ -55,7 +55,7 @@ Discrimination and Anti-Social Behaviour
 
 North Bay Python is proud to support people from all walks of life, especially underrepresented groups like women and people of color, and will not tolerate in any fashion any intimidation, harassment, and/or any abusive, discriminatory or derogatory behaviour by any attendees of the event and/or related events.
 
-Examples of these behaviors and measures the event organizers may take are set out in the [Code of Conduct](/code-of-conduct). By registering for and attending North Bay Python, you agree to this Code of Conduct.
+Examples of these behaviors and measures the event organizers may take are set out in the [Code of Conduct](/code-of-conduct "North Bay Python Code of Conduct"). By registering for and attending North Bay Python, you agree to this Code of Conduct.
 
 Talk Recordings
 ---------------
