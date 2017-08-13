@@ -3,7 +3,7 @@
 We've got lots of good information and resources below that you should read, but in case you've already read it and want to dive in now:
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a proposal</a>
+  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a proposal</a>
 </div>
 
 
@@ -78,7 +78,7 @@ If you've given your talk before, links to video or slides would be excellent, o
 Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain why you're the best person in the world to bring us your amazing ideas, so take advantage of it!
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a proposal</a>
+  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a proposal</a>
 </div>
 
 ## Feedback and mentorship
