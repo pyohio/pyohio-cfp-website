@@ -183,3 +183,8 @@ body.auth .panel-heading .panel-title span.pull-right {
     background-image: url("../images/hills-footer.svg");
   }
 }
+
+
+.btn-group + p {
+  margin-top: 1em;
+}

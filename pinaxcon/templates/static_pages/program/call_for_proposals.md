@@ -1,5 +1,12 @@
 ### The North Bay Python 2017 CFP is open!
 
+We've got lots of good information and resources below that you should read, but in case you've already read it and want to dive in now:
+
+<div class="btn-group">
+  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a proposal</a>
+</div>
+
+
 If you've never presented at a conference before and think you might like to try it, we want to hear from you! The program committee is *very* much interested in encouraging and supporting new speakers, and we will be able to provide detailed feedback and work with you to develop your proposal and talk content so you can give the best talk possible.
 
 In the interest of transparency, we have documented our [selection process](/program/selection-process "North Bay Python proposal selection process"). Portions of this page were drawn from ideas seen on [DjangoCon EU](https://djangocon.eu "DjangoCon Europe"), [SeaGL](https://seagl.org "Seattle GNU Linux"), [Fog City Ruby](http://www.fogcityruby.com/speak/ "Fog City Ruby"), and others. Thanks to all for their inspiration and permission to borrow!
@@ -64,15 +71,15 @@ We're happy to help with any of the following:
 
 ## Submitting
 
-To help us evaluate proposals and build our program, we would like as much detail as you can provide on your talk. At a minimum this should include: **a brief abstract (~500 characters) suitable for inclusion in a schedule page; a detailed prose summary (intended as the content for a talk detail page on the program site); and at least a rough outline of the structure including estimated timings for each section of your talk.**
+To help us evaluate proposals and build our program, we would like as much detail as you can provide on your talk. At a minimum this should include: **a brief description (~400 characters) suitable for inclusion in a schedule page; a brief prose abstract (intended as the content for a talk detail page on the program site); and at least a rough outline of the structure including estimated timings for each section of your talk.**
 
 If you've given your talk before, links to video or slides would be excellent, or if you've blogged about this topic links to your blog posts would be of use as well.
 
 Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain why you're the best person in the world to bring us your amazing ideas, so take advantage of it!
 
-Please click the invitingly large button below to submit a proposal.
-
-<!-- TODO invitingly large button plz -->
+<div class="btn-group">
+  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a proposal</a>
+</div>
 
 ## Feedback and mentorship
 
