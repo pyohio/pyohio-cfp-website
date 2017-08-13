@@ -164,8 +164,7 @@ body.auth .panel-heading .panel-title span.pull-right {
 }
 
 
-#hills {
-  background: url("../images/hills.svg");
+.hills {
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -175,6 +174,12 @@ body.auth .panel-heading .panel-title span.pull-right {
   bottom: 0;
   right: 0;
   z-index: -9999;
-  opacity: 0.3;
-  background-blend-mode: multiply;
+
+  &.main {
+    background-image: url("../images/hills.svg");
+  }
+
+  &.footer {
+    background-image: url("../images/hills-footer.svg");
+  }
 }

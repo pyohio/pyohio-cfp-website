@@ -1,6 +1,6 @@
 /* COLORS */
 // Used by links, buttons, and other background bits.
-$brand-primary: #1f6400;
+$brand-primary: darken(rgb(0, 202, 10), 20%);
 $background-filter: hsla(207, 60%, 85%, 1.0);
 $background-filter-transparent: change-color($background-filter, $alpha: 0.5);
 
