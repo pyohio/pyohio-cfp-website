@@ -13,14 +13,14 @@
 
     <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
 
-    <div class="container has-bottom-aligned-div">
+    <div class="container homepage-block-content">
 
       <h1>North Bay Python</h1>
       <h2>A Python conference north of the Golden Gate</h2>
 
-      <div class="bottom-align col-md-6 col-md-offset-3 text-center">
+      <div class="bottom-align">
         <h3>Petaluma, California</h3>
-        <h4><strong>2017 Conference:</strong> 2 &amp; 3 December</h4>
+        <h4><strong>2017 conference:</strong> 2 &amp; 3 December</h4>
         <h4>Talk submissions close 29 September</h4>
 
         <div class="btn-group">
@@ -32,21 +32,65 @@
   </div>
 
   <div class="jumbotron homepage-block dark">
-    <div class="container">
+
+    <div class="homepage-block-bg" style="background-image: url('{% static "images/mystic.jpg" %}');"></div>
+
+    <div class="container homepage-block-content">
       <h1>Downtown Petaluma</h1>
-      <h2>Blah Blah Test</h2>
-    </div>
+
+      <p>Here is some text about Petaluma and the Mystic Theatre. It's pretty great. The mystic is close to restaurants and hotels. Petaluma is only an hour out of San Francisco. Blah.</p>
+
+      <div class="bottom-align" style="width: 100%">
+        <div class="btn-group col-md-6">
+          <a class="btn btn-lg btn-primary" href="/about/north-bay-python">Find out more</a>
+        </div>
+
+        <div class="col-md-6 text-right">
+          Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (CC-BY-SA)</div>
+      </div>
   </div>
 
-  <div class="jumbotron homepage-block light">
+  </div>
 
-    <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
-    
-    <div class="container">
+  <div class="jumbotron homepage-block white">
+
+    <div class="container homepage-block-content">
       <h1>Sponsors</h1>
     </div>
   </div>
 
+  <div class="jumbotron homepage-block dark">
+
+    <div class="homepage-block-bg" style="background-image: url('{% static "images/django-girls-2014.jpg" %}');"></div>
+
+    <div class="container homepage-block-content">
+      <h1>Inclusion and Diversity</h1>
+
+      <p>Statement about commitment to inclusion and diversity. Strong code of conduct. Short and long term diversity targets in our call for proposals. Cheap tickets, with an entry fee that we will waive on request. Financial assistance for those who need it.</p>
 
 
+      <div class="bottom-align" style="width: 100%">
+        <div class="btn-group col-md-6">
+          <a class="btn btn-lg btn-primary" href="/code-of-conduct">View our code of conduct</a>
+        </div>
+
+        <div class="col-md-6 text-right">
+          Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749">DjangoGirls Brisbane 2014</a>, &copy; 2014 Richard Jones (CC-BY)</div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer_base %}
+  <div class="jumbotron homepage-block light" style="height:100px;">
+
+    <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+
+    <div class="container homepage-block-content">
+      {% block footer %}
+        {% include "_footer.html" %}
+      {% endblock %}
+    </div>
+  </div>
 {% endblock %}

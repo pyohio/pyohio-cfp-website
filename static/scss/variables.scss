@@ -1,9 +1,13 @@
+/* COLORS */
 // Used by links, buttons, and other background bits.
 $brand-primary: #1f6400;
+$background-filter: hsla(207, 60%, 85%, 1.0);
 
+/* TEXT */
 $font-family-sans-serif:  'Montserrat', Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$headings-line-height: 1.0;
 
 
 // Navbar
@@ -13,3 +17,5 @@ $navbar-default-link-color: darken($navbar-default-color, 6.5%);
 $navbar-default-link-hover-color: darken($navbar-default-link-color, 6.5%);
 $navbar-default-link-active-color: $navbar-default-link-hover-color;
 $navbar-default-link-disabled-color: lighten($navbar-default-bg, 6.5%);
+
+$box-shadow: 0px 1px 1em rgba(0, 1, 1, 1); //, inset 0px -5px 1em rgba(0, 0, 0, 0.8);
