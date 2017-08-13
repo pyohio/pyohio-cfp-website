@@ -150,6 +150,7 @@ $homepage-block-min-height: 480px;
 .homepage-block.dark {
   background: $gray-base;
   color: white;
+  text-shadow: 1px 1px $gray-dark;
 }
 
 .navbar {
@@ -164,6 +165,9 @@ $homepage-block-min-height: 480px;
 
 }
 
+.btn-shadow {
+  box-shadow: 1px 1px 5px $gray-dark;
+}
 
 .hills {
   background-size: 100%;
