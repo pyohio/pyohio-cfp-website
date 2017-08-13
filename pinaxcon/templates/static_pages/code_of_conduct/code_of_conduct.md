@@ -33,18 +33,19 @@ If a participant engages in behavior that violates this code of conduct, the con
 Contact Information
 -------------------
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You may also contact venue staff and ask to be put in touch with the conference chair &mdash; Christopher Neugebauer.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You may also contact venue staff and ask to be put in touch with the conference chair&mdash;Christopher Neugebauer.
 
+<!-- TODO add phone number -->
 If the matter is especially urgent, please call our Code of Conduct and safety incident hotline at XXX-YYY-ZZZZ. This number will automatically route to a member of the conference staff who can render assistance.
 
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
 Procedure for Handling Harassment
 ------------------------------------------
-- [Attendee procedure for incident handling](/code-of-conduct/harassment-incidents)
-- [Staff procedure for incident handling](/code-of-conduct/harassment-staff-procedures)
+- [Attendee procedure for incident handling](/code-of-conduct/harassment-incidents "North Bay Python attendee procedure for incident handling")
+- [Staff procedure for incident handling](/code-of-conduct/harassment-staff-procedures "North Bay Python staff procedure for incident handling")
 
 License
 -------
 
-This Code of Conduct was forked from the [PyCon US Code of Conduct](https://github.com/python/pycon-code-of-conduct) under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>, itself originally forked from the example policy from the [Geek Feminism wiki, created by the Ada Initiative and other volunteers.](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy) which is under a Creative Commons Zero license.
+This Code of Conduct was forked from the [PyCon US Code of Conduct](https://github.com/python/pycon-code-of-conduct "PyCon United States Code of Conduct") under a [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/ "Creative Commons Attribution 3.0 Unported License") license, itself originally forked from the example policy in [Geek Feminism wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy "Geek Feminism Wiki Example Anti-harassment Policy"), created by the Ada Initiative and other volunteers. which is under a [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/ "Creative Commons Zero License") license.

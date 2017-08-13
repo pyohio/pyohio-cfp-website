@@ -35,9 +35,9 @@
     "model": "sitetree.treeitem",
     "pk": 3,
     "fields": {
-        "title": "Become a Sponsor",
+        "title": "Sponsors",
         "hint": "",
-        "url": "/sponsors/become-a-sponsor",
+        "url": "/sponsors",
         "urlaspattern": false,
         "tree": 1,
         "hidden": false,
@@ -155,7 +155,7 @@
     "model": "sitetree.treeitem",
     "pk": 12,
     "fields": {
-        "title": "The Team",
+        "title": "Our Team",
         "hint": "",
         "url": "/about/team",
         "urlaspattern": false,
@@ -268,6 +268,54 @@
         "access_perm_type": 1,
         "parent": 8,
         "sort_order": 14,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 21,
+    "fields": {
+        "title": "Our Sponsors",
+        "hint": "",
+        "url": "/sponsors",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 3,
+        "sort_order": 21,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 23,
+    "fields": {
+        "title": "Become a Sponsor",
+        "hint": "",
+        "url": "/sponsors/become-a-sponsor",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 3,
+        "sort_order": 22,
         "access_permissions": []
     }
 }
