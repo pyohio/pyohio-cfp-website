@@ -2,6 +2,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 
 from django.contrib import admin
 
@@ -41,6 +42,8 @@ urlpatterns = [
 
     # sponsor
     # TODO add /sponsors
+    url(r"^sponsors/prospectus$", RedirectView.as_view(url="/static/assets/northbaypython_prospectus.pdf"), name="sponsors/prospectus"),
+    url(r"^northbaypython_prospectus.pdf$", RedirectView.as_view(url="/static/assets/northbaypython_prospectus.pdf"), name="northbaypython_prospectus.pdf"),
     url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become_a_sponsor.html"), name="sponsors/become-a-sponsor"),
 
     # news
