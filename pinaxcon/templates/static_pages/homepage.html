@@ -24,20 +24,21 @@
         <h3>A Python conference north of the Golden Gate</h3>
       </div>
 
-      <div class="bottom-align">
         <h3>
           The Mystic Theatre</br>
           Petaluma, California
         </h3>
         <h4>
-          <strong>2017 conference:</strong> 2 &amp; 3 December <br/>
-          Talk submissions close 29 September
+          <strong>2017 conference:</strong> December 2 &amp; 3 <br/>
+          Talk submissions close September 29
         </h4>
 
-        <div style="height:0.5em;"></div>
+      </div>
+
+      <div class="container homepage-block-footer">
 
         <div class="btn-group">
-          <a class="btn btn-lg btn-primary" href="/dashboard">Submit a proposal</a>
+          <a class="btn btn-lg btn-primary btn-shadow" href="/dashboard">Submit a proposal</a>
         </div>
       </div>
 
@@ -51,17 +52,27 @@
     <div class="container homepage-block-content">
       <h1>Downtown Petaluma</h1>
 
-      <p>Here is some text about Petaluma and the Mystic Theatre. It's pretty great. The mystic is close to restaurants and hotels. Petaluma is only an hour out of San Francisco. Blah.</p>
+      <p>North Bay Python's home is Petaluma, a shockingly quaint dairy town, nestled on a river at the edge of California's Wine Country.</p>
 
-      <div class="bottom-align" style="width: 100%">
-        <div class="btn-group col-md-4">
-          <a class="btn btn-lg btn-primary" href="/about/north-bay-python">Find out more</a>
+      <p>We're hosting the conference at the Mystic Theatre, a 1912-era music hall, right in the middle of Historic Downtown Petaluma. There's countless great places to eat right on our doorstep, craft food and drink producers within walking distance, and plenty of places to stay nearby.</p>
+
+      <p>And it's only an hour's drive out of San Francisco (on a good day).</p>
+
+    </div>
+
+    <div class="homepage-block-footer" style="width: 100%">
+      <div class="container">
+        <div class="row">
+          <div class="btn-group col-md-4">
+            <a class="btn btn-lg btn-primary btn-shadow" href="/about/north-bay-python">Find out more</a>
+          </div>
+
+          <div class="col-md-8 text-right">
+            Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (CC-BY-SA)
+          </div>
         </div>
-
-        <div class="col-md-8 text-right">
-          Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (CC-BY-SA)</div>
       </div>
-  </div>
+    </div>
 
   </div>
 
@@ -69,7 +80,41 @@
 
     <div class="container homepage-block-content">
       <h1>Sponsors</h1>
+
+      {% load sponsorship_tags %}
+      {% load thumbnail %}
+
+      {% sponsor_levels as levels %}
+
+      <div class="row">
+      {% for level in levels %}
+          {% if level.sponsors %}
+              {% for sponsor in level.sponsors %}
+                  <div class="col-md-3">
+                      {% if sponsor.website_logo %}
+                          <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
+                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}" style="width:100%"/>
+                          </a>
+                      {% else %}
+                          <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">{{ sponsor.name }}</a>
+                      {% endif %}
+                  </div>
+              {% endfor %}
+          {% endif %}
+      {% endfor %}
+      </div>
+
+
+
     </div>
+
+    <div class="container homepage-block-footer">
+
+      <div class="btn-group">
+        <a class="btn btn-lg btn-primary btn-shadow" href="/sponsors">Become a sponsor</a>
+      </div>
+    </div>
+
   </div>
 
   <div class="jumbotron homepage-block dark">
@@ -77,20 +122,32 @@
     <div class="homepage-block-bg" style="background-image: url('{% static "images/django-girls-2014.jpg" %}');"></div>
 
     <div class="container homepage-block-content">
+
       <h1>Inclusion and Diversity</h1>
 
-      <p>Statement about commitment to inclusion and diversity. Strong code of conduct. Short and long term diversity targets in our call for proposals. Cheap tickets, with an entry fee that we will waive on request. Financial assistance for those who need it.</p>
+      <p>North Bay Python is proud to be founded on a commitment to inclusion and diversity.</p>
 
+      <p>We value your safety, so we have a strong Code of Conduct and enforcement policy built on the Python Software Foundation's PyCon US policy.</p>
 
-      <div class="bottom-align" style="width: 100%">
-        <div class="btn-group col-md-4">
-          <a class="btn btn-lg btn-primary" href="/code-of-conduct">View our code of conduct</a>
-        </div>
+      <p>We have set diversity targets for our conference program, including short-term and long-term goals for gender balance. We make financial assistance available to speakers.</p>
 
-        <div class="col-md-8 text-right">
-          Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749">DjangoGirls Brisbane 2014</a>, &copy; 2014 Richard Jones (CC-BY)</div>
-      </div>
+      <p>We will always have low-cost tickets available, and we will enthusiastically waive ticket costs on request if you need it.</p>
+
     </div>
+
+    <div class="homepage-block-footer" style="width: 100%">
+      <div class="container">
+        <div class="row">
+          <div class="btn-group col-md-4">
+            <a class="btn btn-lg btn-primary btn-shadow" href="/code-of-conduct">View our code of conduct</a>
+          </div>
+
+          <div class="col-md-8 text-right">
+            Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749">DjangoGirls Brisbane 2014</a>, &copy; 2014 Richard Jones (CC-BY)</div>
+          </div>
+        </div>
+      </div>
+
   </div>
 
 {% endblock %}

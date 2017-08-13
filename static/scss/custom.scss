@@ -103,24 +103,24 @@ body.auth .panel-heading .panel-title span.pull-right {
   box-shadow: 0px 0px 2em $background-filter; //, inset 0px -5px 1em rgba(0, 0, 0, 0.8);
 }
 
-.homepage-block-content {
-  position: relative;
-  height: 100%;
-}
-
-.bottom-align {
-  position: absolute;
-  bottom: 0;
-}
+$homepage-block-min-height: 480px;
 
 .homepage-block {
   margin-top: 0;
   margin-bottom: 0;
-  min-height: 480px;  // TODO: change
-  height: 480px;
+  min-height: $homepage-block-min-height;
   position: relative;
   box-shadow: $box-shadow;
   z-index: 3;
+}
+
+.homepage-block-content {
+  min-height: ($homepage-block-min-height - 80px);
+}
+
+/* ??? */
+.homepage-block-footer {
+
 }
 
 .homepage-block.light {
@@ -150,6 +150,7 @@ body.auth .panel-heading .panel-title span.pull-right {
 .homepage-block.dark {
   background: $gray-base;
   color: white;
+  text-shadow: 1px 1px $gray-dark;
 }
 
 .navbar {
@@ -173,6 +174,9 @@ body.auth .panel-heading .panel-title span.pull-right {
 
 }
 
+.btn-shadow {
+  box-shadow: 1px 1px 5px $gray-dark;
+}
 
 .hills {
   background-size: 100%;
