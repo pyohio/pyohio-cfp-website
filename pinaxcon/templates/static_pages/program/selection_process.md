@@ -2,7 +2,6 @@
 
 During this phase, the program committee will score each proposal solely on the merits of its contents, without any identifying information or other knowledge about the speaker(s) proposing the talk.
 
-
 ## Phase two: identify-aware ranking and curation
 
 The program committee will use the scored proposals in conjunction with speaker profiles to rank and organize a program meeting our goals for diversity of speakers and topics.

@@ -1,6 +1,6 @@
-*This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)”.*
+*This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports "Ada Initive Anti-harassment Guide on Responding to Reports")".*
 
-1\. Keep in mind that all conference staff will be wearing a conference t-shirt/button with the word “STAFF” on it (or otherwise clearly marked as staff). The staff will also be prepared to handle the incident. All of our staff are informed of the [code of conduct policy](/code-of-conduct) and guide for handling harassment at the conference. *There will be a mandatory staff meeting onsite at the conference when this will be reiterated.*
+1\. Keep in mind that all conference staff will be wearing a conference t-shirt/button with the word “STAFF” on it (or otherwise clearly marked as staff). The staff will also be prepared to handle the incident. All of our staff are informed of the [code of conduct policy](/code-of-conduct "North Bay Python Code of Conduct") and guide for handling harassment at the conference. *There will be a mandatory staff meeting onsite at the conference when this will be reiterated.*
 
 2\. Report the harassment incident (preferably in writing) to a conference staff member. All reports are confidential. Please do not disclose public information about the incident until the staff have had sufficient time in which to address the situation. This is as much for your safety and protection as it is the other attendees.
 
@@ -20,4 +20,4 @@ The staff is well informed on how to deal with the incident and how to further p
 
 **Note**: Incidents that violate the Code of Conduct are extremely damaging to the community, and they will not be tolerated. The silver lining is that, in many cases, these incidents present a chance for the offenders, and the community at large, to grow, learn, and become better. North Bay Python staff requests that they be your first resource when reporting a North Bay Python-related incident, so that they may enforce the Code of Conduct and take quick action toward a resolution.
 
-A listing of [North Bay Python staff is located here](/about/team), including contact phone numbers. If at all possible, all reports should be made directly to Bleep and Bloop.
+A listing of [North Bay Python staff is located here](/about/team "About the North Bay Python team"), including contact phone numbers. If at all possible, all reports should be made directly to Bleep and Bloop.
