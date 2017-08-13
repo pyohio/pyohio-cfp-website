@@ -9,9 +9,9 @@
 
 {% block body %}
 
-  <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+  <div class="homepage-block-bg website-background"></div>
   <div class="jumbotron homepage-block light">
-    <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+    <div class="homepage-block-bg website-background"></div>
     <div class="hills main"></div>
     <div class="container homepage-block-content">
       <div class="tight-headings">
@@ -38,18 +38,18 @@
   </div>
 
   <div class="jumbotron homepage-block dark">
-    <div class="homepage-block-bg" style="background-image: url('{% static "images/mystic.jpg" %}');"></div>
+    <div class="homepage-block-bg mystic-background"></div>
     <div class="container homepage-block-content">
       <h1>Downtown Petaluma</h1>
 
       <p>North Bay Python's home is Petaluma, a shockingly quaint dairy town, nestled on a river at the edge of California's Wine Country.</p>
 
-      <p>We're hosting the conference at the Mystic Theatre, a 1912-era music hall, right in the middle of Historic Downtown Petaluma. There's countless great places to eat right on our doorstep, craft food and drink producers within walking distance, and plenty of places to stay nearby.</p>
+      <p>We're hosting the conference at the Mystic Theatre, a 1912-era music hall in the middle of Historic Downtown Petaluma. There are countless places to eat, craft food and drink producers within walking distance, and plenty of places to stay nearby.</p>
 
-      <p>And it's only an hour's drive out of San Francisco (on a good day).</p>
+      <p>And it's only an hour away from San Francisco.</p>
     </div>
 
-    <div class="homepage-block-footer" style="width: 100%">
+    <div class="homepage-block-footer full-width">
       <div class="container">
         <div class="row">
           <div class="btn-group col-md-4">
@@ -57,7 +57,7 @@
           </div>
 
           <div class="col-md-8 text-right">
-            Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt" title="Photo of the Mystic Theatre">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (CC-BY-SA)
+            Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt" title="Photo of the Mystic Theatre">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (<a href="https://creativecommons.org/licenses/by-sa/2.0/" title="Creative Commons Attribute Share Alike 2.0 Generic License">CC BY-SA 2.0</a>)
           </div>
         </div>
       </div>
@@ -73,14 +73,14 @@
 
       {% sponsor_levels as levels %}
 
-      <div class="row">
+      <div class="row sponsor-list">
       {% for level in levels %}
           {% if level.sponsors %}
               {% for sponsor in level.sponsors %}
                   <div class="col-md-3">
                       {% if sponsor.website_logo %}
                           <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}" style="width:100%"/>
+                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
                           </a>
                       {% else %}
                           <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">{{ sponsor.name }}</a>
@@ -100,7 +100,7 @@
   </div>
 
   <div class="jumbotron homepage-block dark">
-    <div class="homepage-block-bg" style="background-image: url('{% static "images/django-girls-2014.jpg" %}');"></div>
+    <div class="homepage-block-bg djangogirls-background"></div>
     <div class="container homepage-block-content">
       <h1>Inclusion and Diversity</h1>
 
@@ -113,7 +113,7 @@
       <p>We will always have low-cost tickets available, and we will enthusiastically waive ticket costs on request if you need it.</p>
     </div>
 
-    <div class="homepage-block-footer" style="width: 100%">
+    <div class="homepage-block-footer full-width">
       <div class="container">
         <div class="row">
           <div class="btn-group col-md-4">
@@ -121,7 +121,7 @@
           </div>
 
           <div class="col-md-8 text-right">
-            Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749" title="Photo from DjangoGirls Brisbane 2014">DjangoGirls Brisbane 2014</a>, &copy; 2014 Richard Jones (CC-BY)
+            Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749" title="Photo from DjangoGirls Brisbane 2014">DjangoGirls Brisbane</a>, &copy; 2014 Richard Jones (<a href="https://creativecommons.org/licenses/by/2.0/" title="Creative Commons Attribute 2.0 Generic License">CC BY 2.0</a>)
           </div>
         </div>
       </div>

@@ -10,15 +10,13 @@
     {% for level in levels %}
         {% if level.sponsors %}
 
-          <div style="height: 1em; "></div>
-
           <h4>{{ level.name }}</h4>
 
           {% for sponsor in level.sponsors %}
               <div>
                   {% if sponsor.website_logo %}
                       <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-                          <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}" style="width: 100%" />
+                          <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}" />
                       </a>
                   {% else %}
                       <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">{{ sponsor.name }}</a>
