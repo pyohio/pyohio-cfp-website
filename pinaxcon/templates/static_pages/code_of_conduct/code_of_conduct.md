@@ -33,8 +33,9 @@ If a participant engages in behavior that violates this code of conduct, the con
 Contact Information
 -------------------
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You may also contact venue staff and ask to be put in touch with the conference chair &mdash; Christopher Neugebauer.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You may also contact venue staff and ask to be put in touch with the conference chair&mdash;Christopher Neugebauer.
 
+<!-- TODO add phone number -->
 If the matter is especially urgent, please call our Code of Conduct and safety incident hotline at XXX-YYY-ZZZZ. This number will automatically route to a member of the conference staff who can render assistance.
 
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.

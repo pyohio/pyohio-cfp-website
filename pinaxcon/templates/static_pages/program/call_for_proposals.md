@@ -18,19 +18,19 @@ North Bay Python is dedicated to featuring a diverse and inclusive speaker lineu
 
 **All speakers will be expected to have read and adhere to the conference [Code of Conduct](/code-of-conduct "North Bay Python Code of Conduct"). In particular for speakers: slide contents and spoken material should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate, and neither are language or imagery that denigrate or demean people based on race, gender, religion, sexual orientation, physical appearance, disability, or body size.**
 
-We will make every effort to provide accommodations for speakers and attendees of all abilities — all we ask is that you let us know so we can prepare accordingly.
+We will make every effort to provide accommodations for speakers and attendees of all abilities&mdash;all we ask is that you let us know so we can prepare accordingly.
 
 North Bay Python is a conference in support of the local programmer community outside of the core San Francisco Bay Area tech scene. We aim to feature a mix of local and non-local speakers to offer a program with broad appeal. **All speakers will receive complimentary registration to the conference, and requests for further financial compensation to assist with travel will be considered on a case-by-case basis independent of the proposal's merits.**
 
 ## Talk formats
 
-**Most of the talk slots will be short** — approximately 25 to 30 minutes, including Q&A. If your ideas would benefit from a longer slot, please explain in your submission how you would use the additional time.
+**Most of the talk slots will be short**&mdash;approximately 25 to 30 minutes, including Q&A. If your ideas would benefit from a longer slot, please explain in your submission how you would use the additional time.
 
 ## Topics
 
 **We are a single track conference. This means that your talk needs to hold the attention of beginners to experienced developers alike.**
 
-This doesn’t mean that every talk needs to be a beginner’s talk: if you’re talking about advanced concepts, people who are new to Python – or new to your library – should come away excited about the possibilities, and know how to learn the concepts that they need to get there.
+This doesn't mean that every talk needs to be a beginner's talk: if you're talking about advanced concepts, people who are new to Python – or new to your library – should come away excited about the possibilities, and know how to learn the concepts that they need to get there.
 
 This is a list of topics we think might go well in the North Bay Python program, but it is by no means exhaustive. If you have a talk idea on a subject not listed here and you think it fits well with our community and mission, we would love to hear about it!
 
@@ -68,7 +68,7 @@ To help us evaluate proposals and build our program, we would like as much detai
 
 If you've given your talk before, links to video or slides would be excellent, or if you've blogged about this topic links to your blog posts would be of use as well.
 
-Your speaker profile includes a space for you to describe your prior experience giving talks — this is your chance to talk yourself up and explain why you're the best person in the world to bring us your amazing ideas, so take advantage of it!
+Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain why you're the best person in the world to bring us your amazing ideas, so take advantage of it!
 
 Please click the invitingly large button below to submit a proposal.
 
