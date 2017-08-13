@@ -42,8 +42,14 @@
 {% endblock %}
 
 
-{% block footer %}
-    {% include "_footer.html" %}
+{% block footer_base %}
+  <div class="container">
+    <footer>
+      {% block footer %}
+          {% include "_footer.html" %}
+      {% endblock %}
+    </footer>
+  </div>
 {% endblock %}
 
 
