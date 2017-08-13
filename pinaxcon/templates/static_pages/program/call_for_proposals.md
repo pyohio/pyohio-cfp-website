@@ -6,7 +6,6 @@ We've got lots of good information and resources below that you should read, but
   <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a Proposal</a>
 </div>
 
-
 If you've never presented at a conference before and think you might like to try it, we want to hear from you! The program committee is *very* much interested in encouraging and supporting new speakers, and we will be able to provide detailed feedback and work with you to develop your proposal and talk content so you can give the best talk possible.
 
 In the interest of transparency, we have documented our [selection process](/program/selection-process "North Bay Python proposal selection process"). Portions of this page were drawn from ideas seen on [DjangoCon EU](https://djangocon.eu "DjangoCon Europe"), [SeaGL](https://seagl.org "Seattle GNU Linux"), [Fog City Ruby](http://www.fogcityruby.com/speak/ "Fog City Ruby"), and others. Thanks to all for their inspiration and permission to borrow!
