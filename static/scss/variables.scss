@@ -2,11 +2,13 @@
 // Used by links, buttons, and other background bits.
 $brand-primary: #1f6400;
 $background-filter: hsla(207, 60%, 85%, 1.0);
+$background-filter-transparent: change-color($background-filter, $alpha: 0.5);
 
 /* TEXT */
 $font-family-sans-serif:  'Montserrat', Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-size-base:          15px;
 $headings-line-height: 1.0;
 
 

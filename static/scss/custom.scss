@@ -2,6 +2,9 @@ body {
   padding-top: 50px;
   position: relative;
   font-weight: 300;  // Not overridable in bootstrap at the moment.
+  /*background: url("../images/website-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;*/
 }
 
 // Not overridable in bootstrap at the moment
@@ -87,6 +90,11 @@ body.reviews.voting-status {
   padding: 0;
 }
 
+#content_body {
+  background-color: $background-filter-transparent;
+  box-shadow: 0px 0px 2em $background-filter; //, inset 0px -5px 1em rgba(0, 0, 0, 0.8);
+}
+
 .homepage-block-content {
   position: relative;
   height: 100%;
@@ -128,6 +136,7 @@ body.reviews.voting-status {
   opacity: 0.3;
   background-blend-mode: multiply;
   z-index: -9999;
+  box-shadow: $box-shadow;
 }
 
 .homepage-block.dark {
