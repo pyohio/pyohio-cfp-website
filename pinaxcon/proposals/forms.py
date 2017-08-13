@@ -1,4 +1,5 @@
 from django import forms
+from symposion.proposals.forms import ProposalMixIn
 
 from .models import ConferenceSpeaker, TalkProposal
 
@@ -22,7 +23,12 @@ class ConferenceSpeakerForm(forms.ModelForm):
 
 
 
-class ProposalForm(forms.ModelForm):
+class ProposalForm(forms.ModelForm, ProposalMixIn):
+
+    def __init__(self, *a, **k):
+        super(ProposalForm, self).__init__(*a, **k)
+        self.description_required()
+        self.abstract_required()
 
     def clean_description(self):
         value = self.cleaned_data["description"]
@@ -39,9 +45,12 @@ class TalkProposalForm(ProposalForm):
         model = TalkProposal
         fields = [
             "title",
-            "audience_level",
             "description",
             "abstract",
+            "new_presentation",
+            "extended_presentation",
             "additional_notes",
+            "extra_av",
+            "slides_release",
             "recording_release",
         ]

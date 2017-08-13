@@ -80,21 +80,42 @@ class ConferenceSpeaker(SpeakerBase):
 
 class Proposal(ProposalBase):
 
-    AUDIENCE_LEVEL_NOVICE = 1
-    AUDIENCE_LEVEL_EXPERIENCED = 2
-    AUDIENCE_LEVEL_INTERMEDIATE = 3
-
-    AUDIENCE_LEVELS = [
-        (AUDIENCE_LEVEL_NOVICE, "Novice"),
-        (AUDIENCE_LEVEL_INTERMEDIATE, "Intermediate"),
-        (AUDIENCE_LEVEL_EXPERIENCED, "Experienced"),
-    ]
-
-    audience_level = models.IntegerField(choices=AUDIENCE_LEVELS)
-
+    extended_presentation = models.BooleanField(
+        default=False,
+        verbose_name=_("Optionally consider this proposal for a 45-minute "
+                       "slot"),
+        help_text=_("Most talks at North Bay Python go for 30 minutes. We "
+                    "have some openings for 45-minute talks. If you check this "
+                    "field, please explain in your additional notes how you "
+                    "would use the extra 15 minutes."),
+    )
+    extra_av = models.TextField(
+        blank=True,
+        verbose_name=_("Extra tech and A/V requirements"),
+        help_text=_("We will provide you with a projector with HDMI "
+                    "connection, an audio connection, and one microphone per "
+                    "speaker. If you need anything more than this to present "
+                    "this talk, please list them here."),
+    )
+    new_presentation = models.BooleanField(
+        default=False,
+        verbose_name=_("This is a new presentation"),
+        help_text=_("Check this box if North Bay Python will be the first "
+                    "time this talk is presented at a technical conference."),
+    )
+    slides_release = models.BooleanField(
+        default=True,
+        help_text=_("I authorize North Bay Python to release a copy of my "
+                    "slides and related materials under the Creative Commons "
+                    "Attribution-ShareAlike 3.0 United States licence, and "
+                    "certify that I have the authority to do so."),
+    )
     recording_release = models.BooleanField(
         default=True,
-        help_text="By submitting your proposal, you agree to give permission to the conference organizers to record, edit, and release audio and/or video of your presentation. If you do not agree to this, please uncheck this box."
+        help_text=_("I authorize North Bay Python to release a recording of "
+                    "my talk under the Creative Commons "
+                    "Attribution-ShareAlike 3.0 United States licence."),
+
     )
 
     class Meta:
