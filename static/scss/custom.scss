@@ -155,6 +155,15 @@ body.auth .panel-heading .panel-title span.pull-right {
   box-shadow: $box-shadow;
 }
 
+.navbar ul.navbar-nav > li a,
+.navbar-header a.navbar-brand {
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: #004303;
+  }
+}
+
 .tight-headings {
 
   h1, h2, h3, h4, h5, h6 {
