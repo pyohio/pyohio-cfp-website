@@ -1,6 +1,25 @@
 from django import forms
 
-from .models import TalkProposal
+from .models import ConferenceSpeaker, TalkProposal
+
+
+class ConferenceSpeakerForm(forms.ModelForm):
+
+    class Meta:
+        model = ConferenceSpeaker
+        exclude = [
+            'user',
+            'biography_html',
+            'experience_html',
+            'invite_email',
+            'invite_token',
+            'annotation',
+        ]
+
+    def __init__(self, *a, **k):
+        super(ConferenceSpeakerForm, self).__init__(*a, **k)
+        self.fields['code_of_conduct'].required = True
+
 
 
 class ProposalForm(forms.ModelForm):
