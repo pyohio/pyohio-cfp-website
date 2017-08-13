@@ -9,6 +9,8 @@
 
 {% block body %}
 
+  <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+
   <div class="jumbotron homepage-block light">
 
     <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
@@ -80,17 +82,4 @@
     </div>
   </div>
 
-{% endblock %}
-
-{% block footer_base %}
-  <div class="jumbotron homepage-block light" style="height:100px;">
-
-    <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
-
-    <div class="container homepage-block-content">
-      {% block footer %}
-        {% include "_footer.html" %}
-      {% endblock %}
-    </div>
-  </div>
 {% endblock %}
