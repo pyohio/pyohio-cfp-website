@@ -3,7 +3,7 @@
 We've got lots of good information and resources below that you should read, but in case you've already read it and want to dive in now:
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a proposal</a>
+  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a Proposal</a>
 </div>
 
 
@@ -35,11 +35,11 @@ North Bay Python is a conference in support of the local programmer community ou
 
 ## Topics
 
-**We are a single track conference. This means that your talk needs to hold the attention of beginners to experienced developers alike.**
+**We are a single track conference. This means that your talk needs to hold the attention of beginners and experienced developers alike.**
 
-This doesn't mean that every talk needs to be a beginner's talk: if you're talking about advanced concepts, people who are new to Python – or new to your library – should come away excited about the possibilities, and know how to learn the concepts that they need to get there.
+This doesn't mean that every talk needs to be a beginner's talk: if you're talking about advanced concepts, people who are new to Python, or new to your library, should come away excited about the possibilities, and know what concepts they need to learn to get there.
 
-This is a list of topics we think might go well in the North Bay Python program, but it is by no means exhaustive. If you have a talk idea on a subject not listed here and you think it fits well with our community and mission, we would love to hear about it!
+This is a list of topics we think might go well in the North Bay Python program, but it is by no means exhaustive. If you have a talk idea on a subject not listed here and you think it fits well with our community and mission, we would love to <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">hear about it</a>!
 
 + The Python community
 + Python fundamentals
@@ -67,23 +67,25 @@ We're happy to help with any of the following:
 + Connecting you with rehearsal audiences or even just watching you present over a video conference as practice
 + Anything else that'd help you be at ease and excited about bringing your ideas to our audience!
 
-<!-- TODO schedule and contact info go here -->
+Our office hours schedule has not yet been announced, but you can reach us by email at <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">program@northbaypython.org</a> or on <a href="http://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">IRC in #nbpy on Freenode</a> at any time.
+
+<!-- TODO post office hours schedule -->
 
 ## Submitting
 
-To help us evaluate proposals and build our program, we would like as much detail as you can provide on your talk. At a minimum this should include: **a brief description (~400 characters) suitable for inclusion in a schedule page; a brief prose abstract (intended as the content for a talk detail page on the program site); and at least a rough outline of the structure including estimated timings for each section of your talk.**
+To help us evaluate proposals and build our program, we would like as much detail as you can provide on your talk. At a minimum this should include: **a brief description (~400 characters) suitable for inclusion in a schedule page; a brief prose abstract (intended as the content for a talk detail page on the program site); and, if you'd like, a rough outline of the structure including estimated timings for each section of your talk.**
 
 If you've given your talk before, links to video or slides would be excellent, or if you've blogged about this topic links to your blog posts would be of use as well.
 
-Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain why you're the best person in the world to bring us your amazing ideas, so take advantage of it!
+Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain how you're qualified to share your ideas, so take advantage of it!
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a proposal</a>
+  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a Proposal</a>
 </div>
 
 ## Feedback and mentorship
 
-**First time speakers are welcomed and encouraged; if you've never done this before but have an idea please contact the program committee to be connected with a mentor and receive guidance structuring your proposal and talk. Above all we want you to be successful and have a good time telling other attendees about your amazing ideas!**
+**First time speakers are welcomed and encouraged; if you've never done this before but have an idea please <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">contact the program committee</a> to be connected with a mentor and receive guidance structuring your proposal and talk. Above all we want you to be successful and have a good time telling other attendees about your amazing ideas!**
 
 If you have an idea (or don't!) and want to speak, here's a very rough process of what you should do next:
 
