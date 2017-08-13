@@ -147,3 +147,20 @@ body.reviews.voting-status {
 .navbar {
   box-shadow: $box-shadow;
 }
+
+
+
+#hills {
+  background: url("../images/hills.svg");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -9999;
+  opacity: 0.3;
+  background-blend-mode: multiply;
+}
