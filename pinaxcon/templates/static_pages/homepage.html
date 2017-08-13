@@ -80,6 +80,32 @@
 
     <div class="container homepage-block-content">
       <h1>Sponsors</h1>
+
+      {% load sponsorship_tags %}
+      {% load thumbnail %}
+
+      {% sponsor_levels as levels %}
+
+      <div class="row">
+      {% for level in levels %}
+          {% if level.sponsors %}
+              {% for sponsor in level.sponsors %}
+                  <div class="col-md-3">
+                      {% if sponsor.website_logo %}
+                          <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
+                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}" style="width:100%"/>
+                          </a>
+                      {% else %}
+                          <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">{{ sponsor.name }}</a>
+                      {% endif %}
+                  </div>
+              {% endfor %}
+          {% endif %}
+      {% endfor %}
+      </div>
+
+
+
     </div>
 
     <div class="container homepage-block-footer">
