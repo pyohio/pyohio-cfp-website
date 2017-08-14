@@ -10,7 +10,12 @@
 {% endblock %}
 
 {% block extra_head_base %}
-    {% block extra_head %}{% endblock %}
+    {% block extra_head %}
+      <meta property="og:title" content="{% block head_title %}{% endblock %} | {{ SITE_NAME }}">
+      <meta property="og:site_name" content="North Bay Python">
+      <meta property="og:image" content="//{{ request.META.HTTP_HOST }}{% static "images/square_icon.png" %}">
+      <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    {% endblock %}
 {% endblock %}
 
 {% block nav %}
@@ -19,7 +24,7 @@
 
 {% block body_base %}
 
-  <div class="homepage-block-bg" style="background-image: url('{% static "images/website-background.svg" %}');"></div>
+  <div class="homepage-block-bg website-background"></div>
 
   <div id="background-filter">
 
