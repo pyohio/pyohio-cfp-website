@@ -256,6 +256,9 @@ PINAX_STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "your test public 
 PINAX_STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "your test secret key")
 PINAX_STRIPE_SEND_EMAIL_RECEIPTS = False
 
+SYMPOSION_SPEAKER_MODEL = "pinaxcon.proposals.models.ConferenceSpeaker"
+SYMPOSION_SPEAKER_FORM = "pinaxcon.proposals.forms.ConferenceSpeakerForm"
+
 # Registrasion Attendee profile model
 ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
 # Registrasion attendee profile form -- must act on ATTENDEE_PROFILE_FORM
