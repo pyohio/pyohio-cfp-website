@@ -16,7 +16,7 @@
               <div>
                   {% if sponsor.website_logo %}
                       <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-                          <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}" />
+                          <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
                       </a>
                   {% else %}
                       <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">{{ sponsor.name }}</a>
