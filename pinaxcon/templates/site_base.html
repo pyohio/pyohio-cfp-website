@@ -14,7 +14,7 @@
       <meta property="twitter:card" content="summary">
       <meta property="og:type" content="website">
       <meta property="og:title" content="{% block head_title %}{% endblock %} | {{ SITE_NAME }}">
-      <meta property="twitter:title" content="{% block head_title %}{% endblock %} | {{ SITE_NAME }}">
+      <meta property="twitter:title" content="{{ SITE_NAME }}">
       <meta property="og:site_name" content="North Bay Python">
       <meta property="og:image" content="http://{{ request.META.HTTP_HOST }}{% static "images/square_icon.png" %}">
       <meta property="og:url" content="{{ request.build_absolute_uri }}">
