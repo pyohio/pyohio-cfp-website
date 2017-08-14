@@ -36,7 +36,7 @@ North Bay Python is a conference in support of the local programmer community ou
 
 **We are a single track conference. This means that your talk needs to hold the attention of beginners and experienced developers alike.**
 
-This doesn't mean that every talk needs to be a beginner's talk: if you're talking about advanced concepts, people who are new to Python, or new to your library, should come away excited about the possibilities, and know what concepts they need to learn to get there.
+This doesn't mean that every talk needs to be a beginner's talk. If you're talking about advanced concepts, people who are new to Python or your library should come away excited about the possibilities, and know what concepts they need to learn to get there.
 
 This is a list of topics we think might go well in the North Bay Python program, but it is by no means exhaustive. If you have a talk idea on a subject not listed here and you think it fits well with our community and mission, we would love to <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">hear about it</a>!
 
