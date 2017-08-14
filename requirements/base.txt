@@ -13,6 +13,7 @@ django-sitetree==1.8.0
 django-countries==4.6.1
 easy-thumbnails==2.4.1
 django-timezone-field==2.0
+django-model-utils==3.0.0
 
 
 # For testing
@@ -21,6 +22,6 @@ coverage==4.0.3
 
 # Registrasion
 https://github.com/chrisjrn/registrasion/tarball/master#egg=registrasion
-https://github.com/pinax/symposion/tarball/ad81810#egg=symposion
+https://github.com/chrisjrn/symposion/tarball/northbaypython#egg=symposion
 https://github.com/chrisjrn/registrasion-stripe/tarball/master#egg=registrasion-stripe
 https://github.com/chrisjrn/symposion-bootstrap-templates/tarball/master#egg=symposion-bootstrap-templates
