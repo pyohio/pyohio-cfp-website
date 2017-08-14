@@ -262,3 +262,24 @@ $homepage-block-min-height: 480px;
 .full-width {
   width: 100%;
 }
+
+body.about {
+  h2, h3, h4 {
+    clear: both;
+  }
+
+  .team-headshot {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+  }
+}
+
+body.news {
+  h2, .h2 {
+    font-size: 28px;
+  }
+}

@@ -2,6 +2,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 
 from django.contrib import admin
 
@@ -12,7 +13,6 @@ urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
 
     # about
-    # TODO add /about
     url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north_bay_python.html"), name="about/north-bay-python"),
     # TODO add /about/the-mystic
     # TODO add /about/petaluma
@@ -20,14 +20,12 @@ urlpatterns = [
     url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
 
     # program
-    # TODO add /program
     # TODO add /program/sessions
     # TODO add /program/events
     url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call_for_proposals.html"), name="program/call-for-proposals"),
     url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
 
     # attend
-    # TODO add /attend
     # TODO add /attend/buy-a-ticket
     # TODO add /attend/volunteer
     # TODO add /attend/financial-assistance
@@ -40,7 +38,8 @@ urlpatterns = [
     url(r"^terms-and-conditions$", TemplateView.as_view(template_name="static_pages/terms_and_conditions.html"), name="terms-and-conditions"),
 
     # sponsor
-    # TODO add /sponsors
+    url(r"^sponsors/prospectus$", RedirectView.as_view(url="/static/assets/northbaypython_prospectus.pdf"), name="sponsors/prospectus"),
+    url(r"^northbaypython_prospectus.pdf$", RedirectView.as_view(url="/static/assets/northbaypython_prospectus.pdf"), name="northbaypython_prospectus.pdf"),
     url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become_a_sponsor.html"), name="sponsors/become-a-sponsor"),
 
     # news
