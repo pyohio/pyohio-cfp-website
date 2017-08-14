@@ -13,7 +13,7 @@ django-sitetree==1.8.0
 django-countries==4.6.1
 easy-thumbnails==2.4.1
 django-timezone-field==2.0
-django-mode-utils==3.0.0
+django-model-utils==3.0.0
 
 
 # For testing
