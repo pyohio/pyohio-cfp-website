@@ -13,8 +13,9 @@
     {% block extra_head %}
       <meta property="og:title" content="{% block head_title %}{% endblock %} | {{ SITE_NAME }}">
       <meta property="og:site_name" content="North Bay Python">
-      <meta property="og:image" content="//{{ request.META.HTTP_HOST }}{% static "images/square_icon.png" %}">
+      <meta property="og:image" content="http://{{ request.META.HTTP_HOST }}{% static "images/square_icon.png" %}">
       <meta property="og:url" content="{{ request.build_absolute_uri }}">
+      <meta property="og:description" content="North Bay Python, a community-organized conference, comes to Petaluma, California on December 2 and 3, 2017.">
     {% endblock %}
 {% endblock %}
 
