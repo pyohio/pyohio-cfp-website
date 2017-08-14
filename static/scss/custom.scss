@@ -151,6 +151,16 @@ $homepage-block-min-height: 480px;
   background: $gray-base;
   color: white;
   text-shadow: 1px 1px $gray-dark;
+
+  a:not(.btn) { 
+    color: lighten($brand-primary, 20%);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: lighten($brand-primary, 15%);
+    }
+  }
 }
 
 .navbar {
