@@ -1,4 +1,6 @@
-These Terms and Conditions apply to all attendees who have registered for North Bay Python. This doucment was forked from the [Linux Australia Event Terms and Conditions](https://github.com/linuxaustralia/constitution_and_policies/blob/master/terms_and_conditions.md "Linux Australia Event Terms and Conditions Template") under the [Creative Commons Attribution Share Alike 3.0 Australia](https://creativecommons.org/licenses/by-sa/3.0/au/ "Creative Commons Attribution Share Alike 3.0 Australia License") license.
+These Terms and Conditions apply to all attendees who have registered for North Bay Python. This doucment was forked from the [Linux Australia Event Terms and Conditions](https://github.com/linuxaustralia/constitution_and_policies/blob/master/terms_and_conditions.md "Linux Australia Event Terms and Conditions Template") under the [GNU General Public License v3.0](https://github.com/linuxaustralia/constitution_and_policies/blob/master/LICENCE.md "GNU General Public License v3.0").
+
+ <a href="" title="GNU General Public License v3.0"></a>
 
 Registration
 ------------
