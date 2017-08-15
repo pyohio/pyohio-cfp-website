@@ -33,7 +33,7 @@ If a participant engages in behavior that violates this code of conduct, the con
 Contact Information
 -------------------
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You may also contact venue staff and ask to be put in touch with conference chair [Christopher Neugebauer](mailto:chrisjrn@northbaypython.org "chrisjrn@northbaypython.org).
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You may also contact venue staff and ask to be put in touch with conference chair [Christopher Neugebauer](mailto:chrisjrn@northbaypython.org "chrisjrn@northbaypython.org").
 
 If the matter is especially urgent, please call our Code of Conduct and safety incident hotline. **The phone number for this hotline will be released shortly before the conference begins.** This number will automatically route to a member of the conference staff who can render assistance.
 
