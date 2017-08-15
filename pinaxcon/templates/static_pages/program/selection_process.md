@@ -10,4 +10,5 @@ The program committee will use the scored proposals in conjunction with speaker 
 
 + At least one-third (33%) of speakers should be not-men, and ideally at least half (50%).
 + As North Bay Python aims to serve the "tech-adjacent" and client services industries, at least one-fifth (20%) of speakers should be from professional backgrounds that are not the Silicon Valley or San Francisco startup/software industry.
++ People with disabilities should be represented in the North Bay Python speaker lineup.
 + Racial demographics of the speaker lineup should ideally reflect US and Bay Area demographics within some margin of error.
