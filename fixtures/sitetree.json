@@ -64,7 +64,7 @@
         "url": "/program/call-for-proposals",
         "urlaspattern": false,
         "tree": 1,
-        "hidden": false,
+        "hidden": true,
         "alias": null,
         "description": "",
         "inmenu": true,
