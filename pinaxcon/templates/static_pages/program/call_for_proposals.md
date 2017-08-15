@@ -56,7 +56,7 @@ This [public speaking](https://github.com/vmbrasseur/Public_Speaking "Public Spe
 
 ### Office Hours and Mentorship
 
-The program committee will be holding regularly-scheduled office hours during the CFP period to help you organize proposals.
+The program committee will be holding regularly-scheduled office hours during the CFP period to help you organize proposals. You are also welcome to <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">email us</a> or drop by <a href="http://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">#nbpy on the Freenode IRC network</a> anytime to ask questions.
 
 We're happy to help with any of the following:
 
@@ -66,9 +66,20 @@ We're happy to help with any of the following:
 + Connecting you with rehearsal audiences or even just watching you present over a video conference as practice
 + Anything else that'd help you be at ease and excited about bringing your ideas to our audience!
 
-Our office hours schedule has not yet been announced, but you can reach us by email at <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">program@northbaypython.org</a> or on <a href="http://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">IRC in #nbpy on Freenode</a> at any time.
+Our office hours are scheduled for every <strong>Wednesday at 7pm</strong> and <strong>Friday at 3pm</strong> Pacific Time. They will take place in <a href="http://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">#nbpy on the Freenode IRC network</a>. IRC is a web chat protocol and you can use <a href="http://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">this IRC web client</a> to connect.
 
-<!-- TODO post office hours schedule -->
++ Wednesday, August 23 at 7pm
++ Friday, August 25 at 3pm
++ Wednesday, August 30 at 7pm
++ Friday, September 1 at 3pm
++ Wednesday, September 6 at 7pm 
++ Friday, September 8 at 3pm
++ Wednesday, September 13 at 7pm
++ Friday, September 15 at 3pm
++ Wednesday, September 20 at 7pm
++ Friday, September 22 at 3pm
++ Wednesday, September 27 at 7pm
++ Friday, September 29 at 3pm
 
 ## Submitting
 
