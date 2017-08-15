@@ -47,6 +47,7 @@ This is a list of topics we think might go well in the North Bay Python program,
 + Deploying, operating, or scaling Python
 + Organization and communication skills for software development
 + What Python can learn from other communities
++ Accessibility in Python (and other) software
 + Unexpected places Python gets used (Embedded systems! Health science!)
 + ... and anything else we might not have thought of!
 
