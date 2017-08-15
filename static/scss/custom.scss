@@ -295,7 +295,7 @@ body.news {
 }
 
 body:not(.home) {
-  a:not(.btn) {
+  #background-filter a:not(.btn) {
     text-decoration: underline;
   }
 }
