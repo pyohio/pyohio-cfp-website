@@ -249,3 +249,9 @@ body.news {
     font-size: 28px;
   }
 }
+
+body:not(.home) {
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+}
