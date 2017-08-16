@@ -31,6 +31,11 @@ ALLOWED_HOSTS = ["localhost", ".herokuapp.com", ".northbaypython.org"]
 # system time zone.
 TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
 
+
+# Use SSLRedirectMiddleware
+SSL_ON = os.environ.get("DJANGO_SSL_ON", True)
+SSL_ALWAYS = os.environ.get("DJANGO_SSL_ALWAYS", False)
+
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = "en-us"
@@ -118,6 +123,8 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "reversion.middleware.RevisionMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "ssl_redirect.middleware.SSLRedirectMiddleware",
+
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"
