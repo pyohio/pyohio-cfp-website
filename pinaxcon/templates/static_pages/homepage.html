@@ -114,7 +114,7 @@
       {% for level in levels %}
           {% if level.sponsors %}
               {% for sponsor in level.sponsors %}
-                  <div class="col-md-3">
+                  <div class="sponsor">
                       {% if sponsor.website_logo %}
                           <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
                               <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
