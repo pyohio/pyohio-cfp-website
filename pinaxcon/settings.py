@@ -85,6 +85,14 @@ STATICFILES_FINDERS = [
     "compressor.finders.CompressorFinder",
 ]
 
+
+# Amazon S3 setup
+DEFAULT_FILE_STORAGE = os.environ.get("DJANGO_DEFAULT_FILE_STORAGE", 'django.core.files.storage.FileSystemStorage') # noqa
+AWS_ACCESS_KEY_ID = os.environ.get("DJANGO_AWS_ACCESS_KEY_ID", None)
+AWS_SECRET_ACCESS_KEY = os.environ.get("DJANGO_AWS_SECRET_ACCESS_KEY", None)
+AWS_STORAGE_BUCKET_NAME = os.environ.get("DJANGO_AWS_STORAGE_BUCKET_NAME", None)
+
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "6r&z0i#!k-thu4nv^zzx!f$fbp(&#2i5mq_^%%@ihu_qxxotl_"
 
