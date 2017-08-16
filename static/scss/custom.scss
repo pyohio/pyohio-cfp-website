@@ -112,7 +112,15 @@ $homepage-block-min-height: 480px;
   position: relative;
   box-shadow: $box-shadow;
   z-index: 3;
+
+  .sponsor {
+    @include make-xs-column(6);
+    @include make-sm-column(4);
+    @include make-md-column(3);
+    max-width: 600px;
+  }
 }
+
 
 .homepage-block-content {
   min-height: ($homepage-block-min-height - 80px);
