@@ -299,3 +299,62 @@ body:not(.home) {
     text-decoration: underline;
   }
 }
+<<<<<<< Updated upstream
+=======
+
+span.date {
+  font-weight: 900;
+}
+
+.email-signup-panel {
+  max-width: 600px;
+}
+
+.logo {
+  float: right !important;
+  width: 80px;
+  height: 80px;
+  margin: 0 1em 2em 2em;
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+footer .footer-copy {
+  margin-left: 1em;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .email-signup-panel input.btn {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .photo-attribution {
+    margin-top: 1em;
+    text-align: left;
+  }
+
+  .email-signup-panel {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav.pull-right {
+    float: left !important;
+  }
+}
+
+@media (max-width: 550px) {
+
+}
+
+@media (min-width: 992px) {
+  .email-signup-panel {
+    margin-top: 22px;
+  }
+}
