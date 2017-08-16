@@ -29,7 +29,12 @@ ALLOWED_HOSTS = ["localhost", ".herokuapp.com", ".northbaypython.org"]
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = "UTC"
+TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
+
+
+# Use SSLRedirectMiddleware
+SSL_ON = os.environ.get("DJANGO_SSL_ON", True)
+SSL_ALWAYS = os.environ.get("DJANGO_SSL_ALWAYS", False)
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -80,6 +85,14 @@ STATICFILES_FINDERS = [
     "compressor.finders.CompressorFinder",
 ]
 
+
+# Amazon S3 setup
+DEFAULT_FILE_STORAGE = os.environ.get("DJANGO_DEFAULT_FILE_STORAGE", 'django.core.files.storage.FileSystemStorage') # noqa
+AWS_ACCESS_KEY_ID = os.environ.get("DJANGO_AWS_ACCESS_KEY_ID", None)
+AWS_SECRET_ACCESS_KEY = os.environ.get("DJANGO_AWS_SECRET_ACCESS_KEY", None)
+AWS_STORAGE_BUCKET_NAME = os.environ.get("DJANGO_AWS_STORAGE_BUCKET_NAME", None)
+
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "6r&z0i#!k-thu4nv^zzx!f$fbp(&#2i5mq_^%%@ihu_qxxotl_"
 
@@ -118,6 +131,8 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "reversion.middleware.RevisionMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "ssl_redirect.middleware.SSLRedirectMiddleware",
+
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"
