@@ -15,12 +15,14 @@ DATABASES = {
     }
 }
 
+UNPREPEND_WWW = bool(os.environ.get("DJANGO_UNPREPEND_WWW", False))
+
 # HEROKU: Update database configuration with $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = ["localhost", ".herokuapp.com", ".northbaypython.org"]
+ALLOWED_HOSTS = [".localhost", ".herokuapp.com", ".northbaypython.org"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -132,6 +134,7 @@ MIDDLEWARE_CLASSES = [
     "reversion.middleware.RevisionMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "ssl_redirect.middleware.SSLRedirectMiddleware",
+    "pinaxcon.middleware.UnprependWWWMiddleware",
 
 ]
 
