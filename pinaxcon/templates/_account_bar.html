@@ -6,8 +6,8 @@
         <li>
             <a href="{% url "dashboard" %}"><i class="fa fa-tasks"></i> {% trans "Dashboard" %}</a>
         </li>
-        <li>      
-           <a id="account_logout" href="{% url 'account_logout' %}"><i class="fa fa-power-off"></i> {% trans "Log out" %}</a>     
+        <li>
+            <a id="account_logout" href="{% url 'account_logout' %}"><i class="fa fa-power-off"></i> {% trans "Log out" %}</a>
         </li>
     {% else %}
         <li><a href="{% url 'account_login' %}">{% trans "Log in" %}</a></li>
