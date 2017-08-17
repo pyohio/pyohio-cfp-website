@@ -23,6 +23,7 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = [".localhost", ".herokuapp.com", ".northbaypython.org"]
+CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -134,8 +135,8 @@ MIDDLEWARE_CLASSES = [
     "reversion.middleware.RevisionMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "ssl_redirect.middleware.SSLRedirectMiddleware",
+    "pinaxcon.middleware.CanonicalHostMiddleware",
     "pinaxcon.middleware.UnprependWWWMiddleware",
-
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"
