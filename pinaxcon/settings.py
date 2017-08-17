@@ -34,6 +34,7 @@ CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
 # system time zone.
 TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
 
+ADMINS = ("Webmaster", os.environ.get("DJANGO_ADMIN_EMAIL", "webmaster@localhost"))
 
 # Use SSLRedirectMiddleware
 SSL_ON = os.environ.get("DJANGO_SSL_ON", True)
