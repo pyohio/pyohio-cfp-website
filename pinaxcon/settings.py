@@ -23,6 +23,12 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = [".localhost", ".herokuapp.com", ".northbaypython.org"]
+CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
+
+# If DEFAULT_FROM_EMAIL is not set, email will most likely break in prod.
+from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", None)
+if from_email is not None:
+    DEFAULT_FROM_EMAIL = from_email
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -32,6 +38,12 @@ ALLOWED_HOSTS = [".localhost", ".herokuapp.com", ".northbaypython.org"]
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
 TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
+
+
+# Set the email address that will receive errors.
+admin_email = os.environ.get("DJANGO_ADMIN_EMAIL", None)
+if admin_email is not None:
+    ADMINS = ("Webmaster", admin_email)
 
 
 # Use SSLRedirectMiddleware
@@ -134,8 +146,8 @@ MIDDLEWARE_CLASSES = [
     "reversion.middleware.RevisionMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "ssl_redirect.middleware.SSLRedirectMiddleware",
+    "pinaxcon.middleware.CanonicalHostMiddleware",
     "pinaxcon.middleware.UnprependWWWMiddleware",
-
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"

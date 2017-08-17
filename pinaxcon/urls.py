@@ -5,8 +5,9 @@ from django.contrib.staticfiles.templatetags.staticfiles import static as _stati
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
 
-
 from django.contrib import admin
+
+from pinaxcon import views
 
 import symposion.views
 
@@ -78,3 +79,5 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler500 = views.server_error

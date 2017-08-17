@@ -16,7 +16,7 @@
     <div class="container homepage-block-content">
       <div class="tight-headings">
         <h1>North Bay Python</h1>
-        <h3>A Python conference north of the Golden Gate</h3>
+        <h2 class="homepage-subtitle">A Python conference north of the Golden Gate</h2>
       </div>
 
       <div class="row">
@@ -42,7 +42,7 @@
                 action="https://tinyletter.com/northbaypython" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/northbaypython', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
                 <div class="form-group">
                   <span>
-                    <label style="display: none;" for="tlemail">Email address:</label>
+                    <label class="hidden-accessible" for="tlemail">Email address:</label>
                   </span>
                   <span>
                     <input class="form-control" type="email" name="email" id="tlemail" placeholder="E-mail address"/>
@@ -64,8 +64,8 @@
 
     <div class="container homepage-block-footer">
       <div>
-        <a class="btn btn-default btn-lg " href="https://twitter.com/northbaypython" title="North Bay Python on Twitter">Twitter</a>
-        <a class="btn btn-default btn-lg" href="https://facebook.com/northbaypython" title="North Bay Python on Facebook">Facebook</a>
+        <a class="btn btn-default btn-lg " href="https://twitter.com/northbaypython">Twitter</a>
+        <a class="btn btn-default btn-lg" href="https://facebook.com/northbaypython">Facebook</a>
       </div>
     </div>
   </div>
@@ -90,11 +90,11 @@
       <div class="container">
         <div class="row">
           <div class="btn-group col-md-4">
-            <a class="btn btn-lg btn-primary btn-shadow" href="/about/north-bay-python" title="About North Bay Python">Learn More</a>
+            <a class="btn btn-lg btn-primary btn-shadow" href="/about/north-bay-python">Learn More</a>
           </div>
 
           <div class="col-md-8 text-right photo-attribution">
-            Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt" title="Photo of the Mystic Theatre">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (<a href="https://creativecommons.org/licenses/by-sa/2.0/" title="Creative Commons Attribute Share Alike 2.0 Generic License">CC BY-SA 2.0</a>)
+            Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>)
           </div>
         </div>
       </div>
@@ -116,11 +116,11 @@
               {% for sponsor in level.sponsors %}
                   <div class="sponsor">
                       {% if sponsor.website_logo %}
-                          <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
+                          <a href="{{ sponsor.external_url }}">
                               <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
                           </a>
                       {% else %}
-                          <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">{{ sponsor.name }}</a>
+                          <a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a>
                       {% endif %}
                   </div>
               {% endfor %}
@@ -131,7 +131,7 @@
 
     <div class="container homepage-block-footer">
       <div class="btn-group">
-        <a class="btn btn-lg btn-primary btn-shadow" href="/sponsors/become-a-sponsor" title="Become a Sponsor">Become a Sponsor</a>
+        <a class="btn btn-lg btn-primary btn-shadow" href="/sponsors/become-a-sponsor">Become a Sponsor</a>
       </div>
     </div>
   </div>
@@ -159,7 +159,7 @@
           </div>
 
           <div class="col-md-8 text-right photo-attribution">
-            Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749" title="Photo from DjangoGirls Brisbane 2014">DjangoGirls Brisbane</a>, &copy; 2014 Richard Jones (<a href="https://creativecommons.org/licenses/by/2.0/" title="Creative Commons Attribute 2.0 Generic License">CC BY 2.0</a>)
+            Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749">DjangoGirls Brisbane</a>, &copy; 2014 Richard Jones (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)
           </div>
         </div>
       </div>

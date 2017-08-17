@@ -5,6 +5,29 @@ from django import http
 from django.conf import settings
 from django.utils.deprecation import MiddlewareMixin
 
+class CanonicalHostMiddleware(MiddlewareMixin):
+    """ Redirects to a canonical host if the current host is not the canonical
+    host. """
+
+    response_redirect_class = http.HttpResponsePermanentRedirect
+
+    def process_request(self, request):
+
+        canonical_host = getattr(settings, "CANONICAL_HOST", None)
+
+        if not canonical_host:
+            return
+
+        host = request.get_host()
+
+        if host == canonical_host:
+            return
+
+        path = request.get_full_path()
+        redirect_url = ('%s://%s%s' % (request.scheme, canonical_host, path))
+        return self.response_redirect_class(redirect_url)
+
+
 class UnprependWWWMiddleware(MiddlewareMixin):
     """ Unprepends www if necessary. """
 
