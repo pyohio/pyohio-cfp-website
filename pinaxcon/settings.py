@@ -34,7 +34,12 @@ CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
 # system time zone.
 TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
 
-ADMINS = ("Webmaster", os.environ.get("DJANGO_ADMIN_EMAIL", "webmaster@localhost"))
+
+# Set the email address that will receive errors.
+admin_email = os.environ.get("DJANGO_ADMIN_EMAIL", None)
+if admin_email is not None:
+    ADMINS = ("Webmaster", admin_email)
+
 
 # Use SSLRedirectMiddleware
 SSL_ON = os.environ.get("DJANGO_SSL_ON", True)
