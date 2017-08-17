@@ -103,6 +103,19 @@ body.auth .panel-heading .panel-title span.pull-right {
   box-shadow: 0px 0px 2em $background-filter; //, inset 0px -5px 1em rgba(0, 0, 0, 0.8);
 }
 
+
+.hidden-accessible {
+  border:0 none;
+  clip:rect(0px,0px,0px,0px);
+  height:1px;
+  margin:-1px;
+  overflow:hidden;
+  padding:0;
+  position:absolute;
+  width:1px
+}
+
+
 $homepage-block-min-height: 480px;
 
 .homepage-block {
