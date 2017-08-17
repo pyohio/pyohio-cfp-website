@@ -25,6 +25,11 @@ DATABASES['default'].update(db_from_env)
 ALLOWED_HOSTS = [".localhost", ".herokuapp.com", ".northbaypython.org"]
 CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
 
+# If DEFAULT_FROM_EMAIL is not set, email will most likely break in prod.
+from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", None)
+if from_email is not None:
+    DEFAULT_FROM_EMAIL = from_email
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
