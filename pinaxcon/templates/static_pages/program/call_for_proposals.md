@@ -3,7 +3,7 @@
 We've got lots of good information and resources below that you should read, but in case you've already read it and want to dive in now:
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a Proposal</a>
+  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a Proposal</a>
 </div>
 
 If you've never presented at a conference before and think you might like to try it, we want to hear from you! The program committee is *very* much interested in encouraging and supporting new speakers, and we will be able to provide detailed feedback and work with you to develop your proposal and talk content so you can give the best talk possible.
@@ -38,7 +38,7 @@ North Bay Python is a conference in support of the local programmer community ou
 
 This doesn't mean that every talk needs to be a beginner's talk. If you're talking about advanced concepts, people who are new to Python or your library should come away excited about the possibilities, and know what concepts they need to learn to get there.
 
-This is a list of topics we think might go well in the North Bay Python program, but it is by no means exhaustive. If you have a talk idea on a subject not listed here and you think it fits well with our community and mission, we would love to <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">hear about it</a>!
+This is a list of topics we think might go well in the North Bay Python program, but it is by no means exhaustive. If you have a talk idea on a subject not listed here and you think it fits well with our community and mission, we would love to <a href="mailto:program@northbaypython.org">hear about it</a>!
 
 + The Python community
 + Python fundamentals
@@ -57,7 +57,7 @@ This [public speaking](https://github.com/vmbrasseur/Public_Speaking "Public Spe
 
 ### Office Hours and Mentorship
 
-The program committee will be holding regularly-scheduled office hours during the CFP period to help you organize proposals. You are also welcome to <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">email us</a> or drop by <a href="https://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">#nbpy on the Freenode IRC network</a> anytime to ask questions.
+The program committee will be holding regularly-scheduled office hours during the CFP period to help you organize proposals. You are also welcome to <a href="mailto:program@northbaypython.org">email us</a> or drop by <a href="https://webchat.freenode.net/?channels=%23nbpy">#nbpy on the Freenode IRC network</a> anytime to ask questions.
 
 We're happy to help with any of the following:
 
@@ -67,13 +67,13 @@ We're happy to help with any of the following:
 + Connecting you with rehearsal audiences or even just watching you present over a video conference as practice
 + Anything else that'd help you be at ease and excited about bringing your ideas to our audience!
 
-Our office hours are scheduled for every <strong>Wednesday at 7pm</strong> and <strong>Friday at 3pm</strong> Pacific Time. They will take place in <a href="https://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">#nbpy on the Freenode IRC network</a>. IRC is a web chat protocol and you can use <a href="https://webchat.freenode.net/?channels=%23nbpy" title="IRC Web Client for #nbpy Channel on Freenode">this IRC web client</a> to connect.
+Our office hours are scheduled for every <strong>Wednesday at 7pm</strong> and <strong>Friday at 3pm</strong> Pacific Time. They will take place in <a href="https://webchat.freenode.net/?channels=%23nbpy">#nbpy on the Freenode IRC network</a>. IRC is a web chat protocol and you can use <a href="https://webchat.freenode.net/?channels=%23nbpy">this IRC web client</a> to connect.
 
 + Wednesday, August 23 at 7pm
 + Friday, August 25 at 3pm
 + Wednesday, August 30 at 7pm
 + Friday, September 1 at 3pm
-+ Wednesday, September 6 at 7pm 
++ Wednesday, September 6 at 7pm
 + Friday, September 8 at 3pm
 + Wednesday, September 13 at 7pm
 + Friday, September 15 at 3pm
@@ -91,12 +91,12 @@ If you've given your talk before, links to video or slides would be excellent, o
 Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain how you're qualified to share your ideas, so take advantage of it!
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard" title="Submit a Proposal to North Bay Python">Submit a Proposal</a>
+  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a Proposal</a>
 </div>
 
 ## Feedback and mentorship
 
-**First time speakers are welcomed and encouraged; if you've never done this before but have an idea please <a href="mailto:program@northbaypython.org" title="program@northbaypython.org">contact the program committee</a> to be connected with a mentor and receive guidance structuring your proposal and talk. Above all we want you to be successful and have a good time telling other attendees about your amazing ideas!**
+**First time speakers are welcomed and encouraged; if you've never done this before but have an idea please <a href="mailto:program@northbaypython.org">contact the program committee</a> to be connected with a mentor and receive guidance structuring your proposal and talk. Above all we want you to be successful and have a good time telling other attendees about your amazing ideas!**
 
 If you have an idea (or don't!) and want to speak, here's a very rough process of what you should do next:
 
