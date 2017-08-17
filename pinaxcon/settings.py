@@ -23,6 +23,7 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = [".localhost", ".herokuapp.com", ".northbaypython.org"]
+CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
 
 # If DEFAULT_FROM_EMAIL is not set, email will most likely break in prod.
 from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", None)
@@ -145,8 +146,8 @@ MIDDLEWARE_CLASSES = [
     "reversion.middleware.RevisionMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "ssl_redirect.middleware.SSLRedirectMiddleware",
+    "pinaxcon.middleware.CanonicalHostMiddleware",
     "pinaxcon.middleware.UnprependWWWMiddleware",
-
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"
