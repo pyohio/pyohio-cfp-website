@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-4">
 
-        <form action="{% url 'account_login' %}" method="POST">
+        <form action="{% url 'nbpy_login_handle' %}" method="POST">
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">
@@ -24,7 +24,7 @@
             </div>
             <div class="panel-body">
               {% csrf_token %}
-              {{ login_form| bootstrap }}
+              {{ login_form|bootstrap }}
             </div>
             <div class="panel-footer">
               <button role="submit" class="btn btn-primary">Log In</button>
