@@ -1,0 +1,59 @@
+{% extends "page_with_title_and_lede.html" %}
+
+{% load bootstrap %}
+{% load i18n %}
+
+{% block head_title %}Log In{% endblock %}
+
+{% block heading %}Log In or Sign Up{% endblock %}
+
+{% block body_class %}login{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+
+        <form action="{% url 'account_login' %}" method="POST">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Log into an existing account
+              </h3>
+            </div>
+            <div class="panel-body">
+              {% csrf_token %}
+              {{ login_form|bootstrap }}
+            </div>
+            <div class="panel-footer">
+              <button role="submit" class="btn btn-primary">Log In</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      {% if signup_open %}
+        <div class="col-md-4">
+          <form action="{% url 'account_signup' %}" method="POST">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  Sign up for a new account
+                </h3>
+              </div>
+              <div class="panel-body">
+                {% csrf_token %}
+                {{ signup_form|bootstrap }}
+              </div>
+              <div class="panel-footer">
+                <button role="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+{% endblock %}

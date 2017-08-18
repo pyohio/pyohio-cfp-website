@@ -349,8 +349,8 @@
     "fields": {
         "title": "Log In",
         "hint": "",
-        "url": "/account/login/",
-        "urlaspattern": false,
+        "url": "nbpy_login",
+        "urlaspattern": true,
         "tree": 1,
         "hidden": false,
         "alias": null,

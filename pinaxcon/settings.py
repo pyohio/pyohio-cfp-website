@@ -15,7 +15,7 @@ DATABASES = {
     }
 }
 
-UNPREPEND_WWW = bool(os.environ.get("DJANGO_UNPREPEND_WWW", False))
+UNPREPEND_WWW = bool(int(os.environ.get("DJANGO_UNPREPEND_WWW", "0")))
 
 # HEROKU: Update database configuration with $DATABASE_URL.
 import dj_database_url
@@ -258,17 +258,21 @@ EMAIL_HOST = os.environ.get("DJANGO_EMAIL_HOST", "")
 EMAIL_PORT = int(os.environ.get("DJANGO_EMAIL_PORT", 25))
 EMAIL_HOST_USER = os.environ.get("DJANGO_EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.environ.get("DJANGO_EMAIL_HOST_PASSWORD", "")
-EMAIL_USE_TLS = bool(os.environ.get("DJANGO_EMAIL_USE_TLS", False))
-EMAIL_USE_SSL = bool(os.environ.get("DJANGO_EMAIL_USE_SSL", False))
+EMAIL_USE_TLS = bool(int(os.environ.get("DJANGO_EMAIL_USE_TLS", "0")))
+EMAIL_USE_SSL = bool(int(os.environ.get("DJANGO_EMAIL_USE_SSL", "0")))
+
+ACCOUNT_LOGIN_URL = "nbpy_login"
+LOGIN_URL = "nbpy_login"
 
 # We need to explicitly switch on signups.
-ACCOUNT_OPEN_SIGNUP = bool(os.environ.get("DJANGO_ACCOUNT_OPEN_SIGNUP", False))
+ACCOUNT_OPEN_SIGNUP = bool(int(os.environ.get("DJANGO_ACCOUNT_OPEN_SIGNUP", "0")))
 ACCOUNT_EMAIL_UNIQUE = True
 ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False if DEBUG else True
-ACCOUNT_LOGIN_REDIRECT_URL = "home"
+ACCOUNT_LOGIN_REDIRECT_URL = "dashboard"
 ACCOUNT_LOGOUT_REDIRECT_URL = "home"
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
 ACCOUNT_USE_AUTH_AUTHENTICATE = True
+ACCOUNT_HOOKSET =  "pinaxcon.account_hooks.BetterAccountHookSet"
 
 AUTHENTICATION_BACKENDS = [
     "symposion.teams.backends.TeamPermissionsBackend",
