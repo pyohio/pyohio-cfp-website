@@ -19,7 +19,6 @@ class BetterAccountHookSet(hooks.AccountDefaultHookSet):
         }
 
     def get_username_by_email(self, email):
-
         try:
             return User.objects.get(email=email).username
         except User.DoesNotExist:

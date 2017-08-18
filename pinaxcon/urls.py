@@ -53,7 +53,8 @@ urlpatterns = [
     url(r"^admin/", include(admin.site.urls)),
 
     url(r"^login$", views.account_login, name="nbpy_login"),
-    url(r"^login_handle$", views.EmailLoginView.as_view(), name="nbpy_login_handle"),
+    # Override the default account_login view with one that takes email addys
+    url(r"^account/login/$", views.EmailLoginView.as_view(), name="account_login"),
     url(r"^account/", include("account.urls")),
 
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
