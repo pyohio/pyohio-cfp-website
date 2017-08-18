@@ -16,12 +16,10 @@ def server_error(request, template_name=defaults.ERROR_500_TEMPLATE_NAME):
 def account_login(request):
 
     d = {
-        "login_form": LoginEmailForm(),
+        "login_form": LoginUsernameForm(),
         "signup_form": SignupForm(),
         "signup_open": getattr(settings, "ACCOUNT_OPEN_SIGNUP", True),
     }
 
     print d["signup_open"], settings.ACCOUNT_OPEN_SIGNUP
     return render(request, "account_login.html", d)
-
-
