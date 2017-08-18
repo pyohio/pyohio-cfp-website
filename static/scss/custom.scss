@@ -364,6 +364,13 @@ footer .footer-copy {
   .navbar-nav.pull-right {
     float: left !important;
   }
+
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .nav > li > a {
+    padding: 15px 9px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -382,4 +389,5 @@ footer .footer-copy {
 
 .navbar-toggle {
   background-color: $gray-lighter;
+  font-size: 10px;
 }
