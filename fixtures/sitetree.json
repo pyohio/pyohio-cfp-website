@@ -51,7 +51,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 7,
+        "sort_order": 8,
         "access_permissions": []
     }
 },
@@ -64,7 +64,7 @@
         "url": "/program/call-for-proposals",
         "urlaspattern": false,
         "tree": 1,
-        "hidden": true,
+        "hidden": false,
         "alias": null,
         "description": "",
         "inmenu": true,
@@ -74,7 +74,7 @@
         "access_guest": false,
         "access_restricted": false,
         "access_perm_type": 1,
-        "parent": null,
+        "parent": 24,
         "sort_order": 4,
         "access_permissions": []
     }
@@ -99,7 +99,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 8,
+        "sort_order": 9,
         "access_permissions": []
     }
 },
@@ -123,7 +123,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 9,
+        "sort_order": 24,
         "access_permissions": []
     }
 },
@@ -316,6 +316,150 @@
         "access_perm_type": 1,
         "parent": 3,
         "sort_order": 22,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 24,
+    "fields": {
+        "title": "Program",
+        "hint": "",
+        "url": "/program",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": true,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 7,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 25,
+    "fields": {
+        "title": "Log In",
+        "hint": "",
+        "url": "/account/login/",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": true,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 26,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 26,
+    "fields": {
+        "title": "My Account",
+        "hint": "",
+        "url": "/dashboard",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": true,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 29,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 27,
+    "fields": {
+        "title": "Dashboard",
+        "hint": "",
+        "url": "/dashboard",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": true,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 26,
+        "sort_order": 27,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 28,
+    "fields": {
+        "title": "Log Out",
+        "hint": "",
+        "url": "/account/logout/",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": true,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 26,
+        "sort_order": 28,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 29,
+    "fields": {
+        "title": "Wiki",
+        "hint": "",
+        "url": "/wiki",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": true,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 25,
         "access_permissions": []
     }
 }
