@@ -391,3 +391,7 @@ footer .footer-copy {
   background-color: $gray-lighter;
   font-size: 10px;
 }
+
+body.login #content_body .row > div.col-md-9 > p + div.container {
+  padding-left: 0px;
+}
