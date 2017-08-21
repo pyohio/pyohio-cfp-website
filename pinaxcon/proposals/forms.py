@@ -29,6 +29,13 @@ class ProposalForm(forms.ModelForm, ProposalMixIn):
         super(ProposalForm, self).__init__(*a, **k)
         self.description_required()
         self.abstract_required()
+        self.fields["additional_notes"].help_text = ("Anything else "
+            "you'd like the program committee to know when making their "
+            "selection. This is not made public. "
+            "Edit using "
+            "<a href='http://daringfireball.net/projects/markdown/basics' "
+            "target='_blank'>Markdown</a>.")
+
 
     def clean_description(self):
         value = self.cleaned_data["description"]

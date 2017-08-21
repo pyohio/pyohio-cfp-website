@@ -28,6 +28,9 @@ urlpatterns = [
     url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call_for_proposals.html"), name="program/call-for-proposals"),
     url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
 
+    url(r"^proposals$", RedirectView.as_view(url="program/call-for-proposals")),
+    url(r"^cfp$", RedirectView.as_view(url="program/call-for-proposals")),
+
     # attend
     # TODO add /attend/buy-a-ticket
     # TODO add /attend/volunteer
