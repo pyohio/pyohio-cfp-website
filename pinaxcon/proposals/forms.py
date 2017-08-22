@@ -36,6 +36,11 @@ class ProposalForm(forms.ModelForm, ProposalMixIn):
             "<a href='http://daringfireball.net/projects/markdown/basics' "
             "target='_blank'>Markdown</a>.")
 
+        for field in ("description", "abstract", "additional_notes"):
+            self.fields[field].help_text += (" Please do not include "
+                "any information that could identify you, as your proposal "
+                "will be reviewed anonymously.")
+
 
     def clean_description(self):
         value = self.cleaned_data["description"]
