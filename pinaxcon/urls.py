@@ -21,6 +21,8 @@ urlpatterns = [
     # TODO add /about/petaluma
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
     url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
+    url(r"^about/donate$", TemplateView.as_view(template_name="static_pages/about/donate.html"), name="about/donate"),
+    url(r"^donate$", RedirectView.as_view(url="about/donate")),
 
     # program
     # TODO add /program/sessions
