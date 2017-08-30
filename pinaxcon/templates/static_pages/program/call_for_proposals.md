@@ -10,7 +10,7 @@ If you've never presented at a conference before and think you might like to try
 
 In the interest of transparency, we have documented our [selection process](/program/selection-process). Portions of this page were drawn from ideas seen on [DjangoCon EU](https://djangocon.eu), [SeaGL](https://seagl.org), [Fog City Ruby](http://www.fogcityruby.com/speak/), and others. Thanks to all for their inspiration and permission to borrow!
 
-## Dates
+## Dates<a name="dates"></a>
 
 + **August 21**: CFP opens
 + **September 29**: CFP closes
@@ -18,7 +18,7 @@ In the interest of transparency, we have documented our [selection process](/pro
 + **Week of October 16**: Speaker confirmations due; program finalized and announced
 + **December 2–3**: Conference happens!
 
-## Speakers
+## Speakers<a name="speakers"></a>
 
 North Bay Python is dedicated to featuring a diverse and inclusive speaker lineup.
 
@@ -28,11 +28,11 @@ We will make every effort to provide accommodations for speakers and attendees o
 
 North Bay Python is a conference in support of the local programmer community outside of the core San Francisco Bay Area tech scene. We aim to feature a mix of local and non-local speakers to offer a program with broad appeal. **All speakers will receive complimentary registration to the conference, and requests for further financial compensation to assist with travel will be considered on a case-by-case basis independent of the proposal's merits.**
 
-## Talk Formats
+## Talk Formats<a name="talk-formats"></a>
 
 **Most of the talk slots will be short**&mdash;approximately 25 to 30 minutes, including Q&A. If your ideas would benefit from a longer slot, please explain in your submission how you would use the additional time.
 
-## Topics
+## Topics<a name="topics"></a>
 
 **We are a single track conference. This means that your talk needs to hold the attention of beginners and experienced developers alike.**
 
@@ -51,11 +51,11 @@ This is a list of topics we think might go well in the North Bay Python program,
 + Unexpected places Python gets used (Embedded systems! Health science!)
 + ... and anything else we might not have thought of!
 
-## Resources
+## Resources<a name="resources"></a>
 
 This [public speaking](https://github.com/vmbrasseur/Public_Speaking) repository, maintained by [VM Brasseur](https://twitter.com/vmbrasseur), has many useful resources to help you polish your proposals and talks.
 
-### Office Hours and Mentorship
+### Office Hours and Mentorship<a name="mentorship"></a>
 
 First time speakers are welcomed and encouraged. In order to support speakers, we offer mentorship and feedback, are running office hours, and hosting a speaker training on the Friday before North Bay Python. Above all we want you to be successful and have a good time telling other attendees about your ideas!
 
@@ -71,7 +71,7 @@ We're happy to help with any of the following:
 + Connecting you with rehearsal audiences or even just watching you present over a video conference as practice
 + Anything else that'd help you be at ease and excited about bringing your ideas to our audience!
 
-## Submitting
+## Submitting<a name="submitting"></a>
 
 To help us evaluate proposals and build our program, we would like as much detail as you can provide on your talk. At a minimum this should include: **a brief description (~400 characters) suitable for inclusion in a schedule page; a brief prose abstract (intended as the content for a talk detail page on the program site); and, if you'd like, a rough outline of the structure including estimated timings for each section of your talk.**
 
@@ -83,7 +83,7 @@ Your speaker profile includes a space for you to describe your prior experience 
   <a class="btn btn-lg btn-primary" href="/dashboard">Submit a Proposal</a>
 </div>
 
-## How to Write Your Proposal
+## How to Write Your Proposal<a name="how-to-write-your-proposal"></a>
 
 If you have an idea (or don't!) and want to speak, here's a very rough process of what you should do next:
 
