@@ -116,6 +116,7 @@
           {% if level.sponsors %}
               {% for sponsor in level.sponsors %}
                   <div class="sponsor">
+                    <div class="logo-alignment">
                       {% if sponsor.website_logo %}
                           <a href="{{ sponsor.external_url }}">
                               <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
@@ -123,6 +124,7 @@
                       {% else %}
                           <a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a>
                       {% endif %}
+                    </div>
                   </div>
               {% endfor %}
           {% endif %}
