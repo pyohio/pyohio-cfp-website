@@ -43,7 +43,7 @@ TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
 # Set the email address that will receive errors.
 admin_email = os.environ.get("DJANGO_ADMIN_EMAIL", None)
 if admin_email is not None:
-    ADMINS = ("Webmaster", admin_email)
+    ADMINS = [("Webmaster", admin_email)]
 
 
 # Use SSLRedirectMiddleware
