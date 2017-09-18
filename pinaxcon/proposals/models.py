@@ -28,6 +28,7 @@ class ConferenceSpeaker(SpeakerBase):
 
     first_time = models.BooleanField(
         blank=True,
+        default=False,
         verbose_name=_("First-time speaker?"),
         help_text=_("Check this field if this is your first time speaking "
                     "at a technical conference."),
@@ -45,6 +46,7 @@ class ConferenceSpeaker(SpeakerBase):
 
     travel_assistance = models.BooleanField(
         blank=True,
+        default=False,
         verbose_name=_("Travel assistance required?"),
         help_text=_("Check this field if you require travel assistance to get "
                     "to North Bay Python in Petaluma, California."),
@@ -52,6 +54,7 @@ class ConferenceSpeaker(SpeakerBase):
 
     lodging_assistance = models.BooleanField(
         blank=True,
+        default=False,
         verbose_name=_("Lodging assistance required?"),
         help_text=_("Check this field if you require lodging assistance in "
                     "Petaluma, California during North Bay Python."),
