@@ -30,6 +30,8 @@ from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", None)
 if from_email is not None:
     DEFAULT_FROM_EMAIL = from_email
 
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -43,7 +45,7 @@ TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
 # Set the email address that will receive errors.
 admin_email = os.environ.get("DJANGO_ADMIN_EMAIL", None)
 if admin_email is not None:
-    ADMINS = ("Webmaster", admin_email)
+    ADMINS = [("Webmaster", admin_email)]
 
 
 # Use SSLRedirectMiddleware
