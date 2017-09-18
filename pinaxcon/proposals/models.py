@@ -75,6 +75,7 @@ class ConferenceSpeaker(SpeakerBase):
     )
 
     code_of_conduct = models.BooleanField(
+        default=False,
         help_text=_("I have read and, in the event that my proposal is "
                     "accepted, agree that I will comply with the "
                     "<a href='/code-of-conduct'>Code of Conduct</a>."),
