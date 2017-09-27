@@ -555,7 +555,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 8,
-        "sort_order": 36,
+        "sort_order": 15,
         "access_permissions": []
     }
 },
@@ -603,7 +603,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 8,
-        "sort_order": 15,
+        "sort_order": 36,
         "access_permissions": []
     }
 }
