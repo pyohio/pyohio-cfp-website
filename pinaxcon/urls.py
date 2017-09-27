@@ -20,8 +20,6 @@ urlpatterns = [
     url(r"^about/petaluma$", TemplateView.as_view(template_name="static_pages/about/petaluma.html"), name="about/petaluma"),
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
     url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
-    url(r"^about/donate$", TemplateView.as_view(template_name="static_pages/about/donate.html"), name="about/donate"),
-    url(r"^donate$", RedirectView.as_view(url="about/donate")),
 
     # program
     url(r"^program/events$", TemplateView.as_view(template_name="static_pages/program/events.html"), name="program/events"),
@@ -33,7 +31,6 @@ urlpatterns = [
     # attend
     url(r"^attend$", TemplateView.as_view(template_name="static_pages/attend/attend.html"), name="attend/attend"),
     url(r"^tickets$", RedirectView.as_view(url="attend")),
-
     url(r"^attend/business-case$", TemplateView.as_view(template_name="static_pages/attend/business-case.html"), name="attend/business-case"),
     url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
     url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
@@ -42,11 +39,15 @@ urlpatterns = [
     url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),
     url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_staff.html"), name="code-of-conduct/harassment-staff-procedures"),
     url(r"^terms-and-conditions$", TemplateView.as_view(template_name="static_pages/terms_and_conditions.html"), name="terms-and-conditions"),
+    url(r"^terms$", RedirectView.as_view(url="terms-and-conditions")),
 
     # sponsor
     url(r"^sponsors/prospectus$", RedirectView.as_view(url=_static("assets/northbaypython_prospectus.pdf")), name="sponsors/prospectus"),
     url(r"^northbaypython_prospectus.pdf$", RedirectView.as_view(url=_static("assets/northbaypython_prospectus.pdf")), name="northbaypython_prospectus.pdf"),
     url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become_a_sponsor.html"), name="sponsors/become-a-sponsor"),
+    url(r"^sponsors/donate$", TemplateView.as_view(template_name="static_pages/sponsors/donate.html"), name="sponsors/donate"),
+    url(r"^donate$", RedirectView.as_view(url="sponsors/donate")),
+    url(r"^about/donate$", RedirectView.as_view(url="sponsors/donate")),
 
     # news
     url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
