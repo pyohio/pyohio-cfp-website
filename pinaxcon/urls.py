@@ -17,29 +17,27 @@ urlpatterns = [
 
     # about
     url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north_bay_python.html"), name="about/north-bay-python"),
-    # TODO add /about/the-mystic
-    # TODO add /about/petaluma
+    url(r"^about/petaluma$", TemplateView.as_view(template_name="static_pages/about/petaluma.html"), name="about/petaluma"),
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
     url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
     url(r"^about/donate$", TemplateView.as_view(template_name="static_pages/about/donate.html"), name="about/donate"),
     url(r"^donate$", RedirectView.as_view(url="about/donate")),
 
     # program
-    # TODO add /program/sessions
-    # TODO add /program/events
+    url(r"^program/events$", TemplateView.as_view(template_name="static_pages/program/events.html"), name="program/events"),
     url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call_for_proposals.html"), name="program/call-for-proposals"),
     url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
-
     url(r"^proposals$", RedirectView.as_view(url="program/call-for-proposals")),
     url(r"^cfp$", RedirectView.as_view(url="program/call-for-proposals")),
 
     # attend
-    # TODO add /attend/buy-a-ticket
-    # TODO add /attend/volunteer
-    # TODO add /attend/financial-assistance
-    # TODO add /attend/how-to-pitch-your-manager
-    # TODO add /attend/how-to-get-here
-    # TODO add /attend/where-to-stay
+    url(r"^attend$", TemplateView.as_view(template_name="static_pages/attend/attend.html"), name="attend/attend"),
+    url(r"^tickets$", RedirectView.as_view(url="attend")),
+
+    url(r"^attend/business-case$", TemplateView.as_view(template_name="static_pages/attend/business-case.html"), name="attend/business-case"),
+    url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
+    url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
+
     url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code_of_conduct/code_of_conduct.html"), name="code-of-conduct"),
     url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),
     url(r"^code-of-conduct/harassment-staff-procedures$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_staff.html"), name="code-of-conduct/harassment-staff-procedures"),
