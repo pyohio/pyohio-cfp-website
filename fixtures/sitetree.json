@@ -27,7 +27,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 2,
+        "sort_order": 7,
         "access_permissions": []
     }
 },
@@ -51,7 +51,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 8,
+        "sort_order": 24,
         "access_permissions": []
     }
 },
@@ -83,9 +83,9 @@
     "model": "sitetree.treeitem",
     "pk": 8,
     "fields": {
-        "title": "Safety",
+        "title": "Attend",
         "hint": "",
-        "url": "/code-of-conduct",
+        "url": "/attend",
         "urlaspattern": false,
         "tree": 1,
         "hidden": false,
@@ -99,7 +99,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 9,
+        "sort_order": 8,
         "access_permissions": []
     }
 },
@@ -123,7 +123,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 24,
+        "sort_order": 25,
         "access_permissions": []
     }
 },
@@ -171,7 +171,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 1,
-        "sort_order": 12,
+        "sort_order": 13,
         "access_permissions": []
     }
 },
@@ -195,55 +195,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 1,
-        "sort_order": 13,
-        "access_permissions": []
-    }
-},
-{
-    "model": "sitetree.treeitem",
-    "pk": 14,
-    "fields": {
-        "title": "Reporting an Incident",
-        "hint": "",
-        "url": "/code-of-conduct/harassment-incidents",
-        "urlaspattern": false,
-        "tree": 1,
-        "hidden": false,
-        "alias": null,
-        "description": "",
-        "inmenu": true,
-        "inbreadcrumbs": true,
-        "insitetree": true,
-        "access_loggedin": false,
-        "access_guest": false,
-        "access_restricted": false,
-        "access_perm_type": 1,
-        "parent": 8,
-        "sort_order": 15,
-        "access_permissions": []
-    }
-},
-{
-    "model": "sitetree.treeitem",
-    "pk": 15,
-    "fields": {
-        "title": "Staff Procedures",
-        "hint": "",
-        "url": "/code-of-conduct/harassment-staff-procedures",
-        "urlaspattern": false,
-        "tree": 1,
-        "hidden": false,
-        "alias": null,
-        "description": "",
-        "inmenu": true,
-        "inbreadcrumbs": true,
-        "insitetree": true,
-        "access_loggedin": false,
-        "access_guest": false,
-        "access_restricted": false,
-        "access_perm_type": 1,
-        "parent": 8,
-        "sort_order": 17,
+        "sort_order": 33,
         "access_permissions": []
     }
 },
@@ -267,7 +219,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 8,
-        "sort_order": 14,
+        "sort_order": 37,
         "access_permissions": []
     }
 },
@@ -328,7 +280,7 @@
         "url": "/program",
         "urlaspattern": false,
         "tree": 1,
-        "hidden": true,
+        "hidden": false,
         "alias": null,
         "description": "",
         "inmenu": true,
@@ -339,7 +291,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 7,
+        "sort_order": 9,
         "access_permissions": []
     }
 },
@@ -349,8 +301,8 @@
     "fields": {
         "title": "Log In",
         "hint": "",
-        "url": "nbpy_login",
-        "urlaspattern": true,
+        "url": "/account/login/",
+        "urlaspattern": false,
         "tree": 1,
         "hidden": false,
         "alias": null,
@@ -363,7 +315,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 26,
+        "sort_order": 29,
         "access_permissions": []
     }
 },
@@ -387,7 +339,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 29,
+        "sort_order": 30,
         "access_permissions": []
     }
 },
@@ -459,7 +411,199 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": null,
-        "sort_order": 25,
+        "sort_order": 26,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 30,
+    "fields": {
+        "title": "North Bay Python",
+        "hint": "",
+        "url": "/",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": true,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": null,
+        "sort_order": 2,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 31,
+    "fields": {
+        "title": "Make a Donation",
+        "hint": "",
+        "url": "/donate",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 3,
+        "sort_order": 31,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 32,
+    "fields": {
+        "title": "Events",
+        "hint": "",
+        "url": "/program/events",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 24,
+        "sort_order": 32,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 33,
+    "fields": {
+        "title": "Petaluma",
+        "hint": "",
+        "url": "/about/petaluma",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 1,
+        "sort_order": 12,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 34,
+    "fields": {
+        "title": "Buy a Ticket",
+        "hint": "",
+        "url": "/attend",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 14,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 35,
+    "fields": {
+        "title": "How to Pitch Your Manager",
+        "hint": "",
+        "url": "/attend/business-cases",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 15,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 36,
+    "fields": {
+        "title": "How to Get Here",
+        "hint": "",
+        "url": "/attend/travel",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 35,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 37,
+    "fields": {
+        "title": "Where to Stay",
+        "hint": "",
+        "url": "/attend/hotels",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 36,
         "access_permissions": []
     }
 }
