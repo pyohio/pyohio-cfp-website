@@ -320,5 +320,8 @@ NOSE_ARGS = [
 MARKDOWN_DEUX_STYLES = {
     "default": {
         "safe_mode": False,
+        "extras": {
+            "tables": 1,
+        }
     },
 }
