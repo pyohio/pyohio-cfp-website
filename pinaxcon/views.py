@@ -1,6 +1,7 @@
 from django.conf import settings
+from django.contrib import messages
 from django.http import HttpResponseServerError
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.template import RequestContext
 from django.template import Template
 from django.template.loader import get_template
@@ -28,3 +29,12 @@ def account_login(request):
 
 class EmailLoginView(LoginView):
     form_class = LoginEmailForm
+
+
+def buy_ticket(request):
+
+    print(dir(request.user))
+    if not request.user.is_authenticated():
+        messages.warning(request, 'To buy a ticket, either create an account, or log in.')
+
+    return redirect("/dashboard")
