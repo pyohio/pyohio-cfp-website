@@ -74,10 +74,7 @@ urlpatterns = [
     url(r"^teams/", include("symposion.teams.urls")),
 
     # Demo payment gateway and related features
-    url(r"^register/pinaxcon/", include("pinaxcon.registrasion.urls")),
-
-    # Demo payment gateway and related features
-    url(r"^register/payments/", include("registripe.urls")),
+    url(r"^tickets/payments/", include("registripe.urls")),
 
     # Required by registrasion
     url(r'^tickets/', include('registrasion.urls')),
