@@ -80,7 +80,7 @@ urlpatterns = [
     url(r"^register/payments/", include("registripe.urls")),
 
     # Required by registrasion
-    url(r'^register/', include('registrasion.urls')),
+    url(r'^tickets/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
 
     # Catch-all MUST go last.
