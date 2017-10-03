@@ -31,9 +31,11 @@ urlpatterns = [
     # attend
     url(r"^attend$", TemplateView.as_view(template_name="static_pages/attend/attend.html"), name="attend/attend"),
     url(r"^tickets$", RedirectView.as_view(url="attend")),
+    url(r"^tickets/buy$", views.buy_ticket, name="buy_ticket"),
     url(r"^attend/business-case$", TemplateView.as_view(template_name="static_pages/attend/business-case.html"), name="attend/business-case"),
     url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
     url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
+    url(r"^attend/tshirts$", TemplateView.as_view(template_name="static_pages/attend/tshirts.html"), name="attend/tshirts"),
 
     url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code_of_conduct/code_of_conduct.html"), name="code-of-conduct"),
     url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),
@@ -72,13 +74,10 @@ urlpatterns = [
     url(r"^teams/", include("symposion.teams.urls")),
 
     # Demo payment gateway and related features
-    url(r"^register/pinaxcon/", include("pinaxcon.registrasion.urls")),
-
-    # Demo payment gateway and related features
-    url(r"^register/payments/", include("registripe.urls")),
+    url(r"^tickets/payments/", include("registripe.urls")),
 
     # Required by registrasion
-    url(r'^register/', include('registrasion.urls')),
+    url(r'^tickets/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
 
     # Catch-all MUST go last.

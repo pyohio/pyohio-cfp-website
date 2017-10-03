@@ -289,6 +289,7 @@ PINAX_BOXES_HOOKSET = "pinaxcon.hooks.PinaxBoxesHookSet"
 
 PINAX_STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "your test public key")
 PINAX_STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "your test secret key")
+TUOKCEHC_BASE_URL = os.environ.get("TUOKCEHC_BASE_URL", None)
 PINAX_STRIPE_SEND_EMAIL_RECEIPTS = False
 
 SYMPOSION_SPEAKER_MODEL = "pinaxcon.proposals.models.ConferenceSpeaker"
@@ -305,7 +306,7 @@ ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
 TICKET_PRODUCT_CATEGORY = 1
 
 
-INVOICE_CURRENCY = "AUD"
+INVOICE_CURRENCY = "USD"
 
 # Use nose to run all tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
@@ -320,5 +321,8 @@ NOSE_ARGS = [
 MARKDOWN_DEUX_STYLES = {
     "default": {
         "safe_mode": False,
+        "extras": {
+            "tables": 1,
+        }
     },
 }

@@ -1,20 +1,138 @@
 {% extends "page_with_title_and_lede.html" %}
 
 {% load i18n %}
+{% load markdown_deux_tags %}
 
 {% block head_title %}Attend{% endblock %}
 
-{% block heading %}Attend{% endblock %}
+{% block heading %}Come to North Bay Python!{% endblock %}
 
 {% block body_class %}attend{% endblock %}
 
 {% block lede %}
-  Lede
+  P-Town. Rivertown. That place where the cows are. No matter that you call Petaluma, we want you to join us here for a great weekend of Python talks and networking. North Bay Python tickets start at $25 for unaffiliated individuals, and $180 for corporate attendees.
 {% endblock %}
 
 
 {% block content %}
 
-Content
+<p>To buy a ticket, <a href="/dashboard">create an account, and go to the dashboard</a>. If you've already bought a ticket, you can check out our information on <a href="/attend/hotels">where to stay</a> if you want to come up for the weekend, and <a href="/attend/travel">how to get here</a>.</p>
+
+<br />
+
+<div class="pull-right"><a class="btn btn-lg btn-primary" href="/tickets/buy">Buy a Ticket</a></div>
+<h2>Which Ticket?</h2>
+
+<p><em>Early Bird discounts are available for the first 100 tickets sold, or until October 20, whichever comes first. T-shirts are only available for tickets bought before November 7.</em></p>
+
+<h3>Corporate <small>$200 ($180 Early Bird)</small></h3>
+
+<p><strong>For company employees, and individuals who can legitimately claim the cost of attending the conference as a business expense or a tax deduction</strong>.</p>
+
+<p>Includes a free t-shirt, and recognition of your affiliation on your conference badge and on the conference supporters list. Group discounts are available for organizations that buy 5 or more tickets.</p>
+
+<h3>Individual Supporter <small>$100 ($80 Early Bird)</small></h3>
+
+<p><strong>For individuals who want to financially contribute to the success of the conference.</strong></p>
+
+<p>This ticket includes a free t-shirt, and recognition of your Free and Open Source Software, hobby, or nonprofit project on your conference badge.</p>
+
+<h3>Unaffiliated Individual <small>$50 ($25 Early Bird)</small></h3>
+
+<p><strong>For students, hobbyists, and unemployed/underemployed people who are coming to North Bay Python at their own expense.</strong></p>
+
+<p>The cheapest ticket we can offer. You can add a t-shirt for $30.</p>
+
+
+<h3>Special Tickets</h3>
+
+<h4>Individual Sponsor <small>$500 ($450 Early Bird)</small></h4>
+
+<p>This ticket includes all of the benefits of a Corporate ticket, but we’ll also give the ticket holder special thanks during our conference plenary sessions. You can also provide us with a promotional item to put in each attendee’s swag bag.</p>
+
+<p>This ticket is for individuals who want to sponsor the conference. For company-level sponsorships, please see our <a href="/sponsors/become-a-sponsor">sponsorships page</a>.</p>
+
+
+<h4>Group Discount Corporate <small>$180 for 5+ tickets</small></h4>
+
+<p>For companies sending multiple attendees, you can get a 10% discount off the regular price on purchases of 5 tickets or more.</p>
+
+<p>To claim, buy your first four tickets, and send us an email with the names and receipt numbers for those attendees. We’ll send you vouchers for a discount on further tickets.</p>
+
+
+<h2>Ticket Types and Inclusions</h2>
+
+<table class="table table-striped">
+<tr>
+  <th></th>
+  <th>Unaffiliated Individual</th><th>Individual Supporter</th><th>  Corporate  </th><th> Individual Sponsor </th></tr>
+<tr>
+  <th>Regular Price</th>
+  <td> $50 </td><td>$100</td><td> $200</td><td> $500
+<tr>
+  <th>Early Bird</th>
+  <td> $25</td><td> $80 </td><td>$180</td><td> $450</td></tr>
+<tr>
+  <th>Group Discount</th>
+  <td> - </td><td>- </td><td>$180/ticket for 5+ tickets</td><td> -</td></tr>
+<tr>
+  <th>Conference access</th>
+  <td>  Yes </td><td>  Yes </td><td>  Yes </td><td>  Yes </td></tr>
+<tr>
+  <th>Morning refreshments</th>
+  <td> TBA </td><td> TBA </td><td> TBA </td><td> TBA </td></tr>
+<tr>
+  <th>Free Lunch</th>
+  <td> No </td><td> No </td><td> No </td><td> No </td></tr>
+<tr>
+  <th>T-Shirt</th>
+  <td>$30 each</td><td>1 free</br>Extras $30 each</td><td>1 free</br>Extras $30 each</td><td>1 free</br>Extras $30 each</td></tr>
+<tr>
+  <th>Affiliation on your badge</th>
+  <td> No </td><td>Personal projects only</td><td> Yes </td><td>Yes</td></tr>
+<tr>
+  <th>Supporter recognition</th>
+  <td> None </td><td>For you </td><td>For you and your company </td><td>Top billing for you and your company or project</td></tr>
+<tr>
+  <th>Sponsor benefits</th>
+  <td> No </td><td>No</td><td> No </td><td>Yes</td></tr>
+</table>
+
+<p>If you can’t afford to attend on these prices, please email <a href="mailto:spam@northbaypthon.org">spam@northbaypython.org</a> – we’ll enthusiastically waive ticket fees for people who need it.</em></p>
+
+<div class="btn-group">
+  <a class="btn btn-lg btn-primary" href="/tickets/buy">Buy a Ticket</a>
+</div>
+
+
+<h2>Benefits</h2>
+
+<h3>Conference access</h3>
+<p>Two days of high-caliber talks about Python, and meeting new Pythonistas at North Bay Python.</p>
+
+<h3>Lunch</h3>
+<p>In order to keep ticket costs as low as possible, we won’t be catering lunch this year.</p>
+
+<p>To make up for it, we’ve located our conference right in the middle of Historic Downtown Petaluma’s restaurant district. You can find everything from market delis and barbecue, through to Michelin-rated restaurants, all within 5 minutes walk. You’ll get a better lunch than we’d ever be able to cater, for much less. We'll have a locals' guide to Petaluma to help you find places to eat.</p>
+
+<h3>Morning Refreshments (TBA)</h3>
+<p>If budget permits, or if we find a sponsor, we’ll provide coffee, tea, hot chocolate, and some light snacks in the morning before proceedings kick off on both days.</p>
+
+<h3>T-Shirt</h3>
+<p>We’ll be designing a collectible North Bay Python t-shirt for you to pick up at the conference, and they’ll be available in a variety of cuts and colors. Each t-shirt costs $30, and for supporter, corporate, and sponsor ticket holders, you’ll get your first t-shirt free!</p>
+
+<p>T-shirts are available only for tickets purchased by Tuesday 7 November.</p>
+
+
+<h3>Affiliation</h3>
+<p>Every attendee gets their very own lanyard and a badge with their name on it. As a paying ticket holder, you’ll get your project’s name (supporter and above) or company name (corporate or sponsor levels only) on your badge, just below your name.</p>
+
+<h3>Supporter Recognition</h3>
+<p>On our website, we’ll have a list of our conference supporters. You can choose to have your name on that list.</p>
+
+<p>For our corporate and sponsor ticket holders, we’ll also include your company name as part of those thanks.</p>
+
+<h3>Sponsor Benefits</h3>
+<p>Sponsor tickets come with sponsor benefits. To find out more, see our <a href="/sponsors/become-a-sponsor">Sponsors page</a>.</p>
 
 {% endblock %}
