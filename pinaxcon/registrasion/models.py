@@ -1,16 +1,7 @@
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
+from django_countries.fields import CountryField
 from registrasion import models as rego
-
-
-@python_2_unicode_compatible
-class DynamicValues(models.Model):
-
-    name = models.CharField(max_length=64)
-    value = models.IntegerField()
-
-    def __str__(self):
-        return "%s - %d" % (self.name, self.value)
 
 
 class AttendeeProfile(rego.AttendeeProfileBase):
@@ -22,11 +13,49 @@ class AttendeeProfile(rego.AttendeeProfileBase):
         return "name"
 
     def invoice_recipient(self):
+
+        lines = [
+            self.name_per_invoice,
+        ]
+
         if self.company:
-            base = "\n%(company)s\nAttention: %(name_per_invoice)s"
-        else:
-            base = "%(name_per_invoice)s"
-        return base % self.__dict__
+            lines.append("C/- " + self.company)
+
+        if self.address_line_1:
+            lines.append(self.address_line_1)
+
+        if self.address_line_2:
+            lines.append(self.address_line_2)
+
+        if self.address_suburb or self.address_postcode:
+            lines.append("%s %s" % (
+                self.address_suburb or "",
+                self.address_postcode or "",
+            ))
+
+        if self.state:
+            lines.append(self.state)
+
+        if self.country:
+            lines.append(self.country.name)
+
+        return "\n".join(unicode(line) for line in lines)
+
+    def clean(self):
+        errors = []
+        if self.country == "US" and not self.state:
+            errors.append(
+                ("state", "US-based attendees must list their state"),
+            )
+
+        if self.address_line_2 and not self.address_line_1:
+            errors.append((
+                "address_line_1",
+                "Please fill in line 1 before filling line 2",
+            ))
+
+        if errors:
+            raise ValidationError(dict(errors))
 
     def save(self):
         if not self.name_per_invoice:
@@ -42,56 +71,68 @@ class AttendeeProfile(rego.AttendeeProfileBase):
 
     company = models.CharField(
         max_length=64,
-        help_text="The name of your company, as you'd like it on your badge",
-        blank=True,
-    )
-    free_text_1 = models.CharField(
-        max_length=64,
-        verbose_name="Free text line 1",
-        help_text="A line of free text that will appear on your badge. Use "
-                  "this for your Twitter handle, IRC nick, your preferred "
-                  "pronouns or anything else you'd like people to see on "
-                  "your badge.",
-        blank=True,
-    )
-    free_text_2 = models.CharField(
-        max_length=64,
-        verbose_name="Free text line 2",
+        help_text="The name of your company, as you'd like it on your badge and receipt",
         blank=True,
     )
 
-    # Other important Information
     name_per_invoice = models.CharField(
-        verbose_name="Your legal name (for invoicing purposes)",
-        max_length=64,
+        verbose_name="Your legal name (for your receipt)",
+        max_length=256,
         help_text="If your legal name is different to the name on your badge, "
-                  "fill this in, and we'll put it on your invoice. Otherwise, "
+                  "fill this in, and we'll put it on your receipt. Otherwise, "
                   "leave it blank.",
         blank=True,
         )
-    of_legal_age = models.BooleanField(
-        default=False,
-        verbose_name="18+?",
+
+    address_line_1 = models.CharField(
+        verbose_name="Address line 1",
+        help_text="This address, if provided, will appear on your receipt.",
+        max_length=1024,
         blank=True,
     )
-    dietary_requirements = models.CharField(
+    address_line_2 = models.CharField(
+        verbose_name="Address line 2",
+        max_length=1024,
+        blank=True,
+    )
+    address_suburb = models.CharField(
+        verbose_name="City/Town/Suburb",
+        max_length=1024,
+        blank=True,
+    )
+    address_postcode = models.CharField(
+        verbose_name="Postal/Zip code",
+        max_length=1024,
+        blank=True,
+    )
+    country = CountryField(
+        default="US",
+    )
+    state = models.CharField(
+        max_length=256,
+        verbose_name="State/Territory/Province",
+        blank=True,
+    )
+
+    dietary_restrictions = models.CharField(
+        verbose_name="Food allergies, intolerances, or dietary restrictions",
         max_length=256,
         blank=True,
     )
     accessibility_requirements = models.CharField(
+        verbose_name="Accessibility-related requirements",
         max_length=256,
         blank=True,
     )
     gender = models.CharField(
+        help_text="Gender data will only be used for demographic purposes.",
         max_length=64,
         blank=True,
     )
-    db_defined_values = models.ManyToManyField(
-        DynamicValues
+
+    newsletter = models.BooleanField(
+        verbose_name="Subscribe to North Bay Python newsletter",
+        help_text="Select to be subscribed to the low-volume North Bay Python "
+                  "announcements newsletter",
+        blank=True,
     )
-
-
-class DemoPayment(rego.PaymentBase):
-    ''' A subclass of PaymentBase for use in our demo payments function. '''
-
-    pass  # No custom features here, but yours could be here.
