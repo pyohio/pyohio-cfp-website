@@ -66,7 +66,7 @@ class Command(BaseCommand):
             name="T-Shirt",
             description="Commemorative conference t-shirts, featuring secret "
                         "North Bay Python 2017 artwork. Details of sizing and "
-                        "manufacturer are on our <a href='/attend/tshirts'>"
+                        "manufacturer are on our <a href='/attend/tshirt'>"
                         "t-shirts page</a>",
             required = False,
             render_type=inv.Category.RENDER_TYPE_ITEM_QUANTITY,
@@ -175,7 +175,7 @@ class Command(BaseCommand):
                 ("S", "M", "L", "XL", "2XL", "3XL", "5XL"),
             ),
             "womens_classic": ShirtGroup(
-                "Women's Classic Fit",
+                "Women's Relaxed Fit",
                 ("XS", "S", "M", "L", "XL", "2XL", "3XL"),
             ),
             "womens_semi": ShirtGroup(

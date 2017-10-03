@@ -35,7 +35,7 @@ urlpatterns = [
     url(r"^attend/business-case$", TemplateView.as_view(template_name="static_pages/attend/business-case.html"), name="attend/business-case"),
     url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
     url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
-    url(r"^attend/tshirts$", TemplateView.as_view(template_name="static_pages/attend/tshirts.html"), name="attend/tshirts"),
+    url(r"^attend/tshirt$", TemplateView.as_view(template_name="static_pages/attend/tshirt.html"), name="attend/tshirt"),
 
     url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code_of_conduct/code_of_conduct.html"), name="code-of-conduct"),
     url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),
