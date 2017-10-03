@@ -306,7 +306,7 @@ ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
 TICKET_PRODUCT_CATEGORY = 1
 
 
-INVOICE_CURRENCY = "AUD"
+INVOICE_CURRENCY = "USD"
 
 # Use nose to run all tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
