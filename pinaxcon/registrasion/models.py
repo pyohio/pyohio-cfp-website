@@ -55,6 +55,12 @@ class AttendeeProfile(rego.AttendeeProfileBase):
                 "Please fill in line 1 before filling line 2",
             ))
 
+        if not self.agreement:
+            errors.append((
+                "agreement",
+                "You must accept the agreement.",
+            ))
+
         if errors:
             raise ValidationError(dict(errors))
 
@@ -136,4 +142,13 @@ class AttendeeProfile(rego.AttendeeProfileBase):
         help_text="Select to be subscribed to the low-volume North Bay Python "
                   "announcements newsletter",
         blank=True,
+    )
+
+    agreement = models.BooleanField(
+        verbose_name="Agreement",
+        help_text="I agree to act according to the <a href='/code-of-conduct'> "
+                  "North Bay Python Code of Conduct</a>. I also agree with the "
+                  "North Bay Python <a href='/terms'>Terms and Conditions</a>.",
+        blank=False,
+        default=False,
     )
