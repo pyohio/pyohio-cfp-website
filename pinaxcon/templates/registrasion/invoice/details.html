@@ -1,0 +1,48 @@
+{% extends "registrasion/invoice/details_.html" %}
+{% comment %}
+  Blocks that you can override:
+
+  - heading
+  - subheading
+  - invoice_intro
+  - extra_line_items
+  - contact_info
+
+{% endcomment %}
+
+{% block heading %}
+  {% if invoice.is_paid or invoice.is_refunded %}
+    Registration Receipt
+  {% else %}
+    Pending Registration
+  {% endif %}
+{% endblock %}
+
+{% block subheading %}
+  North Bay Python. December 2 &amp; 3 2017. Petaluma, California.
+{% endblock %}
+
+{% block invoice_intro %}
+  {% if invoice.is_unpaid %}
+    This is a registration summary for North Bay Python 2017. It is not confirmed until paid in full.
+  {% elif invoice.is_void %}
+    This is a void registration summary for North Bay Python 2017. It is provided for informational purposes only.
+  {% elif invoice.is_refunded %}
+    This is a refunded registration summary for North Bay Python 2017. It is provided for informational purposes only.
+  {% elif invoice.is_paid %}
+    This is a confirmed registration summary for North Bay Python 2017.
+  {% endif %}
+
+{% endblock %}
+
+{% block contact_info %}
+  <p>Direct inquiries to <a href="mailto:spam@northbaypython.org">spam@northbaypython.org</a></p>
+  <p>North Bay Python is run by North Bay and Bay Area locals, as a member project of <a href="https://sfconservancy.org">Software Freedom Conservancy</a>, a 501(c)(3) public charity registered in New York.</p>
+
+  <strong>Mailing Address</strong>
+  <address>
+    Software Freedom Conservancy, Inc.<br>
+    137 MONTAGUE ST STE 380<br>
+    Brooklyn, NY 11201-3548<br>
+  </address>
+{% endblock %}
