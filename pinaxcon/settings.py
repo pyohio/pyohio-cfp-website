@@ -149,6 +149,7 @@ MIDDLEWARE_CLASSES = [
     "ssl_redirect.middleware.SSLRedirectMiddleware",
     "pinaxcon.middleware.CanonicalHostMiddleware",
     "pinaxcon.middleware.UnprependWWWMiddleware",
+    "pinaxcon.monkey_patch.MonkeyPatchMiddleware",
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"
