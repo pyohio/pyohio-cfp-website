@@ -1,4 +1,4 @@
-### The North Bay Python 2017 CFP is open!
+### The North Bay Python 2017 CFP closed on September 29
 
 We've got lots of good information and resources below that you should read, but in case you've already read it and want to dive in now:
 
