@@ -35,6 +35,10 @@ def buy_ticket(request):
 
     print(dir(request.user))
     if not request.user.is_authenticated():
-        messages.warning(request, 'To buy a ticket, either create an account, or log in.')
+        messages.warning(request,
+            '''To buy a ticket, either create an account, or log in.
+            Attendees should fill out their own registration.
+            You will receive a payment link that you can pass to accounts
+            staff, if required. ''')
 
     return redirect("/dashboard")
