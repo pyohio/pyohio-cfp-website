@@ -154,6 +154,28 @@ $homepage-block-min-height: 480px;
     }
 
   }
+
+  .speaker {
+    @include make-xs-column(6);
+    @include make-sm-column(4);
+    @include make-md-column(3);
+    max-width: 600px;
+    min-height: 22em;
+    margin-bottom: 2em;
+    text-align: center;
+    vertical-align: middle;
+
+    .image-alignment {
+      width: 80%;
+      height: 80%;
+      margin: auto auto;
+      // Center the icon horizontally and vertically
+    }
+  }
+
+  .speaker-list {
+    margin-top: 2em;
+  }
 }
 
 
