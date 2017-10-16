@@ -1,0 +1,33 @@
+{% extends "symposion/schedule/presentation_detail_.html" %}
+
+{% load thumbnail %}
+
+{% comment %}
+  Blocks you can override:
+
+  - description (appears in lede)
+  - abstract
+  - speaker
+{% endcomment %}
+
+{% block speaker %}
+  <h2>{{ speaker.name }}</h2>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="bio">
+        {{ speaker.biography_html|safe }}
+      </div>
+
+      {% if speaker.conferencespeaker.twitter_username %}
+        <a class="btn btn-primary" href="https://twitter.com/{{ speaker.conferencespeaker.twitter_username }}">Twitter</a>
+      {% endif %}
+    </div>
+    <div class="col-sm-4 col-xs-6">
+      <div class="circle" style="border: 0;">
+          <div class="fill" style="background-image: url('{% thumbnail speaker.photo '600x600' %}');"></div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
