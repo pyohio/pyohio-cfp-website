@@ -19,6 +19,8 @@ urlpatterns = [
     url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north_bay_python.html"), name="about/north-bay-python"),
     url(r"^about/petaluma$", TemplateView.as_view(template_name="static_pages/about/petaluma.html"), name="about/petaluma"),
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
+    url(r"^about/transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/transparency.html"), name="about/transparency"),
+    url(r"^about/program-transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/program.html"), name="about/program-transparency"),
     url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
 
     # program
