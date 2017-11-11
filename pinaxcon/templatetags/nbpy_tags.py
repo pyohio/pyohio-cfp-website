@@ -40,5 +40,5 @@ def donation_income(context, invoice):
         elif line.product.category.name == "T-Shirt":
             rbi.append(line.total_price * fsa_rate)
 
-    donation = (invoice.value - sum(rbi))
+    donation = max(Decimal('0'), (invoice.value - sum(rbi)))
     return donation.quantize(Decimal('.01'))
