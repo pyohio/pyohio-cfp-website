@@ -59,7 +59,7 @@
     "model": "sitetree.treeitem",
     "pk": 7,
     "fields": {
-        "title": "Call for Proposals",
+        "title": "Call for Proposals (Closed)",
         "hint": "",
         "url": "/program/call-for-proposals",
         "urlaspattern": false,
@@ -75,7 +75,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 24,
-        "sort_order": 32,
+        "sort_order": 39,
         "access_permissions": []
     }
 },
@@ -604,6 +604,102 @@
         "access_perm_type": 1,
         "parent": 8,
         "sort_order": 36,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 38,
+    "fields": {
+        "title": "Transparency Reports",
+        "hint": "",
+        "url": "/about/transparency",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": true,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 1,
+        "sort_order": 38,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 39,
+    "fields": {
+        "title": "Accepted Talks",
+        "hint": "",
+        "url": "/schedule/general-sessions/list/",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 24,
+        "sort_order": 32,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 40,
+    "fields": {
+        "title": "Financial Aid",
+        "hint": "",
+        "url": "/attend/finaid",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 40,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 41,
+    "fields": {
+        "title": "Accessibility and Accommodations",
+        "hint": "",
+        "url": "/attend/accessibility-and-accommodations",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 41,
         "access_permissions": []
     }
 }
