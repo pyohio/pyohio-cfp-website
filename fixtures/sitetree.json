@@ -616,7 +616,7 @@
         "url": "/about/transparency",
         "urlaspattern": false,
         "tree": 1,
-        "hidden": false,
+        "hidden": true,
         "alias": null,
         "description": "",
         "inmenu": true,
@@ -652,6 +652,54 @@
         "access_perm_type": 1,
         "parent": 24,
         "sort_order": 32,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 40,
+    "fields": {
+        "title": "Financial Aid",
+        "hint": "",
+        "url": "/attend/finaid",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 40,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 41,
+    "fields": {
+        "title": "Accessibility and Accommodations",
+        "hint": "",
+        "url": "/attend/accessibility-and-accommodations",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 8,
+        "sort_order": 41,
         "access_permissions": []
     }
 }
