@@ -400,7 +400,7 @@
         "url": "/wiki",
         "urlaspattern": false,
         "tree": 1,
-        "hidden": true,
+        "hidden": false,
         "alias": null,
         "description": "",
         "inmenu": true,
