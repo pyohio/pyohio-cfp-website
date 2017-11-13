@@ -132,10 +132,13 @@ TEMPLATES = [
                 "account.context_processors.account",
                 "pinax_theme_bootstrap.context_processors.theme",
                 "symposion.reviews.context_processors.reviews",
+                "sekizai.context_processors.sekizai",
             ],
         },
     },
 ]
+
+TEMPLATE_DEBUG = False
 
 MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -211,6 +214,18 @@ INSTALLED_APPS = [
 
     #testing
     "django_nose",
+
+    # wiki
+    'django.contrib.humanize',
+    'django_nyt',
+    'mptt',
+    'sekizai',
+    'sorl.thumbnail',
+    'wiki',
+    'wiki.plugins.attachments',
+    'wiki.plugins.notifications',
+    'wiki.plugins.images',
+    'wiki.plugins.macros',
 
     # stylesheets and js
     'compressor',
@@ -308,6 +323,13 @@ TICKET_PRODUCT_CATEGORY = 1
 
 
 INVOICE_CURRENCY = "USD"
+
+WIKI_ACCOUNT_HANDLING = False
+WIKI_ACCOUNT_SIGNUP_ALLOWED = False
+
+WIKI_ANONYMOUS_WRITE = False
+WIKI_ANONYMOUS_UPLOAD = False
+
 
 # Use nose to run all tests
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
