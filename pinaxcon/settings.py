@@ -224,7 +224,7 @@ INSTALLED_APPS = [
     'wiki',
     'wiki.plugins.attachments',
     'wiki.plugins.notifications',
-    'wiki.plugins.images',
+    #'wiki.plugins.images',
     'wiki.plugins.macros',
 
     # stylesheets and js
