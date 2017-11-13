@@ -4,6 +4,8 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.templatetags.staticfiles import static as _static
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
+from django_nyt.urls import get_pattern as get_nyt_pattern
+from wiki.urls import get_pattern as get_wiki_pattern
 
 from django.contrib import admin
 
@@ -85,9 +87,13 @@ urlpatterns = [
     url(r'^tickets/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
 
+    url(r'^wiki/notifications/', get_nyt_pattern()),
+    url(r'^wiki/', get_wiki_pattern())
+
     # Catch-all MUST go last.
     #url(r"^", include("pinax.pages.urls")),
 ]
+
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
