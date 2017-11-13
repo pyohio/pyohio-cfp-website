@@ -15,6 +15,7 @@ import symposion.views
 urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
 
+
     # about
     url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north_bay_python.html"), name="about/north-bay-python"),
     url(r"^about/petaluma$", TemplateView.as_view(template_name="static_pages/about/petaluma.html"), name="about/petaluma"),
@@ -42,7 +43,12 @@ urlpatterns = [
     url(r"^attend/accessibility-and-accommodations$",TemplateView.as_view(template_name="static_pages/attend/accommodations.html"), name="attend/accessibility-and-accommodations"),
     url(r"^accessibility$", RedirectView.as_view(url="attend/accessibility-and-accommodations")),
     url(r"^guides$",TemplateView.as_view(template_name="static_pages/attend/guides.html"), name="attend/guides"),
-
+    url(r"^emergencies$", TemplateView.as_view(template_name="static_pages/attend/emergencies.html"), name="attend/emergencies"),
+    url(r"^emergency$", RedirectView.as_view(url="attend/emergencies")),
+    url(r"^attend/food$", TemplateView.as_view(template_name="static_pages/attend/food.html"), name="attend/food"),
+    url(r"^food$", RedirectView.as_view(url="attend/food")),
+    url(r"^attend/transit$", TemplateView.as_view(template_name="static_pages/attend/transit.html"), name="attend/transit"),
+    url(r"^transit$", RedirectView.as_view(url="attend/transit")),
 
     url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code_of_conduct/code_of_conduct.html"), name="code-of-conduct"),
     url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),
