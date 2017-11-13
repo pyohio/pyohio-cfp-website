@@ -1,0 +1,30 @@
+{% extends "wiki/base_site.html" %}
+{% load staticfiles %}
+{% load compress %}
+{% load sekizai_tags %}
+
+{% block wiki_body %}
+  {% addtoblock "css" %}
+    {% compress css %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static "scss/site.scss" %}">
+    {% endcompress %}
+  {% endaddtoblock %}
+
+  {{ block.super }}
+{% endblock %}
+
+{% block wiki_site_title %} - North Bay Python Wiki{% endblock %}
+
+{% block wiki_header_branding %}
+<a class="navbar-brand" href="/">North Bay Python</a>
+{% endblock %}
+
+{% block wiki_header_navlinks %}
+<ul class="nav navbar-nav">
+  <li class="active"><a href="{% url 'wiki:root' %}">Wiki</a></li>
+</ul>
+{% endblock %}
+
+{% block wiki_footer_prepend %}
+  All contributions to this wiki page are licensed under a Creative Commons Attribution-ShareAlike 4.0 licence.
+{% endblock %}
