@@ -220,11 +220,11 @@ INSTALLED_APPS = [
     'django_nyt',
     'mptt',
     'sekizai',
-    'sorl.thumbnail',
+    #'sorl.thumbnail',
     'wiki',
     'wiki.plugins.attachments',
     'wiki.plugins.notifications',
-    'wiki.plugins.images',
+    #'wiki.plugins.images',
     'wiki.plugins.macros',
 
     # stylesheets and js
