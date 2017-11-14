@@ -8,6 +8,14 @@
   {% addtoblock "css" %}
     {% compress css %}
         <link rel="stylesheet" type="text/x-scss" href="{% static "scss/site.scss" %}">
+
+        <style type="text/css">
+          div.navbar ul.nav.navbar-nav > li:nth-child(1), /* about */
+          div.navbar ul.nav.navbar-nav > li:nth-child(4), /* sponsors */
+          div.navbar ul.nav.navbar-nav > li:nth-child(5)  /* news */ {
+            display: none;
+          }
+        </style>
     {% endcompress %}
   {% endaddtoblock %}
 
@@ -21,10 +29,7 @@
 {% endblock %}
 
 {% block wiki_header_navlinks %}
-<ul class="nav navbar-nav">
-  <li class="active"><a href="{% url 'wiki:root' %}">Wiki</a></li>
   {% sitetree_menu from "main" include "trunk" template "sitetree/menu_bootstrap3.html" %}
-</ul>
 {% endblock %}
 
 {% block wiki_footer_prepend %}

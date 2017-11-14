@@ -27,6 +27,7 @@ urlpatterns = [
 
     # program
     url(r"^program/events$", TemplateView.as_view(template_name="static_pages/program/events.html"), name="program/events"),
+    url(r"^events$", RedirectView.as_view(url="program/events")),
     url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call_for_proposals.html"), name="program/call-for-proposals"),
     url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
     url(r"^proposals$", RedirectView.as_view(url="program/call-for-proposals")),
@@ -43,6 +44,15 @@ urlpatterns = [
     url(r"^attend/tshirt$", TemplateView.as_view(template_name="static_pages/attend/tshirt.html"), name="attend/tshirt"),
     url(r"^attend/accessibility-and-accommodations$",TemplateView.as_view(template_name="static_pages/attend/accommodations.html"), name="attend/accessibility-and-accommodations"),
     url(r"^accessibility$", RedirectView.as_view(url="attend/accessibility-and-accommodations")),
+    url(r"^guides$",TemplateView.as_view(template_name="static_pages/attend/guides.html"), name="attend/guides"),
+    url(r"^guide$", RedirectView.as_view(url="guides")),
+
+    url(r"^emergencies$", TemplateView.as_view(template_name="static_pages/attend/emergencies.html"), name="attend/emergencies"),
+    url(r"^emergency$", RedirectView.as_view(url="emergencies")),
+    url(r"^attend/food$", TemplateView.as_view(template_name="static_pages/attend/food.html"), name="attend/food"),
+    url(r"^food$", RedirectView.as_view(url="attend/food")),
+    url(r"^attend/transit$", TemplateView.as_view(template_name="static_pages/attend/transit.html"), name="attend/transit"),
+    url(r"^transit$", RedirectView.as_view(url="attend/transit")),
 
     url(r"^code-of-conduct$", TemplateView.as_view(template_name="static_pages/code_of_conduct/code_of_conduct.html"), name="code-of-conduct"),
     url(r"^code-of-conduct/harassment-incidents$", TemplateView.as_view(template_name="static_pages/code_of_conduct/harassment_procedure_attendee.html"), name="code-of-conduct/harassment-incidents"),

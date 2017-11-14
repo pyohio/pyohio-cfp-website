@@ -400,7 +400,7 @@
         "url": "/wiki",
         "urlaspattern": false,
         "tree": 1,
-        "hidden": true,
+        "hidden": false,
         "alias": null,
         "description": "",
         "inmenu": true,
@@ -681,11 +681,11 @@
 },
 {
     "model": "sitetree.treeitem",
-    "pk": 41,
+    "pk": 42,
     "fields": {
-        "title": "Accessibility and Accommodations",
+        "title": "Guide Index",
         "hint": "",
-        "url": "/attend/accessibility-and-accommodations",
+        "url": "/guides",
         "urlaspattern": false,
         "tree": 1,
         "hidden": false,
@@ -699,7 +699,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 8,
-        "sort_order": 41,
+        "sort_order": 42,
         "access_permissions": []
     }
 }
