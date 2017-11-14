@@ -1,6 +1,7 @@
 {% extends "wiki/base_site.html" %}
 {% load staticfiles %}
 {% load compress %}
+{% load sitetree %}
 {% load sekizai_tags %}
 
 {% block wiki_body %}
@@ -22,6 +23,7 @@
 {% block wiki_header_navlinks %}
 <ul class="nav navbar-nav">
   <li class="active"><a href="{% url 'wiki:root' %}">Wiki</a></li>
+  {% sitetree_menu from "main" include "trunk" template "sitetree/menu_bootstrap3.html" %}
 </ul>
 {% endblock %}
 
