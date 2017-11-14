@@ -9,13 +9,13 @@
     {% compress css %}
         <link rel="stylesheet" type="text/x-scss" href="{% static "scss/site.scss" %}">
 
-      <style type="text/css">
-        div.navbar ul.nav.navbar-nav li:nth-child(1), /* about */
-        div.navbar ul.nav.navbar-nav li:nth-child(4), /* sponsors */
-        div.navbar ul.nav.navbar-nav li:nth-child(5)  /* news */ {
-          display: none;
-        }
-      </style>
+        <style type="text/css">
+          div.navbar ul.nav.navbar-nav > li:nth-child(1), /* about */
+          div.navbar ul.nav.navbar-nav > li:nth-child(4), /* sponsors */
+          div.navbar ul.nav.navbar-nav > li:nth-child(5)  /* news */ {
+            display: none;
+          }
+        </style>
     {% endcompress %}
   {% endaddtoblock %}
 
