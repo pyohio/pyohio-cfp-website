@@ -59,7 +59,7 @@ def patch_conference_schedule():
 
     def update_presentation(request, slot_data, presentation):
         try:
-            slot_data["reviewer"] = (
+            slot_data["reviewers"] = (
                 presentation.speaker.conferencespeaker.reviewer
                 if request.user.is_staff else ["redacted"]
             )
@@ -88,7 +88,7 @@ def patch_conference_schedule():
         slot_data["description"] = "Keynote presentation from North Bay Python 2017"
         slot_data["conf_url"] = "https://2017.northbaypython.org"
         slot_data["cancelled"] = False,
-        slot_data["reviewer"] = ""
+        slot_data["reviewers"] = ""
         slot_data["license"] = "CC BY-SA"
         slot_data["twitter_id"] = author_twitter_id
         slot_data["released"] = True
