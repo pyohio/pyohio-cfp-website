@@ -84,7 +84,7 @@ def patch_conference_schedule():
         slot_data["contact"] = [
             author_email
         ] if request.user.is_staff else ["redacted"]
-        slot_data["abstract"] = "Keynote presentation from North Bay Python 2017",
+        slot_data["abstract"] = "Keynote presentation from North Bay Python 2017"
         slot_data["description"] = "Keynote presentation from North Bay Python 2017"
         slot_data["conf_url"] = "https://2017.northbaypython.org"
         slot_data["cancelled"] = False,
