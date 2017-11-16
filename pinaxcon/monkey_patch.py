@@ -89,7 +89,7 @@ def patch_conference_schedule():
         slot_data["conf_url"] = "https://2017.northbaypython.org"
         slot_data["cancelled"] = False,
         slot_data["reviewer"] = ""
-        slot_data["licence"] = "CC BY-SA"
+        slot_data["license"] = "CC BY-SA"
         slot_data["twitter_id"] = author_twitter_id
         slot_data["released"] = True
 
