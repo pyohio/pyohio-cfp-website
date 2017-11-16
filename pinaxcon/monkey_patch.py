@@ -50,7 +50,7 @@ def patch_conference_schedule():
             presentation = slot.content
             if presentation is not None:
                 update_presentation(request, slot_data, presentation)
-            elif slot.kind.label == "keynote":
+            elif slot.kind.label.lower() == "keynote":
                 update_keynote(request, slot_data)
             else:
                 pass
