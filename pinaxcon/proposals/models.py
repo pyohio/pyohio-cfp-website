@@ -74,6 +74,15 @@ class ConferenceSpeaker(SpeakerBase):
                     "these here. Your response is optional."),
     )
 
+    reviewer = models.EmailField(
+        blank=True,
+        null=True,
+        verbose_name=_("E-mail of video reviewer"),
+        help_text=_("Include the e-mail address of someone who can watch a "
+                    "video of your talk, shortly after the video is produced, "
+                    "to ensure quality."),
+        )
+
     code_of_conduct = models.BooleanField(
         default=False,
         help_text=_("I have read and, in the event that my proposal is "
