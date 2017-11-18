@@ -97,7 +97,6 @@ def patch_conference_schedule():
         slot_data["released"] = True
 
     def update_housekeeping(request, slot_data):
-        slot_data["authors"] = ["North Bay Python"]
         slot_data["contact"] = [
             "spam@northbaypython.org"
         ] if request.user.is_staff else ["redacted"]
