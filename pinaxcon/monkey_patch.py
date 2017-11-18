@@ -52,6 +52,8 @@ def patch_conference_schedule():
                 update_presentation(request, slot_data, presentation)
             elif slot.kind.label.lower() == "keynote":
                 update_keynote(request, slot_data)
+            elif slot.kind.label.lower() == "housekeeping":
+                update_keynote(request, slot_data)
             else:
                 pass
 
@@ -80,17 +82,25 @@ def patch_conference_schedule():
                 author_name = speaker
                 author_email, author_twitter_id = values
 
+        slot_data["name"] = "Keynote"
         slot_data["authors"] = [author_name]
         slot_data["contact"] = [
             author_email
         ] if request.user.is_staff else ["redacted"]
-        slot_data["abstract"] = "Keynote presentation from North Bay Python 2017"
-        slot_data["description"] = "Keynote presentation from North Bay Python 2017"
+        slot_data["abstract"] = "Keynote presentation from North Bay Python 2017 by " + author_name
+        slot_data["description"] = "Keynote presentation from North Bay Python 2017 by " + author_name
         slot_data["conf_url"] = "https://2017.northbaypython.org"
         slot_data["cancelled"] = False
         slot_data["reviewers"] = ""
         slot_data["license"] = "CC BY-SA"
         slot_data["twitter_id"] = author_twitter_id
         slot_data["released"] = True
+
+    def update_housekeeping(request, slot_data):
+        slot_data["authors"] = ["North Bay Python"]
+        slot_data["contact"] = [
+            "spam@northbaypython.org"
+        ] if request.user.is_staff else ["redacted"]
+
 
     sv._schedule_json = schedule_json
