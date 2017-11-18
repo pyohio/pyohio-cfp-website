@@ -53,7 +53,7 @@ def patch_conference_schedule():
             elif slot.kind.label.lower() == "keynote":
                 update_keynote(request, slot_data)
             elif slot.kind.label.lower() == "housekeeping":
-                update_keynote(request, slot_data)
+                update_housekeeping(request, slot_data)
             else:
                 pass
 
