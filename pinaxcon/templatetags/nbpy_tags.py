@@ -1,6 +1,7 @@
 from registrasion.models import commerce
 from registrasion.controllers.category import CategoryController
 from registrasion.controllers.item import ItemController
+from registrasion.templatetags import registrasion_tags
 
 from decimal import Decimal
 from django import template
@@ -42,3 +43,26 @@ def donation_income(context, invoice):
 
     donation = max(Decimal('0'), (invoice.value - sum(rbi)))
     return donation.quantize(Decimal('.01'))
+
+
+# TODO: include van/de/van der/de la/etc etc etc
+
+@register.simple_tag
+def name_split(name):
+
+    tokens = name.split()
+    even_split = int((len(tokens) + 1) / 2)  # Round up.
+
+    return {
+        "first" : " ".join(tokens[:even_split]),
+        "last" : " ".join(tokens[even_split:]),
+    }
+
+
+@register.simple_tag(takes_context=True)
+def ticket_type(context):
+
+    items = registrasion_tags.items_purchased(context)
+    for item in items:
+        if item.product.category.name == "Ticket":
+            return item.product.name
