@@ -229,6 +229,8 @@ INSTALLED_APPS = [
 
     # stylesheets and js
     'compressor',
+
+    'email_log',
 ]
 
 # A sample logging configuration. The only tangible logging
@@ -270,7 +272,8 @@ FIXTURE_DIRS = [
 
 # Heroku: Get email configuration from environment variables.
 
-EMAIL_BACKEND = os.environ.get("DJANGO_EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")  # noqa
+EMAIL_BACKEND = "email_log.backends.EmailBackend"
+EMAIL_LOG_BACKEND = os.environ.get("DJANGO_EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")  # noqa
 EMAIL_HOST = os.environ.get("DJANGO_EMAIL_HOST", "")
 EMAIL_PORT = int(os.environ.get("DJANGO_EMAIL_PORT", 25))
 EMAIL_HOST_USER = os.environ.get("DJANGO_EMAIL_HOST_USER", "")
