@@ -64,7 +64,6 @@ def name_split(name, split_characters=None):
 @register.simple_tag
 def company_split(name):
     f =  name_split(name, 18)
-    print f
     return f
 
 
