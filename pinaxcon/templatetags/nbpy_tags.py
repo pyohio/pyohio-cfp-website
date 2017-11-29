@@ -67,6 +67,21 @@ def company_split(name):
     return f
 
 
+@register.simple_tag(takes_context=True)
+def special(context, user):
+    organiser = user.groups.filter(name='Conference organisers').exists()
+    speaker = user.speaker_profile.presentations.count() != 0
+    volunteer = "Volunteer" in ticket_type(context)
+
+    if organiser:
+        return "Organizer"
+    elif speaker:
+        return "Speaker"
+    elif volunteer:
+        return "Staff"
+    else:
+        return ""
+
 
 CLEARED = set([
     "BeeWare Project",

@@ -5,6 +5,7 @@
 {% ticket_type as ticket %}
 {% affiliation ticket user as aff %}
 {% company_split aff as split_affiliation %}
+{% special user as special %}
 
 {% with name1=split_name.first name2=split_name.last affiliation1=split_affiliation.first affiliation2=split_affiliation.last %}
   {% include "registrasion/badge_outer.svg" %}
