@@ -20,4 +20,4 @@ The staff is well informed on how to deal with the incident and how to further p
 
 **Note**: Incidents that violate the Code of Conduct are extremely damaging to the community, and they will not be tolerated. The silver lining is that, in many cases, these incidents present a chance for the offenders, and the community at large, to grow, learn, and become better. North Bay Python staff requests that they be your first resource when reporting a North Bay Python-related incident, so that they may enforce the Code of Conduct and take quick action toward a resolution.
 
-A listing of [North Bay Python staff is located here](/about/team), including contact phone numbers. If at all possible, all reports should be made directly to conference chair [Christopher Neugebauer](mailto:chrisjrn@northbaypython.org).
+A listing of [North Bay Python staff is located here](/about/team). If at all possible, all reports should be made directly to conference chair [Christopher Neugebauer](mailto:chrisjrn@northbaypython.org).
