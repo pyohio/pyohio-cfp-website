@@ -70,7 +70,7 @@ def company_split(name):
 @register.simple_tag(takes_context=True)
 def special(context, user):
     organiser = user.groups.filter(name='Conference organisers').exists()
-    speaker = user.speaker_profile.presentations.count() != 0
+    speaker = if user.speaker_profile and user.speaker_profile.presentations.count() != 0
     volunteer = "Volunteer" in ticket_type(context)
 
     if organiser:
