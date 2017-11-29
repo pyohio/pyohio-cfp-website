@@ -48,15 +48,47 @@ def donation_income(context, invoice):
 # TODO: include van/de/van der/de la/etc etc etc
 
 @register.simple_tag
-def name_split(name):
+def name_split(name, split_characters=None):
 
     tokens = name.split()
-    even_split = int((len(tokens) + 1) / 2)  # Round up.
+    if split_characters is None or len(name) > split_characters:
+        even_split = int((len(tokens) + 1) / 2)  # Round up.
+    else:
+        even_split = len(tokens)
 
     return {
         "first" : " ".join(tokens[:even_split]),
         "last" : " ".join(tokens[even_split:]),
     }
+
+@register.simple_tag
+def company_split(name):
+    f =  name_split(name, 18)
+    print f
+    return f
+
+
+
+CLEARED = set([
+    "BeeWare Project",
+    "Project Jupyter",
+    "PSF Packaging WG / PyCon 2018 Chair",
+    "PyCon Ukraine",
+    "PyLadies PDX",
+    "Recovered Silver",
+    "Twisted",
+    "@vmbrasseur",
+])
+
+@register.simple_tag
+def affiliation(ticket, user):
+    aff = user.attendee.attendeeprofilebase.attendeeprofile.company
+    if "Individual" not in ticket or "Sponsor" in ticket:
+        return aff
+    elif ticket == "Individual Supporter" and aff in CLEARED:
+        return aff
+    else:
+        return ""
 
 
 @register.simple_tag(takes_context=True)
