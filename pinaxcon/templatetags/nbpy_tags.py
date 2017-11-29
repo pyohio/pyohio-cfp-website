@@ -72,7 +72,7 @@ def special(context, user):
     organiser = user.groups.filter(name='Conference organisers').exists()
     try:
         speaker = user.speaker_profile.presentations.count() != 0
-    except:
+    except Exception:
         speaker = False
     volunteer = "Volunteer" in ticket_type(context)
 
