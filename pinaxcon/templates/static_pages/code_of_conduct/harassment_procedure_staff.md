@@ -60,5 +60,3 @@ It is very important how we deal with the incident publicly. Our policy is to ma
 Depending on the incident, the conference chair, or designate, may decide to make one or more public announcements. If necessary, this will be done with a short announcement either during the plenary and/or through other channels. No one other than the conference chair or someone delegated authority from the conference chair should make any announcements. No personal information about either party will be disclosed as part of this process.
 
 If some attendees were angered by the incident, it is best to apologize to them that the incident occurred to begin with.  If there are residual hard feelings, suggest to them to write an email to the conference chair or to the event coordinator. It will be dealt with accordingly.
-
-A listing of [North Bay Python staff is located here](/about/team). If at all possible, all reports should be made directly to conference chair [Christopher Neugebauer](mailto:chrisjrn@northbaypython.org).
