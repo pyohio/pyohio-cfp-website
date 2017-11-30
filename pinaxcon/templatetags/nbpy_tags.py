@@ -1,6 +1,7 @@
 from registrasion.models import commerce
 from registrasion.controllers.category import CategoryController
 from registrasion.controllers.item import ItemController
+from registrasion.templatetags import registrasion_tags
 
 from decimal import Decimal
 from django import template
@@ -42,3 +43,75 @@ def donation_income(context, invoice):
 
     donation = max(Decimal('0'), (invoice.value - sum(rbi)))
     return donation.quantize(Decimal('.01'))
+
+
+# TODO: include van/de/van der/de la/etc etc etc
+
+@register.simple_tag
+def name_split(name, split_characters=None):
+
+    tokens = name.split()
+    if split_characters is None or len(name) > split_characters:
+        even_split = int((len(tokens) + 1) / 2)  # Round up.
+    else:
+        even_split = len(tokens)
+
+    return {
+        "first" : " ".join(tokens[:even_split]),
+        "last" : " ".join(tokens[even_split:]),
+    }
+
+@register.simple_tag
+def company_split(name):
+    f =  name_split(name, 18)
+    return f
+
+
+@register.simple_tag(takes_context=True)
+def special(context, user):
+    organiser = user.groups.filter(name='Conference organisers').exists()
+    try:
+        speaker = user.speaker_profile.presentations.count() != 0
+    except Exception:
+        speaker = False
+    volunteer = "Volunteer" in ticket_type(context)
+
+    if organiser:
+        return "Organizer"
+    elif speaker:
+        return "Speaker"
+    elif volunteer:
+        return "Staff"
+    else:
+        return ""
+
+
+CLEARED = set([
+    "BeeWare Project",
+    "Project Jupyter",
+    "PSF Packaging WG / PyCon 2018 Chair",
+    "PyCon Ukraine",
+    "PyLadies PDX",
+    "Recovered Silver",
+    "Twisted",
+    "@vmbrasseur",
+])
+
+@register.simple_tag
+def affiliation(ticket, user):
+    aff = user.attendee.attendeeprofilebase.attendeeprofile.company
+    if "Individual" not in ticket or "Sponsor" in ticket:
+        return aff
+    elif ticket == "Individual Supporter" and aff in CLEARED:
+        return aff
+    else:
+        return ""
+
+
+@register.simple_tag(takes_context=True)
+def ticket_type(context):
+
+    items = registrasion_tags.items_purchased(context)
+    for item in items:
+        if item.product.category.name == "Ticket":
+            return item.product.name
