@@ -18,7 +18,7 @@ easy-thumbnails==2.4.1
 django-timezone-field==2.0
 django-model-utils==3.0.0
 wiki==0.3b3
-
+django-email-log==0.2.0
 
 # For testing
 django-nose==1.4.4
