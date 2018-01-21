@@ -9,6 +9,9 @@ It is a fork of the [North Bay Python website](https://github.com/northbaypython
 
 ### Development
 
+python 2.7.14
+Django 1.11.9
+
 1. pip install -r requirements/base.txt
 2. python manage.py migrate
 3. python manage.py loaddata fixtures/*
