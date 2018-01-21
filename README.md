@@ -1,24 +1,24 @@
-North Bay Python
-=================
+PyOhio Website
+==============
 
-The website for North Bay Python is a Django application with Symposion and Registrasion.
+The website for PyOhio is a Django application with Symposion and Registrasion.
 
-Setup
------
+It is a fork of the [North Bay Python website](https://github.com/northbaypython/website) (thanks NBPy folks!)
 
-Development
-~~~~~~~~~~~
+## Setup
+
+### Development
+
 1. pip install -r requirements/base.txt
 2. python manage.py createsuperuser
 3. python manage.py loaddata fixtures/*
 4. python manage.py migrate
 
-Prod
-~~~~
+### Prod
+
 Use `pip install -r requirements.txt` instead.
 
-Reference Material
-------------------
+## Reference Material
 
 * Registrasion docs are at http://registrasion.readthedocs.io
 * Symposion docs are at http://symposion.readthedocs.io
