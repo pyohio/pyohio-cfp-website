@@ -99,8 +99,8 @@ body.auth .panel-heading .panel-title span.pull-right {
 }
 
 #content_body {
-  background-color: $background-filter-transparent;
-  box-shadow: 0px 0px 2em $background-filter; //, inset 0px -5px 1em rgba(0, 0, 0, 0.8);
+  // background-color: $background-filter-transparent;
+  // box-shadow: 0px 0px 2em $background-filter; //, inset 0px -5px 1em rgba(0, 0, 0, 0.8);
 }
 
 
@@ -313,15 +313,18 @@ $homepage-block-min-height: 480px;
 }
 
 .website-background {
-  background-image: url("../images/website-background.svg");
+  // [[[[background-image: url("../images/website-background.svg");]]]]
+  // background-image: url("https://http.cat/420");
 }
 
 .mystic-background {
-  background-image: url("../images/mystic.jpg");
+  // [[[[background-image: url("../images/mystic.jpg");]]]]
+  background-image: url("https://http.cat/508");
 }
 
 .djangogirls-background {
-  background-image: url("../images/django-girls-2014.jpg");
+  // [[[[background-image: url("../images/django-girls-2014.jpg");]]]]
+  background-image: url("https://http.cat/425");
 }
 
 .sponsor-list a img {

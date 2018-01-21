@@ -5,7 +5,7 @@ from django.contrib.staticfiles.templatetags.staticfiles import static as _stati
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
 from django_nyt.urls import get_pattern as get_nyt_pattern
-from wiki.urls import get_pattern as get_wiki_pattern
+# from wiki.urls import get_pattern as get_wiki_pattern
 
 from django.contrib import admin
 
@@ -18,8 +18,8 @@ urlpatterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
 
     # about
-    url(r"^about/north-bay-python$", TemplateView.as_view(template_name="static_pages/about/north_bay_python.html"), name="about/north-bay-python"),
-    url(r"^about/petaluma$", TemplateView.as_view(template_name="static_pages/about/petaluma.html"), name="about/petaluma"),
+    url(r"^about/pyohio$", TemplateView.as_view(template_name="static_pages/about/pyohio.html"), name="about/pyohio"),
+    url(r"^about/columbus$", TemplateView.as_view(template_name="static_pages/about/columbus.html"), name="about/columbus"),
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
     url(r"^about/transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/transparency.html"), name="about/transparency"),
     url(r"^about/program-transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/program.html"), name="about/program-transparency"),
@@ -69,7 +69,7 @@ urlpatterns = [
     url(r"^about/donate$", RedirectView.as_view(url="sponsors/donate")),
 
     # news
-    url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
+    # url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
 
     # Django, Symposion, and Registrasion URLs
 
@@ -97,8 +97,8 @@ urlpatterns = [
     url(r'^tickets/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
 
-    url(r'^wiki/notifications/', get_nyt_pattern()),
-    url(r'^wiki/', get_wiki_pattern())
+    # url(r'^wiki/notifications/', get_nyt_pattern()),
+    # url(r'^wiki/', get_wiki_pattern())
 
     # Catch-all MUST go last.
     #url(r"^", include("pinax.pages.urls")),

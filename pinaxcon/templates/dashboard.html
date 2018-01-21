@@ -115,10 +115,6 @@
         {% endif %}
     </div>
 
-{% comment %}
-    {% include "registrasion/dashboard_widget.html" %}
-{% endcomment %}
-
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="pull-right header-actions">
@@ -179,29 +175,8 @@
                         <li><a href="{% url "user_not_reviewed" section.section.slug %}">Not Reviewed by you</a></li>
                     {% endfor %}
                 </ul>
-
-                {% comment %}
-                <h4>My Assignments</h4>
-                <table class="table">
-                    <thead>
-                        <td>Proposal Title</td>
-                        <td>Score</td>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Title Three</td>
-                            <td>-1</td>
-                        </tr>
-                        <tr>
-                            <td>Title Four</td>
-                            <td>+2</td>
-                        </tr>
-                    </tbody>
-                </table>
-                {% endcomment %}
-
             </div>
-    </div>
+        </div>
     {% endif %}
 
     {% available_teams as available_teams %}

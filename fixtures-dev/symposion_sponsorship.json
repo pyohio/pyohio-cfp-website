@@ -1,0 +1,390 @@
+[
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 1,
+    "fields": {
+        "conference": 1,
+        "name": "Gold",
+        "order": 1,
+        "cost": 4000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 2,
+    "fields": {
+        "conference": 1,
+        "name": "Silver",
+        "order": 2,
+        "cost": 2000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 3,
+    "fields": {
+        "conference": 1,
+        "name": "Platinum",
+        "order": 1,
+        "cost": 6000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 4,
+    "fields": {
+        "conference": 1,
+        "name": "Individual",
+        "order": 4,
+        "cost": 500,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 1,
+    "fields": {
+        "applicant": 1,
+        "name": "Gold Sponsor",
+        "display_url": "",
+        "external_url": "https://www.pyohio.org",
+        "annotation": "",
+        "contact_name": "Gold Sponsor",
+        "contact_email": "goldsponsor@example.com",
+        "level": 1,
+        "added": "2018-01-20T00:14:37Z",
+        "active": true,
+        "sponsor_logo": 1,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 2,
+    "fields": {
+        "applicant": 1,
+        "name": "Platinum Sponsor",
+        "display_url": "",
+        "external_url": "https://www.pyohio.org",
+        "annotation": "",
+        "contact_name": "platinum sponsor",
+        "contact_email": "platinumsponsor@example.com",
+        "level": 3,
+        "added": "2018-01-20T00:15:25Z",
+        "active": true,
+        "sponsor_logo": 4,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 3,
+    "fields": {
+        "applicant": 1,
+        "name": "Silver Sponsor",
+        "display_url": "",
+        "external_url": "https://www.pyohio.org",
+        "annotation": "",
+        "contact_name": "silver sponsor",
+        "contact_email": "silversponsor@example.com",
+        "level": 2,
+        "added": "2018-01-20T00:15:57Z",
+        "active": true,
+        "sponsor_logo": 7,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 4,
+    "fields": {
+        "applicant": 1,
+        "name": "Individual Sponsor",
+        "display_url": "",
+        "external_url": "https://www.pyohio.org",
+        "annotation": "",
+        "contact_name": "you!",
+        "contact_email": "individualsponsor@example.com",
+        "level": 4,
+        "added": "2018-01-20T00:16:22Z",
+        "active": true,
+        "sponsor_logo": 10,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.benefit",
+    "pk": 2,
+    "fields": {
+        "name": "Web Logo",
+        "description": "Logo to appear on the website",
+        "type": "weblogo",
+        "content_type": "simple"
+    }
+},
+{
+    "model": "symposion_sponsorship.benefit",
+    "pk": 3,
+    "fields": {
+        "name": "Print Logo",
+        "description": "Logo to appear in print",
+        "type": "file",
+        "content_type": "simple"
+    }
+},
+{
+    "model": "symposion_sponsorship.benefit",
+    "pk": 4,
+    "fields": {
+        "name": "Sponsor Description",
+        "description": "Description to appear on website and in print",
+        "type": "text",
+        "content_type": "simple"
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 1,
+    "fields": {
+        "benefit": 2,
+        "level": 1,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 2,
+    "fields": {
+        "benefit": 2,
+        "level": 2,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 3,
+    "fields": {
+        "benefit": 2,
+        "level": 3,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 5,
+    "fields": {
+        "benefit": 3,
+        "level": 1,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 6,
+    "fields": {
+        "benefit": 3,
+        "level": 2,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 7,
+    "fields": {
+        "benefit": 3,
+        "level": 3,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 9,
+    "fields": {
+        "benefit": 4,
+        "level": 1,
+        "max_words": 200,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 10,
+    "fields": {
+        "benefit": 4,
+        "level": 2,
+        "max_words": 100,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 11,
+    "fields": {
+        "benefit": 4,
+        "level": 3,
+        "max_words": 300,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 1,
+    "fields": {
+        "sponsor": 1,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "web logo",
+        "upload": "sponsor_files/py-small-logo.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 2,
+    "fields": {
+        "sponsor": 1,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "print logo",
+        "upload": "sponsor_files/square_icon.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 3,
+    "fields": {
+        "sponsor": 1,
+        "benefit": 4,
+        "active": true,
+        "max_words": 200,
+        "other_limits": "",
+        "text": "sponsor desc",
+        "upload": "",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 4,
+    "fields": {
+        "sponsor": 2,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/py-small-logo_WdswBvL.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 5,
+    "fields": {
+        "sponsor": 2,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 6,
+    "fields": {
+        "sponsor": 2,
+        "benefit": 4,
+        "active": true,
+        "max_words": 300,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 7,
+    "fields": {
+        "sponsor": 3,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "web logo",
+        "upload": "sponsor_files/py-small-logo_jId6zBt.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 8,
+    "fields": {
+        "sponsor": 3,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 9,
+    "fields": {
+        "sponsor": 3,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 10,
+    "fields": {
+        "sponsor": 4,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/py-small-logo_pGhKx8G.png",
+        "is_complete": true
+    }
+}
+]

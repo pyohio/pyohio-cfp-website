@@ -13,36 +13,36 @@
 {% block body %}
 
   <div class="homepage-block-bg website-background"></div>
-  <div class="jumbotron homepage-block light">
+  <div class="jumbotron homepage-block white">
     <div class="homepage-block-bg website-background"></div>
-    <div class="hills main"></div>
     <div class="container homepage-block-content">
       <div class="tight-headings">
-        <h1>North Bay Python</h1>
-        <h2 class="homepage-subtitle">A Python conference north of the Golden Gate</h2>
+        <h1>PyOhio</h1>
+        <h2 class="homepage-subtitle">A free Annual Python Conference in Ohio</h2>
       </div>
 
       <div class="row">
         <div class="col-md-6">
           <h3>
-            The Mystic Theatre</br>
-            Petaluma, California
+            Ohio Union<br>
+            Columbus, Ohio
           </h3>
 
           <h4>
-            December 2 &amp; 3, 2017<br/>
-            Tickets on sale from $50
+            July 29-30 2017<br/>
+            Register now FREE - sponsorships available
           </h4>
         </div>
-        <div class="col-md-4 col-md-offset-2 email-signup-panel">
+        <!-- newsletter form-->
+        <!--div class="col-md-4 col-md-offset-2 email-signup-panel">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h2 class="panel-title">Sign up for our low-volume announcements newsletter!</h4>
+              <h2 class="panel-title">[[[[Newsletter signup]]]]</h4>
             </div>
             <div class="panel-body">
               <form
                 class="form-inline"
-                action="https://tinyletter.com/northbaypython" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/northbaypython', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                action="[[[[newletter link]]]]" method="post" target="popupwindow" onsubmit="window.open('[[[[newsletter link]]]]', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
                 <div class="form-group">
                   <span>
                     <label class="hidden-accessible" for="tlemail">Email address:</label>
@@ -59,7 +59,7 @@
               </form>
             </div>
           </div>
-        </div>
+        </div -->
 
       </div>
 
@@ -67,9 +67,9 @@
 
     <div class="container homepage-block-footer">
       <div>
-        <a class="btn btn-primary btn-lg" href="/attend">Buy a Ticket!</a>
-        <a class="btn btn-default btn-lg " href="https://twitter.com/northbaypython">Twitter</a>
-        <a class="btn btn-default btn-lg" href="https://facebook.com/northbaypython">Facebook</a>
+        <a class="btn btn-primary btn-lg" href="/attend">register to attend!</a>
+        <a class="btn btn-default btn-lg " href="https://twitter.com/pyohio">Twitter</a>
+        <a class="btn btn-default btn-lg" href="https://facebook.com/pyohio">Facebook</a>
       </div>
     </div>
   </div>
@@ -83,20 +83,20 @@
         <div class="speaker" >
           <div class="image-alignment">
             <div class="circle" style="border: 0;">
-                <div class="fill" style="background-image: url('{% static "images/brandon.jpg" %}');"></div>
+                <div class="fill" style="background-image: url('https://http.cat/101');" {% comment %}{% static "images/speaker-one.jpg" %}');"{% endcomment%}></div>
             </div>
           </div>
-          <h4>Brandon Rhodes</h4>
+          <h4>speaker</h4>
           <span class="presentation-title">Keynote Speaker</span>
         </div>
 
         <div class="speaker" >
           <div class="image-alignment">
             <div class="circle" style="border: 0;">
-                <div class="fill" style="background-image: url('{% static "images/cczona.jpg" %}');"></div>
+                <div class="fill" style="background-image: url('https://http.cat/305');" {% comment %}{% static "images/speaker-two.jpg" %}');"{% endcomment %}></div>
             </div>
           </div>
-          <h4>Carina C. Zona</h4>
+          <h4>speaker</h4>
           <span class="presentation-title">Keynote Speaker</span>
         </div>
 
@@ -124,10 +124,10 @@
         <div class="speaker" >
           <div class="image-alignment">
             <div class="circle" style="border: 0;">
-                <div class="fill" style="background-image: url('{% static "images/vmbrasseur.jpg" %}');"></div>
+                <div class="fill" style="background-image: url('https://http.cat/418');"{% comment %}{% static "images/kitten-three.jpg" %}');"{% endcomment%}></div>
             </div>
           </div>
-          <h4>VM Brasseur</h4>
+          <h4>speaker</h4>
           <span class="presentation-title">Speaker Training</span>
         </div>
 
@@ -149,17 +149,15 @@
   <div class="jumbotron homepage-block dark">
     <div class="homepage-block-bg mystic-background"></div>
     <div class="container homepage-block-content">
-      <h1>Downtown Petaluma</h1>
+      <h1>Downtown Columbus</h1>
 
-      <p>North Bay Python's home is Petaluma, a delightfully quaint dairy town, nestled on a river at the edge of California's Wine Country. Here's what you can look forward to:</p>
+      <p>Home to many great restaraunts, parks, things to do, and that other team from that other school down south... (go blue!)</p>
 
       <ul>
-        <li>An historic venue with countless restaurants and coffee shops in walking distance</li>
-        <li>World-famous craft food and drink producers on your doorstep</li>
-        <li>Charming <a href="/attend/hotels">small-town hotels</a>, as close as one block away</li>
+        <li>Visit Downtown! - see a hockey game!</li>
+        <li>Try the restaraunt scene on something something street</li>
+        <li>Place University of Michigan Regalia on the Ohio State Campus! (don't forget your running shoes!)</li>
       </ul>
-
-      <p>&hellip; and it's <a href="/attend/travel">only an hour away from San Francisco</a> (on a good day).</p>
     </div>
 
     <div class="homepage-block-footer full-width">
@@ -172,7 +170,7 @@
           </div>
 
           <div class="col-md-8 text-right photo-attribution">
-            Image credit: <a href="https://www.instagram.com/p/BU-G5dGAkHt">Mystic Theatre</a>, &copy; 2017 Christopher Neugebauer (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>)
+            image courtsey of <a href="https://http.cat">http cats</a>
           </div>
         </div>
       </div>
@@ -218,13 +216,12 @@
     <div class="container homepage-block-content">
       <h1>Inclusion and Diversity</h1>
 
-      <p>North Bay Python is proud to be founded on a commitment to inclusion and diversity. Here's what we commit to:</p>
+      <p>PyOhio is proud to foster a culture and community committed to inclusion and diversity</p>
 
       <ul>
-        <li>A strong Code of Conduct and enforcement policy built on the Python Software Foundation's PyCon US policy.</li>
-        <li>Diversity targets for speakers and attendees.</li>
-        <li>Financial assistance for speakers who need it.</li>
-        <li>Low-cost tickets, with fees enthusiastically waived on request.</li>
+        <li>PyOhio is a welcoming, open conference and expects all attendees, speakers, and volunteers to abide by the <a href="">PyOhio Code of Conduct</a>.</li>
+        <li>Diversity in speakers with preference given to first time speakers.</li>
+        <li>Free registration for attendees</li>
       </ul>
     </div>
 
@@ -232,11 +229,11 @@
       <div class="container">
         <div class="row">
           <div class="btn-group col-md-4">
-            <a class="btn btn-lg btn-primary btn-shadow" href="/code-of-conduct" title"North Bay Python Code of Conduct">Read the Code of Conduct</a>
+            <a class="btn btn-lg btn-primary btn-shadow" href="/code-of-conduct" title"PyOhio Code of Conduct">Read the Code of Conduct</a>
           </div>
 
           <div class="col-md-8 text-right photo-attribution">
-            Image credit: <a href="https://www.flickr.com/photos/richard_jones/14638274749">DjangoGirls Brisbane</a>, &copy; 2014 Richard Jones (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)
+            image courtsey of <a href="https://http.cat">http cats</a>
           </div>
         </div>
       </div>

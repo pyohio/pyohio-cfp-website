@@ -4,16 +4,16 @@
 
   <div class="logo">
     <div class="circle">
-      <div class="fill" style="background-image: url('{% static "images/logo.svg" %}');"></div>
+      <div class="fill" style="background-image: url('{% static "images/py-small-logo.png" %}');"></div>
     </div>
   </div>
 
   <div class="footer-copy">
-    <p>&copy; 2017 North Bay Python, member project of <a href="https://sfconservancy.org" >Software Freedom Conservancy</a>, a 501(c)(3) charity.</p>
+    <p>&copy; 2018 PyOhio</p>
 
     {% sponsors "platinum" as platinum %}
 
-    <p>We acknowledge the support of our Platinum sponsor{{ platinum|length|pluralize}},
+    <p>Sponsorship recognition - We acknowledge the support of our Platinum sponsor{{ platinum|length|pluralize}},
       {% for sponsor in platinum %}
         {% if forloop.last and not forloop.first %}
           and
@@ -22,16 +22,15 @@
       {% endfor %}
 
     <p>
-      <a href="https://facebook.com/northbaypython">Facebook</a>
-      | <a href="https://twitter.com/northbaypython">Twitter</a>
-      | <a href="https://www.youtube.com/channel/UCLc1vUexbRTlRBJcUG9U6ug">YouTube</a>
-      | <a href="https://webchat.freenode.net/?channels=%23nbpy">IRC</a>
+      <a href="https://facebook.com/pyohio">Facebook</a>
+      | <a href="https://twitter.com/pyohio">Twitter</a>
+      | <a href="https://www.youtube.com/channel/UCYqdrfvhGxNW3vXebypqXoQ">YouTube</a>
       | <a href="/accessibility">Accessibility</a>
       | <a href="/code-of-conduct">Code of Conduct</a>
       | <a href="/about/colophon">Colophon</a>
       | <a href="/terms">Terms and Conditions</a>
     </p>
 
-    <p>This site is <a href="https://github.com/northbaypython/website">free and open source software</a>, powered by <a href="https://github.com/chrisjrn/symposion/">Symposion</a> and <a href="https://github.com/chrisjrn/registrasion/">Registrasion</a>.</p>
+    <p>About Site - link to githubThis site is <a href="https://github.com/pyohio/pyohio">free and open source software</a>, powered by <a href="https://github.com/chrisjrn/symposion/">Symposion</a> and <a href="https://github.com/chrisjrn/registrasion/">Registrasion</a>.p>
   </div>
 </div>

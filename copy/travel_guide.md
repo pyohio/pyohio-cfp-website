@@ -1,44 +1,41 @@
-North Bay Python is taking place at the Mystic Theatre in historic Downtown Petaluma. The Mystic was constructed in 1912 as a Vaudeville theatre, and has undergone many changes over the years. These days, it's Petaluma's premier live music venue.
+PyOhio is taking place in the Ohio Union at The Ohio State University. The <a href="https://ohiounion.osu.edu/about_the_union/mission_vision_values">Ohio Union</a> provides a welcoming environment for the Ohio State community and guests and fosters an atmosphere of Inclusiveness, Learning, Innovation, and Teamwork 
 
-Petaluma's a shockingly quaint dairy town at the south end of Sonoma County, full of well preserved Victorian architecture and BLAH. We're in the middle of one of the powerhouses of agriculture and viticulture in California, so Petaluma is full of restaurants that specialize in very local food and wine. Petaluma is also home to the world-famous Lagunitas Brewing Company, as well as numerous artisan distilleries and wine makers.
+Columbus is the state capitol for Ohio and hosts a wide range of communities and activities.
 
-# Getting To Petaluma
+# Getting To Columbus
 
-## From San Francisco
+## From Cleveland
 
-Petaluma is about 30 miles north of the Golden Gate Bridge, and the drive can take anywhere between 30 and 90 minutes depending on the time of day. Golden Gate Transit runs the 101 bus from downtown San Francisco with BART/Muni connections at Civic Center.
+From Cleveland and Akron-Canton, take I-71 south until exit 112.
 
 ## By Air
 
-Petaluma is served by San Francisco (SFO) and Oakland (OAK) international airports, both about 60 miles south of Petaluma. The Sonoma County Airport Express runs hourly buses to Petaluma from SFO, and buses every two hours from OAK.
+Columbus Airport is located about 6 miles east of Columbus and is located near both the Ohio Union and local hotels.
 
-Sonoma County Airport (STS) is about 30 miles north in Santa Rosa, and has passenger service from most major West Coast cities. Sonoma County Airport is served by the SMART Train on weekdays and weekend afternoons, with a stop near downtown Petaluma.
-
-# Staying in Petaluma
+# Staying in Columbus
 
 ## Downtown
 
-Hotel Petaluma
+[[[[Hotel 1]]]]
 
-Metro Hotel
+[[[[Hotel 2]]]]
 
-Airbnb
+[[[[Air BnB?]]]]
 
 ## Near the Freeway
 
-Etc etc etc
+[[[[Locations near the freeway / greater columbus area]]]]
 
-
-# When in Petaluma
+# When in Columbus
 
 ## Eating
 
-There's more than 50 places to find lunch within walking distance of the Mystic, starting at McNear's Saloon next door...
+There's more than 50 places to find lunch within walking distance of the Ohio Union. [[[[we recommend the following...]]]]
 
 ## Evenings
 
-Taps/Brewster's/Dempsey's/Lagunitas
+[[[[restaurant and location recomendations]]]]
 
 ## Nearby attractions
 
-Beaches/Wineries/Breweries/Other forests & parks/Museums
+[[[[Wineries/Breweries/Other forests & parks/Museums]]]]
