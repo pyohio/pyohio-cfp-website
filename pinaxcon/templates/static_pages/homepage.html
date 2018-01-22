@@ -12,10 +12,10 @@
 
 {% block body %}
 
-  <div class="homepage-block-bg website-background"></div>
+  <div class="homepage-block-bg"></div>
   <div class="jumbotron homepage-block white">
-    <div class="homepage-block-bg website-background"></div>
-    <div class="container homepage-block-content">
+    <div class="homepage-block-bg"></div>
+    <div class="container homepage-block-content ">
       <div class="tight-headings">
         <h1>PyOhio</h1>
         <h2 class="homepage-subtitle">A free Annual Python Conference in Ohio</h2>
@@ -28,10 +28,21 @@
             Columbus, Ohio
           </h3>
 
-          <h4>
-            July 29-30 2017<br/>
-            Register now FREE - sponsorships available
-          </h4>
+          <h3>
+            July 28-29, 2018<br/>
+          </h3>
+          <p>Come be a part of the 11th Annual PyOhio!</p>
+          <p>A FREE annual conference at the Ohio Union in Columbus, Ohio for Python programmers in and around Ohio, the entire Midwest, maybe even the whole world.</p>
+          <p>What can you expect at PyOhio 2018? Check out videos from previous PyOhio conferences:</p>
+          <ul class="list-inline">
+            <li><a href="http://pyvideo.org/events/pyohio-2016.html"><h3>2016 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+            <li><a href="http://pyvideo.org/events/pyohio-2015.html"><h3>2015 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+            <li><a href="http://pyvideo.org/events/pyohio-2014.html"><h3>2014 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+            <li><a href="http://pyvideo.org/events/pyohio-2013.html"><h3>2013 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+            <li><a href="http://pyvideo.org/events/pyohio-2012.html"><h3>2012 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+            <li><a href="http://pyvideo.org/events/pyohio-2011.html"><h3>2011 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+            <li><a href="http://pyvideo.org/events/pyohio-2010.html"><h3>2010 <img src="/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a></li>
+          </ul>
         </div>
         <!-- newsletter form-->
         <!--div class="col-md-4 col-md-offset-2 email-signup-panel">
@@ -75,6 +86,40 @@
   </div>
 
   <div class="jumbotron homepage-block white">
+    <div class="container homepage-block-content">
+      <h1>Sponsors</h1>
+
+      {% sponsor_levels as levels %}
+
+      <div class="row sponsor-list">
+      {% for level in levels %}
+          {% if level.sponsors %}
+              {% for sponsor in level.sponsors %}
+                  <div class="sponsor">
+                    <div class="logo-alignment">
+                      {% if sponsor.website_logo %}
+                          <a href="{{ sponsor.external_url }}">
+                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
+                          </a>
+                      {% else %}
+                          <a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a>
+                      {% endif %}
+                    </div>
+                  </div>
+              {% endfor %}
+          {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="container homepage-block-footer">
+      <div class="btn-group">
+        <a class="btn btn-lg btn-primary btn-shadow" href="/sponsors/become-a-sponsor">Become a Sponsor</a>
+      </div>
+    </div>
+  </div>
+
+  <!--div class="jumbotron homepage-block white">
     <div class="container homepage-block-content">
       <h1>Speakers</h1>
 
@@ -143,11 +188,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div-->
 
-
-  <div class="jumbotron homepage-block white">
-    <div class="homepage-block-bg mystic-background"></div>
+  <!--div class="jumbotron homepage-block white">
+    <div class="homepage-block-bg"></div>
     <div class="container homepage-block-content">
       <h1>Downtown Columbus</h1>
 
@@ -170,70 +214,32 @@
           </div>
 
           <div class="col-md-8 text-right photo-attribution">
-            [[[[image credit]]]]
+            {% comment %}image credit{% endcomment %}
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div-->
 
   <div class="jumbotron homepage-block white">
-    <div class="container homepage-block-content">
-      <h1>Sponsors</h1>
-
-      {% sponsor_levels as levels %}
-
-      <div class="row sponsor-list">
-      {% for level in levels %}
-          {% if level.sponsors %}
-              {% for sponsor in level.sponsors %}
-                  <div class="sponsor">
-                    <div class="logo-alignment">
-                      {% if sponsor.website_logo %}
-                          <a href="{{ sponsor.external_url }}">
-                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
-                          </a>
-                      {% else %}
-                          <a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a>
-                      {% endif %}
-                    </div>
-                  </div>
-              {% endfor %}
-          {% endif %}
-      {% endfor %}
+    <div class="homepage-block-bg"></div>
+    <div class="col-xs-12 col-sm-6 index-p">
+      <div class="container homepage-block-content">
+        <p>PyOhio is only successful through the efforts of our sponsors, speakers, and volunteers. If you would like to support PyOhio and keep it the best Python conference in the Midwest, please donate to the PyOhio Future Fund.</p>
       </div>
     </div>
-
-    <div class="container homepage-block-footer">
-      <div class="btn-group">
-        <a class="btn btn-lg btn-primary btn-shadow" href="/sponsors/become-a-sponsor">Become a Sponsor</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="jumbotron homepage-block white">
-    <div class="homepage-block-bg djangogirls-background"></div>
-    <div class="container homepage-block-content">
-      <h1>Inclusion and Diversity</h1>
-
-      <p>PyOhio is proud to foster a culture and community committed to inclusion and diversity</p>
-
-      <ul>
-        <li>PyOhio is a welcoming, open conference and expects all attendees, speakers, and volunteers to abide by the <a href="">PyOhio Code of Conduct</a>.</li>
-        <li>Diversity in speakers with preference given to first time speakers.</li>
-        <li>Free registration for attendees</li>
-      </ul>
+    <div class="col-xs-12 col-sm-6 index-p">
+      <div class="container homepage-block-content">
+        <p>PyOhio is a welcoming, open conference and expects all attendees, speakers, and volunteers to abide by the <a href="">PyOhio Code of Conduct</a>.</p>
+        <p>See you in Columbus!</p>
+      </div>  
     </div>
 
     <div class="homepage-block-footer full-width">
       <div class="container">
         <div class="row">
-          <div class="btn-group col-md-4">
-            <a class="btn btn-lg btn-primary btn-shadow" href="/code-of-conduct" title"PyOhio Code of Conduct">Read the Code of Conduct</a>
-          </div>
-
           <div class="col-md-8 text-right photo-attribution">
-            [[[[image credit]]]]
+            {% comment %}image credit{% endcomment %}
           </div>
         </div>
       </div>

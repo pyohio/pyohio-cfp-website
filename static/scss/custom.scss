@@ -121,7 +121,7 @@ $homepage-block-min-height: 480px;
 .homepage-block {
   margin-top: 0;
   margin-bottom: 0;
-  min-height: $homepage-block-min-height;
+  // min-height: $homepage-block-min-height;
   position: relative;
   box-shadow: $box-shadow;
   z-index: 3;
@@ -180,7 +180,7 @@ $homepage-block-min-height: 480px;
 
 
 .homepage-block-content {
-  min-height: ($homepage-block-min-height - 80px);
+  // min-height: ($homepage-block-min-height - 80px);
 }
 
 /* ??? */
@@ -310,18 +310,6 @@ $homepage-block-min-height: 480px;
 
 .btn-group + p {
   margin-top: 1em;
-}
-
-.website-background {
-  // [[[[background-image: url("../images/website-background.svg");]]]]
-}
-
-.mystic-background {
-  // [[[[background-image: url("../images/mystic.jpg");]]]]
-}
-
-.djangogirls-background {
-  // [[[[background-image: url("../images/django-girls-2014.jpg");]]]]
 }
 
 .sponsor-list a img {
