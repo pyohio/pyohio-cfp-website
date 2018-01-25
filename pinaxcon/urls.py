@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.conf.urls import include, url
+from django.conf.urls import include, patterns, url
 from django.conf.urls.static import static
 from django.contrib.staticfiles.templatetags.staticfiles import static as _static
 from django.views.generic import TemplateView
@@ -14,7 +14,7 @@ from pinaxcon import views
 import symposion.views
 
 
-urlpatterns = [
+original_patterns = [
     url(r"^$", TemplateView.as_view(template_name="static_pages/homepage.html"), name="home"),
 
     # about
@@ -103,6 +103,11 @@ urlpatterns = [
     # Catch-all MUST go last.
     #url(r"^", include("pinax.pages.urls")),
 ]
+
+urlpatterns = patterns("",
+    url(r"^$", RedirectView.as_view(url="/%s/" % URL_PREFIX, permanent=False)),
+    url(r"^%s/" % URL_PREFIX, include(patterns(original_patterns)))
+    )
 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

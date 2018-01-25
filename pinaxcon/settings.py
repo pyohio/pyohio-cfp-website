@@ -155,6 +155,7 @@ MIDDLEWARE_CLASSES = [
     "pinaxcon.monkey_patch.MonkeyPatchMiddleware",
 ]
 
+SITE_URL_PREFIX = "2018"
 ROOT_URLCONF = "pinaxcon.urls"
 
 # Python dotted path to the WSGI application used by Django's runserver.
