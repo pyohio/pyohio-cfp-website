@@ -42,3 +42,5 @@ def buy_ticket(request):
             staff, if required. ''')
 
     return redirect("/dashboard")
+
+

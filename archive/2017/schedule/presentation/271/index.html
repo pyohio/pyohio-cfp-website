@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en-us">
+
+<!-- Mirrored from pyohio.org/schedule/presentation/271/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2018 06:51:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112992906-1"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'UA-112992906-1'); </script>
+  <meta charset="UTF-8">
+  <title>PyOhio | Presentation: Running Vintage Software: PyPI&#39;s Aging Codebase.</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+  <link href="/2017/site_media/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,700,900' rel='stylesheet' type='text/css'>
+  <link href="/2017/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2017/site_media/static/markitup/sets/markdown/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+  <link href="/2017/site_media/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="/2017/site_media/static/pinax/css/theme.css" rel="stylesheet">
+  <link href="/2017/site_media/static/css/styles.css" rel="stylesheet">
+  
+  
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+
+  
+    <link href="/2017/site_media/static/img/favicon.ico" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+    
+<script type="text/javascript" src="/2017/site_media/static/markitup/ajax_csrf.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/markitup/sets/markdown/set.js"></script>
+
+    
+  
+</head>
+
+<body class="" id="">
+
+  <div class="container">
+
+    
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/2017/"><img src="/2017/site_media/static/images/py-small-logo.png" alt="volunteer hand icon" width=30 height=30></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+            
+<ul class="nav navbar-nav">
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Events
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sprints/" >Reception &amp; Sprints</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/young-coders/" >PyKids</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/schedule/" >Conference Schedule</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/schedule/talks/list/" >Talks List</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/schedule/tutorials/list/" >Tutorials List</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/call-for-proposals/" >
+                CFP
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/code-of-conduct/" >
+                Conduct
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/" >PyOhio Sponsors</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/apply/" >Apply to be a Sponsor</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/prospectus/" >Sponsors Prospectus</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://www.pyohio.org/2017/sponsors/nonprofits/" >Sponsorship for Non-Profits</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://www.pyohio.org/2017/sponsors/startups/" >Sponsorship for Python Startups</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/individuals/" >Sponsorship for Individuals</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="https://pyohio.eventbrite.com" >
+                Registration
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/hotel/" >
+                Hotel
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Volunteer
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://docs.google.com/forms/d/1MMkEfL66CNq7sDxvXeizODELnJUzAeZigGW0sUk1WJI/viewform" >Sign up as volunteer</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/proposals/submit/ " >Submit proposal</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/review-proposals/" >Review proposals</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/dashboard/" >
+                Dashboard
+                
+            </a>
+            
+        </li>
+    
+</ul>
+          
+          
+            
+
+
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li><a href="/2017/account/login/">Log in</a></li>
+        
+            <li><a href="/2017/account/signup/">Sign up</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='JXU14ZrM1uOrvzqTJALXzz5yLZEU9tBY' />
+</form>
+
+          
+        </div>
+        <!--/.nav-collapse -->
+        
+      </div>
+    </div>
+    
+
+    
+      <div class="row">
+  <div class="col-xs-12 col-sm-12">
+    
+  </div>
+</div>
+
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          
+    
+        <h4>
+            Saturday
+            11:30 a.m.&ndash;12:20 p.m.
+        </h4>
+    
+    <h2>Running Vintage Software: PyPI&#39;s Aging Codebase.</h2>
+
+    <h4>
+        
+            <a href="/2017/speaker/profile/367/">Ernest W. Durbin III</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt>Audience level:</dt>
+        <dd style="margin-bottom: 0;">Intermediate</dd>
+    </dl>
+
+    <h3>Description</h3>
+
+    <div class="description"><p>The Python Package Index, lovingly known as The Cheeseshop to some, has grown enormously since it's introduction in 2002. As a critical piece of the Python Community's infrastructure, it has suffered many growing pains over the years. Let's review the recent history of PyPI, lessons learned, and techniques applied to keep it running.</p></div>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><p>From it's origins in the early days as a metadata server to the current trove of hosted packages, PyPI has grown into a critical part of the Python Communities Infrastructure.</p>
+<p>Originally conceived and implemented in 2002 as a simple set of metadata, the codebase that backs PyPI has been pushed well beyond it's limits. While some may call it "legacy" software, I choose to view it like one may view a classic car that still sees it's time on the road.</p>
+<p>This talk will present some of the challenges common to keeping a Vintage Car on the road as well as their counter parts when dealing with Vintage Software and take a look at the approaches that have worked well to keep PyPI up and running as a full rewrite is underway.</p>
+<p>Also covered will be an overview of the history of PyPI as a whole, as well as what the future holds and how you (yes you!) can contribute.</p>
+<p>Technical Topics covered include:</p>
+<ul>
+<li>External caching, Content Delivery Networks</li>
+<li>Internal caching, to speed up common or repetitive requests which just can't be cached in the CDN</li>
+<li>Metrics, Metrics, Metrics! Not just for monitoring! Keep track of what features just aren't worth supporting any longer or what methods are prime for optimization</li>
+<li>Dealing with issues related to scaling even when major refactors or changes aren't feasible.</li>
+<li>Increasing reliability</li>
+</ul>
+<p>The desired outcome for attendees of this talk is a sense of how to approach a Vintage codebase that must remain up and running even as it's predecessor may be in progress. Big rewrites can take time! Don't feel defeated sustaining an old project, it is what your users need!</p>
+<p>Novice attendees may find the history and high level concepts interesting, but Intermediate attendees should get the most out of this talk. Specifically some of the technical bits will make the most sense and be most applicable if you've ever worked on a medium to large production web service.</p></div>
+
+        </div>
+      </div>
+      
+    
+
+    
+    <div class="row" id="footer">
+      <div class="col-xs-3 col-sm-3">
+        <div class="pull-left">
+          <p>©2018 PyOhio</p>
+        </div>
+      </div>
+    </div>
+    
+
+  </div><!--end of container-->
+
+  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/2017/site_media/static/js/bootstrap.min.js"></script>
+  
+  
+
+  
+    
+  
+</body>
+
+<!-- Mirrored from pyohio.org/schedule/presentation/271/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2018 06:51:11 GMT -->
+</html>

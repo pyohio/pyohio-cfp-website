@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en-us">
+
+<!-- Mirrored from pyohio.org/schedule/presentation/300/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2018 06:54:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112992906-1"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'UA-112992906-1'); </script>
+  <meta charset="UTF-8">
+  <title>PyOhio | Presentation: Hitting the Pavement with Python: Pt1</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+  <link href="/2017/site_media/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,700,900' rel='stylesheet' type='text/css'>
+  <link href="/2017/site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="/2017/site_media/static/markitup/sets/markdown/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+  <link href="/2017/site_media/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="/2017/site_media/static/pinax/css/theme.css" rel="stylesheet">
+  <link href="/2017/site_media/static/css/styles.css" rel="stylesheet">
+  
+  
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+
+  
+    <link href="/2017/site_media/static/img/favicon.ico" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+    
+<script type="text/javascript" src="/2017/site_media/static/markitup/ajax_csrf.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="/2017/site_media/static/markitup/sets/markdown/set.js"></script>
+
+    
+  
+</head>
+
+<body class="" id="">
+
+  <div class="container">
+
+    
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/2017/"><img src="/2017/site_media/static/images/py-small-logo.png" alt="volunteer hand icon" width=30 height=30></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+            
+<ul class="nav navbar-nav">
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Events
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sprints/" >Reception &amp; Sprints</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/young-coders/" >PyKids</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/schedule/" >Conference Schedule</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/schedule/talks/list/" >Talks List</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/schedule/tutorials/list/" >Tutorials List</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/call-for-proposals/" >
+                CFP
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/code-of-conduct/" >
+                Conduct
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/" >PyOhio Sponsors</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/apply/" >Apply to be a Sponsor</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/prospectus/" >Sponsors Prospectus</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://www.pyohio.org/2017/sponsors/nonprofits/" >Sponsorship for Non-Profits</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://www.pyohio.org/2017/sponsors/startups/" >Sponsorship for Python Startups</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/sponsors/individuals/" >Sponsorship for Individuals</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="https://pyohio.eventbrite.com" >
+                Registration
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/hotel/" >
+                Hotel
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Volunteer
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://docs.google.com/forms/d/1MMkEfL66CNq7sDxvXeizODELnJUzAeZigGW0sUk1WJI/viewform" >Sign up as volunteer</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/proposals/submit/ " >Submit proposal</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="/2017/review-proposals/" >Review proposals</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/2017/dashboard/" >
+                Dashboard
+                
+            </a>
+            
+        </li>
+    
+</ul>
+          
+          
+            
+
+
+
+<ul class="nav navbar-nav navbar-right">
+    
+        <li><a href="/2017/account/login/">Log in</a></li>
+        
+            <li><a href="/2017/account/signup/">Sign up</a></li>
+        
+    
+</ul>
+
+<form id="accountLogOutForm" style="display: none;" action="/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='JXU14ZrM1uOrvzqTJALXzz5yLZEU9tBY' />
+</form>
+
+          
+        </div>
+        <!--/.nav-collapse -->
+        
+      </div>
+    </div>
+    
+
+    
+      <div class="row">
+  <div class="col-xs-12 col-sm-12">
+    
+  </div>
+</div>
+
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          
+    
+        <h4>
+            Sunday
+            4 p.m.&ndash;4:50 p.m.
+        </h4>
+    
+    <h2>Hitting the Pavement with Python: Pt1</h2>
+
+    <h4>
+        
+            <a href="/2017/speaker/profile/358/">Josh Francisco</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt>Audience level:</dt>
+        <dd style="margin-bottom: 0;">Novice</dd>
+    </dl>
+
+    <h3>Description</h3>
+
+    <div class="description"><p>Using python to interact with aftermarket engine management controllers. Part 1 will focus on the initial discovery of the controller's serial protocol, communicating with the controller over a serial port, unpacking the byte stream, and using Redis as a mechanism to store and radiate data.</p></div>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><h2>Intro</h2>
+<p>Don't be scared! I'll go over the 'need-to-know' automotive bits quickly so that we can remain focused on python.</p>
+<p>This project was the result of my second serious attempt at a project in python. I ended up with a good code base for the evolution of a more complete platform in the future.</p>
+<h2>Talk Outline</h2>
+<h3>Intro</h3>
+<ul>
+<li>~5min - Introduce self, obligatory company representation</li>
+</ul>
+<h3>Hardware</h3>
+<ul>
+<li>~5min - Quickly list required/useful hardware/tools</li>
+</ul>
+<h3>Software</h3>
+<ul>
+<li>~5min - Quickly list used software</li>
+</ul>
+<h3>Preparing a simulated environment</h3>
+<ul>
+<li>Determining your engine's trigger configuration</li>
+<li>Setup ardu-stim (engine oriented signal generator)</li>
+<li>Verify serial connection state with TunerStudio</li>
+<li>Setup MS controller to your engine's specs</li>
+<li>Wiring the things on a breadboard</li>
+</ul>
+<h3>The Code</h3>
+<ul>
+<li>Environment setup (redis, pyenv, pip the things)</li>
+<li>./collect - start data collection in a loop</li>
+<li>read .ini config file to determine packet structure</li>
+<li>open serial connection</li>
+<li>send 'A' command</li>
+<li>collect and unpack(struct) result</li>
+<li>store and publish result to redis</li>
+<li>./display - display live data</li>
+<li>connect to redis channel</li>
+<li>print published data</li>
+</ul>
+<h3>The Future</h3>
+<ul>
+<li>Installation into Vehicle</li>
+<li>Analytics</li>
+<li>Secondary data sources (ardunios, gpio, etc)</li>
+</ul></div>
+
+        </div>
+      </div>
+      
+    
+
+    
+    <div class="row" id="footer">
+      <div class="col-xs-3 col-sm-3">
+        <div class="pull-left">
+          <p>©2018 PyOhio</p>
+        </div>
+      </div>
+    </div>
+    
+
+  </div><!--end of container-->
+
+  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/2017/site_media/static/js/bootstrap.min.js"></script>
+  
+  
+
+  
+    
+  
+</body>
+
+<!-- Mirrored from pyohio.org/schedule/presentation/300/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jan 2018 06:54:32 GMT -->
+</html>

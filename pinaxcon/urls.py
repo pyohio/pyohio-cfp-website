@@ -1,15 +1,18 @@
+import os
 from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib.staticfiles.templatetags.staticfiles import static as _static
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
+from django.views.static import serve
 from django_nyt.urls import get_pattern as get_nyt_pattern
 # from wiki.urls import get_pattern as get_wiki_pattern
 
 from django.contrib import admin
 
 from pinaxcon import views
+from pinaxcon.static import serve_index
 
 import symposion.views
 
@@ -107,10 +110,14 @@ original_patterns = [
 
 urlpatterns = [
     url(r"^$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
+    url(r'^2017/(?P<path>.*)$', serve_index, {
+            'document_root': os.path.join(settings.ARCHIVE_ROOT, '2017'),
+        }),
     url(r"^%s/" % URL_PREFIX.lstrip('/'), include(original_patterns))
     ]
 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+#urlpatterns += static('/2017/', document_root=os.path.join(settings.ARCHIVE_ROOT, '2017'))
 
 handler500 = views.server_error
