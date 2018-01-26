@@ -1,7 +1,7 @@
 import os
 import dj_database_url
 
-
+CONFERENCE_YEAR = '2018'
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = PACKAGE_ROOT
@@ -133,6 +133,7 @@ TEMPLATES = [
                 "pinax_theme_bootstrap.context_processors.theme",
                 "symposion.reviews.context_processors.reviews",
                 "sekizai.context_processors.sekizai",
+                "pinaxcon.context_processors.site_settings",
             ],
         },
     },
@@ -155,7 +156,7 @@ MIDDLEWARE_CLASSES = [
     "pinaxcon.monkey_patch.MonkeyPatchMiddleware",
 ]
 
-SITE_URL_PREFIX = "2018"
+URL_PREFIX = "/%s" % CONFERENCE_YEAR
 ROOT_URLCONF = "pinaxcon.urls"
 
 # Python dotted path to the WSGI application used by Django's runserver.
