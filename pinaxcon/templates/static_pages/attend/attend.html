@@ -16,13 +16,13 @@
 
 {% block content %}
 
-<p>To buy a ticket, <a href="/dashboard">create an account, and go to the dashboard</a>. If you've already bought a ticket, you can check out our information on <a href="/attend/hotels">where to stay</a> if you want to come up for the weekend, and <a href="/attend/travel">how to get here</a>.</p>
+<p>To buy a ticket, <a href="{{ URL_PREFIX }}/dashboard">create an account, and go to the dashboard</a>. If you've already bought a ticket, you can check out our information on <a href="{{ URL_PREFIX }}/attend/hotels">where to stay</a> if you want to come up for the weekend, and <a href="{{ URL_PREFIX }}/attend/travel">how to get here</a>.</p>
 
 <p><strong>Attendees should fill out their own registration form</strong>. When you complete the form, you'll receive a link that you can pass on to accounts staff if you need someone to pay on your behalf.</p>
 
 <br />
 
-<div class="pull-right"><a class="btn btn-lg btn-primary" href="/tickets/buy">Buy a Ticket</a></div>
+<div class="pull-right"><a class="btn btn-lg btn-primary" href="{{ URL_PREFIX }}/tickets/buy">Buy a Ticket</a></div>
 <h2>Which Ticket?</h2>
 
 <p><em>T-shirts are only available for tickets bought before November 7.</em></p>
@@ -52,7 +52,7 @@
 
 <p>This ticket includes all of the benefits of a Corporate ticket, but we’ll also give the ticket holder special thanks during our conference plenary sessions. You can also provide us with a promotional item to put in each attendee’s swag bag.</p>
 
-<p>This ticket is for individuals who want to sponsor the conference. For company-level sponsorships, please see our <a href="/sponsors/become-a-sponsor">sponsorships page</a>.</p>
+<p>This ticket is for individuals who want to sponsor the conference. For company-level sponsorships, please see our <a href="{{ URL_PREFIX }}/sponsors/become-a-sponsor">sponsorships page</a>.</p>
 
 
 <h4>Group Discount Corporate <small>$180 for 5+ tickets</small></h4>
@@ -103,7 +103,7 @@
 <p>If you can’t afford to attend on these prices, please email <a href="mailto:hello@northbaypthon.org">hello@northbaypython.org</a> – we’ll enthusiastically waive ticket fees for people who need it.</em></p>
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/tickets/buy">Buy a Ticket</a>
+  <a class="btn btn-lg btn-primary" href="{{ URL_PREFIX }}/tickets/buy">Buy a Ticket</a>
 </div>
 
 
@@ -121,7 +121,7 @@
 <p>If budget permits, or if we find a sponsor, we’ll provide coffee, tea, hot chocolate, and some light snacks in the morning before proceedings kick off on both days.</p>
 
 <h3>T-Shirt</h3>
-<p>We’ll be designing a collectible North Bay Python t-shirt for you to pick up at the conference, and they’ll be <a href="/attend/tshirt">available in a variety of sizes, cuts and colors</a>. Each t-shirt costs $30, and for supporter, corporate, and sponsor ticket holders, you’ll get your first t-shirt free!</p>
+<p>We’ll be designing a collectible North Bay Python t-shirt for you to pick up at the conference, and they’ll be <a href="{{ URL_PREFIX }}/attend/tshirt">available in a variety of sizes, cuts and colors</a>. Each t-shirt costs $30, and for supporter, corporate, and sponsor ticket holders, you’ll get your first t-shirt free!</p>
 
 <p>T-shirts are available only for tickets purchased by Tuesday 7 November.</p>
 
@@ -135,6 +135,6 @@
 <p>For our corporate and sponsor ticket holders, we’ll also include your company name as part of those thanks.</p>
 
 <h3>Sponsor Benefits</h3>
-<p>Sponsor tickets come with sponsor benefits. To find out more, see our <a href="/sponsors/become-a-sponsor">Sponsors page</a>.</p>
+<p>Sponsor tickets come with sponsor benefits. To find out more, see our <a href="{{ URL_PREFIX }}/sponsors/become-a-sponsor">Sponsors page</a>.</p>
 
 {% endblock %}

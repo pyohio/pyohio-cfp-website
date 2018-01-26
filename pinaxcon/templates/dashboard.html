@@ -43,7 +43,7 @@
                     <a href="{% url "speaker_edit" %}" class="btn btn-xs btn-default">
                         <i class="fa fa-pencil"></i> Edit your speaker profile
                     </a>
-                    <a href="/proposals/submit/talk" class="btn btn-xs btn-default">
+                    <a href="{{ URL_PREFIX }}/proposals/submit/talk" class="btn btn-xs btn-default">
                         <i class="fa fa-plus-sign"></i> Submit a new proposal
                     </a>
                 {% endif %}

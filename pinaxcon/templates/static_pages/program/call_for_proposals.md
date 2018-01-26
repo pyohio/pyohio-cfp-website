@@ -3,7 +3,7 @@
 We've got lots of good information and resources below that you should read, but in case you've already read it and want to dive in now:
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a Proposal</a>
+  <a class="btn btn-lg btn-primary" href="{{ URL_PREFIX }}/dashboard">Submit a Proposal</a>
 </div>
 
 If you've never presented at a conference before and think you might like to try it, we want to hear from you! The program committee is *very* much interested in encouraging and supporting new speakers, and we will be able to provide detailed feedback and work with you to develop your proposal and talk content so you can give the best talk possible.
@@ -80,7 +80,7 @@ If you've given your talk before, links to video or slides would be excellent, o
 Your speaker profile includes a space for you to describe your prior experience giving talks&mdash;this is your chance to talk yourself up and explain how you're qualified to share your ideas, so take advantage of it!
 
 <div class="btn-group">
-  <a class="btn btn-lg btn-primary" href="/dashboard">Submit a Proposal</a>
+  <a class="btn btn-lg btn-primary" href="{{ URL_PREFIX }}/dashboard">Submit a Proposal</a>
 </div>
 
 ## How to Write Your Proposal<a name="how-to-write-your-proposal"></a>
