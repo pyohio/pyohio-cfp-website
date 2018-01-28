@@ -397,7 +397,7 @@
     "fields": {
         "title": "PyKids",
         "hint": "",
-        "url": "/about/pykids",
+        "url": "about/pykids",
         "urlaspattern": false,
         "tree": 1,
         "hidden": false,
