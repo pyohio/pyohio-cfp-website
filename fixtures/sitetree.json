@@ -371,7 +371,7 @@
     "model": "sitetree.treeitem",
     "pk": 45,
     "fields": {
-        "title": "sprints",
+        "title": "Sprints",
         "hint": "",
         "url": "about/sprints",
         "urlaspattern": false,
