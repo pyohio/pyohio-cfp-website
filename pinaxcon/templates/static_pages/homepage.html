@@ -224,6 +224,32 @@
   <div class="jumbotron homepage-block white">
     <div class="container homepage-block-content">
       <div class="col-xs-12 col-sm-6 index-p">
+        <h2>Details</h2>
+        <div id="content_homepage_details" class="content-box ">
+          <ul>
+            <li><a href="{{ URL_PREFIX }}/code-of-conduct" title="Code of Conduct">Code of Conduct</a></li>
+            <li><a href="{{ URL_PREFIX }}/attend">Registration</a></li>
+            <li><a href="{{ URL_PREFIX }}/attend/hotel" title="Hotels">Hotels</a></li>
+            <li><a href="http://ohiounion.osu.edu/" title="Venue">Venue</a></li>
+            <li><a href="{{ URL_PREFIX }}/about/sprints/" title="Sprints">Sprints</a></li>
+          </ul>
+        </div>
+        <a href="/{{ URL_PREFIX }}/details/"><h3>Find Out More <img src="/2017/site_media/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 index-p">
+        <h2>PyKids</h2>
+        <div id="content_homepage_pykids" class="content-box ">
+          <p>Young people ages 12-17 are invited to come and learn to program in Python at PyOhio 2017 on Saturday, July 30.</p>
+        </div>
+        <a href="/2017/young-coders/"><h3>Find Out More <img src="/2017/site_media/static/images/caret-red.svg" alt="caret icon" height="25" width="30"></h3></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron homepage-block white">
+    <div class="container homepage-block-content">
+      <div class="col-xs-12 col-sm-6 index-p">
         <p>PyOhio is only successful through the efforts of our sponsors, speakers, and volunteers. If you would like to support PyOhio and keep it the best Python conference in the Midwest, please donate to the PyOhio Future Fund.</p>
       </div>
       <div class="col-xs-12 col-sm-6 index-p">
@@ -231,7 +257,6 @@
         <p>See you in Columbus!</p>
       </div>  
     </div>
-
  </div>
 
 {% endblock %}
