@@ -393,6 +393,30 @@
 },
 {
     "model": "sitetree.treeitem",
+    "pk": 46,
+    "fields": {
+        "title": "PyKids",
+        "hint": "",
+        "url": "/about/pykids",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 1,
+        "sort_order": 46,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
     "pk": 21,
     "fields": {
         "title": "Our Sponsors",
