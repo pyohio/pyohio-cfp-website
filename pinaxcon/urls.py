@@ -28,6 +28,7 @@ original_patterns = [
     url(r"^about/transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/transparency.html"), name="about/transparency"),
     url(r"^about/program-transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/program.html"), name="about/program-transparency"),
     url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
+    url(r"about/sprints$", TemplateView.as_view(template_name="static_pages/about/sprints.html"), name="about/sprints"),
 
     # program
     url(r"^program/events$", TemplateView.as_view(template_name="static_pages/program/events.html"), name="program/events"),

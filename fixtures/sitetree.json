@@ -369,6 +369,30 @@
 },
 {
     "model": "sitetree.treeitem",
+    "pk": 45,
+    "fields": {
+        "title": "sprints",
+        "hint": "",
+        "url": "about/sprints",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 1,
+        "sort_order": 45,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
     "pk": 21,
     "fields": {
         "title": "Our Sponsors",
