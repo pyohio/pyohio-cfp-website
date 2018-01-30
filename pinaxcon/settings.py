@@ -355,3 +355,11 @@ MARKDOWN_DEUX_STYLES = {
         }
     },
 }
+
+# Use Django-lockdown to password-protect staging / preview sites
+LOCKDOWN_SITE = os.environ.get('LOCKDOWN_SITE', False)
+if LOCKDOWN_SITE:
+    INSTALLED_APPS += ('lockdown',)
+    MIDDLEWARE_CLASSES += ('lockdown.middleware.LockdownMiddleware',)
+    LOCKDOWN_PASSWORDS = (os.environ['LOCKDOWN_PASSWORD'],)
+
