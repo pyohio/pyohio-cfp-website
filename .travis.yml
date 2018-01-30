@@ -1,6 +1,5 @@
 language: python
 python:
   - 2.7
-#install: 
-
-script: python -V
+# just make sure it's installing for now:
+script: python manage.py check
