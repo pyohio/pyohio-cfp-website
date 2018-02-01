@@ -13,7 +13,7 @@
     "fields": {
         "title": "About",
         "hint": "",
-        "url": "/2018/about/north-bay-python",
+        "url": "/2018/about/pyohio",
         "urlaspattern": false,
         "tree": 1,
         "hidden": false,
@@ -243,7 +243,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 3,
-        "sort_order": 22,
+        "sort_order": 44,
         "access_permissions": []
     }
 },
@@ -435,7 +435,7 @@
         "access_restricted": false,
         "access_perm_type": 1,
         "parent": 3,
-        "sort_order": 31,
+        "sort_order": 22,
         "access_permissions": []
     }
 },
@@ -700,6 +700,30 @@
         "access_perm_type": 1,
         "parent": null,
         "sort_order": 9,
+        "access_permissions": []
+    }
+},
+{
+    "model": "sitetree.treeitem",
+    "pk": 44,
+    "fields": {
+        "title": "Prospectus",
+        "hint": "",
+        "url": "/2018/sponsors/prospectus",
+        "urlaspattern": false,
+        "tree": 1,
+        "hidden": false,
+        "alias": null,
+        "description": "",
+        "inmenu": true,
+        "inbreadcrumbs": true,
+        "insitetree": true,
+        "access_loggedin": false,
+        "access_guest": false,
+        "access_restricted": false,
+        "access_perm_type": 1,
+        "parent": 3,
+        "sort_order": 31,
         "access_permissions": []
     }
 }
