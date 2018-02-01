@@ -1,10 +1,10 @@
 [
 {
-    "model": "sites.site",
-    "pk": 1,
-    "fields": {
-        "domain": "pyohio.org",
-        "name": "PyOhio"
-    }
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "pyohio.org",
+    "name": "PyOhio"
+  }
 }
 ]
