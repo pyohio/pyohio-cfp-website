@@ -23,6 +23,7 @@ original_patterns = [
 
     # about
     url(r"^about/pyohio$", TemplateView.as_view(template_name="static_pages/about/pyohio.html"), name="about/pyohio"),
+    url(r"^about/keep-in-touch$", TemplateView.as_view(template_name="static_pages/about/keep-in-touch.html"), name="about/keep-in-touch"),
     url(r"^about/columbus$", TemplateView.as_view(template_name="static_pages/about/columbus.html"), name="about/columbus"),
     url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
     url(r"^about/transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/transparency.html"), name="about/transparency"),
