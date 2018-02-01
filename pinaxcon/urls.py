@@ -67,8 +67,8 @@ original_patterns = [
     url(r"^terms$", RedirectView.as_view(url="terms-and-conditions")),
 
     # sponsor
-    url(r"^sponsors/prospectus$", RedirectView.as_view(url=_static("assets/northbaypython_prospectus.pdf")), name="sponsors/prospectus"),
-    url(r"^northbaypython_prospectus.pdf$", RedirectView.as_view(url=_static("assets/northbaypython_prospectus.pdf")), name="northbaypython_prospectus.pdf"),
+    url(r"^sponsors/prospectus$", TemplateView.as_view(template_name="static_pages/sponsors/prospectus.html")), name="sponsors/prospectus"),
+    url(r"^pyohio-2018-prospectus.pdf$", RedirectView.as_view(url=_static("assets/pyohio-2018-prospectus.pdf")), name="pyohio-2018-prospectus.pdf"),
     url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become_a_sponsor.html"), name="sponsors/become-a-sponsor"),
     url(r"^sponsors/donate$", TemplateView.as_view(template_name="static_pages/sponsors/donate.html"), name="sponsors/donate"),
     url(r"^donate$", RedirectView.as_view(url="sponsors/donate")),
