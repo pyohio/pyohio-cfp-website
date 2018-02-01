@@ -13,22 +13,22 @@
 
     {% sponsors "platinum" as platinum %}
 
-    <p>Sponsorship recognition - We acknowledge the support of our Platinum sponsor{{ platinum|length|pluralize}},
+<!--    <p>Sponsorship recognition - We acknowledge the support of our Platinum sponsor{{ platinum|length|pluralize}},
       {% for sponsor in platinum %}
         {% if forloop.last and not forloop.first %}
           and
         {% endif %}
         {{ sponsor }}{% if forloop.last %}.{% endif %}
       {% endfor %}
-
+-->
     <p>
       <a href="https://facebook.com/pyohio">Facebook</a>
       | <a href="https://twitter.com/pyohio">Twitter</a>
       | <a href="https://www.youtube.com/channel/UCYqdrfvhGxNW3vXebypqXoQ">YouTube</a>
-      | <a href="{{ URL_PREFIX }}/accessibility">Accessibility</a>
-      | <a href="{{ URL_PREFIX }}/code-of-conduct">Code of Conduct</a>
+   <!--   | <a href="{{ URL_PREFIX }}/accessibility">Accessibility</a>
       | <a href="{{ URL_PREFIX }}/about/colophon">Colophon</a>
-      | <a href="{{ URL_PREFIX }}/terms">Terms and Conditions</a>
+      | <a href="{{ URL_PREFIX }}/terms">Terms and Conditions</a> -->
+      | <a href="{{ URL_PREFIX }}/code-of-conduct">Code of Conduct</a>
     </p>
 
     <p>This site is <a href="https://github.com/pyohio/pyohio-website">free and open source software</a>, powered by <a href="https://github.com/chrisjrn/symposion/">Symposion</a> and <a href="https://github.com/chrisjrn/registrasion/">Registrasion</a></p>
