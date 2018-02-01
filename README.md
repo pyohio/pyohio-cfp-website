@@ -18,8 +18,8 @@ Django 1.11.9
 4. cd pyohio-website
 5. pip install -r requirements/base.txt
 6. python manage.py migrate
-7. python manage.py loaddata fixtures/*
-8. python manage.py loaddata fixturesdev/*
+7. python manage.py loaddata fixtures/base/*
+8. python manage.py loaddata fixtures/dev/*
 9. python manage.py createsuperuser
 10. python manage.py runserver
 
