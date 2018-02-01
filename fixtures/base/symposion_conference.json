@@ -1,0 +1,23 @@
+[
+{
+  "model": "symposion_conference.conference",
+  "pk": 1,
+  "fields": {
+    "title": "PyOhio 2018",
+    "start_date": "2018-07-28",
+    "end_date": "2018-07-29",
+    "timezone": "US/Eastern"
+  }
+},
+{
+  "model": "symposion_conference.section",
+  "pk": 1,
+  "fields": {
+    "conference": 1,
+    "name": "General Sessions",
+    "slug": "general-sessions",
+    "start_date": "2018-07-28",
+    "end_date": "2018-07-29"
+  }
+}
+]

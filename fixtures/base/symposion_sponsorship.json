@@ -6,7 +6,7 @@
         "conference": 1,
         "name": "Gold",
         "order": 1,
-        "cost": 4000,
+        "cost": 1000,
         "description": ""
     }
 },
@@ -17,7 +17,7 @@
         "conference": 1,
         "name": "Silver",
         "order": 2,
-        "cost": 2000,
+        "cost": 500,
         "description": ""
     }
 },
@@ -28,7 +28,7 @@
         "conference": 1,
         "name": "Platinum",
         "order": 1,
-        "cost": 6000,
+        "cost": 2000,
         "description": ""
     }
 },
@@ -38,8 +38,52 @@
     "fields": {
         "conference": 1,
         "name": "Individual",
-        "order": 4,
-        "cost": 500,
+        "order": 10,
+        "cost": 50,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 5,
+    "fields": {
+        "conference": 1,
+        "name": "Premier",
+        "order": 0,
+        "cost": 5000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 6,
+    "fields": {
+        "conference": 1,
+        "name": "Young Coders",
+        "order": 1,
+        "cost": 3000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 7,
+    "fields": {
+        "conference": 1,
+        "name": "T-Shirt",
+        "order": 2,
+        "cost": 3000,
+        "description": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorlevel",
+    "pk": 8,
+    "fields": {
+        "conference": 1,
+        "name": "Swag Bag",
+        "order": 3,
+        "cost": 3000,
         "description": ""
     }
 },
@@ -160,6 +204,136 @@
         "benefit": 4,
         "level": 3,
         "max_words": 300,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 12,
+    "fields": {
+        "benefit": 2,
+        "level": 4,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 13,
+    "fields": {
+        "benefit": 2,
+        "level": 5,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 14,
+    "fields": {
+        "benefit": 3,
+        "level": 5,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 15,
+    "fields": {
+        "benefit": 4,
+        "level": 5,
+        "max_words": 100,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 16,
+    "fields": {
+        "benefit": 2,
+        "level": 6,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 17,
+    "fields": {
+        "benefit": 3,
+        "level": 6,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 18,
+    "fields": {
+        "benefit": 4,
+        "level": 6,
+        "max_words": 100,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 19,
+    "fields": {
+        "benefit": 2,
+        "level": 7,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 20,
+    "fields": {
+        "benefit": 3,
+        "level": 7,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 21,
+    "fields": {
+        "benefit": 4,
+        "level": 7,
+        "max_words": 100,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 22,
+    "fields": {
+        "benefit": 2,
+        "level": 8,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 23,
+    "fields": {
+        "benefit": 3,
+        "level": 8,
+        "max_words": null,
+        "other_limits": ""
+    }
+},
+{
+    "model": "symposion_sponsorship.benefitlevel",
+    "pk": 24,
+    "fields": {
+        "benefit": 4,
+        "level": 8,
+        "max_words": 100,
         "other_limits": ""
     }
 }

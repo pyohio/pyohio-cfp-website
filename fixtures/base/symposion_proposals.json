@@ -1,0 +1,32 @@
+[
+{
+    "model": "symposion_proposals.proposalsection",
+    "pk": 1,
+    "fields": {
+        "section": 1,
+        "start": "2018-02-12T08:00:00Z",
+        "end": "2018-05-19T06:59:59Z",
+        "closed": true,
+        "published": false,
+        "anonymous": true
+    }
+},
+{
+    "model": "symposion_proposals.proposalkind",
+    "pk": 1,
+    "fields": {
+        "section": 1,
+        "name": "talk",
+        "slug": "talk"
+    }
+},
+{
+    "model": "symposion_proposals.proposalkind",
+    "pk": 2,
+    "fields": {
+        "section": 1,
+        "name": "tutorial",
+        "slug": "tutorial"
+    }
+}
+]
