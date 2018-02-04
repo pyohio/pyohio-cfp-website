@@ -35,9 +35,9 @@ Contact Information
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing badges that clearly identify them as staff.
 
-You can email the incident response team at [safety@pyohio.org](mailto:safety@pyohio.org). You may also contact venue staff and ask to be put in touch with conference chair [Dave Forgac](mailto:dforgac@pyohio.org).
+You can email the incident response team at [safety@pyohio.org](mailto:safety@pyohio.org). You may also contact conference staff and ask to be put in touch with conference chair [Dave Forgac](mailto:dforgac@pyohio.org).
 
-If the matter is especially urgent, please dial our Code of Conduct and safety representitives: 
+If the matter is especially urgent, please call our Code of Conduct and safety representitives:
 
 - Jason Green at +1-614-349-6349
 - Brian Costlow at +1-740-919-1291
@@ -46,8 +46,8 @@ Conference staff will be happy to help participants contact hotel/venue security
 
 Procedure for Handling Harassment
 ------------------------------------------
-- [Attendee procedure for incident handling](/code-of-conduct/harassment-incidents)
-- [Staff procedure for incident handling](/code-of-conduct/harassment-staff-procedures)
+- [Attendee procedure for incident handling](/2018/code-of-conduct/harassment-incidents)
+- [Staff procedure for incident handling](/2018/code-of-conduct/harassment-staff-procedures)
 
 License
 -------
