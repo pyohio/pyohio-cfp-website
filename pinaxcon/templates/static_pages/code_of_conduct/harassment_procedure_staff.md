@@ -1,8 +1,8 @@
 *This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)".*
 
-Be sure to have a good understanding of our Code of Conduct policy, which can be found here: [https://northbaypython.org/code-of-conduct](/code-of-conduct)
+Be sure to have a good understanding of our Code of Conduct policy, which can be found here: [/2018/code-of-conduct](/code-of-conduct)
 
-Also have a good understanding of what is expected from an attendee that wants to report a harassment incident. These guidelines can be found here: [https://northbaypython.org/code-of-conduct/harassment-incidents](/code-of-conduct/harassment-incidents)
+Also have a good understanding of what is expected from an attendee that wants to report a harassment incident. These guidelines can be found here: [/2018/code-of-conduct/harassment-incidents](/code-of-conduct/harassment-incidents)
 
 Try to get as much of the incident in written form by the reporter. If you cannot, transcribe it yourself as it was told to you. The important information to gather include the following:
 
@@ -12,7 +12,7 @@ Try to get as much of the incident in written form by the reporter. If you canno
  - The circumstances surrounding the incident
  - Other people involved in the incident
 
-Prepare an initial response to the incident. This initial response is very important and will set the tone for North Bay Python. Depending on the severity/details of the incident, please follow these guidelines:
+Prepare an initial response to the incident. This initial response is very important and will set the tone for PyOhio. Depending on the severity/details of the incident, please follow these guidelines:
 
  - If there is any general threat to attendees or the safety of anyone including conference staff is in doubt, summon security or police
  - Offer the victim a private place to sit

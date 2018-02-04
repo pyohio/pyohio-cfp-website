@@ -26,16 +26,21 @@ Participants asked to stop any harassing behavior are expected to comply immedia
 
 Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.
 
-Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for PyCon.
+Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for PyOhio.
 
 If a participant engages in behavior that violates this code of conduct, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
 
 Contact Information
 -------------------
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing t-shirts and/or badges that clearly identify them as staff. You can email the incident response team at [safety@northbaypython.org](mailto:safety@northbaypython.org). You may also contact venue staff and ask to be put in touch with conference chair [Christopher Neugebauer](mailto:chrisjrn@northbaypython.org).
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing badges that clearly identify them as staff.
 
-If the matter is especially urgent, please dial our Code of Conduct and safety incident hotline: +1 (707) 755-7357. This number will automatically route to a member of the conference staff who can render assistance.
+You can email the incident response team at [safety@pyohio.org](mailto:safety@pyohio.org). You may also contact venue staff and ask to be put in touch with conference chair [Dave Forgac](mailto:dforgac@pyohio.org).
+
+If the matter is especially urgent, please dial our Code of Conduct and safety representitives: 
+
+- Jason Green at +1-614-349-6349
+- Brian Costlow at +1-740-919-1291
 
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
