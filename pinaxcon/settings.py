@@ -51,7 +51,7 @@ if admin_email is not None:
 
 # Use SSLRedirectMiddleware
 SSL_ON = os.environ.get("DJANGO_SSL_ON", True)
-SSL_ALWAYS = os.environ.get("DJANGO_SSL_ALWAYS", False)
+SSL_ALWAYS = os.environ.get("DJANGO_SSL_ALWAYS", True)
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
