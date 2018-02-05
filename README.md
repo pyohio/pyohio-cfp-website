@@ -12,16 +12,17 @@ It is a fork of the [North Bay Python website](https://github.com/northbaypython
 python 2.7.14
 Django 1.11.9
 
-1. python -m virtualenv pyohio-website
-2. cd pyohio-website; 
-3. git clone [your fork url] pyohio-webiste
-4. cd pyohio-website
-5. pip install -r requirements/base.txt
-6. python manage.py migrate
-7. python manage.py loaddata fixtures/base/*
-8. python manage.py loaddata fixtures/dev/*
-9. python manage.py createsuperuser
-10. python manage.py runserver
+- Fork this repo
+- `git clone [your fork url] pyohio-webiste`
+- `cd pyohio-website`
+- Create and activate a virtualenv (using Pipenv or virtualenv)
+- `pip install -r requirements/base.txt`
+- `python manage.py migrate`
+- `python manage.py loaddata fixtures/base/*`
+- `python manage.py createsuperuser`
+- Run the development server
+  - `python manage.py runserver`
+  - Or if you have heroku tools installed: `heroku local web`
 
 ### Prod
 
