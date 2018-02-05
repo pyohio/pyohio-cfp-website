@@ -112,6 +112,7 @@ original_patterns = [
 ]
 
 urlpatterns = [
+    url(r"^code-of-conduct.*$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
     url(r"^$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
     url(r'^2017/(?P<path>.*)$', serve_index, {
             'document_root': os.path.join(settings.ARCHIVE_ROOT, '2017'),
