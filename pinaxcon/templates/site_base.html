@@ -15,13 +15,12 @@
       <meta property="og:type" content="website">
       <meta property="og:title" content="{% block head_title %}{% endblock %} | {{ SITE_NAME }}">
       <meta property="twitter:title" content="{{ SITE_NAME }}">
-      <meta property="og:site_name" content="PyOhio">
-      <meta property="og:image" content="http://{{ request.META.HTTP_HOST }}{% static "images/square_icon.png" %}">
+      <meta property="og:site_name" content="{{ SITE_NAME }}">
+      <meta property="og:image" content="http://{{ request.META.HTTP_HOST }}{% static "images/pyohio-logo-square.png" %}">
       <meta property="og:url" content="{{ request.build_absolute_uri }}">
-      <meta property="og:description" content="PyOhio, a free Python-centric conference - coming to columbus on [[[[DATES]]]]">
-      <meta property="twitter:description" content="PyOhio, a free Python-centric conference - coming to columbus on [[[[DATES)]]]]">
-      <meta name="description" content="PyOhio, a free Python-centric conference - coming to columbus on [[[[DATES]]]]">
-      <meta name="google-site-verification" content="[[[[google site verification code]]]]">
+      <meta property="og:description" content="PyOhio: The FREE Python conference in Columbus, OH July 28-29, 2018">
+      <meta property="twitter:description" content="PyOhio: The FREE Python conference in Columbus, OH July 28-29, 2018">
+      <meta name="description" content="PyOhio: The FREE Python conference in Columbus, OH July 28-29, 2018">
     {% endblock %}
 {% endblock %}
 
