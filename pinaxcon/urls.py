@@ -111,14 +111,28 @@ original_patterns = [
     #url(r"^", include("pinax.pages.urls")),
 ]
 
+
 urlpatterns = [
-    url(r"^code-of-conduct.*$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
     url(r"^$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
+    url(r"^code-of-conduct$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
+    url(r"^account/login/$", RedirectView.as_view(url="%s/account/login" % URL_PREFIX, permanent=False)),
+    url(r"^details$", RedirectView.as_view(url="%s/program/events" % URL_PREFIX, permanent=False)),
+    url(r"^register$", RedirectView.as_view(url="%s/attend" % URL_PREFIX, permanent=False)),
+    url(r"^call-for-proposals$", RedirectView.as_view(url="%s/program/call-for-proposals" % URL_PREFIX, permanent=False)),
+    url(r"^hotel$", RedirectView.as_view(url="%s/attend/hotels" % URL_PREFIX, permanent=False)),
+    url(r"^schedule$", RedirectView.as_view(url="%s/schedule" % URL_PREFIX, permanent=False)),
+    url(r"^harassment-incidents-staff$", RedirectView.as_view(url="%s/harassment-incidents-staff" % URL_PREFIX, permanent=False)),
+    url(r"^harassment-incidents$", RedirectView.as_view(url="%s/harassment-incidents" % URL_PREFIX, permanent=False)),
+    url(r"^lightning$", RedirectView.as_view(url="%s/program/lightning-talks" % URL_PREFIX, permanent=False)),
+    url(r"^review-proposals$", RedirectView.as_view(url="%s/program/call-for-proposals/review" % URL_PREFIX, permanent=False)),
+    url(r"^$", RedirectView.as_view(url="%s" % URL_PREFIX, permanent=False)),
+    url(r"^account/signup$", RedirectView.as_view(url="%s/attend" % URL_PREFIX, permanent=False)),
+    # url(r"^account/password/reset$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
     url(r'^2017/(?P<path>.*)$', serve_index, {
             'document_root': os.path.join(settings.ARCHIVE_ROOT, '2017'),
         }),
-    url(r"^%s/" % URL_PREFIX.lstrip('/'), include(original_patterns))
-    ]
+    url(r"^%s/" % URL_PREFIX.lstrip('/'), include(original_patterns)),
+]
 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
