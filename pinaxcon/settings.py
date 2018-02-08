@@ -111,7 +111,9 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get("DJANGO_AWS_STORAGE_BUCKET_NAME", None)
 
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "6r&z0i#!k-thu4nv^zzx!f$fbp(&#2i5mq_^%%@ihu_qxxotl_"
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+if DEBUG and not SECRET_KEY:
+    SECRET_KEY = "711d8b059214f9a496ab5e8df8fc6db2bfd0da1863a8cb6ae01be9f4da69434e"
 
 TEMPLATES = [
     {
@@ -156,6 +158,7 @@ MIDDLEWARE_CLASSES = [
     "pinaxcon.middleware.CanonicalHostMiddleware",
     "pinaxcon.middleware.UnprependWWWMiddleware",
     "pinaxcon.monkey_patch.MonkeyPatchMiddleware",
+    "rollbar.contrib.django.middleware.RollbarNotifierMiddleware",
 ]
 
 ROOT_URLCONF = "pinaxcon.urls"
@@ -363,3 +366,11 @@ if LOCKDOWN_SITE:
     MIDDLEWARE_CLASSES += ('lockdown.middleware.LockdownMiddleware',)
     LOCKDOWN_PASSWORDS = (os.environ['LOCKDOWN_PASSWORD'],)
     LOCKDOWN_LOGOUT_KEY = 'logmeout'
+
+# Rollbar monitoring and alerts configuration
+ROLLBAR = {
+    'access_token': os.environ.get('ROLLBAR_ACCESS_TOKEN'),
+    'environment': 'development' if DEBUG else 'production',
+    'branch': 'master',
+    'root': PROJECT_ROOT,
+}

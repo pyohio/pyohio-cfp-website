@@ -30,3 +30,12 @@ https://github.com/chrisjrn/registrasion/tarball/master
 https://github.com/chrisjrn/symposion/tarball/northbaypython
 https://github.com/chrisjrn/registrasion-stripe/tarball/master
 https://github.com/chrisjrn/symposion-bootstrap-templates/tarball/master
+
+# Rollbar
+certifi==2018.1.18        # via requests
+chardet==3.0.4            # via requests
+idna==2.6                 # via requests
+requests==2.18.4          # via rollbar
+rollbar==0.13.17
+six==1.11.0               # via rollbar
+urllib3==1.22             # via requests
