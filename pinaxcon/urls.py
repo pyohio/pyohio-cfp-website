@@ -75,6 +75,9 @@ original_patterns = [
     #url(r"^donate$", RedirectView.as_view(url="sponsors/donate")),
     #url(r"^about/donate$", RedirectView.as_view(url="sponsors/donate")),
 
+    # jobs
+    url(r"^jobs$", TemplateView.as_view(template_name="static_pages/jobs/job_board.html"), name="jobs"),
+
     # news
     # url(r"^news$", TemplateView.as_view(template_name="static_pages/news.html"), name="news"),
 
