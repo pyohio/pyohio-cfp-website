@@ -1,7 +1,7 @@
 from django import forms
 from symposion.proposals.forms import ProposalMixIn
 
-from .models import ConferenceSpeaker, TalkProposal
+from .models import ConferenceSpeaker, TalkProposal, TutorialProposal
 
 
 class ConferenceSpeakerForm(forms.ModelForm):
@@ -63,6 +63,24 @@ class TalkProposalForm(ProposalForm):
             "extended_presentation",
             "additional_notes",
             "extra_av",
+            "slides_release",
+            "recording_release",
+        ]
+
+
+class TutorialProposalForm(ProposalForm):
+
+    class Meta:
+        model = TutorialProposal
+        fields = [
+            "title",
+            "description",
+            "abstract",
+            "new_presentation",
+            "additional_notes",
+            "extra_av",
+            "prerequisite_setup",
+            "participant_limit",
             "slides_release",
             "recording_release",
         ]
