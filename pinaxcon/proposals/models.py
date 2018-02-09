@@ -48,22 +48,22 @@ class ConferenceSpeaker(SpeakerBase):
         default=False,
         verbose_name=_("Travel assistance required?"),
         help_text=_("Check this field if you require travel assistance to get "
-                    "to North Bay Python in Petaluma, California."),
+                    "to PyOhio."),
     )
 
     lodging_assistance = models.BooleanField(
         blank=True,
         default=False,
         verbose_name=_("Lodging assistance required?"),
-        help_text=_("Check this field if you require lodging assistance in "
-                    "Petaluma, California during North Bay Python."),
+        help_text=_("Check this field if you require lodging assistance "
+                    "during PyOhio."),
     )
 
     home_city = models.CharField(
         blank=True,
         max_length=127,
         help_text=_("Which city (and state, and country) will you be "
-                    "traveling from to get to North Bay Python?"),
+                    "traveling from to get to PyOhio?"),
     )
 
     minority_group = models.CharField(blank=True, max_length=256,
