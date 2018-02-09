@@ -6,7 +6,6 @@ from symposion.proposals.models import ProposalBase
 from symposion.speakers.models import SpeakerBase
 
 
-
 class ConferenceSpeaker(SpeakerBase):
 
     def clean_twitter_username(self):
@@ -93,15 +92,6 @@ class ConferenceSpeaker(SpeakerBase):
 
 class Proposal(ProposalBase):
 
-    extended_presentation = models.BooleanField(
-        default=False,
-        verbose_name=_("Optionally consider this proposal for a 45-minute "
-                       "slot"),
-        help_text=_("Most talks at North Bay Python go for 30 minutes. We "
-                    "have some openings for 45-minute talks. If you check this "
-                    "field, please explain in your additional notes how you "
-                    "would use the extra 15 minutes."),
-    )
     extra_av = models.TextField(
         blank=True,
         verbose_name=_("Extra tech and A/V requirements"),
@@ -113,19 +103,19 @@ class Proposal(ProposalBase):
     new_presentation = models.BooleanField(
         default=False,
         verbose_name=_("This is a new presentation"),
-        help_text=_("Check this box if North Bay Python will be the first "
+        help_text=_("Check this box if PyOhio will be the first "
                     "time this talk is presented at a technical conference."),
     )
     slides_release = models.BooleanField(
         default=True,
-        help_text=_("I authorize North Bay Python to release a copy of my "
+        help_text=_("I authorize PyOhio to release a copy of my "
                     "slides and related materials under the Creative Commons "
                     "Attribution-ShareAlike 3.0 United States licence, and "
                     "certify that I have the authority to do so."),
     )
     recording_release = models.BooleanField(
         default=True,
-        help_text=_("I authorize North Bay Python to release a recording of "
+        help_text=_("I authorize PyOhio to release a recording of "
                     "my talk under the Creative Commons "
                     "Attribution-ShareAlike 3.0 United States licence."),
 
@@ -139,3 +129,36 @@ class TalkProposal(Proposal):
 
     class Meta:
         verbose_name = "talk proposal"
+
+    extended_presentation = models.BooleanField(
+        default=False,
+        verbose_name=_("Optionally consider this proposal for a 45-minute "
+                       "slot"),
+        help_text=_("Most talks at PyOhio go for 30 minutes. We "
+                    "have some openings for 45-minute talks. If you check this "
+                    "field, please explain in your additional notes how you "
+                    "would use the extra 15 minutes."),
+    )
+
+
+class TutorialProposal(Proposal):
+
+    class Meta:
+        verbose_name = "tutorial proposal"
+
+    prerequisite_setup = models.TextField(
+        blank=True,
+        verbose_name=_("Prerequisites tutorial participants should complete"),
+        help_text=_("Many tutorials require specific setup or installed "
+                    "software. Please explain your tutrial setup requirements "
+                    ""),
+    )
+    prerequisite_setup_html = models.TextField(blank=True)
+
+    participant_limit = models.IntegerField(
+        blank=True,
+        verbose_name=_("The maximum number of tutorial participants"),
+        help_text=_("The maximum number of tutorial participants you "
+                    "feel comfortable accepting to your tutorial"),
+    )
+
