@@ -82,7 +82,7 @@ original_patterns = [
 
     url(r"^admin/", include(admin.site.urls)),
 
-    url(r"^login$", views.account_login, name="nbpy_login"),
+    url(r"^login$", views.account_login, name="dashboard_login"),
     # Override the default account_login view with one that takes email addys
     url(r"^account/login/$", views.EmailLoginView.as_view(), name="account_login"),
     url(r"^account/", include("account.urls")),

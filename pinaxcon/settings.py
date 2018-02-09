@@ -287,8 +287,8 @@ EMAIL_HOST_PASSWORD = os.environ.get("DJANGO_EMAIL_HOST_PASSWORD", "")
 EMAIL_USE_TLS = bool(int(os.environ.get("DJANGO_EMAIL_USE_TLS", "0")))
 EMAIL_USE_SSL = bool(int(os.environ.get("DJANGO_EMAIL_USE_SSL", "0")))
 
-ACCOUNT_LOGIN_URL = "nbpy_login"
-LOGIN_URL = "nbpy_login"
+ACCOUNT_LOGIN_URL = "dashboard_login"
+LOGIN_URL = "dashboard_login"
 
 # We need to explicitly switch on signups.
 ACCOUNT_OPEN_SIGNUP = bool(int(os.environ.get("DJANGO_ACCOUNT_OPEN_SIGNUP", "0")))
