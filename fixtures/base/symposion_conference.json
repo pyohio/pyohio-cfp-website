@@ -14,8 +14,19 @@
   "pk": 1,
   "fields": {
     "conference": 1,
-    "name": "General Sessions",
-    "slug": "general-sessions",
+    "name": "Talks",
+    "slug": "talks",
+    "start_date": "2018-07-28",
+    "end_date": "2018-07-29"
+  }
+},
+{
+  "model": "symposion_conference.section",
+  "pk": 2,
+  "fields": {
+    "conference": 1,
+    "name": "Tutorials",
+    "slug": "tutorials",
     "start_date": "2018-07-28",
     "end_date": "2018-07-29"
   }
