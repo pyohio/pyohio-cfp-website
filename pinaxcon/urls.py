@@ -110,8 +110,6 @@ original_patterns = [
     # url(r'^wiki/notifications/', get_nyt_pattern()),
     # url(r'^wiki/', get_wiki_pattern())
 
-    # Catch-all MUST go last.
-    #url(r"^", include("pinax.pages.urls")),
 ]
 
 
@@ -140,5 +138,10 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 #urlpatterns += static('/2017/', document_root=os.path.join(settings.ARCHIVE_ROOT, '2017'))
+
+urlpatterns += [
+    # Catch-all MUST go last.
+    url(r"^", include("pinax.pages.urls")),
+]
 
 handler500 = views.server_error
