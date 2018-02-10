@@ -108,6 +108,8 @@ DEFAULT_FILE_STORAGE = os.environ.get("DJANGO_DEFAULT_FILE_STORAGE", 'django.cor
 AWS_ACCESS_KEY_ID = os.environ.get("DJANGO_AWS_ACCESS_KEY_ID", None)
 AWS_SECRET_ACCESS_KEY = os.environ.get("DJANGO_AWS_SECRET_ACCESS_KEY", None)
 AWS_STORAGE_BUCKET_NAME = os.environ.get("DJANGO_AWS_STORAGE_BUCKET_NAME", None)
+STATICFILES_STORAGE = os.environ.get("DJANGO_STATICFILES_STORAGE", None)
+AWS_S3_REGION_NAME = os.environ.get("DJANGO_S3_REGION", None)
 
 
 # Make this unique, and don't share it with anybody.
@@ -237,6 +239,7 @@ INSTALLED_APPS = [
     'compressor',
 
     'email_log',
+    'storages',
 ]
 
 # A sample logging configuration. The only tangible logging
