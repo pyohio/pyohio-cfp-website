@@ -5,8 +5,13 @@ $(document).ready(function() {
         handleLoginErrors();
     }
 
-    if(urlPath.match('speaker')) {
-        handleSpeakerProfileForm();
+    if(urlPath.match(/speaker\/.+/) ||
+            urlPath.match(/proposals\/.+\/[submit|edit]/)) {
+        handleCommonTalkDataForm();
+    }
+
+    if(urlPath.match(/proposals\/.+\/speakers/)) {
+        handleAddlSpeakerForm();
     }
 });
 
@@ -29,12 +34,13 @@ function handleLoginErrors() {
     }
 }
 
-function handleSpeakerProfileForm() {
+function handleCommonTalkDataForm() {
     var formItems = $('div.form-group');
     formItems.each(function(index) {
         var helpText = $(formItems[index]).find('p.help-block');
         if($(formItems[index]).hasClass('has-error')) {
             // Errors may have multiple "help" blocks
+
             var errorMessage = helpText.prev();
             var errorInput = errorMessage.prev();
             var errorID = errorInput.attr('id') + '-error';
@@ -61,6 +67,23 @@ function handleSpeakerProfileForm() {
 
     if($('input[aria-invalid]')) {
         // Use native focus
+        document.querySelector('input[aria-invalid]').focus();
+    }
+}
+
+function handleAddlSpeakerForm() {
+    // Extremely similar to the login form.
+
+    var errorItem = $('div.has-error');
+    if(errorItem) {
+        var errorMessage = errorItem.find('span.help-block');
+        var errorInput = errorMessage.prev();
+
+        errorInput.attr('aria-invalid', 'true');
+        errorInput.attr('aria-describedby', errorInput.attr('id') + '-error');
+        errorMessage.attr('id', errorInput.attr('id') + '-error');
+        errorMessage.attr('role', 'alert');
+
         document.querySelector('input[aria-invalid]').focus();
     }
 }
