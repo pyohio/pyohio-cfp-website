@@ -4,6 +4,10 @@ $(document).ready(function() {
     if(urlPath.match('login')) {
         handleLoginErrors();
     }
+
+    if(urlPath.match('speaker')) {
+        handleSpeakerProfileForm();
+    }
 });
 
 function handleLoginErrors() {
@@ -23,4 +27,19 @@ function handleLoginErrors() {
         // Use native focus
         document.querySelector('input[type="password"]').focus();
     }
+}
+
+function handleSpeakerProfileForm() {
+    // First, handle help text
+    var formItems = $('div.form-group');
+    formItems.each(function(index) {
+        var helpText = $(formItems[index]).find('p.help-block');
+        if(helpText) {
+            var prev = helpText.prev();
+
+            // Set up describedby relationship
+            helpText.attr('id', prev.attr('id') + '-help');
+            prev.attr('aria-describedby', helpText.attr('id'));
+        }
+    });
 }
