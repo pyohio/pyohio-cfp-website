@@ -30,16 +30,37 @@ function handleLoginErrors() {
 }
 
 function handleSpeakerProfileForm() {
-    // First, handle help text
     var formItems = $('div.form-group');
     formItems.each(function(index) {
         var helpText = $(formItems[index]).find('p.help-block');
-        if(helpText) {
-            var prev = helpText.prev();
+        if($(formItems[index]).hasClass('has-error')) {
+            // Errors may have multiple "help" blocks
+            var errorMessage = helpText.prev();
+            var errorInput = errorMessage.prev();
+            var errorID = errorInput.attr('id') + '-error';
+            var helpID = errorInput.attr('id') + '-help';
 
-            // Set up describedby relationship
-            helpText.attr('id', prev.attr('id') + '-help');
-            prev.attr('aria-describedby', helpText.attr('id'));
+            errorInput.attr('aria-invalid', 'true');
+            errorInput.attr('aria-describedby', errorID + ' ' + helpID);
+            helpText.attr('id', helpID);
+            errorMessage.attr('id', errorID);
+            errorMessage.attr('role', 'alert');
+        }
+        else {
+            // Handle help text
+
+            if(helpText) {
+                var prev = helpText.prev();
+
+                // Set up describedby relationship
+                helpText.attr('id', prev.attr('id') + '-help');
+                prev.attr('aria-describedby', helpText.attr('id'));
+            }
         }
     });
+
+    if($('input[aria-invalid]')) {
+        // Use native focus
+        document.querySelector('input[aria-invalid]').focus();
+    }
 }
