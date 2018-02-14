@@ -241,6 +241,10 @@ $homepage-block-min-height: 480px;
   }
 }
 
+a.navbar-brand {
+  font-weight: $headings-font-weight;
+}
+
 .tight-headings {
   h1, h2, h3, h4, h5, h6 {
     margin: 0.05em 0.05em 0.05em 0em;
