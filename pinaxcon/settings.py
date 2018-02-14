@@ -17,7 +17,8 @@ DATABASES = {
     }
 }
 
-UNPREPEND_WWW = bool(int(os.environ.get("DJANGO_UNPREPEND_WWW", "0")))
+#UNPREPEND_WWW = bool(int(os.environ.get("DJANGO_UNPREPEND_WWW", "0")))
+PREPEND_WWW = bool(int(os.environ.get("DJANGO_PREPEND_WWW", "0")))
 
 # HEROKU: Update database configuration with $DATABASE_URL.
 import dj_database_url
@@ -165,7 +166,7 @@ MIDDLEWARE_CLASSES = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "ssl_redirect.middleware.SSLRedirectMiddleware",
     "pinaxcon.middleware.CanonicalHostMiddleware",
-    "pinaxcon.middleware.UnprependWWWMiddleware",
+#    "pinaxcon.middleware.UnprependWWWMiddleware",
     "pinaxcon.monkey_patch.MonkeyPatchMiddleware",
     "rollbar.contrib.django.middleware.RollbarNotifierMiddleware",
 ]
