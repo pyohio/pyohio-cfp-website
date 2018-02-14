@@ -40,14 +40,16 @@
         {% endfor %}
       {% endif %}
     {% else %}
-      <h2>{{ level.name }}</h2>
-      {% for sponsor in level.sponsors %}
-        {% if sponsor.name|lower == "anonymous" %}
-          <div class="h4">Anonymous</div>
-        {% else %}
-          <div class="h4"><a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a></div>
-        {% endif %}
-      {% endfor %}
+      {% if level.sponsors %}
+        <h2>{{ level.name }}</h2>
+        {% for sponsor in level.sponsors %}
+          {% if sponsor.name|lower == "anonymous" %}
+            <div class="h4">Anonymous</div>
+          {% else %}
+            <div class="h4"><a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a></div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     {% endif %}
     
   {% endfor %}
