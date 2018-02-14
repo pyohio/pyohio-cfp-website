@@ -87,7 +87,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '%s/static/' % URL_PREFIX
+STATIC_URL = COMPRESS_URL = '%s/static/' % URL_PREFIX
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -108,7 +108,15 @@ DEFAULT_FILE_STORAGE = os.environ.get("DJANGO_DEFAULT_FILE_STORAGE", 'django.cor
 AWS_ACCESS_KEY_ID = os.environ.get("DJANGO_AWS_ACCESS_KEY_ID", None)
 AWS_SECRET_ACCESS_KEY = os.environ.get("DJANGO_AWS_SECRET_ACCESS_KEY", None)
 AWS_STORAGE_BUCKET_NAME = os.environ.get("DJANGO_AWS_STORAGE_BUCKET_NAME", None)
+STATICFILES_STORAGE = COMPRESS_STORAGE =  os.environ.get("DJANGO_STATICFILES_STORAGE", None)
+AWS_S3_REGION_NAME = os.environ.get("DJANGO_S3_REGION", None)
+AWS_QUERYSTRING_AUTH = False
 
+if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
+    # Re-assign static URLs to point to the s3 bucket
+    STATIC_URL = COMPRESS_URL = 'https://s3.{0}.amazonaws.com/{1}/'.format(
+        os.environ.get("DJANGO_S3_REGION", "us-east-2"),
+        AWS_STORAGE_BUCKET_NAME)
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
@@ -237,6 +245,7 @@ INSTALLED_APPS = [
     'compressor',
 
     'email_log',
+    'storages',
 ]
 
 # A sample logging configuration. The only tangible logging

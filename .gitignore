@@ -7,3 +7,4 @@ dev.db
 staticfiles
 venv/
 pinaxcon/site_media
+.env
