@@ -121,12 +121,10 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="pull-right header-actions">
-                {% if not user.sponsorships.exists %}
                     <a href="{% url "sponsor_apply" %}" class="btn btn-xs btn-default">
                         <i class="fa fa-plus-sign"></i>
                         Apply to be a sponsor
                     </a>
-                {% endif %}
             </div>
             <h3 class="panel-title">
                 <i class="fa fa-briefcase"></i>
