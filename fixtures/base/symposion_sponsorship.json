@@ -5,7 +5,7 @@
   "fields": {
     "conference": 1,
     "name": "Gold",
-    "order": 1,
+    "order": 5,
     "cost": 1000,
     "description": ""
   }
@@ -16,7 +16,7 @@
   "fields": {
     "conference": 1,
     "name": "Silver",
-    "order": 2,
+    "order": 6,
     "cost": 500,
     "description": ""
   }
@@ -27,7 +27,7 @@
   "fields": {
     "conference": 1,
     "name": "Platinum",
-    "order": 1,
+    "order": 4,
     "cost": 2000,
     "description": ""
   }
@@ -204,16 +204,6 @@
     "benefit": 4,
     "level": 3,
     "max_words": 300,
-    "other_limits": ""
-  }
-},
-{
-  "model": "symposion_sponsorship.benefitlevel",
-  "pk": 12,
-  "fields": {
-    "benefit": 2,
-    "level": 4,
-    "max_words": null,
     "other_limits": ""
   }
 },
