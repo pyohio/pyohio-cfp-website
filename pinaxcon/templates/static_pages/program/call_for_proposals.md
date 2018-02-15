@@ -7,6 +7,8 @@ Ready to submit a talk? Create a speaker profile and submit proposal(s) on [the 
 
 Log into our Slack team (<a href="https://slack.pyohio.org/">invitation here</a>) and ask in the #cfp channel or email us at info@pyohio.org.
 
+If you would like to be matched with a mentor to help with your proposal(s), [request a mentor here](https://goo.gl/forms/s3nBsWMmdwgQHWww2).
+
 ## Background
 
 PyOhio 2018, the annual Python programming conference for Ohio and the surrounding region, will take place Saturday & Sunday July 28th-29th, 2018 at The Ohio Union in Columbus, Ohio.
