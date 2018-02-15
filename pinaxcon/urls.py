@@ -88,6 +88,7 @@ original_patterns = [
     url(r"^login$", views.account_login, name="dashboard_login"),
     # Override the default account_login view with one that takes email addys
     url(r"^account/login/$", views.EmailLoginView.as_view(), name="account_login"),
+    url(r"^account/signup/$", views.EmailSignupView.as_view(), name="account_signup"),
     url(r"^account/", include("account.urls")),
 
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
@@ -126,7 +127,6 @@ urlpatterns = [
     url(r"^harassment-incidents/?$", RedirectView.as_view(url="%s/code-of-conduct/harassment-incidents" % URL_PREFIX, permanent=False)),
     url(r"^lightning/?$", RedirectView.as_view(url="%s/program/lightning-talks" % URL_PREFIX, permanent=False)),
     url(r"^review-proposals/?$", RedirectView.as_view(url="%s/program/call-for-proposals/review" % URL_PREFIX, permanent=False)),
-    url(r"^account/signup/?$", RedirectView.as_view(url="%s/attend" % URL_PREFIX, permanent=False)),
     url(r"^$", RedirectView.as_view(url="%s" % URL_PREFIX, permanent=False)),
     # url(r"^account/password/reset$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
     url(r'^2017/(?P<path>.*)$', serve_index, {
