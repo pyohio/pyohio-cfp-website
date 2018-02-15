@@ -27,7 +27,7 @@ You may submit multiple proposals however we will typically only accept one prop
 
 Unfortunately PyOhio is not able to offer financial aid or travel assistance at this time.
 
-We prioritize for PyOhio to be free for all attendees but by doing so we run with a very lean budget. Financial aid is a goal for the future but until we can secure funding for this we are unable to provide it.
+We prioritize for PyOhio to be free to attend so as many people as possible can participate. By doing so we run with a very lean budget. Financial aid is a goal for the future but until we can secure funding for this we are unable to provide it.
 
 ## Speakers<a name="speakers"></a>
 

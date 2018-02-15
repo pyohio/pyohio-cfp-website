@@ -256,7 +256,7 @@
     "url": "/2018/program",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -267,7 +267,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 24,
+    "sort_order": 9,
     "access_permissions": []
   }
 },
@@ -699,7 +699,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 9,
+    "sort_order": 24,
     "access_permissions": []
   }
 },
