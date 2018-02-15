@@ -51,7 +51,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 26,
+    "sort_order": 25,
     "access_permissions": []
   }
 },
@@ -280,7 +280,7 @@
     "url": "/2018/account/login/",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -290,7 +290,7 @@
     "access_guest": true,
     "access_restricted": false,
     "access_perm_type": 1,
-    "parent": null,
+    "parent": 26,
     "sort_order": 43,
     "access_permissions": []
   }
@@ -299,18 +299,18 @@
   "model": "sitetree.treeitem",
   "pk": 26,
   "fields": {
-    "title": "My Account",
+    "title": "Account",
     "hint": "",
     "url": "/2018/dashboard",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
-    "inmenu": false,
-    "inbreadcrumbs": false,
-    "insitetree": false,
-    "access_loggedin": true,
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
     "access_guest": false,
     "access_restricted": false,
     "access_perm_type": 1,
@@ -771,8 +771,58 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 25,
+    "sort_order": 26,
     "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 47,
+  "fields": {
+    "title": "Sign Up",
+    "hint": "",
+    "url": "/2018/account/signup/",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": true,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 26,
+    "sort_order": 48,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 48,
+  "fields": {
+    "title": "Admin",
+    "hint": "",
+    "url": "/2018/admin/",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": true,
+    "access_guest": false,
+    "access_restricted": true,
+    "access_perm_type": 1,
+    "parent": 26,
+    "sort_order": 47,
+    "access_permissions": [
+      22
+    ]
   }
 }
 ]
