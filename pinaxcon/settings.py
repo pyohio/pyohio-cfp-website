@@ -113,12 +113,16 @@ AWS_STORAGE_BUCKET_NAME = os.environ.get("DJANGO_AWS_STORAGE_BUCKET_NAME", None)
 STATICFILES_STORAGE = COMPRESS_STORAGE =  os.environ.get("DJANGO_STATICFILES_STORAGE", None)
 AWS_S3_REGION_NAME = os.environ.get("DJANGO_S3_REGION", None)
 AWS_QUERYSTRING_AUTH = False
+AWS_S3_CUSTOM_DOMAIN = os.environ.get("DJANGO_AWS_S3_CUSTOM_DOMAIN", None)
 
 if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
     # Re-assign static URLs to point to the s3 bucket
-    STATIC_URL = COMPRESS_URL = 'https://s3.{0}.amazonaws.com/{1}/'.format(
-        os.environ.get("DJANGO_S3_REGION", "us-east-2"),
-        AWS_STORAGE_BUCKET_NAME)
+    if AWS_S3_CUSTOM_DOMAIN:
+        STATIC_URL = COMPRESS_URL = 'https://{0}/'.format(AWS_S3_CUSTOM_DOMAIN)
+    else:
+        STATIC_URL = COMPRESS_URL = 'https://s3.{0}.amazonaws.com/{1}/'.format(
+            os.environ.get("DJANGO_S3_REGION", "us-east-2"),
+            AWS_STORAGE_BUCKET_NAME)
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
