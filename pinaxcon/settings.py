@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [".pyohio.org", ".localhost", ".herokuapp.com"]
 CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
 
 # If DEFAULT_FROM_EMAIL is not set, email will most likely break in prod.
-from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", None)
+from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", "no-reply@pyohio.org")
 if from_email is not None:
     DEFAULT_FROM_EMAIL = from_email
     SERVER_EMAIL = DEFAULT_FROM_EMAIL
@@ -41,7 +41,7 @@ if from_email is not None:
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = os.environ.get("TZ", "America/Los_Angeles")
+TIME_ZONE = os.environ.get("TZ", "America/New_York")
 
 
 # Set the email address that will receive errors.
