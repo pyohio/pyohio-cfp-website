@@ -1,5 +1,7 @@
 
-### The PyOhio 2018 CFP has not yet opened
+## *Proposals accepted until 23:59:59ET on 2018-05-15*
+
+Ready to submit a talk? Create a speaker profile and submit proposal(s) on [the dashboard](/2018/dashboard/).
 
 ## Questions?
 
@@ -7,11 +9,9 @@ Log into our Slack team (<a href="https://slack.pyohio.org/">invitation here</a>
 
 ## Background
 
-PyOhio 2018, the annual Python programming conference for Ohio and the surrounding region, will take place Saturday, July 28th, and Sunday, July 29th, 2018 at The Ohio State University in Columbus, Ohio.
+PyOhio 2018, the annual Python programming conference for Ohio and the surrounding region, will take place Saturday & Sunday July 28th-29th, 2018 at The Ohio Union in Columbus, Ohio.
 
-You can read more about the conference at http://pyohio.org.
-
-PyOhio invites all interested people to submit proposals for scheduled talks and tutorials. All topics of interest to the Python community will be considered. Standard presentation talk slots will be 40 minutes plus a 10 minute question-and-answer period. Tutorial slots will be 110 minutes long.
+PyOhio invites all interested people to submit proposals for scheduled talks and tutorials. All topics of interest to the Python community will be considered. Standard presentation talk slots will be 30 minutes with select talks being given 45 minutes. Tutorial slots will be 120 minutes long.
 
 ## Who Should Submit a Proposal?
 
@@ -19,9 +19,9 @@ You. Your friends. Your friends' friends. Anyone with any level of Python knowle
 
 Whether you got started with Python last month or you've been around for 20 years, we think you've got something to share. The Python community is stronger than ever and we're still reaching new areas, new industries, and new users. Be a part of growing Python by helping us change the future.
 
-In particular, we welcome submissions from people that have never done a talk before! And if you want help preparing a talk, let us know! Volunteers are eager to help new people do talks.
+In particular, we welcome submissions from people that have never done a talk before! And if you want help preparing a talk, let us know! Volunteers are eager to help new people with talks.
 
-You may submit multiple proposals.
+You may submit multiple proposals however we will typically only accept one proposal per speaker.
 
 ## Financial Aid / Travel Assistance
 
@@ -58,5 +58,6 @@ If you have an idea (or don't!) and want to speak, here's a very rough process o
 + Brainstorm or [mind map](https://en.wikipedia.org/wiki/Mind_map) to expand upon your ideas or knowledge in search of a general topic
 + Write a paragraph or two, or some bullet points, to outline the core concepts you want to communicate and what people might learn from your talk
 + Get someone you trust to read your notes and tell you what they think they'd learn
-+ Attend our office hours to get help building up your submission
++ Join us in Slack and discuss it in the #cfp channel: [https://slack.pyohio.org/](https://slack.pyohio.org/)
++ Submit your proposal on [your account dashboard](/2018/dashboard/)
 + Practice!
