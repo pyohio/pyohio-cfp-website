@@ -164,10 +164,3 @@ class TutorialProposal(Proposal):
     )
     prerequisite_setup_html = models.TextField(blank=True)
 
-    participant_limit = models.IntegerField(
-        blank=True,
-        verbose_name=_("The maximum number of tutorial participants"),
-        help_text=_("The maximum number of tutorial participants you "
-                    "feel comfortable accepting to your tutorial"),
-    )
-

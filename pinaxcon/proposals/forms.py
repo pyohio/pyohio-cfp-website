@@ -82,7 +82,6 @@ class TutorialProposalForm(ProposalForm):
             "additional_notes",
             "extra_av",
             "prerequisite_setup",
-            "participant_limit",
             "slides_release",
             "recording_release",
         ]
