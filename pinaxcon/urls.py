@@ -6,7 +6,7 @@ from django.contrib.staticfiles.templatetags.staticfiles import static as _stati
 from django.views.generic import TemplateView
 from django.views.generic import RedirectView
 from django.views.static import serve
-from django_nyt.urls import get_pattern as get_nyt_pattern
+#from django_nyt.urls import get_pattern as get_nyt_pattern
 # from wiki.urls import get_pattern as get_wiki_pattern
 
 from django.contrib import admin

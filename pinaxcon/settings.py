@@ -236,16 +236,16 @@ INSTALLED_APPS = [
     "django_nose",
 
     # wiki
-    'django.contrib.humanize',
-    'django_nyt',
-    'mptt',
-    'sekizai',
+    #'django.contrib.humanize',
+    #'django_nyt',
+    #'mptt',
+    #'sekizai',
     #'sorl.thumbnail',
-    'wiki',
-    'wiki.plugins.attachments',
-    'wiki.plugins.notifications',
+    #'wiki',
+    #'wiki.plugins.attachments',
+    #'wiki.plugins.notifications',
     #'wiki.plugins.images',
-    'wiki.plugins.macros',
+    #'wiki.plugins.macros',
 
     # stylesheets and js
     'compressor',
@@ -350,11 +350,11 @@ TICKET_PRODUCT_CATEGORY = 1
 
 INVOICE_CURRENCY = "USD"
 
-WIKI_ACCOUNT_HANDLING = False
-WIKI_ACCOUNT_SIGNUP_ALLOWED = False
-
-WIKI_ANONYMOUS_WRITE = False
-WIKI_ANONYMOUS_UPLOAD = False
+#WIKI_ACCOUNT_HANDLING = False
+#WIKI_ACCOUNT_SIGNUP_ALLOWED = False
+#
+#WIKI_ANONYMOUS_WRITE = False
+#WIKI_ANONYMOUS_UPLOAD = False
 
 
 # Use nose to run all tests
