@@ -34,6 +34,7 @@ if from_email is not None:
     DEFAULT_FROM_EMAIL = from_email
     SERVER_EMAIL = DEFAULT_FROM_EMAIL
     THEME_CONTACT_EMAIL = DEFAULT_FROM_EMAIL
+    CONTACT_EMAIL = DEFAULT_FROM_EMAIL
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
