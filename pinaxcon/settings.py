@@ -27,6 +27,8 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = [".pyohio.org", ".localhost", ".herokuapp.com"]
 CANONICAL_HOST = os.environ.get("DJANGO_CANONICAL_HOST", None)
+DEFAULT_HTTP_PROTOCOL = os.environ.get("DJANGO_DEFAULT_HTTP_PROTOCOL", "http")
+
 
 # If DEFAULT_FROM_EMAIL is not set, email will most likely break in prod.
 from_email = os.environ.get("DJANGO_DEFAULT_FROM_EMAIL", "no-reply@pyohio.org")
