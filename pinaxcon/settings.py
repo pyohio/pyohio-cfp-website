@@ -157,8 +157,6 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_DEBUG = DEBUG
-
 MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
