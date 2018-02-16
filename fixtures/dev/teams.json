@@ -1,0 +1,55 @@
+[
+{
+  "model": "teams.team",
+  "pk": 1,
+  "fields": {
+    "slug": "proposal-reviewers",
+    "name": "Proposal Reviewers",
+    "description": "",
+    "access": "application",
+    "created": "2018-02-16T03:07:24.412Z",
+    "permissions": [
+      1074,
+      1079
+    ],
+    "manager_permissions": []
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 2,
+  "fields": {
+    "slug": "program-chairs",
+    "name": "Program Chairs",
+    "description": "",
+    "access": "invitation",
+    "created": "2018-02-16T03:08:35.392Z",
+    "permissions": [
+      1074,
+      1079
+    ],
+    "manager_permissions": []
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 3,
+  "fields": {
+    "slug": "organizers",
+    "name": "Organizers",
+    "description": "",
+    "access": "invitation",
+    "created": "2018-02-16T03:09:36.726Z",
+    "permissions": [
+      1074,
+      1079
+    ],
+    "manager_permissions": [
+      1073,
+      1074,
+      1078,
+      1079
+    ]
+  }
+}
+]
