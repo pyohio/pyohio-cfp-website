@@ -157,7 +157,7 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = DEBUG
 
 MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
