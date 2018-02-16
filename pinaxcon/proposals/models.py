@@ -129,6 +129,10 @@ class TalkProposal(Proposal):
 
     class Meta:
         verbose_name = "talk proposal"
+        permissions = (
+                ('can_manage_talks', 'Can manage talks'),
+                ('can_review_talks', 'Can review talks'),
+                )
 
     extended_presentation = models.BooleanField(
         default=False,
@@ -145,6 +149,11 @@ class TutorialProposal(Proposal):
 
     class Meta:
         verbose_name = "tutorial proposal"
+        permissions = (
+                ('can_manage_tutorials', 'Can manage tutorials'),
+                ('can_review_tutorials', 'Can review tutorials'),
+                )
+
 
     prerequisite_setup = models.TextField(
         blank=True,
