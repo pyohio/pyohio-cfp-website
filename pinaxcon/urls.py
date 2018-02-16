@@ -125,6 +125,7 @@ urlpatterns = [
     url(r"^harassment-incidents-staff/?$", RedirectView.as_view(url="%s/code-of-conduct/harassment-staff-procedures" % URL_PREFIX, permanent=False)),
     url(r"^harassment-incidents/?$", RedirectView.as_view(url="%s/code-of-conduct/harassment-incidents" % URL_PREFIX, permanent=False)),
     url(r"^lightning/?$", RedirectView.as_view(url="%s/program/lightning-talks" % URL_PREFIX, permanent=False)),
+    url(r"^sponsors/prospectus/?$", RedirectView.as_view(url="%s/sponsors/prospectus" % URL_PREFIX, permanent=False)),
     url(r"^review-proposals/?$", RedirectView.as_view(url="%s/program/call-for-proposals/review" % URL_PREFIX, permanent=False)),
     url(r"^$", RedirectView.as_view(url="%s" % URL_PREFIX, permanent=False)),
     # url(r"^account/password/reset$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
