@@ -17,8 +17,8 @@
   "pk": 2,
   "fields": {
     "slug": "program-committee",
-    "name": "Program Comittee",
-    "description": "I am not a comittee!",
+    "name": "Program Committee",
+    "description": "I am not a committee!",
     "access": "invitation",
     "created": "2018-02-17T18:00:26.572Z",
     "permissions": [],
