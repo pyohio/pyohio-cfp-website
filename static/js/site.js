@@ -1,6 +1,10 @@
 $(document).ready(function() {
     var urlPath = window.location.pathname;
 
+    if(urlPath.match(/2018\/$/)) {
+        handleHomeAlert();
+    }
+
     if(urlPath.match(/login/)) {
         handleLoginErrors();
     }
@@ -18,6 +22,15 @@ $(document).ready(function() {
         handleSignupErrors();
     }
 });
+
+function handleHomeAlert() {
+    // Notification for confirmation email sent
+
+    var banner = $('div.alert');
+    if(banner) {
+        banner.attr('role', 'alert');
+    }
+}
 
 /*
  * In all of the following:
