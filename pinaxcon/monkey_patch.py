@@ -14,10 +14,18 @@ class MonkeyPatchMiddleware(object):
 def do_monkey_patch():
     patch_stripe_card_defaults()
     patch_conference_schedule()
+    update_user_representation()
 
     # Remove this function from existence
     global do_monkey_patch
     do_monkey_patch = lambda: None
+
+
+def update_user_representation():
+    def user_repr(user):
+        return '{} ({})'.format(user.email, user.username)
+
+    User.add_to_class("__str__", user_repr)
 
 
 def patch_stripe_card_defaults():
