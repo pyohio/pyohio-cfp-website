@@ -21,6 +21,11 @@ $(document).ready(function() {
     if(urlPath.match(/account\/signup/)) {
         handleSignupErrors();
     }
+
+    if(urlPath.match(/sponsors\/apply/) ||
+            urlPath.match(/sponsors\/\d.+/)) {
+        handleSponsorErrors();
+    }
 });
 
 function handleHomeAlert() {
@@ -139,6 +144,35 @@ function handleAddlSpeakerForm() {
         errorMessage.attr('id', errorInput.attr('id') + '-error');
         errorMessage.attr('role', 'alert');
 
+        // Use native focus
+        document.querySelector('input[aria-invalid]').focus();
+    }
+}
+
+function handleSponsorErrors() {
+    // Like other forms, but has div wrappers for a two-column form
+    // Also has a global sometimes
+    var formItems = $('div.form-group');
+    var globalError = $('div.alert');
+
+    if(globalError) {
+        globalError.attr('role', 'alert');
+    }
+
+    formItems.each(function(index) {
+        if($(formItems[index]).hasClass('has-error')) {
+            var errorMessage = $(formItems[index]).find('span.help-block');
+            var errorInput = errorMessage.prev();
+
+            errorInput.attr('aria-invalid', 'true');
+            errorInput.attr('aria-describedby', errorInput.attr('id') + '-error');
+            errorMessage.attr('id', errorInput.attr('id') + '-error');
+            errorMessage.attr('role', 'alert');
+        }
+    });
+
+    if($('input[aria-invalid]').length) {
+        // Use native focus
         document.querySelector('input[aria-invalid]').focus();
     }
 }
