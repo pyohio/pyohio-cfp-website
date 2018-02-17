@@ -24,15 +24,5 @@
     "permissions": [],
     "manager_permissions": []
   }
-},
-{
-  "model": "teams.membership",
-  "pk": 3,
-  "fields": {
-    "user": 3,
-    "team": 1,
-    "state": "member",
-    "message": ""
-  }
 }
 ]
