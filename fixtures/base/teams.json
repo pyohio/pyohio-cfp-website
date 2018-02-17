@@ -1,0 +1,28 @@
+[
+{
+  "model": "teams.team",
+  "pk": 1,
+  "fields": {
+    "slug": "reviewers",
+    "name": "Reviewers",
+    "description": "Talk and Tutorial submission reviewers.",
+    "access": "open",
+    "created": "2018-02-17T00:49:21.546Z",
+    "permissions": [],
+    "manager_permissions": []
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 2,
+  "fields": {
+    "slug": "program-committee",
+    "name": "Program Committee",
+    "description": "I am not a committee!",
+    "access": "invitation",
+    "created": "2018-02-17T18:00:26.572Z",
+    "permissions": [],
+    "manager_permissions": []
+  }
+}
+]
