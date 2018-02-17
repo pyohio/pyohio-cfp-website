@@ -6,7 +6,7 @@
     "slug": "reviewers",
     "name": "Reviewers",
     "description": "Talk and Tutorial submission reviewers.",
-    "access": "open",
+    "access": "application",
     "created": "2018-02-17T00:49:21.546Z",
     "permissions": [],
     "manager_permissions": []
