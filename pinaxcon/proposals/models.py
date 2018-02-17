@@ -76,10 +76,12 @@ class ConferenceSpeaker(SpeakerBase):
     reviewer = models.EmailField(
         blank=True,
         null=True,
-        verbose_name=_("E-mail of video reviewer"),
-        help_text=_("Include the e-mail address of someone who can watch a "
-                    "video of your talk, shortly after the video is produced, "
-                    "to ensure quality."),
+        verbose_name=_("Email of video reviewer"),
+        help_text=_("Email address of someone, not yourself, that will "
+                    "<a href='https://github.com/CarlFK/veyepar/wiki/Reviewer'>"
+                    "review the video of your talk"
+                    "</a>"
+                    " to make sure it is ready to publish"),
         )
 
     code_of_conduct = models.BooleanField(
