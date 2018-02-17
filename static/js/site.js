@@ -26,6 +26,10 @@ $(document).ready(function() {
             urlPath.match(/sponsors\/\d.+/)) {
         handleSponsorErrors();
     }
+
+    if(urlPath.match(/reviews\/.+\/notification/)) {
+        handleResultNotificationElements();
+    }
 });
 
 function handleHomeAlert() {
@@ -35,6 +39,19 @@ function handleHomeAlert() {
     if(banner) {
         banner.attr('role', 'alert');
     }
+}
+
+function handleResultNotificationElements() {
+    var templateSelect = $('select[name="notification_template"]');
+    var toggleAll = $('#action-toggle');
+    var toggleOneList = $('input[type="checkbox"][name="_selected_action"]');
+
+    templateSelect.attr('aria-label', 'notification email template');
+
+    // FIXME: remove these when real hidden labels are added and column
+    // scope is added to this table
+    toggleAll.attr('aria-label', 'select all proposals');
+    toggleOneList.attr('aria-label', 'select this proposal');
 }
 
 /*
