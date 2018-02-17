@@ -20,6 +20,7 @@ Django 1.11.9
 - `python manage.py migrate`
 - `python manage.py loaddata fixtures/base/*`
 - `python manage.py createsuperuser`
+- `python manage.py collectstatic`
 - Run the development server
   - `python manage.py runserver`
   - Or if you have heroku tools installed: `heroku local web`
