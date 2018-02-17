@@ -18,7 +18,8 @@ $(document).ready(function() {
         handleAddlSpeakerForm();
     }
 
-    if(urlPath.match(/account\/signup/)) {
+    if(urlPath.match(/account\/signup/) ||
+            urlPath.match(/account\/password/)) {
         handleSignupErrors();
     }
 
