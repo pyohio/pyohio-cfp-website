@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var urlPath = window.location.pathname;
 
-    if(urlPath.match('login')) {
+    if(urlPath.match(/login/)) {
         handleLoginErrors();
     }
 
@@ -13,15 +13,23 @@ $(document).ready(function() {
     if(urlPath.match(/proposals\/.+\/speakers/)) {
         handleAddlSpeakerForm();
     }
+
+    if(urlPath.match(/account\/signup/)) {
+        handleSignupErrors();
+    }
 });
+
+/*
+ * In all of the following:
+ * - Create link between any inputs and their help text via aria-describedby
+ * - Locate any errors and apply role="alert"
+ * - Create link between errors and their associated inputs
+ */
 
 function handleLoginErrors() {
     var globalError = $('div.alert');
 
     if(globalError) {
-        // Apply:
-        // role="alert"
-        // id for reference
         globalError.attr('role', 'alert');
         globalError.attr('id', 'login-error');
 
@@ -31,6 +39,40 @@ function handleLoginErrors() {
 
         // Use native focus
         document.querySelector('input[type="password"]').focus();
+    }
+}
+
+function handleSignupErrors() {
+    var globalError = $('div.alert');
+    var formItems = $('div.form-group');
+
+    // This form is complicated:
+    // * Can have global error
+    // * Can have inline error
+    // * Global doesn't tie direct to input
+    // User potentially has to error twice to hear both.
+    if(globalError) {
+        globalError.attr('role', 'alert');
+    }
+
+    if(formItems) {
+        formItems.each(function(index) {
+            if($(formItems[index]).hasClass('has-error')) {
+                var errorMessage = $(formItems[index]).find('span.help-block');
+                var errorInput = errorMessage.prev();
+
+                errorInput.attr('aria-invalid', 'true');
+                errorInput.attr('aria-describedby', errorInput.attr('id') + '-error');
+                errorMessage.attr('id', errorInput.attr('id') + '-error');
+                errorMessage.attr('role', 'alert');
+            }
+        });
+    }
+
+    if($('input[aria-invalid]').length) {
+        // Use native focus
+        // Won't work right until reconciled w/ pinax-theme-bootstrap
+        document.querySelector('input[aria-invalid]').focus();
     }
 }
 
@@ -65,7 +107,7 @@ function handleCommonTalkDataForm() {
         }
     });
 
-    if($('input[aria-invalid]')) {
+    if($('input[aria-invalid]').length) {
         // Use native focus
         document.querySelector('input[aria-invalid]').focus();
     }
