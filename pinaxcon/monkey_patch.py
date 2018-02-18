@@ -26,6 +26,8 @@ def update_user_representation():
         return '{} ({})'.format(user.email, user.username)
 
     User.add_to_class("__str__", user_repr)
+    User.add_to_class("__unicode__", user_repr)
+    User.add_to_class("__repr__", user_repr)
 
 
 def patch_stripe_card_defaults():
