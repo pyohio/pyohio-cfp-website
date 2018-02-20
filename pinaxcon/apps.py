@@ -9,3 +9,5 @@ class AppConfig(BaseAppConfig):
 
     def ready(self):
         import_module("pinaxcon.receivers")
+        import_module("pinaxcon.signals")
+

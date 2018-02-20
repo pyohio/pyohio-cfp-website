@@ -393,3 +393,7 @@ ROLLBAR = {
     'branch': 'master',
     'root': PROJECT_ROOT,
 }
+
+SLACK_WEBHOOK_URL = os.environ.get('SLACK_WEBHOOK_URL')
+SLACK_CHANNEL_SPONSORS = os.environ.get('SLACK_CHANNEL_SPONSORS')
+SLACK_CHANNEL_PROPOSALS = os.environ.get('SLACK_CHANNEL_PROPOSALS')
