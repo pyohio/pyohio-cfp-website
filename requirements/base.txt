@@ -27,7 +27,7 @@ coverage==4.0.3
 
 # Registrasion
 https://github.com/chrisjrn/registrasion/tarball/master
-https://github.com/tylerdave/symposion/tarball/pyohio-2018
+https://github.com/pyohio/symposion/tarball/pyohio-2018
 https://github.com/chrisjrn/registrasion-stripe/tarball/master
 https://github.com/chrisjrn/symposion-bootstrap-templates/tarball/master
 
@@ -39,3 +39,6 @@ requests==2.18.4          # via rollbar
 rollbar==0.13.17
 six==1.11.0               # via rollbar
 urllib3==1.22             # via requests
+
+# Keen.io
+keen==0.5.1
