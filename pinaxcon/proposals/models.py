@@ -152,7 +152,7 @@ class TutorialProposal(Proposal):
         blank=True,
         verbose_name=_("Prerequisites tutorial participants should complete"),
         help_text=_("Many tutorials require specific setup or installed "
-                    "software. Please explain your tutrial setup requirements "
+                    "software. Please explain your tutorial setup requirements "
                     ""),
     )
     prerequisite_setup_html = models.TextField(blank=True)
