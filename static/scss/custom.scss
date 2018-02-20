@@ -243,6 +243,13 @@ $homepage-block-min-height: 480px;
 
 a.navbar-brand {
   font-weight: $headings-font-weight;
+  white-space:nowrap;
+}
+
+a.navbar-brand img {
+  float: left;
+  vertical-align:middle;
+  margin-right: 5px;
 }
 
 .tight-headings {
