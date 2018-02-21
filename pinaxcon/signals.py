@@ -70,12 +70,13 @@ def save_proposal(sender, instance, **kwargs):
                     get_admin_url(instance)
                     )
             post_slack_message(text, channel=SLACK_CHANNEL_PROPOSALS)
-        event = {
-                'kind': str(instance.kind.slug),
-                'date': instance.submitted.strftime('%Y-%m-%d'),
-                'id': instance.id,
-                }
-        send_keen_event('proposals', event)
+        if kwargs.get('created'):
+            event = {
+                    'kind': str(instance.kind.slug),
+                    'date': instance.submitted.strftime('%Y-%m-%d'),
+                    'id': instance.id,
+                    }
+            send_keen_event('proposals', event)
     except:
         logger.exception('save_proposal callback failed')
 
