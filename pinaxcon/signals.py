@@ -71,7 +71,7 @@ def save_proposal(sender, instance, **kwargs):
                     )
             post_slack_message(text, channel=SLACK_CHANNEL_PROPOSALS)
         event = {
-                'kind': str(instance.kind),
+                'kind': str(instance.kind.slug),
                 'date': instance.submitted.strftime('%Y-%m-%d'),
                 'id': instance.id,
                 }
