@@ -144,4 +144,10 @@ urlpatterns += [
     url(r"^", include("pinax.pages.urls")),
 ]
 
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
+
 handler500 = views.server_error
