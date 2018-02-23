@@ -139,10 +139,10 @@ urlpatterns = [
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 #urlpatterns += static('/2017/', document_root=os.path.join(settings.ARCHIVE_ROOT, '2017'))
 
-urlpatterns += [
+#urlpatterns += [
     # Catch-all MUST go last.
-    url(r"^", include("pinax.pages.urls")),
-]
+#    url(r"^", include("pinax.pages.urls")),
+#]
 
 if settings.DEBUG:
     import debug_toolbar
