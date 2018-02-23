@@ -1,4 +1,6 @@
 import os
+import urlparse
+
 import dj_database_url
 
 CONFERENCE_YEAR = '2018'
@@ -9,6 +11,20 @@ BASE_DIR = PACKAGE_ROOT
 ARCHIVE_ROOT = os.path.join(PROJECT_ROOT, 'archive')
 
 DEBUG = bool(int(os.environ.get("DEBUG", "1")))
+
+REDIS_URL = os.environ.get("REDIS_URL", None)
+if REDIS_URL:
+    redis_url = urlparse.urlparse(REDIS_URL)
+    CACHES = {
+        "default": {
+            "BACKEND": "redis_cache.RedisCache",
+            "LOCATION": "{0}:{1}".format(redis_url.hostname, redis_url.port),
+            "OPTIONS": {
+                "PASSWORD": redis_url.password,
+                "DB": 0,
+            }
+        }
+    }
 
 DATABASES = {
     "default": {
@@ -393,6 +409,11 @@ ROLLBAR = {
     'branch': 'master',
     'root': PROJECT_ROOT,
 }
+
+if REDIS_URL and STATICFILES_STORAGE == "storages.backends.s3boto3.S3Boto3Storage":
+    AWS_PRELOAD_METADATA = True
+    INSTALLED_APPS = ['collectfast'] + INSTALLED_APPS
+    COLLECTFAST_THREADS = 10
 
 SLACK_WEBHOOK_URL = os.environ.get('SLACK_WEBHOOK_URL')
 SLACK_CHANNEL_SPONSORS = os.environ.get('SLACK_CHANNEL_SPONSORS')
