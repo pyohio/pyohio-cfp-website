@@ -26,9 +26,9 @@ django-nose==1.4.4
 coverage==4.0.3
 
 # Registrasion
-https://github.com/chrisjrn/registrasion/tarball/master
+https://github.com/pyohio/registrasion/tarball/pyohio-2018
 https://github.com/pyohio/symposion/tarball/pyohio-2018
-https://github.com/chrisjrn/registrasion-stripe/tarball/master
+https://github.com/pyohio/registrasion-stripe/tarball/pyohio-2018
 https://github.com/pyohio/symposion-bootstrap-templates/tarball/pyohio-2018
 
 # Rollbar
