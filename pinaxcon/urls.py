@@ -82,9 +82,6 @@ original_patterns = [
     url(r"^jobs$", TemplateView.as_view(template_name="static_pages/jobs/job_board.html"), name="jobs"),
 
     # Django, Symposion, and Registrasion URLs
-
-    url(r"^admin/", include(admin.site.urls)),
-
     url(r"^login$", views.account_login, name="dashboard_login"),
     # Override the default account_login view with one that takes email addys
     url(r"^account/login/$", views.EmailLoginView.as_view(), name="account_login"),
@@ -92,6 +89,9 @@ original_patterns = [
     url(r"^account/", include("account.urls")),
 
     url(r"^dashboard/", symposion.views.dashboard, name="dashboard"),
+
+    url(r"^admin/login/", views.EmailLoginView.as_view(), name="admin_login"),
+    url(r"^admin/", include(admin.site.urls)),
 
     url(r"^speaker/", include("symposion.speakers.urls")),
     url(r"^proposals/", include("symposion.proposals.urls")),
