@@ -37,7 +37,7 @@ function handleHomeAlert() {
     // Notification for confirmation email sent
 
     var banner = $('div.alert');
-    if(banner) {
+    if(banner.length) {
         banner.attr('role', 'alert');
     }
 }
@@ -65,7 +65,7 @@ function handleResultNotificationElements() {
 function handleLoginErrors() {
     var globalError = $('div.alert');
 
-    if(globalError) {
+    if(globalError.length) {
         globalError.attr('role', 'alert');
         globalError.attr('id', 'login-error');
 
@@ -87,11 +87,11 @@ function handleSignupErrors() {
     // * Can have inline error
     // * Global doesn't tie direct to input
     // User potentially has to error twice to hear both.
-    if(globalError) {
+    if(globalError.length) {
         globalError.attr('role', 'alert');
     }
 
-    if(formItems) {
+    if(formItems.length) {
         formItems.each(function(index) {
             if($(formItems[index]).hasClass('has-error')) {
                 var errorMessage = $(formItems[index]).find('span.help-block');
@@ -153,7 +153,7 @@ function handleAddlSpeakerForm() {
     // Extremely similar to the login form.
 
     var errorItem = $('div.has-error');
-    if(errorItem) {
+    if(errorItem.length) {
         var errorMessage = errorItem.find('span.help-block');
         var errorInput = errorMessage.prev();
 
@@ -173,7 +173,7 @@ function handleSponsorErrors() {
     var formItems = $('div.form-group');
     var globalError = $('div.alert');
 
-    if(globalError) {
+    if(globalError.length) {
         globalError.attr('role', 'alert');
     }
 
