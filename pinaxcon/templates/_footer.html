@@ -1,20 +1,23 @@
 {% load staticfiles %}
 {% load sponsorship_tags %}
+{% load thumbnail %}
 <div class="row">
 
   <div class="footer-copy">
-      <p>&copy; {{ CONFERENCE_YEAR }} PyOhio</p>
-
-    {% sponsors "platinum" as platinum %}
-
-<!--    <p>Sponsorship recognition - We acknowledge the support of our Platinum sponsor{{ platinum|length|pluralize}},
-      {% for sponsor in platinum %}
-        {% if forloop.last and not forloop.first %}
-          and
+      <p>&copy; {{ CONFERENCE_YEAR }} PyOhio &mdash;
+        PyOhio is made possible by
+        {% sponsors "Premier" as premier %}
+        {% if premier %}
+          {% for sponsor in premier %}
+            Premier sponsor
+            <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}"><img style="margin: 10px;" src="{% thumbnail sponsor.website_logo '75x50' %}" alt="{{ sponsor.name }}" /></a>
+            and our other
+          {% endfor %}
+        {% else %}
+        our
         {% endif %}
-        {{ sponsor }}{% if forloop.last %}.{% endif %}
-      {% endfor %}
--->
+        <a href="{% url "sponsor_list" %}">sponsors</a>.
+      </p>
     <p>
       <a href="https://facebook.com/pyohio">Facebook</a>
       | <a href="https://twitter.com/pyohio">Twitter</a>
