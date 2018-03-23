@@ -36,6 +36,7 @@ original_patterns = [
     url(r"^program/events/?$", TemplateView.as_view(template_name="static_pages/program/events.html"), name="program/events"),
     url(r"^events$", RedirectView.as_view(url="program/events")),
     url(r"^program/call-for-proposals$", TemplateView.as_view(template_name="static_pages/program/call_for_proposals.html"), name="program/call-for-proposals"),
+    url(r"^program/review-proposals$", TemplateView.as_view(template_name="static_pages/program/review_proposals.html"), name="program/review-proposals"),
     # url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
     url(r"^cfp$", RedirectView.as_view(url="program/call-for-proposals")),
     # move to program/young-coders: url(r"about/pykids$", TemplateView.as_view(template_name="static_pages/about/pykids.html"), name="about/pykids"),
