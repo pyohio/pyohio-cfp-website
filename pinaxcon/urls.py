@@ -43,23 +43,23 @@ original_patterns = [
 
     # attend
     # TODO:
-    # url(r"^attend$", TemplateView.as_view(template_name="static_pages/attend/attend.html"), name="attend/attend"),
-    # url(r"^registration$", RedirectView.as_view(url="attend")),
-    # url(r"^registration/register$", views.buy_ticket, name="buy_ticket"),
+    url(r"^attend$", TemplateView.as_view(template_name="static_pages/attend/attend.html"), name="attend/attend"),
+    url(r"^registration$", RedirectView.as_view(url="attend")),
+    url(r"^registration/register$", views.buy_ticket, name="buy_ticket"),
     # url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
-    # url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
-    # url(r"^attend/tshirt$", TemplateView.as_view(template_name="static_pages/attend/tshirt.html"), name="attend/tshirt"),
-    # url(r"^attend/accessibility-and-accommodations$",TemplateView.as_view(template_name="static_pages/attend/accommodations.html"), name="attend/accessibility-and-accommodations"),
-    # url(r"^accessibility$", RedirectView.as_view(url="attend/accessibility-and-accommodations")),
+    url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
+    url(r"^attend/tshirt$", TemplateView.as_view(template_name="static_pages/attend/tshirt.html"), name="attend/tshirt"),
+    url(r"^attend/accessibility-and-accommodations$",TemplateView.as_view(template_name="static_pages/attend/accommodations.html"), name="attend/accessibility-and-accommodations"),
+    url(r"^accessibility$", RedirectView.as_view(url="attend/accessibility-and-accommodations")),
     # url(r"^guides$",TemplateView.as_view(template_name="static_pages/attend/guides.html"), name="attend/guides"),
     # url(r"^guide$", RedirectView.as_view(url="guides")),
 
     # url(r"^emergencies$", TemplateView.as_view(template_name="static_pages/attend/emergencies.html"), name="attend/emergencies"),
     # url(r"^emergency$", RedirectView.as_view(url="emergencies")),
-    # url(r"^attend/food$", TemplateView.as_view(template_name="static_pages/attend/food.html"), name="attend/food"),
-    # url(r"^food$", RedirectView.as_view(url="attend/food")),
-    # url(r"^attend/transit$", TemplateView.as_view(template_name="static_pages/attend/transit.html"), name="attend/transit"),
-    # url(r"^transit$", RedirectView.as_view(url="attend/transit")),
+    url(r"^attend/food$", TemplateView.as_view(template_name="static_pages/attend/food.html"), name="attend/food"),
+    url(r"^food$", RedirectView.as_view(url="attend/food")),
+    url(r"^attend/transit$", TemplateView.as_view(template_name="static_pages/attend/transit.html"), name="attend/transit"),
+    url(r"^transit$", RedirectView.as_view(url="attend/transit")),
     # Maybe:
     # url(r"^attend/business-case$", TemplateView.as_view(template_name="static_pages/attend/business-case.html"), name="attend/business-case"),
 
