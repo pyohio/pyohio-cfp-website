@@ -37,7 +37,7 @@ class ConferenceSpeaker(SpeakerBase):
         ("List any past speaking experience you have. This can include "
          "user groups, meetups, or presentations at work or school.  Edit "
          "using <a href='http://warpedvisions.org/projects/"
-         "markdown-cheat-sheet/target='_blank'>"
+         "markdown-cheat-sheet/'>"
          "Markdown</a>."),
          verbose_name=_("Past speaking experience"),
     )
