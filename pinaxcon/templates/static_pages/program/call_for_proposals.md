@@ -45,6 +45,8 @@ PyOhio is a conference in support of the local programmer community. We aim to f
 
 This [public speaking](https://github.com/vmbrasseur/Public_Speaking) repository, maintained by [VM Brasseur](https://twitter.com/vmbrasseur), has many useful resources to help you polish your proposals and talks.
 
+You may review last year's talk listing for example abstracts: [2017 talks.](https://www.pyohio.org/2017/schedule/talks/list/)
+
 ## Submitting<a name="submitting"></a>
 
 To help us evaluate proposals and build our program, we would like as much detail as you can provide on your talk. At a minimum this should include: **a brief description (~400 characters) suitable for inclusion in a schedule page; a brief prose abstract (intended as the content for a talk detail page on the program site); and, if you'd like, a rough outline of the structure including estimated timings for each section of your talk.**
