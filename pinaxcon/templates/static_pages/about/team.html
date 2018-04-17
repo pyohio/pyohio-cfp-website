@@ -3,6 +3,7 @@
 {% load i18n %}
 {% load thumbnail %}
 {% load staticfiles %}
+{% load pyohio_tags %}
 
 {% block head_title %}About the Team{% endblock %}
 
@@ -32,6 +33,9 @@ Our team of North Bay and Bay Area locals has years of experience building commu
 
 
 <h2>Meet the Team</h2>
+
+{% user_photo 'tylerdave@tylerdave.com' %}
+{% user_bio 'tylerdave@tylerdave.com' %}
 
 <h3>Christopher Neugebauer, Conference Chair</h3>
 
