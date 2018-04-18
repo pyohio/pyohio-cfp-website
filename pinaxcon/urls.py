@@ -39,16 +39,16 @@ original_patterns = [
     url(r"^program/review-proposals$", TemplateView.as_view(template_name="static_pages/program/review_proposals.html"), name="program/review-proposals"),
     # url(r"^program/selection-process$", TemplateView.as_view(template_name="static_pages/program/selection_process.html"), name="program/selection-process"),
     url(r"^cfp$", RedirectView.as_view(url="program/call-for-proposals")),
-    # move to program/young-coders: url(r"about/pykids$", TemplateView.as_view(template_name="static_pages/about/pykids.html"), name="about/pykids"),
     # move to program/sprints-and-receptions: url(r"about/sprints$", TemplateView.as_view(template_name="static_pages/about/sprints.html"), name="about/sprints"),
+    url(r"^program/young-coders$", TemplateView.as_view(template_name="static_pages/program/pykids.html"), name="about/pykids"),
 
     # attend
     # TODO:
-    # url(r"^attend$", TemplateView.as_view(template_name="static_pages/attend/attend.html"), name="attend/attend"),
-    # url(r"^registration$", RedirectView.as_view(url="attend")),
+     url(r"^attend/register$", TemplateView.as_view(template_name="static_pages/attend/register.html"), name="attend/register"),
+    url(r"^attend$", RedirectView.as_view(url="attend/register")),
     # url(r"^registration/register$", views.buy_ticket, name="buy_ticket"),
-    # url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
-    # url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
+    url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
+    url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
     # url(r"^attend/tshirt$", TemplateView.as_view(template_name="static_pages/attend/tshirt.html"), name="attend/tshirt"),
     # url(r"^attend/accessibility-and-accommodations$",TemplateView.as_view(template_name="static_pages/attend/accommodations.html"), name="attend/accessibility-and-accommodations"),
     # url(r"^accessibility$", RedirectView.as_view(url="attend/accessibility-and-accommodations")),
