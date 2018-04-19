@@ -49,6 +49,7 @@ original_patterns = [
     # url(r"^registration/register$", views.buy_ticket, name="buy_ticket"),
     url(r"^attend/travel$", TemplateView.as_view(template_name="static_pages/attend/travel.html"), name="attend/travel"),
     url(r"^attend/hotels$", TemplateView.as_view(template_name="static_pages/attend/hotels.html"), name="attend/hotels"),
+    url(r"^attend/volunteer$", TemplateView.as_view(template_name="static_pages/attend/volunteer.html"), name="attend/volunteer"),
     # url(r"^attend/tshirt$", TemplateView.as_view(template_name="static_pages/attend/tshirt.html"), name="attend/tshirt"),
     # url(r"^attend/accessibility-and-accommodations$",TemplateView.as_view(template_name="static_pages/attend/accommodations.html"), name="attend/accessibility-and-accommodations"),
     # url(r"^accessibility$", RedirectView.as_view(url="attend/accessibility-and-accommodations")),
