@@ -25,7 +25,7 @@ def make_bio_html(username):
     html = """<p><img src="{0}" alt="{1}" class="team-headshot">{2}</p>"""
     if speaker.twitter_username:
         twitter_username = speaker.twitter_username.lstrip('@')
-        html += """<p><a class="twitter-follow-button" href="https://twitter.com/{0}">@{0}</a>""".format(twitter_username)
+        html += """<p><a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/{0}">@{0}</a>""".format(twitter_username)
     if speaker.photo.name:
         photo_url = staticfiles_storage.url(speaker.photo.name)
     else:
