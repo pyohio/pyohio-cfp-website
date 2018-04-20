@@ -346,12 +346,15 @@ body.about {
   }
 
   .team-headshot {
-    height: 150px;
     width: 150px;
     float: left;
     margin-right: 1em;
     margin-top: 0.25em;
     margin-bottom: 1em;
+  }
+
+  .bio-block {
+      min-height: 1.5em;
   }
 }
 

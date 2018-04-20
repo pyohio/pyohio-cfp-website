@@ -26,7 +26,7 @@ original_patterns = [
     # TODO:
     # url(r"^about/pyohio$", TemplateView.as_view(template_name="static_pages/about/pyohio.html"), name="about/pyohio"),
     # url(r"^about/columbus$", TemplateView.as_view(template_name="static_pages/about/columbus.html"), name="about/columbus"),
-    # url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
+    url(r"^about/team$", TemplateView.as_view(template_name="static_pages/about/team.html"), name="about/team"),
     # rename to about/credits: url(r"^about/colophon$", TemplateView.as_view(template_name="static_pages/about/colophon.html"), name="about/colophon"),
     # Maybe:
     # url(r"^about/transparency$", TemplateView.as_view(template_name="static_pages/about/transparency/transparency.html"), name="about/transparency"),
