@@ -29,7 +29,7 @@ def make_bio_html(username):
     if speaker.photo.name:
         photo_url = staticfiles_storage.url(speaker.photo.name)
     else:
-        photo_url = staticfiles_storage.url('/static/images/blank-profile-photo.png')
+        photo_url = staticfiles_storage.url('/images/blank-profile-photo.png')
     return html.format(photo_url, speaker.name, speaker.biography_html)
 
 @register.simple_tag
