@@ -76,7 +76,7 @@ original_patterns = [
     url(r"^sponsors/prospectus$", TemplateView.as_view(template_name="static_pages/sponsors/prospectus.html"), name="sponsors/prospectus"),
     url(r"^prospectus.pdf$", RedirectView.as_view(url=_static("assets/PyOhio-2018-Sponsorship-Prospectus.pdf")), name="pyohio-2018-prospectus.pdf"),
     url(r"^sponsors/become-a-sponsor$", TemplateView.as_view(template_name="static_pages/sponsors/become_a_sponsor.html"), name="sponsors/become-a-sponsor"),
-    # url(r"^sponsors/donate$", TemplateView.as_view(template_name="static_pages/sponsors/donate.html"), name="sponsors/donate"),
+    url(r"^sponsors/individual$", TemplateView.as_view(template_name="static_pages/sponsors/individual.html"), name="sponsors/individual"),
     # url(r"^donate$", RedirectView.as_view(url="sponsors/donate")),
     # url(r"^about/donate$", RedirectView.as_view(url="sponsors/donate")),
 
