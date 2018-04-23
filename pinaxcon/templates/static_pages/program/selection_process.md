@@ -1,6 +1,6 @@
 PyOhio is using a two-phase review process for 2018. This is intended to allow
 attendees and others interested in PyOhio to have input in the talk selection
-decision while leaving the final program curation up to the program committe.
+decision while leaving the final program curation up to the Program Co-Chairs.
 
 ## Phase One: Ranking of anonymized proposals
 
@@ -13,6 +13,6 @@ Anyone interested in helping provide input is invited to
 
 ## Phase Two: Identity-aware curation and selection
 
-The program committee will use the scored proposals in conjunction with speaker
+The Program Co-chairs will use the scored proposals in conjunction with speaker
 profiles to rank and organize a program while ensuring diversity of speakers
 and topics.
