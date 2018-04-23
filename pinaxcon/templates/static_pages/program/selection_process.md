@@ -1,14 +1,18 @@
-## Phase one: ranking of anonymized proposal contents
+PyOhio is using a two-phase review process for 2018. This is intended to allow
+attendees and others interested in PyOhio to have input in the talk selection
+decision while leaving the final program curation up to the program committe.
 
-During this phase, the program committee will score each proposal solely on the merits of its contents, without any identifying information or other knowledge about the speaker(s) proposing the talk.
+## Phase One: Ranking of anonymized proposals
 
-## Phase two: identity-aware ranking and curation
+During this phase, the reviewers will score each proposal solely on the
+contents, without any identifying information or other knowledge about the
+speaker(s) proposing the talk.
 
-The program committee will use the scored proposals in conjunction with speaker profiles to rank and organize a program meeting our goals for diversity of speakers and topics.
+Anyone interested in helping provide input is invited to
+[become a reviewer](/2018/program/review-proposals).
 
-## PyOhio's diversity goals
+## Phase Two: Identity-aware curation and selection
 
-+ At least one-third (33%) of speakers should be not-men, and ideally at least half (50%).
-+ As PyOhio aims to serve the "tech-adjacent" and client services industries, at least one-fifth (20%) of speakers should be from professional backgrounds that are not the Silicon Valley or San Francisco startup/software industry.
-+ People with disabilities should be represented in the PyOhio speaker lineup.
-+ Racial demographics of the speaker lineup should ideally reflect US and Bay Area demographics within some margin of error.
+The program committee will use the scored proposals in conjunction with speaker
+profiles to rank and organize a program while ensuring diversity of speakers
+and topics.
