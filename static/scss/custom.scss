@@ -237,7 +237,7 @@ $homepage-block-min-height: 480px;
   &:active,
   &:focus,
   &:hover {
-    background-color: #004303;
+      background-color: lighten($brand-primary, 10%);
   }
   line-height: 32px;
   height: 60px;
