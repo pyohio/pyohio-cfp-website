@@ -31,6 +31,11 @@ $(document).ready(function() {
     if(urlPath.match(/reviews\/.+\/notification/)) {
         handleResultNotificationElements();
     }
+
+    if(urlPath.match(/about\/team/)) {
+        // crappy float fix
+        $('.col-md-9').addClass('clearfix');
+    }
 });
 
 function handleHomeAlert() {
