@@ -7,19 +7,26 @@ Be sure to [subscribe to our mailing list](/2018/about/keep-in-touch) for update
 On-site Volunteer Roles
 -----------------------
 
-### Session Chair
-
-### Video Assistant
-
 ### Registration
+Greet attendees. Dispense badges and shwag bags. Smile.
+
+### Session Chair
+Offer speaker water. Introduce speaker. Show provided time-remaining cards. Remind speaker to repeat questions. Grin.
+
+### Teaching Assistant
+Assist the teacher and students of the Young Coders class. Beam.
 
 ### T-Shirts
+Dispense shirts. Accept donations. Smirk.
 
-### Pre-Conference Setup
-
-### Young Coders Teaching Assistant
+### Video Assistant
+Assist the Videographer. Aim and focus. Twinkle.
 
 ### Signage
+Update all room signs (at doors) after each talk. Simper.
+
+### Backup
+Stand ready to step into any of the above roles as necessary. Laugh.
 
 Other Ways to Help
 ------------------
