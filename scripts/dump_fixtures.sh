@@ -3,14 +3,15 @@
 # Dumps the important models from the heroku staging app to fixture files
 # Run me from the repo root: ./scripts/dump_fixtures.sh
 
-app_name="staging-pyohio-website"
+#app_name="staging-pyohio-website"
+app_name="production-pyohio-website"
 
 models=(
 registrasion
 sites
 sitetree
 symposion_conference
-symposion_proposals
+#symposion_proposals
 symposion_sponsorship
 )
 

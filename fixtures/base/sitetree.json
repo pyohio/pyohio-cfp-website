@@ -88,7 +88,7 @@
     "url": "/2018/attend",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -147,7 +147,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 1,
-    "sort_order": 11,
+    "sort_order": 12,
     "access_permissions": []
   }
 },
@@ -160,7 +160,7 @@
     "url": "/2018/about/team",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -171,7 +171,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 1,
-    "sort_order": 13,
+    "sort_order": 24,
     "access_permissions": []
   }
 },
@@ -483,7 +483,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 1,
-    "sort_order": 12,
+    "sort_order": 13,
     "access_permissions": []
   }
 },
@@ -493,10 +493,10 @@
   "fields": {
     "title": "Register",
     "hint": "",
-    "url": "/2018/attend",
+    "url": "/2018/attend/register",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -539,12 +539,12 @@
   "model": "sitetree.treeitem",
   "pk": 36,
   "fields": {
-    "title": "How to Get Here",
+    "title": "Travel to PyOhio",
     "hint": "",
     "url": "/2018/attend/travel",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -563,12 +563,12 @@
   "model": "sitetree.treeitem",
   "pk": 37,
   "fields": {
-    "title": "Where to Stay",
+    "title": "Hotels",
     "hint": "",
     "url": "/2018/attend/hotels",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -698,8 +698,8 @@
     "access_guest": false,
     "access_restricted": false,
     "access_perm_type": 1,
-    "parent": null,
-    "sort_order": 24,
+    "parent": 1,
+    "sort_order": 11,
     "access_permissions": []
   }
 },
@@ -823,6 +823,126 @@
     "access_permissions": [
       22
     ]
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 49,
+  "fields": {
+    "title": "Review Proposals",
+    "hint": "",
+    "url": "/2018/program/review-proposals",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 24,
+    "sort_order": 49,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 50,
+  "fields": {
+    "title": "Young Coders",
+    "hint": "",
+    "url": "/2018/program/young-coders",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 24,
+    "sort_order": 53,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 51,
+  "fields": {
+    "title": "Volunteer",
+    "hint": "",
+    "url": "/2018/attend/volunteer",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 8,
+    "sort_order": 51,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 52,
+  "fields": {
+    "title": "Individual Sponsorship",
+    "hint": "",
+    "url": "/2018/sponsors/individual",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 3,
+    "sort_order": 52,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 53,
+  "fields": {
+    "title": "Selection Process",
+    "hint": "",
+    "url": "/2018/program/selection-process",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 24,
+    "sort_order": 50,
+    "access_permissions": []
   }
 }
 ]
