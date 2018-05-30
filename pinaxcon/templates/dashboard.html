@@ -179,7 +179,20 @@
                 </ul>
             </div>
         </div>
-    {% endif %}
+    {% else %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <i class="fa fa-briefcase"></i>
+                    {% trans "Reviews" %}
+                </h3>
+            </div>
+            <div class="panel-body">
+                <h4>No Sections Available for Review</h4>
+            </div>
+        </div>
+     {% endif %}
+
 
     {% available_teams as available_teams %}
     {% if user.memberships.exists or available_teams %}
