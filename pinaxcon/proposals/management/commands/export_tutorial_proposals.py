@@ -15,13 +15,12 @@ class BlankSpeaker:
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        csv_file = csv.writer(sys.stdout, quotechar='|')
+        csv_file = csv.writer(sys.stdout, delimiter='|')
         #csv_file = csv.writer(open(os.path.join(os.getcwd(), "talk_proposals.csv"), "wb"))
         csv_file.writerow([
             "number",
             "title",
             "primary_speaker",
-            "extended_presentation",
             "speaker1_name",
             "speaker1_first_time",
             "speaker1_diversity",
@@ -32,7 +31,7 @@ class Command(BaseCommand):
             "speaker2_home_city",
             ])
 
-        for proposal in TalkProposal.objects.filter(cancelled=False):
+        for proposal in TutorialProposal.objects.filter(cancelled=False):
             speakers = list(proposal.speakers())
             speaker1 = ConferenceSpeaker.objects.get(speakerbase_ptr=speakers[0])
             if len(speakers) > 1:
@@ -44,7 +43,6 @@ class Command(BaseCommand):
                 proposal.number,
                 proposal.title.encode("utf-8"),
                 proposal.speaker.name.encode("utf-8"),
-                proposal.extended_presentation,
                 speaker1.name.encode("utf-8"),
                 speaker1.first_time,
                 speaker1.minority_group.encode("utf-8"),
