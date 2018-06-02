@@ -1,0 +1,52 @@
+[
+{
+  "pk": 1, 
+  "model": "symposion_reviews.notificationtemplate", 
+  "fields": {
+    "body": "Hi {{ proposal.speaker }}!\r\n\r\nWe are happy to accept the following proposal for PyOhio 2018:\r\n\r\n    {{ proposal.kind }}:\r\n    {{ proposal.title }}\r\n\r\nImportant: *Please reply to this email to confirm that you can make it to PyOhio 2018 and will present this session*\r\n\r\nNotes:\r\n - Please do not share news of this acceptance publicly until we have published the complete session list. We will email and tweet when the list is published and you are encouraged to publicize your session at that time.\r\n - We are only scheduling one session per speaker so if you submitted other proposals you will be receiving \"not accepted\" emails for them once all other notifications are sent.\r\n - We will be sending more information and some speaker logistics in a later email.\r\n - All conference participants, including speakers must adhere to our code of conduct: https://pyohio.org/code-of-conduct/\r\n\r\nPlease let us know if you have any questions.\r\n\r\nCongratulations and thanks!\r\n\r\n-PyOhio Organizers", 
+    "subject": "Please read, confirmation needed: Your PyOhio proposal has been accepted!", 
+    "from_address": "program@pyohio.org", 
+    "label": "Accepted"
+  }
+},
+{
+  "pk": 2, 
+  "model": "symposion_reviews.notificationtemplate", 
+  "fields": {
+    "body": "Dear {{ proposal.speaker }},\r\n\r\nThank you very much for taking the time to submit a proposal for PyOhio 2018. Unfortunately this proposal was not selected for the PyOhio 2018 schedule:\r\n\r\n    {{ proposal.title }} [{{ proposal.kind }}]\r\n\r\nWe had room for ~40 sessions on the schedule and received *many* more quality proposals than we could accept.\r\n\r\nWe do hope you'll still attend PyOhio! We'd like you to consider presenting about your topic as a 5-minute lightning talk or facilitating an Open Space discussion. Sign-ups for both will be on-site.\r\n\r\nThank you again for your submission.\r\n\r\n-PyOhio Organizers\r\n", 
+    "subject": "PyOhio proposal not accepted", 
+    "from_address": "program@pyohio.org", 
+    "label": "Not Accepted"
+  }
+},
+{
+  "pk": 3, 
+  "model": "symposion_reviews.notificationtemplate", 
+  "fields": {
+    "body": "Hello {{ proposal.speaker }},\r\n\r\nThank you for presenting at PyOhio! Your hard work is what makes PyOhio a great event. As you prepare your presentation, please review this important information about PyOhio:\r\n\r\n\u2022 Be sure to register as an attendee if you haven\u2019t already. We need you to register in order to print badges correctly and to get an accurate count for refreshments: https://www.eventbrite.com/e/pyohio-2017-tickets-33066656259\r\n\r\n\u2022 Please review our Code of Conduct. Everyone is required to follow the Code of Conduct and this includes your presentation & slide content. If you have any questions about this please email program@pyohio.org: http://pyohio.org/code-of-conduct/\r\n\r\n\u2022 Find your talk on the lists:\r\n  https://pyohio.org/schedule/talks/list/\r\n  https://pyohio.org/schedule/tutorials/list/\r\n  \r\n\u2022 Verify that the title, description, and abstract are correct. Please note that if you make any further changes to your proposal they are not automatically copied over to the public listing. If you need changes to be applied, please email us. \r\n\r\n\u2022 Please consider readability when creating slides for your presentation. The following PyCon document has good guidelines for creating readable slides: https://github.com/PyCon/best-practices/blob/master/presentation_slides.md\r\n\r\n\u2022 We are in the process of confirming the A/V hookups and projector dimensions and will email again once we have those.\r\n\r\n\u2022 We will be finalizing the schedule soon and will email & tweet when it is ready.\r\n\r\n\u2022 Please feel free to share the news of your session being selected and the link to your listing! On Twitter you can use the hashtag #PyOhio and/or mention @PyOhio.\r\n\r\nThanks again for speaking at PyOhio! If you have any questions please reply to this email and let us know.\r\n\r\n-The PyOhio Organizers\r\n", 
+    "subject": "Important PyOhio Speaker Info", 
+    "from_address": "program@pyohio.org", 
+    "label": "Important Speaker Info"
+  }
+},
+{
+  "pk": 4, 
+  "model": "symposion_reviews.notificationtemplate", 
+  "fields": {
+    "body": "Hello {{ proposal.speaker }},\r\n\r\nWe have just a couple more updates for you:\r\n\r\n\u2022 Presentation information:\r\n   Slide size: 16:9 - 720p (1280\u00d7720)\r\n   Preferred connections: HDMI, mini display port\r\n   We have adapters for display port and VGA but these do not work with all systems. Please be sure to test your connection in the room beforehand if you're unsure of your setup.\r\n\r\n\u2022 Speakers receive two parking passes (one for each day) for the garage that is adjacent to The Ohio Union. If you need them, please ask for them upon check-in at the registration desk. Parking garage info here:\r\n\r\n  https://ohiounion.osu.edu/visit_the_union/garage_parking\r\n\r\nThanks again for presenting at PyOhio! If you have any questions please reply to this email and let us know.\r\n\r\n-The PyOhio Organizers", 
+    "subject": "Re: Important PyOhio Speaker Logistics", 
+    "from_address": "program@pyohio.org", 
+    "label": "Speaker Info Follow-up"
+  }
+},
+{
+  "pk": 5, 
+  "model": "symposion_reviews.notificationtemplate", 
+  "fields": {
+    "body": "Dear {{ proposal.speaker }},\r\n\r\nThank you for your proposal. We received far more submissions than we could accommodate this year. Our program is nearly complete but we'd like to keep your submission on a waitlist in case space becomes available in the schedule:\r\n\r\n    {{ proposal.title }} [{{ proposal.kind }}]\r\n\r\nWe will notify you immediately if a slot opens and this session is accepted or in the next couple weeks if it is no longer needed. If you would like to have this taken off the waitlist now please let us know.\t\r\n\t\r\nWe do hope you'll attend PyOhio either way! If the session is not scheduled we'd like you to consider presenting about your topic as a 5-minute lightning talk or facilitating an Open Space discussion. Sign-ups for both will be on-site.\r\n\r\nThank you again for your submission.\r\n\r\n-PyOhio Organizers\r\n", 
+    "subject": "PyOhio proposal waitlisted", 
+    "from_address": "program@pyohio.org", 
+    "label": "Waitlist"
+  }
+}
+]
