@@ -53,4 +53,15 @@
     {% endif %}
     
   {% endfor %}
+
+  <h2>Individual Sponsors</h2>
+  <ul class="columnlist">
+  {% if anonymous_individuals %}
+  <li>Anonymous (&#x2715;{{ anonymous_individuals }})</li>
+  {% endif %}
+  {% for individual in individual_sponsors %}
+  <li>{{ individual.display_name }}</li>
+  {% endfor %}
+  </ul>
+  <p>To become an individual sponsor, donate using the <a href="/register">registration site.</a>
 {% endblock %}
