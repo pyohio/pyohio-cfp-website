@@ -172,6 +172,7 @@ TEMPLATES = [
                 "symposion.reviews.context_processors.reviews",
                 "sekizai.context_processors.sekizai",
                 "pinaxcon.context_processors.site_settings",
+                "pinaxcon.context_processors.template_cache_ttls",
             ],
         },
     },
