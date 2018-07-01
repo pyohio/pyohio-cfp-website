@@ -33,7 +33,9 @@ table.calendar {
 
       // Customize for slot types per site
       &.slot-break { background-color: #ECFFFF; }
-      &.slot-plenary { background-color: lighten(#DCDCFF, 3%); }
+      &.slot-keynote { background-color: lighten(#DCDCFF, 10%); }
+      &.slot-nothing { background-color: #ECECEC; }
+      &.slot-plenary { background-color: lighten(#DCDCFF, 5%); }
       p {
         padding: 0;
         margin: 0;
