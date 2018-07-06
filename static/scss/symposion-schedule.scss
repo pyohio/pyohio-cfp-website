@@ -2,6 +2,7 @@ table.calendar {
   background-color: #fffff;
   table-layout: fixed;
   font-size: 12px;
+  word-break: break-word;
 
   tr {
     min-height: 36px;
