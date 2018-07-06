@@ -11,7 +11,7 @@ table.calendar {
     text-align: center;
 
     &.time {
-      width: 40px;
+      width: 80px;
     }
   }
 
@@ -32,10 +32,22 @@ table.calendar {
       text-shadow: #fff 0px 1px 0px;
 
       // Customize for slot types per site
-      &.slot-break { background-color: #ECFFFF; }
-      &.slot-keynote { background-color: lighten(#DCDCFF, 10%); }
-      &.slot-nothing { background-color: #ECECEC; }
+      &.slot-break { 
+        background-color: #ECFFFF;
+        vertical-align: middle;
+      }
+      &.slot-keynote {
+      background-color: lighten(#DCDCFF, 10%); 
+      }
+      &.slot-nothing {
+      background-color: #ECECEC;
+        vertical-align: middle;
+      }
       &.slot-plenary { background-color: lighten(#DCDCFF, 5%); }
+      &.slot-other {
+        vertical-align: middle;
+    }
+
       p {
         padding: 0;
         margin: 0;
