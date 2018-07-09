@@ -1,8 +1,9 @@
 Volunteer Sign-ups
 ------------------
 
-The volunteer sign-up form will be available closer to the event.
-Be sure to [subscribe to our mailing list](/2018/about/keep-in-touch) for updates.
+Sign up to be on the volunteer list here!: [Volunteer Sign-ups](https://goo.gl/muSVjG)
+
+Be sure to also [subscribe to our mailing list](/2018/about/keep-in-touch) for updates.
 
 On-site Volunteer Roles
 -----------------------
