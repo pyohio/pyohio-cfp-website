@@ -13,7 +13,7 @@ class MonkeyPatchMiddleware(object):
 
 def do_monkey_patch():
     #patch_stripe_card_defaults()
-    #patch_conference_schedule()
+    patch_conference_schedule()
     update_user_representation()
 
     # Remove this function from existence
@@ -60,10 +60,6 @@ def patch_conference_schedule():
             presentation = slot.content
             if presentation is not None:
                 update_presentation(request, slot_data, presentation)
-            elif slot.kind.label.lower() == "keynote":
-                update_keynote(request, slot_data)
-            elif slot.kind.label.lower() == "housekeeping":
-                update_housekeeping(request, slot_data)
             else:
                 pass
 
