@@ -30,8 +30,11 @@ TBD...
 
 ## Sprints planned
 
-<p>None formally planned (yet!)</p>
+| Project         | Leader         | Details                           |
+| --------------- | -------------- | --------------------------------- |
+| Example Project | Example Leader | Working on example things         |
 
 ## Want to lead a sprint?
 
-Issue a PR to this page or contact info@pyohio.org if you are planning to lead a sprint!
+Add to the table above by [issueing a PR to this page](https://github.com/pyohio/pyohio-website/blob/master/pinaxcon/templates/static_pages/program/sprints_and_receptions.md)
+or contact info@pyohio.org with your information.
