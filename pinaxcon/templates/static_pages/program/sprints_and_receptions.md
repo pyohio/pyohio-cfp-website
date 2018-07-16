@@ -2,8 +2,6 @@ PyOhio attendees are invited to informal reception and sprint sessions. These ev
 
 ## Sprints
 
-*Check back soon for sprint times and directions*
-
 For those unfamiliar with the term: sprints are cooperative coding sessions where you work side-by-side with other PyOhio participants to improve an open-source project.
 
 You can:
@@ -18,17 +16,18 @@ It's a great way to contribute to the community, learn about coding and open-sou
 
 ## Schedule
 
-TBD...
+* Friday, July 27, 6:00pm-11:00pm
+* Saturday, July 28, 6:30pm-11:00pm
+
+## Location & Directions
+
+*Check back soon!*
 
 ## What you need
 
 *Experience not needed* - sprinting is actually a great way to <em>gain</em> experience. Just bring a laptop!
 
-## Food
-
-TBD...
-
-## Sprints planned
+## Projects
 
 | Project         | Leader         | Details                           |
 | --------------- | -------------- | --------------------------------- |
@@ -36,5 +35,5 @@ TBD...
 
 ## Want to lead a sprint?
 
-Add to the table above by [issueing a PR to this page](https://github.com/pyohio/pyohio-website/blob/master/pinaxcon/templates/static_pages/program/sprints_and_receptions.md)
-or contact info@pyohio.org with your information.
+Add a project to the table above by [issuing a PR to this page](https://github.com/pyohio/pyohio-website/blob/master/pinaxcon/templates/static_pages/program/sprints_and_receptions.md)
+or email info@pyohio.org with the information.
