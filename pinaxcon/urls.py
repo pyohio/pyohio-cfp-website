@@ -129,6 +129,8 @@ urlpatterns = [
     url(r"^lightning/?$", RedirectView.as_view(url="%s/program/lightning-talks" % URL_PREFIX, permanent=False)),
     url(r"^sponsors/prospectus/?$", RedirectView.as_view(url="%s/sponsors/prospectus" % URL_PREFIX, permanent=False)),
     url(r"^sprints/?$", RedirectView.as_view(url="%s/program/sprints" % URL_PREFIX, permanent=False)),
+    url(r"^volunteer/?$", RedirectView.as_view(url="%s/attend/volunteer" % URL_PREFIX, permanent=False)),
+    url(r"^video/?$", RedirectView.as_view(url="https://www.youtube.com/channel/UCYqdrfvhGxNW3vXebypqXoQ", permanent=False)),
     url(r"^review-proposals/?$", RedirectView.as_view(url="%s/program/call-for-proposals/review" % URL_PREFIX, permanent=False)),
     url(r"^$", RedirectView.as_view(url="%s" % URL_PREFIX, permanent=False)),
     url(r'^2017/(?P<path>.*)$', serve_index, {
