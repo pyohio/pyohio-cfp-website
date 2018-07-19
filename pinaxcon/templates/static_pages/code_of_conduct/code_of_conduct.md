@@ -35,9 +35,13 @@ Contact Information
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing badges that clearly identify them as staff.
 
-You can email the incident response team at [safety@pyohio.org](mailto:safety@pyohio.org). You may also contact conference staff and ask to be put in touch with conference chair [Dave Forgac](mailto:dforgac@pyohio.org).
+You can email the incident response team at [conduct@pyohio.org](mailto:conduct@pyohio.org). You may also contact conference staff and ask to be put in touch with conference chair [Dave Forgac](mailto:dforgac@pyohio.org).
 
-If the matter is especially urgent, please call our Code of Conduct and safety representitives:
+If the matter is especially urgent, please call our Code of Conduct and safety representitives via phone or text:
+
+- Central number: +1-614-524-4050
+
+Or individual responders:
 
 - Jason Green at +1-614-349-6349
 - Brian Costlow at +1-740-919-1291

@@ -114,7 +114,9 @@ original_patterns = [
 
 urlpatterns = [
     url(r"^$", RedirectView.as_view(url="%s/" % URL_PREFIX, permanent=False)),
+    url(r"^coc/?$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
     url(r"^code-of-conduct/?$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
+    url(r"^conduct/?$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
     url(r"^account/login/?$", RedirectView.as_view(url="%s/account/login" % URL_PREFIX, permanent=False)),
     url(r"^details/?$", RedirectView.as_view(url="%s/program/events" % URL_PREFIX, permanent=False)),
     url(r"^register/?$", RedirectView.as_view(url="%s/attend" % URL_PREFIX, permanent=False)),
