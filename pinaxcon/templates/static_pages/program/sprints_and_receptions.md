@@ -21,7 +21,14 @@ It's a great way to contribute to the community, learn about coding and open-sou
 
 ## Location & Directions
 
-*Check back soon!*
+The Forge is located at 580 N 4th St Suite 190, Columbus, OH 43215.
+
+Map & Directions with parking info:
+
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1LIewa4cWEDFfmL76YY9XOx1KsPjOOUZF" width="640" height="480"></iframe>
+
+***IMPORTANT: DO NOT PARK IN FRONT OF THE BUILDING. ONLY PARK IN THE AREA NOTED
+ON THE MAP***
 
 ## What you need
 
@@ -29,9 +36,9 @@ It's a great way to contribute to the community, learn about coding and open-sou
 
 ## Projects
 
-| Project         | Leader         | Details                           |
-| --------------- | -------------- | --------------------------------- |
-| Example Project | Example Leader | Working on example things         |
+| Project             | Leader            | Details                           |
+| ------------------- | ----------------- | --------------------------------- |
+| Example Project     | Example Leader    | Working on example things         |
 
 ## Want to lead a sprint?
 
