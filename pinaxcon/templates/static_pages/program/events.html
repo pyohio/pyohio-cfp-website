@@ -1,38 +1,20 @@
 {% extends "page_with_title_and_lede.html" %}
 
 {% load i18n %}
+{% load markdown_deux_tags %}
 
 {% block head_title %}Events{% endblock %}
 
-{% block heading %}Events{% endblock %}
+{% block heading %}PyOhio Events{% endblock %}
 
 {% block body_class %}program{% endblock %}
 
 {% block lede %}
-PyOhio 2018 conference, sprints, and receptions
+Overview of all PyOhio 2018 events
 {% endblock %}
 
-
 {% block content %}
-
-<h2>Friday, Jul 27, 2018</h2>
-<ul>
-    <li>Evening sprints and reception <em>TBD*</em></li>
-</ul>
-<h2>Saturday, Jul 28, 2018</h2>
-<ul>
-    <li>PyOhio 2018 Talks & Tutorials at The Ohio Union</li>
-    <li>Evening sprints and reception <em>TBD*</em></li>
-</ul>
-<h2>Sunday, Jul 29, 2018</h2>
-<ul>
-    <li>PyOhio 2018 Talks & Tutorials at The Ohio Union</li>
-</ul>
-<h2>Monday, Jul 30, 2018:</h2>
-<ul>
-    <li>Sprints and gathering <em>TBD*</em</li>
-</ul>
-
-* Join our <a href="{{ URL_PREFIX }}/about/keep-in-touch">mailing list</a> or check back here for updates.
-
+  {% markdown %}
+  {% include "static_pages/program/events.md" %}
+  {% endmarkdown %}
 {% endblock %}

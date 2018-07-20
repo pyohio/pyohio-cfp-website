@@ -119,6 +119,7 @@ urlpatterns = [
     url(r"^conduct/?$", RedirectView.as_view(url="%s/code-of-conduct" % URL_PREFIX, permanent=False)),
     url(r"^account/login/?$", RedirectView.as_view(url="%s/account/login" % URL_PREFIX, permanent=False)),
     url(r"^details/?$", RedirectView.as_view(url="%s/program/events" % URL_PREFIX, permanent=False)),
+    url(r"^events/?$", RedirectView.as_view(url="%s/program/events" % URL_PREFIX, permanent=False)),
     url(r"^register/?$", RedirectView.as_view(url="%s/attend" % URL_PREFIX, permanent=False)),
     url(r"^call-for-proposals/?$", RedirectView.as_view(url="%s/program/call-for-proposals" % URL_PREFIX, permanent=False)),
     url(r"^cfp/?$", RedirectView.as_view(url="%s/program/call-for-proposals" % URL_PREFIX, permanent=False)),
