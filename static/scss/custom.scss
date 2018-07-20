@@ -460,3 +460,10 @@ body.login #content_body .row > div.col-md-9 > p + div.container {
     list-style-type: none;
 }
 
+
+h2 + table, th, td {
+   padding: 5px;
+   border: 1px solid black;
+   vertical-align: top;
+}
+

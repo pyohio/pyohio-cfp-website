@@ -36,9 +36,9 @@ AREA NOTED ON THE MAP***
 
 ## Projects
 
-| Project             | Leader            | Details                           |
-| ------------------- | ----------------- | --------------------------------- |
-| StackStorm Exchange | Nick Maludy       | <ul><li>Fix bugs in existing exchange packs: https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3AStackStorm-Exchange</li><li>Implement a new pack for an integration/API that isn't present on the exchange: https://exchange.stackstorm.org/</li></ul> |
+| Day(s) | Project             | Leader            | Details                           |
+| ------ | ------------------- | ----------------- | --------------------------------- |
+| Fri    | StackStorm Exchange | Nick Maludy       | <ul><li>Fix bugs in existing exchange packs: https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3AStackStorm-Exchange</li><li>Implement a new pack for an integration/API that isn't present on the exchange: https://exchange.stackstorm.org/</li></ul> |
 
 ## Want to lead a sprint?
 
