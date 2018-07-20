@@ -27,7 +27,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 7,
+    "sort_order": 8,
     "access_permissions": []
   }
 },
@@ -51,7 +51,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 25,
+    "sort_order": 26,
     "access_permissions": []
   }
 },
@@ -64,7 +64,7 @@
     "url": "/2018/program/call-for-proposals",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -75,7 +75,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 24,
-    "sort_order": 39,
+    "sort_order": 50,
     "access_permissions": []
   }
 },
@@ -99,7 +99,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 8,
+    "sort_order": 9,
     "access_permissions": []
   }
 },
@@ -123,7 +123,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 29,
+    "sort_order": 30,
     "access_permissions": []
   }
 },
@@ -267,7 +267,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 9,
+    "sort_order": 25,
     "access_permissions": []
   }
 },
@@ -315,7 +315,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 46,
+    "sort_order": 55,
     "access_permissions": []
   }
 },
@@ -387,7 +387,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 30,
+    "sort_order": 46,
     "access_permissions": []
   }
 },
@@ -459,7 +459,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 24,
-    "sort_order": 4,
+    "sort_order": 32,
     "access_permissions": []
   }
 },
@@ -611,12 +611,12 @@
   "model": "sitetree.treeitem",
   "pk": 39,
   "fields": {
-    "title": "Accepted Talks",
+    "title": "Talks List",
     "hint": "",
-    "url": "/2018/schedule/general-sessions/list/",
+    "url": "/2018/schedule/talks/list/",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": true,
+    "hidden": false,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -627,7 +627,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 24,
-    "sort_order": 32,
+    "sort_order": 39,
     "access_permissions": []
   }
 },
@@ -771,7 +771,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": null,
-    "sort_order": 26,
+    "sort_order": 29,
     "access_permissions": []
   }
 },
@@ -834,7 +834,7 @@
     "url": "/2018/program/review-proposals",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -845,7 +845,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 24,
-    "sort_order": 49,
+    "sort_order": 53,
     "access_permissions": []
   }
 },
@@ -869,7 +869,7 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 24,
-    "sort_order": 53,
+    "sort_order": 56,
     "access_permissions": []
   }
 },
@@ -941,7 +941,79 @@
     "access_restricted": false,
     "access_perm_type": 1,
     "parent": 24,
-    "sort_order": 50,
+    "sort_order": 54,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 54,
+  "fields": {
+    "title": "Tutorials List",
+    "hint": "",
+    "url": "/2018/schedule/tutorials/list/",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 24,
+    "sort_order": 49,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 55,
+  "fields": {
+    "title": "Schedule",
+    "hint": "",
+    "url": "/2018/schedule/",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": null,
+    "sort_order": 7,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 56,
+  "fields": {
+    "title": "Schedule",
+    "hint": "",
+    "url": "/2018/schedule/",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 24,
+    "sort_order": 4,
     "access_permissions": []
   }
 }
