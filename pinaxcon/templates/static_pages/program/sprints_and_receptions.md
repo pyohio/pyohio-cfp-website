@@ -27,8 +27,8 @@ Map & Directions with parking info:
 
 <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1LIewa4cWEDFfmL76YY9XOx1KsPjOOUZF" width="640" height="480"></iframe>
 
-***IMPORTANT: DO NOT PARK IN FRONT OF THE BUILDING. ONLY PARK IN THE AREA NOTED
-ON THE MAP***
+***IMPORTANT: DO NOT PARK ON THE SOUTH SIDE OF THE BUILDING. ONLY PARK IN THE
+AREA NOTED ON THE MAP***
 
 ## What you need
 
