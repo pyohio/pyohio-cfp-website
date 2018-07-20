@@ -32,7 +32,7 @@ walking distance of the venue. [Some ideas](http://bit.ly/2NwRCoJ)
 
 ### Lightning Talks
 
-**5:15-6:15** Lightning talks. 5-minute talks on topics of interest to the 
+**5:15pm-6:15pm** Lightning talks. 5-minute talks on topics of interest to the 
 PyOhio community. Sign up for a slot on the board near registration.
 
 ### Sprints & Receptions
@@ -40,7 +40,7 @@ PyOhio community. Sign up for a slot on the board near registration.
 **6:30pm-11:00pm** Join us for sprints and an attendee reception. No experience
 necessary and coding is completley optional. [Details](/sprints)
 
-## Sunday, July 29 2018
+## Sunday, July 29, 2018
 
 *Tip: There's no lunch break on Sunday so grab a bite to eat before we get
 started! We will have light refreshments at the break*
@@ -64,7 +64,7 @@ to the PyOhio community. Sign up for a spot outside the rooms.
 
 ## Lightning Talks
 
-**5:00-6:00** Lightning talks. 5-minute talks on topics of interest to the 
+**5:00pm-6:00pm** Lightning talks. 5-minute talks on topics of interest to the 
 PyOhio community. Sign up for a slot on the board near registration.
 
 
