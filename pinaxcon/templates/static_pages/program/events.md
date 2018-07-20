@@ -47,7 +47,7 @@ started! We will have light refreshments at the break*
 
 ### Registration
 
-**10:30am** Registration and signin opens. [Directions](/2018/attend/travel)
+**11:00am** Registration and signin opens. [Directions](/2018/attend/travel)
 
 ### Welcome & Keynote
 
