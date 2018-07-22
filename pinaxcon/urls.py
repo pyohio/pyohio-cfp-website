@@ -123,6 +123,7 @@ urlpatterns = [
     url(r"^register/?$", RedirectView.as_view(url="%s/attend" % URL_PREFIX, permanent=False)),
     url(r"^call-for-proposals/?$", RedirectView.as_view(url="%s/program/call-for-proposals" % URL_PREFIX, permanent=False)),
     url(r"^cfp/?$", RedirectView.as_view(url="%s/program/call-for-proposals" % URL_PREFIX, permanent=False)),
+    url(r"^directions/?$", RedirectView.as_view(url="%s/attend/travel" % URL_PREFIX, permanent=False)),
     url(r"^hotel/?$", RedirectView.as_view(url="%s/attend/hotels" % URL_PREFIX, permanent=False)),
     url(r"^schedule/?$", RedirectView.as_view(url="%s/schedule" % URL_PREFIX, permanent=False)),
     url(r"^harassment-incidents-staff/?$", RedirectView.as_view(url="%s/code-of-conduct/harassment-staff-procedures" % URL_PREFIX, permanent=False)),
