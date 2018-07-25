@@ -39,6 +39,7 @@ AREA NOTED ON THE MAP***
 | Day(s) | Project             | Leader            | Details                           |
 | ------ | ------------------- | ----------------- | --------------------------------- |
 | Fri    | StackStorm Exchange | Nick Maludy       | <ul><li>Fix bugs in existing exchange packs: <a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3AStackStorm-Exchange">Find bugs.</a></li><li>Implement a new pack for an integration/API that isn't present on <a href="https://exchange.stackstorm.org/">the exchange</a>.</li></ul> |
+| Fri/Sat| Arcade              | Paul Everitt      | <ul><li>Submit new example games</li><li>Try branch with new sound support</li><li>Help design pytest mocking approach for improved test writing</li><li>Convert doctests to pytest unit/integration tests</li></ul> |
 
 ## Want to lead a sprint?
 
