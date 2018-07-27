@@ -39,12 +39,15 @@ You can email the incident response team at [conduct@pyohio.org](mailto:conduct@
 
 If the matter is especially urgent, please call our Code of Conduct and safety representitives via phone or text:
 
-- Central number: +1-614-524-4050
+- PyOhio CoC Hotline: +1-614-524-4050
 
-Or individual responders:
+Or find individual responders in person:
 
-- Jason Green at +1-614-349-6349
-- Brian Costlow at +1-740-919-1291
+- Jason Green
+- Brian Costlow
+- Jess Unrein
+
+Or find a PyOhio staff member with a red STAFF badge and lanyard.
 
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
