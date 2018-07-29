@@ -134,6 +134,7 @@ urlpatterns = [
     url(r"^volunteer/?$", RedirectView.as_view(url="%s/attend/volunteer" % URL_PREFIX, permanent=False)),
     url(r"^video/?$", RedirectView.as_view(url="https://www.youtube.com/channel/UCYqdrfvhGxNW3vXebypqXoQ", permanent=False)),
     url(r"^review-proposals/?$", RedirectView.as_view(url="%s/program/call-for-proposals/review" % URL_PREFIX, permanent=False)),
+    url(r"^opyoh/?$", RedirectView.as_view(url="https://mail.python.org/pipermail/centraloh/2008-March/000082.html", permanent=False)),
     url(r"^$", RedirectView.as_view(url="%s" % URL_PREFIX, permanent=False)),
     url(r'^2017/(?P<path>.*)$', serve_index, {
             'document_root': os.path.join(settings.ARCHIVE_ROOT, '2017'),
