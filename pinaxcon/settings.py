@@ -340,7 +340,7 @@ AUTHENTICATION_BACKENDS = [
     "account.auth_backends.UsernameAuthenticationBackend",
 ]
 
-CONFERENCE_ID = 1
+CONFERENCE_ID = 2
 PROPOSAL_FORMS = {
     "talk": "pinaxcon.proposals.forms.TalkProposalForm",
     "tutorial": "pinaxcon.proposals.forms.TutorialProposalForm",
