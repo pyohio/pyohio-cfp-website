@@ -3,7 +3,7 @@ import urlparse
 
 import dj_database_url
 
-CONFERENCE_YEAR = '2018'
+CONFERENCE_YEAR = '2019'
 URL_PREFIX = "/%s" % CONFERENCE_YEAR
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
