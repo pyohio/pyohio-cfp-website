@@ -23,7 +23,7 @@ class SignupEmailForm(SignupForm):
         super(SignupEmailForm, self).__init__(*args, **kwargs)
         self.fields.pop('username')
         email = self.fields.pop('email')
-        email.help_text = 'Note: You must create a new account for 2018.'
+        #email.help_text = 'Note: You must create a new account for this year.'
         original_fields = self.fields
         self.fields = OrderedDict({'email': email})
         self.fields.update(original_fields)

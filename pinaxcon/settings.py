@@ -8,7 +8,6 @@ URL_PREFIX = "/%s" % CONFERENCE_YEAR
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = PACKAGE_ROOT
-ARCHIVE_ROOT = os.path.join(PROJECT_ROOT, 'archive')
 
 DEBUG = bool(int(os.environ.get("DEBUG", "1")))
 

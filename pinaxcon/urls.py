@@ -138,9 +138,6 @@ urlpatterns = [
     url(r"^ohpyo/?$", RedirectView.as_view(url="https://mail.python.org/pipermail/centraloh/2008-March/000082.html", permanent=False)),
 
     url(r"^$", RedirectView.as_view(url="%s" % URL_PREFIX, permanent=False)),
-    url(r'^2017/(?P<path>.*)$', serve_index, {
-            'document_root': os.path.join(settings.ARCHIVE_ROOT, '2017'),
-        }),
     url(r"^%s/" % URL_PREFIX.lstrip('/'), include(original_patterns)),
 ]
 
