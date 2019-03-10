@@ -6,7 +6,7 @@
 {% load sponsorship_tags %}
 {% load schedule_tags %}
 
-{% block head_title %}Welcome{% endblock %}
+{% block head_title %}PyOhio CFP{% endblock %}
 
 {% block body_class %}home{% endblock %}
 
@@ -16,78 +16,21 @@
   <div class="jumbotron homepage-block white">
     <div class="homepage-block-bg"></div>
     <div class="container homepage-block-content ">
-<div class="alert alert-info" role="alert">
-    <p><strong>PyOhio 2018 is a wrap!</strong></p>
-    <p>Save the date: PyOhio 2019 will be July 27-28
-    at The Ohio Union in Columbus, OH.</p>
-</div>
-        
-        <div class="tight-headings">
-        <h1>PyOhio 2018</h1>
-        <h2 class="homepage-subtitle">The FREE Annual Python Conference in Ohio</h2>
+      <div class="tight-headings">
+        <h1>PyOhio CFP</h1>
+        <h2 class="homepage-subtitle">Submit your talk and tutorial proposals for PyOhio!</h2>
       </div>
 
       <div>
-        <div>
           <div class="homepage-eventinfo">
-              PyOhio 2018 is July 28-29, 2018 <br/>
+              PyOhio 2019 is July 27-28, 2019 <br/>
               at <a href="https://goo.gl/maps/ZT1GpzUkCtQ2">The Ohio Union</a> in Columbus, OH<br/>
           </div>
-          <p class="h2">Important Info</p>
-          <ul>
-              <li><a href="/conduct">Code of Conduct</a></li>
-              <li><a href="/events">Events Overview</a></li>
-              <li><a href="/schedule">Schedule</a></li>
-              <li><a href="/directions">Directions & Travel Info</a></li>
-              <li><a href="https://slack.pyohio.org/">Join us on Slack</a></li>
-              <li><a href="/register">Register now!</a></li>
-          </ul>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="container homepage-block-footer">
-        <p>Follow us for updates:</p>
-      <div>
-        <a class="btn btn-primary btn-lg" href="{{ URL_PREFIX }}/about/keep-in-touch">Subscribe to Email Updates</a>
-        <!-- <a class="btn btn-primary btn-lg" href="{{ URL_PREFIX }}/attend">register to attend!</a> -->
-        <a class="btn btn-primary btn-lg " href="https://twitter.com/pyohio">Twitter</a>
-        <a class="btn btn-primary btn-lg" href="https://facebook.com/pyohio">Facebook</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="jumbotron homepage-block white">
-    <div class="container homepage-block-content">
-      <h2>Sponsors</h2>
-
-      {% sponsor_levels as levels %}
-
-      <div class="row sponsor-list">
-          {% for level in levels %}
-          {% if level.sponsors and level.order < 10 %}
-              {% for sponsor in level.sponsors %}
-                  <div class="sponsor">
-                    <div class="logo-alignment">
-                      {% if sponsor.website_logo is not None %}
-                          <a href="{{ sponsor.external_url }}">
-                              <img src="{% thumbnail sponsor.website_logo '600x360' %}" alt="{{ sponsor.name }}">
-                          </a>
-                      {% else %}
-                          <div class="h2"><a href="{{ sponsor.external_url }}">{{ sponsor.name }}</a></div>
-                      {% endif %}
-                    </div>
-                  </div>
-              {% endfor %}
-          {% endif %}
-      {% endfor %}
-      </div>
-    </div>
-
-    <div class="container homepage-block-footer">
-      <div class="btn-group">
-        <a class="btn btn-lg btn-primary btn-shadow" href="{{ URL_PREFIX }}/sponsors/become-a-sponsor">Become a Sponsor</a>
+          <p class="h2">CFP Information</p>
+          <p>The PyOhio 2019 CFP will open in late March and run through early May.</p>
+          <p>See <a hred="https://www.pyohio.org/">the PyOhio website</a> for more details
+          and <a href="https://www.pyohio.org/2019/contact/keep-in-touch/">subscribe to our mailing list</a>
+          for announcements.</p>
       </div>
     </div>
   </div>
