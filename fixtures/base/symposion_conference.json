@@ -1,34 +1,45 @@
 [
 {
   "model": "symposion_conference.conference",
-  "pk": 1,
+  "pk": 2,
   "fields": {
-    "title": "PyOhio 2018",
-    "start_date": "2018-07-28",
-    "end_date": "2018-07-29",
+    "title": "PyOhio 2019",
+    "start_date": "2019-07-27",
+    "end_date": "2019-07-28",
     "timezone": "US/Eastern"
   }
 },
 {
   "model": "symposion_conference.section",
-  "pk": 1,
+  "pk": 4,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Talks",
     "slug": "talks",
-    "start_date": "2018-07-28",
-    "end_date": "2018-07-29"
+    "start_date": "2019-07-27",
+    "end_date": "2019-07-28"
   }
 },
 {
   "model": "symposion_conference.section",
-  "pk": 2,
+  "pk": 5,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Tutorials",
     "slug": "tutorials",
-    "start_date": "2018-07-28",
-    "end_date": "2018-07-29"
+    "start_date": "2019-07-27",
+    "end_date": "2019-07-28"
+  }
+},
+{
+  "model": "symposion_conference.section",
+  "pk": 6,
+  "fields": {
+    "conference": 2,
+    "name": "Other Events",
+    "slug": "other",
+    "start_date": "2019-07-27",
+    "end_date": "2019-07-28"
   }
 }
 ]

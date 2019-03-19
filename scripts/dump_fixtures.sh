@@ -7,11 +7,9 @@
 app_name="production-pyohio-website"
 
 models=(
-registrasion
 sites
 sitetree
 symposion_conference
-#symposion_proposals
 symposion_sponsorship
 )
 

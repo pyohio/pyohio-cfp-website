@@ -13,10 +13,10 @@
   "fields": {
     "title": "About",
     "hint": "",
-    "url": "/2018/about/pyohio",
+    "url": "/2019/about/pyohio",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -37,10 +37,10 @@
   "fields": {
     "title": "Sponsors",
     "hint": "",
-    "url": "/2018/sponsors",
+    "url": "/2019/sponsors",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -61,7 +61,7 @@
   "fields": {
     "title": "Call for Proposals",
     "hint": "",
-    "url": "/2018/program/call-for-proposals",
+    "url": "/2019/program/call-for-proposals",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -85,10 +85,10 @@
   "fields": {
     "title": "Attend",
     "hint": "",
-    "url": "/2018/attend",
+    "url": "/2019/attend",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -109,7 +109,7 @@
   "fields": {
     "title": "News",
     "hint": "",
-    "url": "/2018/news",
+    "url": "/2019/news",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -133,7 +133,7 @@
   "fields": {
     "title": "PyOhio",
     "hint": "",
-    "url": "/2018/about/pyohio",
+    "url": "/2019/about/pyohio",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -157,10 +157,10 @@
   "fields": {
     "title": "Our Team",
     "hint": "",
-    "url": "/2018/about/team",
+    "url": "/2019/about/team",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -181,7 +181,7 @@
   "fields": {
     "title": "Colophon",
     "hint": "",
-    "url": "/2018/about/colophon",
+    "url": "/2019/about/colophon",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -205,7 +205,7 @@
   "fields": {
     "title": "Our Sponsors",
     "hint": "",
-    "url": "/2018/sponsors",
+    "url": "/2019/sponsors",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -229,7 +229,7 @@
   "fields": {
     "title": "Become a Sponsor",
     "hint": "",
-    "url": "/2018/sponsors/become-a-sponsor",
+    "url": "/2019/sponsors/become-a-sponsor",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -253,10 +253,10 @@
   "fields": {
     "title": "Program",
     "hint": "",
-    "url": "/2018/program",
+    "url": "/2019/program",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -277,7 +277,7 @@
   "fields": {
     "title": "Log In",
     "hint": "",
-    "url": "/2018/account/login/",
+    "url": "/2019/account/login/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -301,7 +301,7 @@
   "fields": {
     "title": "Account",
     "hint": "",
-    "url": "/2018/dashboard",
+    "url": "/2019/dashboard",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -325,7 +325,7 @@
   "fields": {
     "title": "Dashboard",
     "hint": "",
-    "url": "/2018/dashboard",
+    "url": "/2019/dashboard",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -349,7 +349,7 @@
   "fields": {
     "title": "Log Out",
     "hint": "",
-    "url": "/2018/account/logout/",
+    "url": "/2019/account/logout/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -373,7 +373,7 @@
   "fields": {
     "title": "Wiki",
     "hint": "",
-    "url": "/2018/wiki",
+    "url": "/2019/wiki",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -397,7 +397,7 @@
   "fields": {
     "title": "PyOhio",
     "hint": "",
-    "url": "/2018/",
+    "url": "/2019/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -421,7 +421,7 @@
   "fields": {
     "title": "Make a Donation",
     "hint": "",
-    "url": "/2018/donate",
+    "url": "/2019/donate",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -445,7 +445,7 @@
   "fields": {
     "title": "Events",
     "hint": "",
-    "url": "/2018/program/events",
+    "url": "/2019/program/events",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -469,7 +469,7 @@
   "fields": {
     "title": "Columbus",
     "hint": "",
-    "url": "/2018/about/columbus",
+    "url": "/2019/about/columbus",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -493,7 +493,7 @@
   "fields": {
     "title": "Register",
     "hint": "",
-    "url": "/2018/attend/register",
+    "url": "/2019/attend/register",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -517,7 +517,7 @@
   "fields": {
     "title": "How to Pitch Your Manager",
     "hint": "",
-    "url": "/2018/attend/business-case",
+    "url": "/2019/attend/business-case",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -541,7 +541,7 @@
   "fields": {
     "title": "Travel to PyOhio",
     "hint": "",
-    "url": "/2018/attend/travel",
+    "url": "/2019/attend/travel",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -565,7 +565,7 @@
   "fields": {
     "title": "Hotels",
     "hint": "",
-    "url": "/2018/attend/hotels",
+    "url": "/2019/attend/hotels",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -589,7 +589,7 @@
   "fields": {
     "title": "Transparency Reports",
     "hint": "",
-    "url": "/2018/about/transparency",
+    "url": "/2019/about/transparency",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -613,7 +613,7 @@
   "fields": {
     "title": "Talks List",
     "hint": "",
-    "url": "/2018/schedule/talks/list/",
+    "url": "/2019/schedule/talks/list/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -637,7 +637,7 @@
   "fields": {
     "title": "Financial Aid",
     "hint": "",
-    "url": "/2018/attend/finaid",
+    "url": "/2019/attend/finaid",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -661,7 +661,7 @@
   "fields": {
     "title": "Guide Index",
     "hint": "",
-    "url": "/2018/guides",
+    "url": "/2019/guides",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -685,7 +685,7 @@
   "fields": {
     "title": "Code of Conduct",
     "hint": "",
-    "url": "/2018/code-of-conduct",
+    "url": "/2019/code-of-conduct",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -709,7 +709,7 @@
   "fields": {
     "title": "Prospectus",
     "hint": "",
-    "url": "/2018/sponsors/prospectus",
+    "url": "/2019/sponsors/prospectus",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -733,7 +733,7 @@
   "fields": {
     "title": "Keep In Touch",
     "hint": "",
-    "url": "/2018/about/keep-in-touch",
+    "url": "/2019/about/keep-in-touch",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -757,10 +757,10 @@
   "fields": {
     "title": "Jobs",
     "hint": "",
-    "url": "/2018/jobs",
+    "url": "/2019/jobs",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -781,7 +781,7 @@
   "fields": {
     "title": "Sign Up",
     "hint": "",
-    "url": "/2018/account/signup/",
+    "url": "/2019/account/signup/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -805,7 +805,7 @@
   "fields": {
     "title": "Admin",
     "hint": "",
-    "url": "/2018/admin/",
+    "url": "/2019/admin/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -831,7 +831,7 @@
   "fields": {
     "title": "Review Proposals",
     "hint": "",
-    "url": "/2018/program/review-proposals",
+    "url": "/2019/program/review-proposals",
     "urlaspattern": false,
     "tree": 1,
     "hidden": true,
@@ -855,7 +855,7 @@
   "fields": {
     "title": "Young Coders",
     "hint": "",
-    "url": "/2018/program/young-coders",
+    "url": "/2019/program/young-coders",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -879,7 +879,7 @@
   "fields": {
     "title": "Volunteer",
     "hint": "",
-    "url": "/2018/attend/volunteer",
+    "url": "/2019/attend/volunteer",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -903,7 +903,7 @@
   "fields": {
     "title": "Individual Sponsorship",
     "hint": "",
-    "url": "/2018/sponsors/individual",
+    "url": "/2019/sponsors/individual",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -927,7 +927,7 @@
   "fields": {
     "title": "Selection Process",
     "hint": "",
-    "url": "/2018/program/selection-process",
+    "url": "/2019/program/selection-process",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -951,7 +951,7 @@
   "fields": {
     "title": "Tutorials List",
     "hint": "",
-    "url": "/2018/schedule/tutorials/list/",
+    "url": "/2019/schedule/tutorials/list/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -975,10 +975,10 @@
   "fields": {
     "title": "Schedule",
     "hint": "",
-    "url": "/2018/schedule/",
+    "url": "/2019/schedule/",
     "urlaspattern": false,
     "tree": 1,
-    "hidden": false,
+    "hidden": true,
     "alias": null,
     "description": "",
     "inmenu": true,
@@ -999,7 +999,7 @@
   "fields": {
     "title": "Schedule",
     "hint": "",
-    "url": "/2018/schedule/",
+    "url": "/2019/schedule/",
     "urlaspattern": false,
     "tree": 1,
     "hidden": false,
@@ -1014,6 +1014,30 @@
     "access_perm_type": 1,
     "parent": 24,
     "sort_order": 4,
+    "access_permissions": []
+  }
+},
+{
+  "model": "sitetree.treeitem",
+  "pk": 57,
+  "fields": {
+    "title": "Sprints & Receptions",
+    "hint": "",
+    "url": "/2019/program/sprints",
+    "urlaspattern": false,
+    "tree": 1,
+    "hidden": false,
+    "alias": null,
+    "description": "",
+    "inmenu": true,
+    "inbreadcrumbs": true,
+    "insitetree": true,
+    "access_loggedin": false,
+    "access_guest": false,
+    "access_restricted": false,
+    "access_perm_type": 1,
+    "parent": 24,
+    "sort_order": 57,
     "access_permissions": []
   }
 }

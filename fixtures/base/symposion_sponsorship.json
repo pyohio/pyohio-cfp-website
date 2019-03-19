@@ -3,7 +3,7 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 1,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Gold",
     "order": 5,
     "cost": 1000,
@@ -15,7 +15,7 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 2,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Silver",
     "order": 6,
     "cost": 500,
@@ -27,7 +27,7 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 3,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Platinum",
     "order": 4,
     "cost": 2000,
@@ -39,7 +39,7 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 4,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Individual",
     "order": 100,
     "cost": 50,
@@ -51,19 +51,19 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 5,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Premier",
     "order": 0,
     "cost": 5000,
     "description": "",
-    "available": false
+    "available": true
   }
 },
 {
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 6,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Young Coders",
     "order": 1,
     "cost": 3000,
@@ -75,19 +75,19 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 7,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "T-Shirt",
     "order": 2,
     "cost": 3000,
     "description": "",
-    "available": false
+    "available": true
   }
 },
 {
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 8,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Swag Bag",
     "order": 3,
     "cost": 3000,
@@ -99,7 +99,7 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 9,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Non-Profit",
     "order": 8,
     "cost": 0,
@@ -111,7 +111,7 @@
   "model": "symposion_sponsorship.sponsorlevel",
   "pk": 10,
   "fields": {
-    "conference": 1,
+    "conference": 2,
     "name": "Conference Friends",
     "order": 9,
     "cost": 0,
@@ -121,322 +121,26 @@
 },
 {
   "model": "symposion_sponsorship.sponsorlevel",
-  "pk": 11,
+  "pk": 12,
   "fields": {
-    "conference": 1,
-    "name": "Tutorial Hardware",
+    "conference": 2,
+    "name": "Conference Grant",
     "order": 7,
-    "cost": 1000,
+    "cost": 5000,
     "description": "",
     "available": false
   }
 },
 {
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 1,
-  "fields": {
-    "name": "Michael Pirnat",
-    "display_name": "Mike Pirnat",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:25:57Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 2,
-  "fields": {
-    "name": "Johnathan Harris",
-    "display_name": "Johnathan Harris",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:26:11Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 3,
-  "fields": {
-    "name": "Chris Beelby",
-    "display_name": "Chloe",
-    "is_anonymous": false,
-    "amount": 100,
-    "added": "2018-06-23T14:26:30Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 4,
-  "fields": {
-    "name": "Rick Teachey",
-    "display_name": "Rick Teachey",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:26:52Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 5,
-  "fields": {
-    "name": "Edward W Hunter",
-    "display_name": "Weston Hunter",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:27:07Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 6,
-  "fields": {
-    "name": "Manoj",
-    "display_name": "Manoj",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:27:30Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 7,
-  "fields": {
-    "name": "James Hoburg",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:27:46Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 8,
-  "fields": {
-    "name": "Herbert W Schilling",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:28:27Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 9,
-  "fields": {
-    "name": "Russell E McMahon",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:29:03Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 10,
-  "fields": {
-    "name": "Mohamed  L. Khouya",
-    "display_name": "Mohamed  L. Khouya",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:29:21Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 11,
-  "fields": {
-    "name": "Christian Wyglendowski",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 200,
-    "added": "2018-06-23T14:29:37Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 12,
-  "fields": {
-    "name": "Wendell Odom",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 500,
-    "added": "2018-06-23T14:29:53Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
+  "model": "symposion_sponsorship.sponsorlevel",
   "pk": 13,
   "fields": {
-    "name": "Doug Philips",
-    "display_name": "Doug Philips",
-    "is_anonymous": false,
-    "amount": 150,
-    "added": "2018-06-23T14:30:03Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 14,
-  "fields": {
-    "name": "Matt Nystrom",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:30:25Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 15,
-  "fields": {
-    "name": "Christopher Gruber",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:30:39Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 16,
-  "fields": {
-    "name": "Damon Murphy",
-    "display_name": "Damon Murphy",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:30:51Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 17,
-  "fields": {
-    "name": "Wesley Winham",
-    "display_name": "Wes",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:31:11Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 18,
-  "fields": {
-    "name": "Eric Appelt",
-    "display_name": "Eric Appelt",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:31:31Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 19,
-  "fields": {
-    "name": "Benjamin J Freeman",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 100,
-    "added": "2018-06-23T14:31:44Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 20,
-  "fields": {
-    "name": "Greg Back",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:31:57Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 21,
-  "fields": {
-    "name": "Michael A Meffie",
-    "display_name": "Michael A Meffie",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:32:04Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 22,
-  "fields": {
-    "name": "Jamisen L Sivak",
-    "display_name": "John and Jamisen Sivak",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:32:15Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 23,
-  "fields": {
-    "name": "Philip Semanchuk",
-    "display_name": "Philip Semanchuk",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:32:30Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 24,
-  "fields": {
-    "name": "Megan Kress",
-    "display_name": "",
-    "is_anonymous": true,
-    "amount": 50,
-    "added": "2018-06-23T14:32:43Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 25,
-  "fields": {
-    "name": "Tod Schneider",
-    "display_name": "Tod",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-23T14:32:57Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 26,
-  "fields": {
-    "name": "Yarko Tymciurak",
-    "display_name": "Yarko Tymciurak",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-26T03:40:01Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 27,
-  "fields": {
-    "name": "Ian Zelikman",
-    "display_name": "Ian Zelikman",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-28T19:08:01Z"
-  }
-},
-{
-  "model": "symposion_sponsorship.individualsponsor",
-  "pk": 28,
-  "fields": {
-    "name": "Samuel Agnew",
-    "display_name": "Samuel Agnew",
-    "is_anonymous": false,
-    "amount": 50,
-    "added": "2018-06-29T13:08:35Z"
+    "conference": 2,
+    "name": "Lanyards",
+    "order": 3,
+    "cost": 3000,
+    "description": "",
+    "available": true
   }
 },
 {
@@ -444,77 +148,14 @@
   "pk": 1,
   "fields": {
     "applicant": 1,
-    "name": "American Greetings",
-    "display_url": "",
-    "external_url": "https://www.americangreetings.com/",
-    "annotation": "",
-    "contact_name": "Dave Forgac",
-    "contact_email": "dforgac@ag.com",
-    "level": 1,
-    "added": "2018-02-15T04:47:51Z",
-    "active": true,
-    "sponsor_logo": 3,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 2,
-  "fields": {
-    "applicant": 32,
-    "name": "PyGotham",
-    "display_url": "",
-    "external_url": "https://2018.pygotham.org/",
-    "annotation": "",
-    "contact_name": "Jon Banafato",
-    "contact_email": "jon@pygotham.org",
-    "level": 10,
-    "added": "2018-02-20T20:12:26Z",
-    "active": true,
-    "sponsor_logo": 6,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 35,
-  "fields": {
-    "applicant": 73,
-    "name": "Fuse by Cardinal Health",
-    "display_url": "",
-    "external_url": "http://www.cardinalhealth.com/en/about-us/who-we-are/fuse-by-cardinal-health.html",
-    "annotation": "",
-    "contact_name": "Jeff Graham",
-    "contact_email": "jeff.graham@cardinalhealth.com",
-    "level": 5,
-    "added": "2018-02-28T15:53:42Z",
-    "active": true,
-    "sponsor_logo": 39,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 36,
-  "fields": {
-    "applicant": 86,
     "name": "OSU Open Source Club",
     "display_url": "",
     "external_url": "https://opensource.osu.edu",
     "annotation": "",
-    "contact_name": "Jack Moore",
-    "contact_email": "opensource-announce@cse.ohio-state.edu",
+    "contact_name": "Exmaple",
+    "contact_email": "example@example.com",
     "level": 9,
-    "added": "2018-03-10T04:31:43Z",
+    "added": "2019-03-10T04:31:43Z",
     "active": true,
     "sponsor_logo": 44,
     "web_logo_benefit": null,
@@ -525,334 +166,19 @@
 },
 {
   "model": "symposion_sponsorship.sponsor",
-  "pk": 37,
+  "pk": 55,
   "fields": {
-    "applicant": 93,
-    "name": "SciPy Conference",
+    "applicant": 1,
+    "name": "The Python Software Foundation",
     "display_url": "",
-    "external_url": "https://scipy2018.scipy.org/ehome/index.php?eventid=299527&",
+    "external_url": "https://www.python.org/psf/",
     "annotation": "",
-    "contact_name": "Jill Cowan",
-    "contact_email": "scipy@enthought.com",
-    "level": 10,
-    "added": "2018-03-14T16:01:45Z",
-    "active": true,
-    "sponsor_logo": 49,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 38,
-  "fields": {
-    "applicant": 94,
-    "name": "North Bay Python",
-    "display_url": "",
-    "external_url": "https://northbaypython.org",
-    "annotation": "",
-    "contact_name": "Christopher Neugebauer",
-    "contact_email": "_@chrisjrn.com",
-    "level": 10,
-    "added": "2018-03-14T16:36:12Z",
-    "active": true,
-    "sponsor_logo": 53,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 39,
-  "fields": {
-    "applicant": 99,
-    "name": "PyTennessee",
-    "display_url": "",
-    "external_url": "https://www.pytennessee.org/",
-    "annotation": "",
-    "contact_name": "Bill Israel",
-    "contact_email": "pyohio@pytennessee.org",
-    "level": 10,
-    "added": "2018-03-16T11:39:22Z",
-    "active": true,
-    "sponsor_logo": 57,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 40,
-  "fields": {
-    "applicant": 100,
-    "name": "OnShift",
-    "display_url": "",
-    "external_url": "https://www.onshift.com/",
-    "annotation": "",
-    "contact_name": "Abby Dressler",
-    "contact_email": "adressler@onshift.com",
-    "level": 7,
-    "added": "2018-03-16T14:39:02Z",
-    "active": true,
-    "sponsor_logo": 61,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 42,
-  "fields": {
-    "applicant": 118,
-    "name": "Wingware",
-    "display_url": "",
-    "external_url": "https://wingware.com/",
-    "annotation": "",
-    "contact_name": "Stephan Deibel",
-    "contact_email": "info@wingware.com",
-    "level": 1,
-    "added": "2018-03-26T18:44:24Z",
-    "active": true,
-    "sponsor_logo": 69,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 43,
-  "fields": {
-    "applicant": 131,
-    "name": "Cisco DevNet",
-    "display_url": "",
-    "external_url": "http://developer.cisco.com",
-    "annotation": "",
-    "contact_name": "Hank Preston",
-    "contact_email": "hank.preston@gmail.com",
-    "level": 3,
-    "added": "2018-03-28T23:48:37Z",
-    "active": true,
-    "sponsor_logo": 73,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 44,
-  "fields": {
-    "applicant": 142,
-    "name": "IndyPy",
-    "display_url": "",
-    "external_url": "https://www.meetup.com/indypy/",
-    "annotation": "",
-    "contact_name": "Colleen Walker",
-    "contact_email": "colleen@sixfeetup.com",
-    "level": 10,
-    "added": "2018-04-10T20:43:20Z",
-    "active": true,
-    "sponsor_logo": 77,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 45,
-  "fields": {
-    "applicant": 31,
-    "name": "216 Software, LLC",
-    "display_url": "",
-    "external_url": "http://216software.com",
-    "annotation": "",
-    "contact_name": "W. Matthew Wilson",
-    "contact_email": "matt@216software.com",
-    "level": 2,
-    "added": "2018-04-25T21:38:02Z",
-    "active": true,
-    "sponsor_logo": 80,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 46,
-  "fields": {
-    "applicant": 79,
-    "name": "Truthful Technology LLC",
-    "display_url": "",
-    "external_url": "http://truthful.technology",
-    "annotation": "",
-    "contact_name": "Trey Hunner",
-    "contact_email": "trey@truthful.technology",
-    "level": 3,
-    "added": "2018-04-28T21:37:03Z",
-    "active": true,
-    "sponsor_logo": 84,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 47,
-  "fields": {
-    "applicant": 189,
-    "name": "JPMorgan Chase & Co.",
-    "display_url": "",
-    "external_url": "https://www.jpmorganchase.com/",
-    "annotation": "",
-    "contact_name": "Tracy Hedderly",
-    "contact_email": "tracy.hedderly@jpmchase.com",
-    "level": 3,
-    "added": "2018-05-03T17:27:37Z",
-    "active": true,
-    "sponsor_logo": 88,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 48,
-  "fields": {
-    "applicant": 192,
-    "name": "Girl Develop It",
-    "display_url": "",
-    "external_url": "https://www.girldevelopit.com/chapters/columbus",
-    "annotation": "",
-    "contact_name": "Parker Dyer",
-    "contact_email": "parker@girldevelopit.com",
-    "level": 3,
-    "added": "2018-05-10T16:27:04Z",
-    "active": true,
-    "sponsor_logo": 91,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 49,
-  "fields": {
-    "applicant": 95,
-    "name": "Michigan!/usr/group",
-    "display_url": "",
-    "external_url": "http://mug.org",
-    "annotation": "",
-    "contact_name": "Craig Maloney",
-    "contact_email": "craig@decafbad.net",
-    "level": 9,
-    "added": "2018-05-31T00:58:01Z",
-    "active": true,
-    "sponsor_logo": 94,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 50,
-  "fields": {
-    "applicant": 65,
-    "name": "Intellovations LLC",
-    "display_url": "",
-    "external_url": "http://www.intellovations.com",
-    "annotation": "",
-    "contact_name": "Eric Floehr",
-    "contact_email": "eric@intellovations.com",
-    "level": 6,
-    "added": "2018-06-02T15:45:41Z",
-    "active": true,
-    "sponsor_logo": 98,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 51,
-  "fields": {
-    "applicant": 350,
-    "name": "DataRobot",
-    "display_url": "",
-    "external_url": "http://www.datarobot.com",
-    "annotation": "",
-    "contact_name": "Ryan Sevey",
-    "contact_email": "ryan@datarobot.com",
-    "level": 1,
-    "added": "2018-06-26T16:12:08Z",
-    "active": true,
-    "sponsor_logo": 103,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 52,
-  "fields": {
-    "applicant": 80,
-    "name": "Adafruit",
-    "display_url": "",
-    "external_url": "https://www.adafruit.com",
-    "annotation": "",
-    "contact_name": "Kattni Rembor",
-    "contact_email": "kattni@adafruit.com",
-    "level": 11,
-    "added": "2018-06-29T19:31:29Z",
-    "active": true,
-    "sponsor_logo": 107,
-    "web_logo_benefit": null,
-    "print_logo_benefit": null,
-    "print_description_benefit": null,
-    "company_description_benefit": null
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsor",
-  "pk": 53,
-  "fields": {
-    "applicant": 69,
-    "name": "DjangoGirlsCLE",
-    "display_url": "",
-    "external_url": "https://djangogirls.org/cleveland/",
-    "annotation": "",
-    "contact_name": "Rae Krantz, Denise Williams, Marissa Utterberg",
-    "contact_email": "cleveland@djangogirls.org",
-    "level": 9,
-    "added": "2018-07-02T13:04:34Z",
-    "active": true,
-    "sponsor_logo": 110,
+    "contact_name": "Dave",
+    "contact_email": "dforgac@pyohio.org",
+    "level": 12,
+    "added": "2018-07-17T06:58:00Z",
+    "active": false,
+    "sponsor_logo": 117,
     "web_logo_benefit": null,
     "print_logo_benefit": null,
     "print_description_benefit": null,
@@ -1241,196 +567,32 @@
 },
 {
   "model": "symposion_sponsorship.benefitlevel",
-  "pk": 38,
+  "pk": 42,
   "fields": {
-    "benefit": 3,
-    "level": 11,
+    "benefit": 2,
+    "level": 12,
     "max_words": null,
     "other_limits": ""
   }
 },
 {
   "model": "symposion_sponsorship.benefitlevel",
-  "pk": 39,
+  "pk": 43,
   "fields": {
     "benefit": 4,
-    "level": 11,
+    "level": 12,
     "max_words": null,
     "other_limits": ""
   }
 },
 {
   "model": "symposion_sponsorship.benefitlevel",
-  "pk": 40,
+  "pk": 44,
   "fields": {
-    "benefit": 5,
-    "level": 11,
+    "benefit": 3,
+    "level": 12,
     "max_words": null,
     "other_limits": ""
-  }
-},
-{
-  "model": "symposion_sponsorship.benefitlevel",
-  "pk": 41,
-  "fields": {
-    "benefit": 2,
-    "level": 11,
-    "max_words": null,
-    "other_limits": ""
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 1,
-  "fields": {
-    "sponsor": 1,
-    "benefit": 4,
-    "active": true,
-    "max_words": 200,
-    "other_limits": "",
-    "text": "American Greetings is a leading creator and manufacturer of innovative social expression products that assist consumers in enhancing their relationships to create happiness, laughter, and love. We offer one of the largest collections of greetings on the web, including print-on-demand cards available at https://Cardstore.com and ecards at https://AmericanGreetings.com.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 2,
-  "fields": {
-    "sponsor": 1,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 3,
-  "fields": {
-    "sponsor": 1,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/ag_logo_360x120.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 4,
-  "fields": {
-    "sponsor": 2,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "PyGotham is a New York City based, eclectic, Py-centric conference covering many topics. There\u2019s a diverse speaker list, and some things which will be quite different. Find out more and join us at https://2018.pygotham.org.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 5,
-  "fields": {
-    "sponsor": 2,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/PyGotham.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 6,
-  "fields": {
-    "sponsor": 2,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/PyGotham.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 37,
-  "fields": {
-    "sponsor": 35,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "Fuse is the innovation center of Cardinal Health. Made up of a nimble, diverse team which merges technology and science with human-centered design, they bring deep expertise and industry foresight to solve complex healthcare challenges while leveraging the reach and resources of a large, global corporation. As ambassadors of change, they work alongside customers to illuminate opportunities and create solutions that transform the future of health and wellness.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 38,
-  "fields": {
-    "sponsor": 35,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/Fuse_Logo.eps",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 39,
-  "fields": {
-    "sponsor": 35,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/Fuse_Logo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 40,
-  "fields": {
-    "sponsor": 1,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "amgreetings",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 41,
-  "fields": {
-    "sponsor": 35,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "@cardinalhealth",
-    "upload": "",
-    "is_complete": true
   }
 },
 {
@@ -1449,897 +611,15 @@
 },
 {
   "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 43,
+  "pk": 115,
   "fields": {
-    "sponsor": 36,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/open_source_club_logo-master.svg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 44,
-  "fields": {
-    "sponsor": 36,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/open-source-club.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 45,
-  "fields": {
-    "sponsor": 2,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 46,
-  "fields": {
-    "sponsor": 37,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "The annual SciPy Conference brings together over 700 participants from industry, academia, and government to showcase their latest projects, learn from skilled users and developers, and collaborate on code development. The full program will consist of 2 days of tutorials (July 9-10), 3 days of talks (July 11-13), and 2 days of developer sprints (July 14-15).",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 47,
-  "fields": {
-    "sponsor": 37,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "@scipyconf",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 48,
-  "fields": {
-    "sponsor": 37,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/SciPy2018-Logo-250x67_1.jpg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 49,
-  "fields": {
-    "sponsor": 37,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/SciPy2018-Logo-250x67_1.jpg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 50,
-  "fields": {
-    "sponsor": 38,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "North Bay Python is a 2-day community conference that brings together professionals, enthusiasts, and students interested in the Python programming language. North Bay Python 2018 will be held on November 3 & 4 at the Mystic Theatre in Historic Downtown Petaluma, California. For more information visit northbaypython.org.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 51,
-  "fields": {
-    "sponsor": 38,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "@northbaypython",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 52,
-  "fields": {
-    "sponsor": 38,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/wordmark.svg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 53,
-  "fields": {
-    "sponsor": 38,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/wordmark.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 54,
-  "fields": {
-    "sponsor": 39,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "PyTennessee is a regional Python conference being held February 9-10, 2019 in Nashville, TN! With 3 talk tracks, a tutorial track, and a killer hallway track, we have something for everyone. Come for the community, stay for the hot chicken!",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 55,
-  "fields": {
-    "sponsor": 39,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "pytennessee",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 56,
-  "fields": {
-    "sponsor": 39,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 57,
-  "fields": {
-    "sponsor": 39,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/2019-logo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 58,
-  "fields": {
-    "sponsor": 40,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 59,
-  "fields": {
-    "sponsor": 40,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 60,
-  "fields": {
-    "sponsor": 40,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/On_Shift_logo_color.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 61,
-  "fields": {
-    "sponsor": 40,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/On_Shift_logo_color.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 66,
-  "fields": {
-    "sponsor": 42,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "pythonide",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 67,
-  "fields": {
-    "sponsor": 42,
-    "benefit": 4,
-    "active": true,
-    "max_words": 200,
-    "other_limits": "",
-    "text": "Wingware makes a family of cross-platform Python IDEs with powerful integrated editing, debugging, unit testing, and project management features. Wing runs on Windows, Linux, and OS X, and can be used to develop any kind of Python code for web, desktop, embedded scripting, and other applications.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 68,
-  "fields": {
-    "sponsor": 42,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/wingware-button-2015.pdf",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 69,
-  "fields": {
-    "sponsor": 42,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/wingware-button-2018.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 70,
-  "fields": {
-    "sponsor": 43,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "@CiscoDevNet",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 71,
-  "fields": {
-    "sponsor": 43,
-    "benefit": 4,
-    "active": true,
-    "max_words": 300,
-    "other_limits": "",
-    "text": "DevNet is Cisco's Developer program and our mission is to \"Learn, Code, Inspire, and Connect\" anyone interested in developing with Cisco platforms or technologies.  DevNet provides API guides, code samples, learning labs, sandboxes, and support for the hundreds of products in the Cisco portfolio.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 72,
-  "fields": {
-    "sponsor": 43,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/core_black_url_with_cisco.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 73,
-  "fields": {
-    "sponsor": 43,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/core_black_url_with_cisco.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 74,
-  "fields": {
-    "sponsor": 44,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "The Indianapolis Python Meetup (\u201cIndyPy\u201d) is a leading national group promoting the Python programming language and connecting the Python community.\r\n\r\nIndyPy draws Python enthusiasts from the entire Midwest for regular events. In 2017, we celebrated\r\n10 years of success with over 1,200 members.\r\n\r\nWe are learners, employers, and enthusiasts of all kinds. All skill levels are welcome: if you are interested in Python, we are interested in you!",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 75,
-  "fields": {
-    "sponsor": 44,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "@indypy",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 76,
-  "fields": {
-    "sponsor": 44,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/IndyPy-logo-large.jpg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 77,
-  "fields": {
-    "sponsor": 44,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/IndyPy-logo-large.jpg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 78,
-  "fields": {
-    "sponsor": 45,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "The team at 216 Software are experts in anti-gravity, mass hypnosis, shape-shifting, astral projection, weather modification, clairvoyance, matter transmutation, corpse reanimation, space folding, insect swarm control, and shrink ray technology.\r\n\r\nWant agile coaching?  Call somebody else.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 79,
-  "fields": {
-    "sponsor": 45,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/216-software-logo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 80,
-  "fields": {
-    "sponsor": 45,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/216-software-logo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 81,
-  "fields": {
-    "sponsor": 46,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "treyhunner",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 82,
-  "fields": {
-    "sponsor": 46,
-    "benefit": 4,
-    "active": true,
-    "max_words": 300,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 83,
-  "fields": {
-    "sponsor": 46,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 84,
-  "fields": {
-    "sponsor": 46,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/TTSwoopVText.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 85,
-  "fields": {
-    "sponsor": 47,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 86,
-  "fields": {
-    "sponsor": 47,
-    "benefit": 4,
-    "active": true,
-    "max_words": 300,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 87,
-  "fields": {
-    "sponsor": 47,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/JPMC_Logo.jpg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 88,
-  "fields": {
-    "sponsor": 47,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/JPMC_Logo.jpg",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 89,
-  "fields": {
-    "sponsor": 48,
-    "benefit": 4,
-    "active": true,
-    "max_words": 300,
-    "other_limits": "",
-    "text": "Girl Develop It is a nonprofit organization that exists to provide affordable and judgment-free opportunities for women interested in learning web and software development. Through in-person classes and community support, Girl Develop It helps women of diverse backgrounds achieve their technology goals and build confidence in their careers and their every day lives.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 90,
-  "fields": {
-    "sponsor": 48,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/circle-gdi-logo.ai",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 91,
-  "fields": {
-    "sponsor": 48,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/circle-gdi-logo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 92,
-  "fields": {
-    "sponsor": 49,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "The Michigan!/usr/group (or MUG) is one of Michigan\u2019s longest-running UNIX users groups. Our meetings are held on the second Tuesday of the month featuring a wide variety of UNIX, Linux, and Open Source technologies. Meetings are free to attend, and all are welcome. See http://mug.org for more details.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 93,
-  "fields": {
-    "sponsor": 49,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/mug.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 94,
-  "fields": {
-    "sponsor": 49,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/mug.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 95,
-  "fields": {
-    "sponsor": 50,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "@intellovations",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 96,
-  "fields": {
-    "sponsor": 50,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "Intellovations uses Python and Django to help businesses understand weather and weather forecasts better. ForecastWatch, a service of Intellovations, LLC, is the world\u2019s premier weather forecast monitoring and assessment company. ForecastWatch compiles weather forecasts and observations from more than 1,200 locations around the world, including the United States, Canada, Europe, South America, Central America, Africa and the Asian Pacific. ForecastWatch maintains a historical database of more than 800 million weather forecasts from a number of providers and provides unbiased reporting.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 97,
-  "fields": {
-    "sponsor": 50,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 98,
-  "fields": {
-    "sponsor": 50,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/Intellovations-vertical-color.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 99,
-  "fields": {
-    "sponsor": 48,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "",
-    "upload": "",
-    "is_complete": false
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 100,
-  "fields": {
-    "sponsor": 51,
-    "benefit": 5,
-    "active": true,
-    "max_words": 1,
-    "other_limits": "",
-    "text": "@DataRobot",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 101,
-  "fields": {
-    "sponsor": 51,
-    "benefit": 4,
-    "active": true,
-    "max_words": 200,
-    "other_limits": "",
-    "text": "DataRobot helps enterprises embrace artificial intelligence (AI). Its automated machine learning platform harnesses hundreds of cutting-edge open source algorithms to discover the best machine learning models for every situation, empowering users of all skill levels to consistently make smarter, faster business decisions. The DataRobot platform automates, trains, and evaluates models in parallel, delivering AI applications at scale. DataRobot captures the knowledge, experience, and best practices of the world\u2019s leading data scientists, delivering unmatched levels of automation and ease-of-use for machine learning initiatives. DataRobot provides the fastest path to AI success for organizations of all sizes. For more information, visit datarobot.com",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 102,
-  "fields": {
-    "sponsor": 51,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/Vector_logo_options-01.eps",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 103,
-  "fields": {
-    "sponsor": 51,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/Vector_logo_options-01.eps",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 104,
-  "fields": {
-    "sponsor": 52,
-    "benefit": 5,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "@adafruit",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 105,
-  "fields": {
-    "sponsor": 52,
+    "sponsor": 55,
     "benefit": 4,
     "active": true,
     "max_words": null,
     "other_limits": "",
-    "text": "Adafruit was founded in 2005 by MIT hacker & engineer, Limor \"Ladyada\" Fried. Her goal was to create the best place online for learning electronics and making the best designed products for makers of all ages and skill levels. Adafruit has grown to over 100+ employees in the heart of NYC with a 50,000+ sq ft. factory. Adafruit has expanded offerings to include tools, equipment and electronics that Limor personally selects, tests and approves before going in to the Adafruit store. Limor was the first female engineer on the cover of WIRED magazine, awarded Entrepreneur magazine's Entrepreneur of the year, and was on the cover of Make: Vol. 57. Ladyada was a founding member of the NYC Industrial Business Advisory Council. Adafruit is ranked #11 in the top 20 USA manufacturing companies and #1 in New York City by Inc. 5000 \"fastest growing private companies\". Adafruit is featured in Google's Economic Impact Report. Limor was named a WHITEHOUSE CHAMPION OF CHANGE in 2016. Adafruit is a 100% woman owned company.",
+    "text": "The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. The majority of the PSF's work is focused on empowering and supporting people within the Python community. The PSF has active grant programs that support sprints, conferences, meet ups, user groups, and Python development efforts all over the world. In addition, the PSF underwrites and runs PyCon US, the primary Python community conference. Being part of the PSF means being part of the Python community. Recently we changed the PSF to an open membership organization, so that everyone who uses and supports Python can join. To learn more, visit https://www.python.org/psf/membership.",
     "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 106,
-  "fields": {
-    "sponsor": 52,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/AdafruitPrintLogo.ai",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 107,
-  "fields": {
-    "sponsor": 52,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/AdafruitWebLogo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 108,
-  "fields": {
-    "sponsor": 53,
-    "benefit": 4,
-    "active": true,
-    "max_words": 100,
-    "other_limits": "",
-    "text": "If you identify as a woman and want to learn how to make websites, we have good news for you: we are holding a one-day workshop for beginners! Keep up with us on social media to be alerted when registration opens:\r\nhttp://instagram.com/djangogirlscle\r\nhttp://twitter.com/djangogirlscle\r\n\r\nIf you are anyone else and would like to be a mentor, get in touch with us!\r\n\r\nThe workshop will take place on Saturday September 22, 2018 at MidTown Tech Hive in Cleveland. For more details and contact info, visit https://djangogirls.org/cleveland/.",
-    "upload": "",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 109,
-  "fields": {
-    "sponsor": 53,
-    "benefit": 3,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/dgc_logo.png",
-    "is_complete": true
-  }
-},
-{
-  "model": "symposion_sponsorship.sponsorbenefit",
-  "pk": 110,
-  "fields": {
-    "sponsor": 53,
-    "benefit": 2,
-    "active": true,
-    "max_words": null,
-    "other_limits": "",
-    "text": "",
-    "upload": "sponsor_files/dgc_logo.png",
     "is_complete": true
   }
 }
