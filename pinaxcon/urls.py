@@ -107,7 +107,7 @@ original_patterns = [
     #url(r"^tickets/payments/", include("registripe.urls")),
 
     # Required by registrasion
-    url(r'^nested_admin/', include('nested_admin.urls')),
+    #url(r'^nested_admin/', include('nested_admin.urls')),
 ]
 
 

@@ -244,7 +244,7 @@ INSTALLED_APPS = [
     #"registripe",
 
     #admin - required by registrasion ??
-    "nested_admin",
+    #"nested_admin",
 
     # project
     "pinaxcon",
