@@ -104,10 +104,9 @@ original_patterns = [
     url(r"^teams/", include("symposion.teams.urls")),
 
     # Demo payment gateway and related features
-    url(r"^tickets/payments/", include("registripe.urls")),
+    #url(r"^tickets/payments/", include("registripe.urls")),
 
     # Required by registrasion
-    url(r'^tickets/', include('registrasion.urls')),
     url(r'^nested_admin/', include('nested_admin.urls')),
 ]
 

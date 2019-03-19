@@ -235,13 +235,13 @@ INSTALLED_APPS = [
     "symposion.teams",
 
     # Registrasion
-    "registrasion",
+    #"registrasion",
     "symposion_templates",
 
     # Registrasion-stipe
-    "pinax.stripe",
-    "django_countries",
-    "registripe",
+    #"pinax.stripe",
+    #"django_countries",
+    #"registripe",
 
     #admin - required by registrasion ??
     "nested_admin",
@@ -249,7 +249,7 @@ INSTALLED_APPS = [
     # project
     "pinaxcon",
     "pinaxcon.proposals",
-    "pinaxcon.registrasion",
+    #"pinaxcon.registrasion",
 
     #testing
     "django_nose",
@@ -357,7 +357,7 @@ SYMPOSION_SPEAKER_MODEL = "pinaxcon.proposals.models.ConferenceSpeaker"
 SYMPOSION_SPEAKER_FORM = "pinaxcon.proposals.forms.ConferenceSpeakerForm"
 
 # Registrasion Attendee profile model
-ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
+#ATTENDEE_PROFILE_MODEL = "pinaxcon.registrasion.models.AttendeeProfile"
 # Registrasion attendee profile form -- must act on ATTENDEE_PROFILE_FORM
 # You only need to provide this if you're customising the form from the default
 # ATTENDEE_PROFILE_FORM = "pinaxcon.registrasion.forms.ProfileForm"
@@ -383,7 +383,6 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 # Tell nose to measure coverage on the 'foo' and 'bar' apps
 NOSE_ARGS = [
     '--with-coverage',
-    '--cover-package=registrasion.controllers,registrasion.models',
 ]
 
 MARKDOWN_DEUX_STYLES = {

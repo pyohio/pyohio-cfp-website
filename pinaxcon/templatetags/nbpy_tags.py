@@ -1,8 +1,3 @@
-from registrasion.models import commerce
-from registrasion.controllers.category import CategoryController
-from registrasion.controllers.item import ItemController
-from registrasion.templatetags import registrasion_tags
-
 from decimal import Decimal
 from django import template
 from django.conf import settings
