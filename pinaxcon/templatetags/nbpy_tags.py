@@ -101,12 +101,3 @@ def affiliation(ticket, user):
         return aff
     else:
         return ""
-
-
-@register.simple_tag(takes_context=True)
-def ticket_type(context):
-
-    items = registrasion_tags.items_purchased(context)
-    for item in items:
-        if item.product.category.name == "Ticket":
-            return item.product.name

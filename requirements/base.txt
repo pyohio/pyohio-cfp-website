@@ -39,7 +39,6 @@ chardet==3.0.4            # via requests
 idna==2.6                 # via requests
 requests>=2.19.1          # via rollbar
 rollbar==0.13.17
-six==1.11.0               # via rollbar
 urllib3>=1.23             # via requests
 
 # Keen.io
@@ -50,3 +49,4 @@ django-debug-toolbar==1.9.1
 
 collectfast==0.6.0
 django-redis
+ipython
