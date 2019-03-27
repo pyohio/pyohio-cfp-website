@@ -215,7 +215,7 @@ INSTALLED_APPS = [
 
     # external
     "account",
-    "easy_thumbnails",
+    #"easy_thumbnails",
     "taggit",
     "reversion",
     "metron",
@@ -260,7 +260,7 @@ INSTALLED_APPS = [
     #'django_nyt',
     #'mptt',
     #'sekizai',
-    #'sorl.thumbnail',
+    'sorl.thumbnail',
     #'wiki',
     #'wiki.plugins.attachments',
     #'wiki.plugins.notifications',
