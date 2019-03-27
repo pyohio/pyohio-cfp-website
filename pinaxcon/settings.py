@@ -125,6 +125,7 @@ STATICFILES_FINDERS = [
 
 # Amazon S3 setup
 DEFAULT_FILE_STORAGE = os.environ.get("DJANGO_DEFAULT_FILE_STORAGE", 'django.core.files.storage.FileSystemStorage') # noqa
+THUMBNAIL_DEBUG = True
 THUMBNAIL_DEFAULT_STORAGE = DEFAULT_FILE_STORAGE
 AWS_DEFAULT_ACL = os.environ.get("AWS_DEFAULT_ACL", None)
 AWS_ACCESS_KEY_ID = os.environ.get("DJANGO_AWS_ACCESS_KEY_ID", None)
