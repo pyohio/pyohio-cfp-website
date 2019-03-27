@@ -1,9 +1,9 @@
 /* COLORS */
 // Used by links, buttons, and other background bits.
-$brand-primary: rgb(38, 59, 108);
+$brand-primary: rgb(128,0,0);
 $background-filter: hsla(207, 60%, 85%, 1.0);
 $background-filter-transparent: change-color($background-filter, $alpha: 0.5);
-$link-color: rgb(0, 131, 143);
+$link-color: rgb(184, 0, 0);
 $link-hover-color: darken($link-color, 10%);
 
 /* TEXT */
