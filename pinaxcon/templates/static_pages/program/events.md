@@ -1,20 +1,20 @@
 
-## Friday, July 27, 2018
+## Friday, July 26, 2019
 
 ### Sprints & Reception
 
 **6:00pm-11:00pm** Join us for sprints and an attendee reception. No experience
 necessary and coding is completley optional. [Details](/sprints)
 
-## Saturday, July 28, 2018
+## Saturday, July 27, 2019
 
 ### Registration
 
-**8:00am** Registration and signin opens. [Directions](/2018/attend/travel)
+**8:00am** Registration and signin opens. [Directions](/2019/attend/travel)
 
 ### Welcome & Keynote
 
-**9:00am** Welcome information and our [Saturday keynote](/2018/schedule/presentation/59/).
+**9:00am** Welcome information and our [Saturday keynote](/2019/schedule/presentation/59/).
 
 ### Talks & Tutorials
 
@@ -40,18 +40,18 @@ PyOhio community. Sign up for a slot on the board near registration.
 **6:30pm-11:00pm** Join us for sprints and an attendee reception. No experience
 necessary and coding is completley optional. [Details](/sprints)
 
-## Sunday, July 29, 2018
+## Sunday, July 28, 2019
 
 *Tip: There's no lunch break on Sunday so grab a bite to eat before we get
 started! We will have light refreshments at the break*
 
 ### Registration
 
-**11:00am** Registration and signin opens. [Directions](/2018/attend/travel)
+**11:00am** Registration and signin opens. [Directions](/2019/attend/travel)
 
 ### Welcome & Keynote
 
-**11:30am** Welcome back and our [Sunday keynote](/2018/schedule/presentation/60/).
+**11:30am** Welcome back and our [Sunday keynote](/2019/schedule/presentation/60/).
 
 ### Talks & Tutorials
 

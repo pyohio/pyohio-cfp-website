@@ -53,8 +53,8 @@ Conference staff will be happy to help participants contact hotel/venue security
 
 Procedure for Handling Harassment
 ------------------------------------------
-- [Attendee procedure for incident handling](/2018/code-of-conduct/harassment-incidents)
-- [Staff procedure for incident handling](/2018/code-of-conduct/harassment-staff-procedures)
+- [Attendee procedure for incident handling](/2019/code-of-conduct/harassment-incidents)
+- [Staff procedure for incident handling](/2019/code-of-conduct/harassment-staff-procedures)
 
 License
 -------
