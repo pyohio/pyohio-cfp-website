@@ -7,7 +7,7 @@ Ready to submit a talk? Create a speaker profile and submit proposal(s) on [the 
 
 Log into our Slack team (<a href="https://slack.pyohio.org/">invitation here</a>) and ask in the #cfp channel or email us at info@pyohio.org.
 
-If you would like to be matched with a mentor to help with your proposal(s), [request a mentor here](https://goo.gl/forms/s3nBsWMmdwgQHWww2).
+If you would like to be matched with a mentor to help with your proposal(s), [request a mentor here](https://forms.gle/4tUxujRfhiyTbsf8A).
 
 ## Background
 
