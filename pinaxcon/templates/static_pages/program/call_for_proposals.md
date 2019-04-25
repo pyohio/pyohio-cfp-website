@@ -1,5 +1,5 @@
 
-## *Proposals accepted until 23:59:59ET on 2019-05-10*
+## *Proposals accepted until 23:59:59ET on 2019-05-12*
 
 Ready to submit a talk? Create a speaker profile and submit proposal(s) on [the dashboard](/2019/dashboard/).
 
