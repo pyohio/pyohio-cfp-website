@@ -1,0 +1,44 @@
+[
+{
+  "model": "symposion_proposals.proposalsection",
+  "pk": 3,
+  "fields": {
+    "section": 4,
+    "start": "2019-03-27T04:29:34Z",
+    "end": "2019-06-13T12:00:00Z",
+    "closed": false,
+    "published": true,
+    "anonymous": true
+  }
+},
+{
+  "model": "symposion_proposals.proposalsection",
+  "pk": 4,
+  "fields": {
+    "section": 5,
+    "start": "2019-03-27T04:29:09Z",
+    "end": "2019-06-13T12:00:00Z",
+    "closed": false,
+    "published": true,
+    "anonymous": true
+  }
+},
+{
+  "model": "symposion_proposals.proposalkind",
+  "pk": 4,
+  "fields": {
+    "section": 4,
+    "name": "Talk",
+    "slug": "talk"
+  }
+},
+{
+  "model": "symposion_proposals.proposalkind",
+  "pk": 5,
+  "fields": {
+    "section": 5,
+    "name": "Tutorial",
+    "slug": "tutorial"
+  }
+}
+]
