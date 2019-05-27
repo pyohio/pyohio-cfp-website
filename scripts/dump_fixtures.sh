@@ -7,10 +7,16 @@
 app_name="production-pyohio-website"
 
 models=(
-sites
-sitetree
-symposion_conference
-symposion_sponsorship
+#sites
+#sitetree
+#symposion_conference
+#symposion_sponsorship
+#symposion_proposals
+#auth
+#account
+#symposion_speakers
+#contenttypes
+symposion_schedule
 )
 
 for model in "${models[@]}"

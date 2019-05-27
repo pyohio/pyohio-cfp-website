@@ -323,7 +323,7 @@
   "model": "sitetree.treeitem",
   "pk": 27,
   "fields": {
-    "title": "Dashboard",
+    "title": "Manage Proposals",
     "hint": "",
     "url": "/2019/dashboard",
     "urlaspattern": false,
@@ -334,11 +334,11 @@
     "inmenu": true,
     "inbreadcrumbs": true,
     "insitetree": true,
-    "access_loggedin": true,
+    "access_loggedin": false,
     "access_guest": false,
     "access_restricted": false,
     "access_perm_type": 1,
-    "parent": 26,
+    "parent": null,
     "sort_order": 27,
     "access_permissions": []
   }

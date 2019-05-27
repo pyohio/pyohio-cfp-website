@@ -3,8 +3,8 @@
   "model": "sites.site",
   "pk": 1,
   "fields": {
-    "domain": "pyohio.org",
-    "name": "PyOhio"
+    "domain": "cfp.pyohio.org",
+    "name": "PyOhio CFP"
   }
 }
 ]

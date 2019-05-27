@@ -1,0 +1,2874 @@
+[
+{
+  "model": "symposion_schedule.schedule",
+  "pk": 1,
+  "fields": {
+    "section": 4,
+    "published": true,
+    "hidden": false
+  }
+},
+{
+  "model": "symposion_schedule.schedule",
+  "pk": 3,
+  "fields": {
+    "section": 5,
+    "published": true,
+    "hidden": true
+  }
+},
+{
+  "model": "symposion_schedule.schedule",
+  "pk": 4,
+  "fields": {
+    "section": 6,
+    "published": true,
+    "hidden": false
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 1,
+  "fields": {
+    "schedule": 1,
+    "date": "2019-07-27"
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 2,
+  "fields": {
+    "schedule": 1,
+    "date": "2019-07-28"
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 5,
+  "fields": {
+    "schedule": 3,
+    "date": "2019-07-27"
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 6,
+  "fields": {
+    "schedule": 3,
+    "date": "2019-07-28"
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 7,
+  "fields": {
+    "schedule": 4,
+    "date": "2019-07-27"
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 8,
+  "fields": {
+    "schedule": 4,
+    "date": "2019-07-28"
+  }
+},
+{
+  "model": "symposion_schedule.day",
+  "pk": 9,
+  "fields": {
+    "schedule": 4,
+    "date": "2019-07-26"
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 1,
+  "fields": {
+    "schedule": 1,
+    "name": "Cartoon 1",
+    "order": 1
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 2,
+  "fields": {
+    "schedule": 1,
+    "name": "Cartoon 2",
+    "order": 2
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 3,
+  "fields": {
+    "schedule": 1,
+    "name": "Barbie Tootle",
+    "order": 3
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 4,
+  "fields": {
+    "schedule": 1,
+    "name": "Hays Cape",
+    "order": 4
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 5,
+  "fields": {
+    "schedule": 1,
+    "name": "Suzanne Scharer",
+    "order": 5
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 6,
+  "fields": {
+    "schedule": 4,
+    "name": "Rosa Ailabouni",
+    "order": 6
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 7,
+  "fields": {
+    "schedule": 4,
+    "name": "Tanya Rutner",
+    "order": 7
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 8,
+  "fields": {
+    "schedule": 4,
+    "name": "Brutus Buckeye",
+    "order": 8
+  }
+},
+{
+  "model": "symposion_schedule.room",
+  "pk": 9,
+  "fields": {
+    "schedule": 4,
+    "name": "Offsite",
+    "order": 10
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 1,
+  "fields": {
+    "schedule": 1,
+    "label": "talk"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 2,
+  "fields": {
+    "schedule": 1,
+    "label": "tutorial"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 3,
+  "fields": {
+    "schedule": 1,
+    "label": "break"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 4,
+  "fields": {
+    "schedule": 1,
+    "label": "keynote"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 5,
+  "fields": {
+    "schedule": 1,
+    "label": "plenary"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 6,
+  "fields": {
+    "schedule": 1,
+    "label": "nothing"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 7,
+  "fields": {
+    "schedule": 3,
+    "label": "tutorials"
+  }
+},
+{
+  "model": "symposion_schedule.slotkind",
+  "pk": 8,
+  "fields": {
+    "schedule": 4,
+    "label": "other"
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 1,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) tutorial (10:30:00 - 12:30:00) Suzanne Scharer",
+    "day": 1,
+    "kind": 2,
+    "start": "10:30:00",
+    "end": "12:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": 3
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 2,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) tutorial (15:00:00 - 17:00:00) Suzanne Scharer",
+    "day": 1,
+    "kind": 2,
+    "start": "15:00:00",
+    "end": "17:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": 3
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 3,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) nothing (14:00:00 - 14:45:00) Suzanne Scharer",
+    "day": 1,
+    "kind": 6,
+    "start": "14:00:00",
+    "end": "14:45:00",
+    "content_override": "\u2013",
+    "content_override_html": "<p>\u2013</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 4,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) break (10:00:00 - 10:30:00) Cartoon 1 Cartoon 2 Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 1,
+    "kind": 3,
+    "start": "10:00:00",
+    "end": "10:30:00",
+    "content_override": "Break",
+    "content_override_html": "<p>Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 5,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) tutorial (12:45:00 - 14:45:00) Suzanne Scharer",
+    "day": 2,
+    "kind": 2,
+    "start": "12:45:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": 3
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 6,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) tutorial (15:00:00 - 17:00:00) Suzanne Scharer",
+    "day": 2,
+    "kind": 2,
+    "start": "15:00:00",
+    "end": "17:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": 4
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 7,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) nothing (14:45:00 - 15:00:00) Suzanne Scharer",
+    "day": 2,
+    "kind": 6,
+    "start": "14:45:00",
+    "end": "15:00:00",
+    "content_override": "-",
+    "content_override_html": "<p>-</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 8,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) plenary (09:00:00 - 09:15:00) Cartoon 1 Cartoon 2",
+    "day": 1,
+    "kind": 5,
+    "start": "09:00:00",
+    "end": "09:15:00",
+    "content_override": "Saturday Welcome",
+    "content_override_html": "<p>Saturday Welcome</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 9,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (09:15:00 - 10:00:00) Cartoon 1 Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "09:15:00",
+    "end": "10:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 10,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) break (12:30:00 - 14:00:00) Cartoon 1 Cartoon 2 Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 1,
+    "kind": 3,
+    "start": "12:30:00",
+    "end": "14:00:00",
+    "content_override": "Lunch Break",
+    "content_override_html": "<p>Lunch Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 11,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) plenary (11:30:00 - 11:40:00) Cartoon 1 Cartoon 2",
+    "day": 2,
+    "kind": 5,
+    "start": "11:30:00",
+    "end": "11:40:00",
+    "content_override": "Sunday Welcome",
+    "content_override_html": "<p>Sunday Welcome</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 12,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (10:30:00 - 11:00:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "10:30:00",
+    "end": "11:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 13,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (10:30:00 - 11:00:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "10:30:00",
+    "end": "11:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 14,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (10:30:00 - 11:00:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "10:30:00",
+    "end": "11:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 15,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (10:30:00 - 11:00:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "10:30:00",
+    "end": "11:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 16,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (11:15:00 - 11:45:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "11:15:00",
+    "end": "11:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 17,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (11:15:00 - 11:45:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "11:15:00",
+    "end": "11:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 18,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (11:15:00 - 11:45:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "11:15:00",
+    "end": "11:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 19,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (11:15:00 - 11:45:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "11:15:00",
+    "end": "11:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 20,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (12:00:00 - 12:30:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "12:00:00",
+    "end": "12:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 21,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (12:00:00 - 12:30:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "12:00:00",
+    "end": "12:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 22,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (12:00:00 - 12:30:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "12:00:00",
+    "end": "12:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 23,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (12:00:00 - 12:30:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "12:00:00",
+    "end": "12:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 24,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (14:00:00 - 14:45:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "14:00:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 25,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (14:00:00 - 14:45:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "14:00:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 26,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (14:00:00 - 14:45:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "14:00:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 27,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (14:00:00 - 14:45:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "14:00:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 28,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:00:00 - 15:30:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "15:00:00",
+    "end": "15:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 29,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:00:00 - 15:30:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "15:00:00",
+    "end": "15:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 30,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:00:00 - 15:30:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "15:00:00",
+    "end": "15:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 31,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:00:00 - 15:30:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "15:00:00",
+    "end": "15:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 32,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:45:00 - 16:15:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "15:45:00",
+    "end": "16:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 33,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:45:00 - 16:15:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "15:45:00",
+    "end": "16:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 34,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:45:00 - 16:15:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "15:45:00",
+    "end": "16:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 35,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (15:45:00 - 16:15:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "15:45:00",
+    "end": "16:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 36,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (16:30:00 - 17:00:00) Cartoon 1",
+    "day": 1,
+    "kind": 1,
+    "start": "16:30:00",
+    "end": "17:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 37,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (16:30:00 - 17:00:00) Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "16:30:00",
+    "end": "17:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 38,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (16:30:00 - 17:00:00) Barbie Tootle",
+    "day": 1,
+    "kind": 1,
+    "start": "16:30:00",
+    "end": "17:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 39,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (16:30:00 - 17:00:00) Hays Cape",
+    "day": 1,
+    "kind": 1,
+    "start": "16:30:00",
+    "end": "17:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 40,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) break (17:00:00 - 17:15:00) Cartoon 1 Cartoon 2 Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 1,
+    "kind": 3,
+    "start": "17:00:00",
+    "end": "17:15:00",
+    "content_override": "Break",
+    "content_override_html": "<p>Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 41,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) talk (17:15:00 - 18:30:00) Cartoon 1 Cartoon 2",
+    "day": 1,
+    "kind": 1,
+    "start": "17:15:00",
+    "end": "18:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 42,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) nothing (09:00:00 - 10:00:00) Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 1,
+    "kind": 6,
+    "start": "09:00:00",
+    "end": "10:00:00",
+    "content_override": "\u2013",
+    "content_override_html": "<p>\u2013</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 43,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) nothing (17:15:00 - 18:30:00) Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 1,
+    "kind": 6,
+    "start": "17:15:00",
+    "end": "18:30:00",
+    "content_override": "\u2013",
+    "content_override_html": "<p>\u2013</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 44,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (11:40:00 - 12:30:00) Cartoon 1 Cartoon 2",
+    "day": 2,
+    "kind": 1,
+    "start": "11:40:00",
+    "end": "12:30:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 45,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) break (12:30:00 - 12:45:00) Cartoon 1 Cartoon 2 Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 2,
+    "kind": 3,
+    "start": "12:30:00",
+    "end": "12:45:00",
+    "content_override": "Break",
+    "content_override_html": "<p>Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 46,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (12:45:00 - 13:15:00) Cartoon 1",
+    "day": 2,
+    "kind": 1,
+    "start": "12:45:00",
+    "end": "13:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 47,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (12:45:00 - 13:15:00) Cartoon 2",
+    "day": 2,
+    "kind": 1,
+    "start": "12:45:00",
+    "end": "13:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 48,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (12:45:00 - 13:15:00) Barbie Tootle",
+    "day": 2,
+    "kind": 1,
+    "start": "12:45:00",
+    "end": "13:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 50,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) nothing (11:30:00 - 12:30:00) Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 2,
+    "kind": 6,
+    "start": "11:30:00",
+    "end": "12:30:00",
+    "content_override": "\u2013",
+    "content_override_html": "<p>\u2013</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 51,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (12:45:00 - 13:15:00) Hays Cape",
+    "day": 2,
+    "kind": 1,
+    "start": "12:45:00",
+    "end": "13:15:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 52,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (13:30:00 - 14:00:00) Cartoon 1",
+    "day": 2,
+    "kind": 1,
+    "start": "13:30:00",
+    "end": "14:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 53,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (13:30:00 - 14:00:00) Cartoon 2",
+    "day": 2,
+    "kind": 1,
+    "start": "13:30:00",
+    "end": "14:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 54,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (13:30:00 - 14:00:00) Barbie Tootle",
+    "day": 2,
+    "kind": 1,
+    "start": "13:30:00",
+    "end": "14:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 55,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (13:30:00 - 14:00:00) Hays Cape",
+    "day": 2,
+    "kind": 1,
+    "start": "13:30:00",
+    "end": "14:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 56,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (14:15:00 - 14:45:00) Cartoon 1",
+    "day": 2,
+    "kind": 1,
+    "start": "14:15:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 57,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (14:15:00 - 14:45:00) Cartoon 2",
+    "day": 2,
+    "kind": 1,
+    "start": "14:15:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 58,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (14:15:00 - 14:45:00) Barbie Tootle",
+    "day": 2,
+    "kind": 1,
+    "start": "14:15:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 59,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (14:15:00 - 14:45:00) Hays Cape",
+    "day": 2,
+    "kind": 1,
+    "start": "14:15:00",
+    "end": "14:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 60,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) break (14:45:00 - 15:15:00) Cartoon 1 Cartoon 2 Barbie Tootle Hays Cape",
+    "day": 2,
+    "kind": 3,
+    "start": "14:45:00",
+    "end": "15:15:00",
+    "content_override": "Break",
+    "content_override_html": "<p>Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 62,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (15:15:00 - 16:00:00) Cartoon 1",
+    "day": 2,
+    "kind": 1,
+    "start": "15:15:00",
+    "end": "16:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 63,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (15:15:00 - 16:00:00) Cartoon 2",
+    "day": 2,
+    "kind": 1,
+    "start": "15:15:00",
+    "end": "16:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 64,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (15:15:00 - 16:00:00) Barbie Tootle",
+    "day": 2,
+    "kind": 1,
+    "start": "15:15:00",
+    "end": "16:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 65,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (15:15:00 - 16:00:00) Hays Cape",
+    "day": 2,
+    "kind": 1,
+    "start": "15:15:00",
+    "end": "16:00:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 66,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (16:15:00 - 16:45:00) Cartoon 1",
+    "day": 2,
+    "kind": 1,
+    "start": "16:15:00",
+    "end": "16:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 67,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (16:15:00 - 16:45:00) Cartoon 2",
+    "day": 2,
+    "kind": 1,
+    "start": "16:15:00",
+    "end": "16:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 68,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (16:15:00 - 16:45:00) Barbie Tootle",
+    "day": 2,
+    "kind": 1,
+    "start": "16:15:00",
+    "end": "16:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 69,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) talk (16:15:00 - 16:45:00) Hays Cape",
+    "day": 2,
+    "kind": 1,
+    "start": "16:15:00",
+    "end": "16:45:00",
+    "content_override": "",
+    "content_override_html": "",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 70,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) break (16:45:00 - 17:00:00) Cartoon 1 Cartoon 2 Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 2,
+    "kind": 3,
+    "start": "16:45:00",
+    "end": "17:00:00",
+    "content_override": "Break",
+    "content_override_html": "<p>Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 71,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) plenary (17:00:00 - 18:00:00) Cartoon 1 Cartoon 2",
+    "day": 2,
+    "kind": 5,
+    "start": "17:00:00",
+    "end": "18:00:00",
+    "content_override": "Close & Lightning Talks",
+    "content_override_html": "<p>Close &amp; Lightning Talks</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 72,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) nothing (17:00:00 - 18:00:00) Barbie Tootle Hays Cape Suzanne Scharer",
+    "day": 2,
+    "kind": 6,
+    "start": "17:00:00",
+    "end": "18:00:00",
+    "content_override": "\u2013",
+    "content_override_html": "<p>\u2013</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 73,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (09:00:00 - 17:15:00) Brutus Buckeye",
+    "day": 7,
+    "kind": 8,
+    "start": "09:00:00",
+    "end": "17:15:00",
+    "content_override": "Quiet Room",
+    "content_override_html": "<p>Quiet Room</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 74,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (09:00:00 - 17:15:00) Tanya Rutner",
+    "day": 7,
+    "kind": 8,
+    "start": "09:00:00",
+    "end": "17:15:00",
+    "content_override": "Young Coders",
+    "content_override_html": "<p>Young Coders</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 75,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (10:30:00 - 11:15:00) ",
+    "day": 7,
+    "kind": 8,
+    "start": "10:30:00",
+    "end": "11:15:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 76,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (11:15:00 - 12:00:00) ",
+    "day": 7,
+    "kind": 8,
+    "start": "11:15:00",
+    "end": "12:00:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 77,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (12:00:00 - 12:30:00) ",
+    "day": 7,
+    "kind": 8,
+    "start": "12:00:00",
+    "end": "12:30:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 78,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) break (12:30:00 - 14:00:00) Rosa Ailabouni Brutus Buckeye",
+    "day": 7,
+    "kind": 3,
+    "start": "12:30:00",
+    "end": "14:00:00",
+    "content_override": "Lunch Break (room still open)",
+    "content_override_html": "<p>Lunch Break (room still open)</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 79,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (14:00:00 - 15:00:00) Brutus Buckeye",
+    "day": 7,
+    "kind": 8,
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 80,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) nothing (09:00:00 - 10:30:00) ",
+    "day": 7,
+    "kind": 6,
+    "start": "09:00:00",
+    "end": "10:30:00",
+    "content_override": "-",
+    "content_override_html": "<p>-</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 83,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (15:00:00 - 15:45:00) ",
+    "day": 7,
+    "kind": 8,
+    "start": "15:00:00",
+    "end": "15:45:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 84,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (15:45:00 - 16:30:00) ",
+    "day": 7,
+    "kind": 8,
+    "start": "15:45:00",
+    "end": "16:30:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 85,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) other (16:30:00 - 17:15:00) ",
+    "day": 7,
+    "kind": 8,
+    "start": "16:30:00",
+    "end": "17:15:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 86,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Schedule) nothing (17:15:00 - 18:30:00) ",
+    "day": 7,
+    "kind": 6,
+    "start": "17:15:00",
+    "end": "18:30:00",
+    "content_override": "-",
+    "content_override_html": "<p>-</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 87,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) nothing (11:30:00 - 12:45:00) Rosa Ailabouni Tanya Rutner",
+    "day": 8,
+    "kind": 6,
+    "start": "11:30:00",
+    "end": "12:45:00",
+    "content_override": "-",
+    "content_override_html": "<p>-</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 88,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (11:30:00 - 16:45:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "11:30:00",
+    "end": "16:45:00",
+    "content_override": "Quiet Room",
+    "content_override_html": "<p>Quiet Room</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 89,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (12:45:00 - 13:30:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "12:45:00",
+    "end": "13:30:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 90,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (12:45:00 - 13:30:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "12:45:00",
+    "end": "13:30:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 91,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (13:30:00 - 14:15:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 92,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (13:30:00 - 14:15:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 93,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (14:15:00 - 14:45:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "14:15:00",
+    "end": "14:45:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 94,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (14:15:00 - 14:45:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "14:15:00",
+    "end": "14:45:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 95,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) break (14:45:00 - 15:15:00) ",
+    "day": 8,
+    "kind": 3,
+    "start": "14:45:00",
+    "end": "15:15:00",
+    "content_override": "Break",
+    "content_override_html": "<p>Break</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 96,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (15:15:00 - 16:15:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 97,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (15:15:00 - 16:15:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 98,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (16:15:00 - 16:45:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "16:15:00",
+    "end": "16:45:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 99,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) other (16:15:00 - 16:45:00) ",
+    "day": 8,
+    "kind": 8,
+    "start": "16:15:00",
+    "end": "16:45:00",
+    "content_override": "Open Space",
+    "content_override_html": "<p>Open Space</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 100,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Other Schedule) nothing (16:45:00 - 18:00:00) ",
+    "day": 8,
+    "kind": 6,
+    "start": "16:45:00",
+    "end": "18:00:00",
+    "content_override": "-",
+    "content_override_html": "<p>-</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 101,
+  "fields": {
+    "name": "2018-07-27 (PyOhio 2018 Other Events Schedule) other (18:00:00 - 23:00:00) Offsite",
+    "day": 9,
+    "kind": 8,
+    "start": "18:00:00",
+    "end": "23:00:00",
+    "content_override": "Sprints & Opening Reception\r\n\r\n*at The Forge at Pillar Technology*\r\n\r\n[Directions & More Info](/2018/program/sprints)",
+    "content_override_html": "<p>Sprints &amp; Opening Reception</p>\n<p><em>at The Forge at Pillar Technology</em></p>\n<p><a href=\"/2018/program/sprints\">Directions &amp; More Info</a></p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 102,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Other Events Schedule) other (18:30:00 - 23:00:00) Rosa Ailabouni Tanya Rutner Brutus Buckeye",
+    "day": 7,
+    "kind": 8,
+    "start": "18:30:00",
+    "end": "23:00:00",
+    "content_override": "Sprints & Reception\r\n\r\n*at The Forge at Pillar Technology*\r\n\r\n[Directions & More Info](/2018/program/sprints)",
+    "content_override_html": "<p>Sprints &amp; Reception</p>\n<p><em>at The Forge at Pillar Technology</em></p>\n<p><a href=\"/2018/program/sprints\">Directions &amp; More Info</a></p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 103,
+  "fields": {
+    "name": "2018-07-28 (PyOhio 2018 Talks Schedule) other (08:00:00 - 09:00:00) ",
+    "day": 1,
+    "kind": 8,
+    "start": "08:00:00",
+    "end": "09:00:00",
+    "content_override": "Registration Opens",
+    "content_override_html": "<p>Registration Opens</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slot",
+  "pk": 104,
+  "fields": {
+    "name": "2018-07-29 (PyOhio 2018 Talks Schedule) other (11:00:00 - 11:30:00) ",
+    "day": 2,
+    "kind": 8,
+    "start": "11:00:00",
+    "end": "11:30:00",
+    "content_override": "Registration Opens",
+    "content_override_html": "<p>Registration Opens</p>",
+    "override_rowspan": null
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 1,
+  "fields": {
+    "slot": 1,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 2,
+  "fields": {
+    "slot": 2,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 3,
+  "fields": {
+    "slot": 3,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 4,
+  "fields": {
+    "slot": 4,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 5,
+  "fields": {
+    "slot": 4,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 6,
+  "fields": {
+    "slot": 4,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 7,
+  "fields": {
+    "slot": 4,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 8,
+  "fields": {
+    "slot": 5,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 9,
+  "fields": {
+    "slot": 6,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 10,
+  "fields": {
+    "slot": 7,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 11,
+  "fields": {
+    "slot": 8,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 12,
+  "fields": {
+    "slot": 8,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 13,
+  "fields": {
+    "slot": 9,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 14,
+  "fields": {
+    "slot": 9,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 15,
+  "fields": {
+    "slot": 4,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 16,
+  "fields": {
+    "slot": 10,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 17,
+  "fields": {
+    "slot": 10,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 18,
+  "fields": {
+    "slot": 10,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 19,
+  "fields": {
+    "slot": 10,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 21,
+  "fields": {
+    "slot": 11,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 22,
+  "fields": {
+    "slot": 11,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 23,
+  "fields": {
+    "slot": 12,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 24,
+  "fields": {
+    "slot": 13,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 25,
+  "fields": {
+    "slot": 14,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 26,
+  "fields": {
+    "slot": 15,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 27,
+  "fields": {
+    "slot": 16,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 28,
+  "fields": {
+    "slot": 17,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 29,
+  "fields": {
+    "slot": 18,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 30,
+  "fields": {
+    "slot": 19,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 31,
+  "fields": {
+    "slot": 20,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 32,
+  "fields": {
+    "slot": 21,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 33,
+  "fields": {
+    "slot": 22,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 34,
+  "fields": {
+    "slot": 23,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 35,
+  "fields": {
+    "slot": 24,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 36,
+  "fields": {
+    "slot": 25,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 37,
+  "fields": {
+    "slot": 26,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 38,
+  "fields": {
+    "slot": 27,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 39,
+  "fields": {
+    "slot": 28,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 40,
+  "fields": {
+    "slot": 29,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 41,
+  "fields": {
+    "slot": 30,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 42,
+  "fields": {
+    "slot": 31,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 43,
+  "fields": {
+    "slot": 32,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 44,
+  "fields": {
+    "slot": 33,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 45,
+  "fields": {
+    "slot": 34,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 46,
+  "fields": {
+    "slot": 35,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 47,
+  "fields": {
+    "slot": 36,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 48,
+  "fields": {
+    "slot": 37,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 49,
+  "fields": {
+    "slot": 38,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 50,
+  "fields": {
+    "slot": 39,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 51,
+  "fields": {
+    "slot": 40,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 52,
+  "fields": {
+    "slot": 40,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 53,
+  "fields": {
+    "slot": 40,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 54,
+  "fields": {
+    "slot": 40,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 55,
+  "fields": {
+    "slot": 40,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 56,
+  "fields": {
+    "slot": 41,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 57,
+  "fields": {
+    "slot": 41,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 58,
+  "fields": {
+    "slot": 42,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 59,
+  "fields": {
+    "slot": 42,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 60,
+  "fields": {
+    "slot": 42,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 61,
+  "fields": {
+    "slot": 43,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 62,
+  "fields": {
+    "slot": 43,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 63,
+  "fields": {
+    "slot": 43,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 64,
+  "fields": {
+    "slot": 44,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 65,
+  "fields": {
+    "slot": 44,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 66,
+  "fields": {
+    "slot": 45,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 67,
+  "fields": {
+    "slot": 45,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 68,
+  "fields": {
+    "slot": 45,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 69,
+  "fields": {
+    "slot": 45,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 70,
+  "fields": {
+    "slot": 45,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 71,
+  "fields": {
+    "slot": 46,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 72,
+  "fields": {
+    "slot": 47,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 73,
+  "fields": {
+    "slot": 48,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 75,
+  "fields": {
+    "slot": 50,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 76,
+  "fields": {
+    "slot": 50,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 77,
+  "fields": {
+    "slot": 50,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 78,
+  "fields": {
+    "slot": 51,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 79,
+  "fields": {
+    "slot": 52,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 80,
+  "fields": {
+    "slot": 53,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 81,
+  "fields": {
+    "slot": 54,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 82,
+  "fields": {
+    "slot": 55,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 83,
+  "fields": {
+    "slot": 56,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 84,
+  "fields": {
+    "slot": 57,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 85,
+  "fields": {
+    "slot": 58,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 86,
+  "fields": {
+    "slot": 59,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 87,
+  "fields": {
+    "slot": 60,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 88,
+  "fields": {
+    "slot": 60,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 89,
+  "fields": {
+    "slot": 60,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 90,
+  "fields": {
+    "slot": 60,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 92,
+  "fields": {
+    "slot": 62,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 93,
+  "fields": {
+    "slot": 63,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 94,
+  "fields": {
+    "slot": 64,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 95,
+  "fields": {
+    "slot": 65,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 96,
+  "fields": {
+    "slot": 66,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 97,
+  "fields": {
+    "slot": 67,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 98,
+  "fields": {
+    "slot": 68,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 99,
+  "fields": {
+    "slot": 69,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 100,
+  "fields": {
+    "slot": 70,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 101,
+  "fields": {
+    "slot": 70,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 102,
+  "fields": {
+    "slot": 70,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 103,
+  "fields": {
+    "slot": 70,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 105,
+  "fields": {
+    "slot": 71,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 106,
+  "fields": {
+    "slot": 71,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 107,
+  "fields": {
+    "slot": 10,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 108,
+  "fields": {
+    "slot": 72,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 109,
+  "fields": {
+    "slot": 72,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 110,
+  "fields": {
+    "slot": 72,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 111,
+  "fields": {
+    "slot": 73,
+    "room": 8
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 112,
+  "fields": {
+    "slot": 74,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 113,
+  "fields": {
+    "slot": 75,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 114,
+  "fields": {
+    "slot": 76,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 115,
+  "fields": {
+    "slot": 77,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 116,
+  "fields": {
+    "slot": 78,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 118,
+  "fields": {
+    "slot": 79,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 119,
+  "fields": {
+    "slot": 80,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 122,
+  "fields": {
+    "slot": 83,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 123,
+  "fields": {
+    "slot": 84,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 124,
+  "fields": {
+    "slot": 85,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 125,
+  "fields": {
+    "slot": 86,
+    "room": 8
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 126,
+  "fields": {
+    "slot": 86,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 127,
+  "fields": {
+    "slot": 86,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 128,
+  "fields": {
+    "slot": 87,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 129,
+  "fields": {
+    "slot": 87,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 130,
+  "fields": {
+    "slot": 88,
+    "room": 8
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 131,
+  "fields": {
+    "slot": 89,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 132,
+  "fields": {
+    "slot": 90,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 133,
+  "fields": {
+    "slot": 91,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 134,
+  "fields": {
+    "slot": 92,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 135,
+  "fields": {
+    "slot": 93,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 136,
+  "fields": {
+    "slot": 94,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 137,
+  "fields": {
+    "slot": 95,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 138,
+  "fields": {
+    "slot": 95,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 139,
+  "fields": {
+    "slot": 96,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 140,
+  "fields": {
+    "slot": 97,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 141,
+  "fields": {
+    "slot": 98,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 142,
+  "fields": {
+    "slot": 99,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 143,
+  "fields": {
+    "slot": 100,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 144,
+  "fields": {
+    "slot": 100,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 145,
+  "fields": {
+    "slot": 100,
+    "room": 8
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 146,
+  "fields": {
+    "slot": 101,
+    "room": 9
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 147,
+  "fields": {
+    "slot": 102,
+    "room": 6
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 148,
+  "fields": {
+    "slot": 102,
+    "room": 7
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 149,
+  "fields": {
+    "slot": 102,
+    "room": 8
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 150,
+  "fields": {
+    "slot": 103,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 151,
+  "fields": {
+    "slot": 103,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 152,
+  "fields": {
+    "slot": 103,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 153,
+  "fields": {
+    "slot": 103,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 154,
+  "fields": {
+    "slot": 103,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 155,
+  "fields": {
+    "slot": 104,
+    "room": 1
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 156,
+  "fields": {
+    "slot": 104,
+    "room": 2
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 157,
+  "fields": {
+    "slot": 104,
+    "room": 3
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 158,
+  "fields": {
+    "slot": 104,
+    "room": 4
+  }
+},
+{
+  "model": "symposion_schedule.slotroom",
+  "pk": 159,
+  "fields": {
+    "slot": 104,
+    "room": 5
+  }
+},
+{
+  "model": "symposion_schedule.session",
+  "pk": 2,
+  "fields": {
+    "day": 1,
+    "slots": [
+      8,
+      9,
+      4,
+      1,
+      10,
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "symposion_schedule.session",
+  "pk": 3,
+  "fields": {
+    "day": 2,
+    "slots": [
+      5,
+      7,
+      6
+    ]
+  }
+}
+]
