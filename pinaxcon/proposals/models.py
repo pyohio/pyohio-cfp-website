@@ -84,6 +84,15 @@ class ConferenceSpeaker(SpeakerBase):
                     " to make sure it is ready to publish"),
         )
 
+    pronouns = models.CharField(
+        blank=True,
+        null=True,
+        max_length=64,
+        verbose_name=_("Pronouns"),
+        help_text=_("Enter your pronouns to help the session chair introduce you "
+                    "properly.")
+    )
+
     code_of_conduct = models.BooleanField(
         default=False,
         help_text=_("I have read and, in the event that my proposal is "
