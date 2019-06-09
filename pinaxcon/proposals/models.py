@@ -100,6 +100,31 @@ class ConferenceSpeaker(SpeakerBase):
                     "<a href='/code-of-conduct'>Code of Conduct</a>."),
     )
 
+class OrganizerRole(models.Model):
+
+    title = models.CharField(max_length=32, verbose_name=_("Role Title"))
+    order = models.PositiveIntegerField(verbose_name=_("Order"), default=100)
+
+
+    def __str__(self):
+        return "%s (%s)" % (self.title, self.order)
+
+    class Meta:
+        ordering = ["order", "title"]
+
+
+class ConferenceSpeakerOrganizerRoles(models.Model):
+
+    roles = models.ManyToManyField(OrganizerRole, verbose_name=_("Role"))
+    speaker = models.ForeignKey(ConferenceSpeaker, verbose_name=_("Speaker"))
+
+    def __str__(self):
+        return "%s %s" % (self.speaker, [str(r) for r in self.roles.all()])
+
+    class Meta:
+        ordering = ["speaker"]
+        verbose_name=_("Speaker Organizer Roles")
+        verbose_name_plural=_("Speaker Organizer Roles")
 
 class Proposal(ProposalBase):
 

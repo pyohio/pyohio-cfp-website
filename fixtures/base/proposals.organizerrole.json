@@ -1,0 +1,138 @@
+[
+{
+  "model": "proposals.organizerrole",
+  "pk": 1,
+  "fields": {
+    "title": "Conference Chair",
+    "order": 1
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 2,
+  "fields": {
+    "title": "Program Chair",
+    "order": 3
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 3,
+  "fields": {
+    "title": "Finance Chair",
+    "order": 4
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 4,
+  "fields": {
+    "title": "Conference Co-Chair",
+    "order": 2
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 5,
+  "fields": {
+    "title": "Volunteer Chair",
+    "order": 5
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 6,
+  "fields": {
+    "title": "A/V Chair",
+    "order": 6
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 7,
+  "fields": {
+    "title": "Program Committee",
+    "order": 10
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 8,
+  "fields": {
+    "title": "Committee Member",
+    "order": 100
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 9,
+  "fields": {
+    "title": "Conference Chair Emeritus",
+    "order": 101
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 10,
+  "fields": {
+    "title": "Young Coders",
+    "order": 11
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 11,
+  "fields": {
+    "title": "OSU Open Source Club President",
+    "order": 9
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 12,
+  "fields": {
+    "title": "T-Shirts",
+    "order": 12
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 13,
+  "fields": {
+    "title": "Web Accessibility",
+    "order": 20
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 14,
+  "fields": {
+    "title": "Web Technology",
+    "order": 21
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 15,
+  "fields": {
+    "title": "Communications Chair",
+    "order": 7
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 16,
+  "fields": {
+    "title": "Sponsorship Chair",
+    "order": 8
+  }
+},
+{
+  "model": "proposals.organizerrole",
+  "pk": 17,
+  "fields": {
+    "title": "Speaker Mentoring Coordinator",
+    "order": 13
+  }
+}
+]
