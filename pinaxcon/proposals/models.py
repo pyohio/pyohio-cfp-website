@@ -191,3 +191,6 @@ class TutorialProposal(Proposal):
     )
     prerequisite_setup_html = models.TextField(blank=True)
 
+    def save(self, *args, **kwargs):
+        self.prerequisite_setup_html = parse(self.prerequisite_setup)
+        return super(TutorialProposal, self).save(*args, **kwargs)
