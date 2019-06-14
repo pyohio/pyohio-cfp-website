@@ -20,11 +20,23 @@ class ConferenceSpeaker(SpeakerBase):
         return super(ConferenceSpeaker, self).save(*args, **kwargs)
 
     twitter_username = models.CharField(
-        max_length=15,
+        max_length=16,
         blank=True,
-        help_text=_(u"Your Twitter account")
+        help_text=_(u"Your Twitter username (without the @)")
     )
 
+    mastodon_username = models.CharField(
+        max_length=64,
+        blank=True,
+        help_text=_(u"Your Mastodon username (@username@instance.domain)")
+    )
+
+    website_url = models.URLField(
+        blank=True,
+        help_text=_(u"Personal website URL"),
+        verbose_name="Website URL"
+    )
+    
     first_time = models.BooleanField(
         blank=True,
         default=False,
