@@ -71,7 +71,7 @@ def patch_conference_schedule():
                 presentation.speaker.conferencespeaker.reviewer
                 if request.user.is_staff else ["redacted"]
             )
-            slot_data["license"] = "CC BY-SA"
+            slot_data["license"] = "youtube"
             slot_data["released"] = presentation.proposal_base.talkproposal.recording_release
             slot_data["twitter_id"] = presentation.speaker.conferencespeaker.twitter_username
         except Exception as e:
